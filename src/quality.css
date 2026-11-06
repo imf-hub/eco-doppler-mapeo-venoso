@@ -22,3 +22,5 @@ p{color:#586779}.caption,.muted{color:#667487}.eyebrow{color:#8d3654;font-size:1
 .st-heading p,.st-region-description{font-size:14px;color:#5e7489}.st-eyebrow{font-size:11px}.st-preparation>label,.st-control-grid>label,.st-safety label,.st-checks li{font-size:13px}.st-root select,.st-control-grid output{font-size:13px}.st-root button{min-height:39px;font-size:12px}.st-stage-caption span,.st-screen-top,.st-screen-bottom,.st-range-ends{font-size:10px}.st-stage-caption strong{font-size:14px}.st-patient-stage>p,.st-scene-legend,.st-limits,.st-sources a{font-size:11px}.st-transfer p,.st-feedback p{font-size:13px}.st-control-grid{gap:20px}.st-safety label{line-height:1.7}.st-control-grid>label{line-height:1.7}
 
 .map-three-views.zoomed .map-view .map-annotation{font-size:9px}
+
+.mg-home-guide{display:flex;align-items:flex-start;gap:18px;margin-top:25px;padding:24px}.mg-home-guide>svg{color:#a64465;flex-shrink:0}.mg-home-guide h3{font-size:19px}.mg-home-guide p{font-size:14px;line-height:1.8;margin:12px 0}.mg-home-guide .text-btn{font-size:13px}
