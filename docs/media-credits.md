@@ -1,5 +1,9 @@
 # Créditos de media clínica integrada
 
+## Originales del consenso · versión 6
+
+El propietario proporcionó la carpeta [Consenso y plantillas](https://drive.google.com/drive/folders/1lXUTkjYLXQzfgql9SUTZpMqaRKkvTWiF) y pidió incorporarlos a la enseñanza y al constructor. Las plantillas derecha/izquierda MERIT se mantienen como PDF original y renderizado completo. Las páginas 52, 54–57 de Bottini et al. (2023, DOI 10.23736/S0392-9590.23.04991-X) se muestran completas, con los avisos © Edizioni Minerva Medica conservados. No se les atribuye licencia libre. `public/media/consenso/provenance.json` registra tamaños y SHA-256. Las superposiciones IMF se identifican como ejercicios ficticios. Véase `docs/consensus-integration-v6.md`.
+
 Revisado: 6 de noviembre de 2026. Se integran **dos archivos** (2.10 MB, 2,104,129 bytes), descargados desde los originales enlazados en sus fichas Commons. Las imágenes se inspeccionaron visualmente antes de incorporarse. No muestran nombres, números de expediente ni otra identificación textual visible del paciente. No se alteraron imágenes, colores, duración, rótulos ni diagnósticos de origen.
 
 ## 1. B-flow de reflujo en safena magna

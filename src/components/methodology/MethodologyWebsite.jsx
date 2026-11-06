@@ -15,6 +15,7 @@ import ScientificDiagram from '../visual/ScientificDiagram';
 import ProcedureArtwork from './ProcedureIllustration';
 import MethodErrorIllustration from './MethodErrorIllustration';
 import './MethodologyWebsite.css';
+import {ConsensusBridge,ConsensusFigure} from '../consensus/ConsensusWebsite';
 const Volume=lazy(()=>import('../visual/ConceptVolumeScene'));
 const SHORT={preparar:'Preparación',equipo:'Equipo y sonda',posicion:'Posición',profundo:'Sistema profundo',ingle:'Unión safenofemoral',gsv:'Safena mayor',ssv:'Safena menor',tributarias:'Conexiones y perforantes',reflujo:'Maniobras y reflujo',diametros:'Medidas',cartografia:'Cartografía',informe:'Informe'};
 const REFERENCES={
@@ -91,6 +92,7 @@ export default function MethodologyWebsite({stepId,momentId,navigate}){
  {moment?<div className="m4-content m4-in-page-sequence"><SequenceLinks page={page} active={moment.id}/></div>:null}
  {!moment&&<section className="m4-section"><div className="m4-content"><SectionTitle n="PASOS" title="Realiza esta etapa en orden">Cada maniobra abre una página propia con todas sus referencias visuales.</SectionTitle><SequenceLinks page={page}/></div></section>}
  {moment&&<section className="m4-section m4-hand" id="seccion-sonda"><div className="m4-content"><SectionTitle n="02" title="La mano, la sonda y el plano">{moment.action}</SectionTitle><div className="m4-hand-layout"><ProcedureIllustration stepId={stepId} momentId={moment?.id} view="probe" phase={platePhase}/><div className="m4-brief"><span className="m4-eyebrow">BUSCA ESTA RELACIÓN</span><p>{moment.lookFor}</p><span className="m4-eyebrow">EN PANTALLA</span><p>{page.screen}</p></div></div><ProcedureIllustration stepId={stepId} momentId={moment?.id} view="anatomy" phase={platePhase}/></div></section>}
+ {['cartografia','informe','diametros','ingle','ssv'].includes(stepId)&&<div className="m4-content"><ConsensusBridge chapter={stepId==='diametros'?'mediciones':stepId==='informe'?'informe':['ingle','ssv'].includes(stepId)?'ampliaciones':'plantillas'}/>{['cartografia','diametros','informe'].includes(stepId)&&<ConsensusFigure figureId={stepId==='cartografia'?'symbols':'measures'}/>}</div>}
  <Demonstration key={stepId+'-'+index} stepId={stepId} index={index}/>
  <References stepId={stepId}/>
  {moment&&<section className="m4-section m4-correction"><div className="m4-content"><SectionTitle n="05" title="Reconoce el error. Recupera la técnica."/><div className="m4-error-pair"><figure><span>ERROR FRECUENTE</span><ProcedureIllustration Artwork={MethodErrorIllustration} plateLabel="comparación del error y la técnica" code={methodSequences[stepId][index].errorCode} stepId={stepId} momentId={moment.id} phase={.5} error/><figcaption>{moment.error}</figcaption></figure><figure><span>CORRECCIÓN</span><ProcedureIllustration Artwork={MethodErrorIllustration} plateLabel="comparación del error y la técnica" code={methodSequences[stepId][index].errorCode} stepId={stepId} momentId={moment.id} phase={.5} error={false}/><figcaption>{moment.correction}</figcaption></figure></div></div></section>}

@@ -49,3 +49,5 @@
 .ab-scale-note{position:absolute;bottom:16px;left:15px;font-size:8px;color:#789fb8;pointer-events:none}@media(max-width:520px){.ab-scale-note{bottom:56px;font-size:6px;left:10px}}
 
 @media(max-width:520px){.va-nav-open{grid-template-columns:repeat(2,minmax(0,1fr))}.va-nav-open button{min-width:0;white-space:normal;text-align:left;line-height:1.5}.va-nav-open button svg{flex-shrink:0}}
+
+.va-nav{flex-wrap:wrap}.va-nav button{max-width:100%}

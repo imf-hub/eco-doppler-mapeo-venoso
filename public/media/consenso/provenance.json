@@ -1,0 +1,61 @@
+{
+  "folder": "https://drive.google.com/drive/folders/1lXUTkjYLXQzfgql9SUTZpMqaRKkvTWiF",
+  "article": "Bottini et al. International Angiology. 2023;42:45-58. DOI:10.23736/S0392-9590.23.04991-X",
+  "rights": "Original ownership and copyright notices retained. No Creative Commons license is asserted for these supplied documents. IMF annotations and simulations are identified separately.",
+  "files": [
+    {
+      "file": "articulo-ampliaciones-ingle.jpg",
+      "bytes": 631676,
+      "sha256": "d9f5569f8d11a4cfd014bc9519965c62bd6ad4ae3567cdf73c4da85f288b4444",
+      "origin": "Original PDF supplied in the project owner Drive folder, 2026-11-06. PNG/JPG files are unretouched page renders."
+    },
+    {
+      "file": "articulo-ampliaciones-poplitea.jpg",
+      "bytes": 669123,
+      "sha256": "5c7fd75407d2ce8c18c48618eb9c37db878f17971290ff587c315afa683e4a4f",
+      "origin": "Original PDF supplied in the project owner Drive folder, 2026-11-06. PNG/JPG files are unretouched page renders."
+    },
+    {
+      "file": "articulo-figuras-2-3.jpg",
+      "bytes": 362463,
+      "sha256": "b5e9ead870429251044c09c982495c281798521f6b3a584cf07f4f851dbe1a04",
+      "origin": "Original PDF supplied in the project owner Drive folder, 2026-11-06. PNG/JPG files are unretouched page renders."
+    },
+    {
+      "file": "articulo-tabla-v.jpg",
+      "bytes": 455378,
+      "sha256": "b628a1055edad51e401b3b9fd8ebf2850c2c0d3a1a73e20f5b6eb3f66ce2e781",
+      "origin": "Original PDF supplied in the project owner Drive folder, 2026-11-06. PNG/JPG files are unretouched page renders."
+    },
+    {
+      "file": "articulo-tabla-vi-figura-4.jpg",
+      "bytes": 547999,
+      "sha256": "1950276b4cfd86798121b0edf7183f82bac5fb1bd671326eaa383e3cbc2015ce",
+      "origin": "Original PDF supplied in the project owner Drive folder, 2026-11-06. PNG/JPG files are unretouched page renders."
+    },
+    {
+      "file": "plantilla-derecha.pdf",
+      "bytes": 1841804,
+      "sha256": "329fa67e423808f45bd58dca724ef4723e5baf5d684f085853e5676af7575c4b",
+      "origin": "Original PDF supplied in the project owner Drive folder, 2026-11-06. PNG/JPG files are unretouched page renders."
+    },
+    {
+      "file": "plantilla-derecha.png",
+      "bytes": 352006,
+      "sha256": "475c311626d5049ae62afb7f0c59a343ccf9ab70a96da94fd23243e895d10ce2",
+      "origin": "Original PDF supplied in the project owner Drive folder, 2026-11-06. PNG/JPG files are unretouched page renders."
+    },
+    {
+      "file": "plantilla-izquierda.pdf",
+      "bytes": 1835083,
+      "sha256": "629408d5ee57b3c2b6dc0939f7b3552ed3083d7b92ccdeeaff9a113721c53bea",
+      "origin": "Original PDF supplied in the project owner Drive folder, 2026-11-06. PNG/JPG files are unretouched page renders."
+    },
+    {
+      "file": "plantilla-izquierda.png",
+      "bytes": 354547,
+      "sha256": "206f1f4ba43c04fdd8e01ec61e72720d2ef268697e0d6f58e67cd75b650d6549",
+      "origin": "Original PDF supplied in the project owner Drive folder, 2026-11-06. PNG/JPG files are unretouched page renders."
+    }
+  ]
+}

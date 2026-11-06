@@ -57,12 +57,14 @@ export function validateEducationalMap(entries, meta = {}) {
     if (!Number.isInteger(entry.view) || entry.view < 0 || entry.view > 4) push(`view-${id}`, 'error', 'El elemento no tiene una cara o ampliación válida asignada.', id);
     const pointsValid = Array.isArray(entry.points) && entry.points.length > 0 && entry.points.every(p => Array.isArray(p) && p.length >= 2 && Number.isFinite(p[0]) && Number.isFinite(p[1]));
     if (!pointsValid) push(`points-${id}`, 'error', 'La posición del elemento contiene coordenadas inválidas. No puede exportarse con fiabilidad.', id);
+    else if(entry.points.some(p=>p[0]<0||p[0]>200||p[1]<0||p[1]>(entry.view>=3?200:470))) push(`point-bounds-${id}`,'error','El elemento queda fuera de la cara o ampliación seleccionada.',id);
     else if (entry.type === 'vessel' && entry.points.length < 2) push(`path-${id}`, 'error', 'Un trayecto necesita al menos dos puntos distintos.', id);
     else if (entry.type === 'vessel' && entry.points.every(p => p[0] === entry.points[0][0] && p[1] === entry.points[0][1])) push(`path-${id}`, 'warning', 'Los puntos del trayecto coinciden. Revisa que la vena tenga una representación visible.', id);
     if (vascularType(entry) && !textPresent(entry.condition)) push(`condition-missing-${id}`, 'error', 'La vena no tiene una condición documentada. No permitas que un color por defecto sustituya el hallazgo.', id);
     if (textPresent(entry.condition) && !knownConditions.has(entry.condition)) push(`condition-${id}`, 'warning', 'La condición elegida no pertenece a la leyenda disponible. Revísala antes de compartir el ejercicio.', id);
     if (vascularType(entry) && ['lymph', 'nonvascular'].includes(entry.condition)) push(`vascular-color-${id}`, 'error', 'El verde y el amarillo identifican estructuras no venosas. Revisa el tipo de elemento o su código de color.', id);
     if (entry.type === 'oval' && !['lymph','nonvascular','unknown','not-evaluated'].includes(entry.condition)) push(`structure-color-${id}`, 'warning', 'Para una estructura no vascular usa el código correspondiente: verde linfoganglionar o amarillo para las demás.', id);
+    for(const key of ['labelX','labelY'])if(entry[key]!==undefined&&(!Number.isFinite(entry[key])||entry[key]<0||entry[key]>(key==='labelX'?200:entry.view>=3?200:470)))push(`${key}-${id}`,'error','Sitúa la etiqueta dentro de la cara o ampliación seleccionada.',id);
 
     for (const [field, title, strictlyPositive, unusual] of [['diameter','diámetro en mm',true,100],['reflux','duración en s',false,30],['length','longitud en cm',true,150],['height','altura en cm',false,150]]) {
       const value = numberValue(entry[field]);

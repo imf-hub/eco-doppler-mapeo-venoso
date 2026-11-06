@@ -2,6 +2,10 @@
 
 Aplicación educativa estática para médicos que comienzan en ultrasonido. La experiencia prioriza demostraciones, adquisiciones publicadas y manipulación de controles.
 
+## Experiencia 6.0 · El mapa del consenso
+
+Ocho páginas dedicadas al consenso: plantillas originales MERIT de ambos lados, figuras y tablas de origen, nomenclatura, medidas, ampliaciones, construcción e informe. El constructor trabaja sobre la base proporcionada, admite tres caras y dos ampliaciones y exporta SVG/PDF con la plantilla incorporada y el informe del ejercicio. Trazabilidad: `docs/consensus-integration-v6.md`.
+
 ## Experiencia 5.0
 
 - Glosario animado con 80 términos: definiciones, mecanismos específicos, controles físicos, observaciones y referencias por término.

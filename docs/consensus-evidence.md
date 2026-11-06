@@ -31,7 +31,7 @@ El documento normaliza **cómo representar** hallazgos del sistema superficial y
 | Alturas: planta del pie para pierna y pliegue de rodilla para muslo; unión respecto del pliegue correspondiente | pp. 8–12 | Distancias siempre con referencia y sentido cuando corresponda |
 | Imagen no interpretable: registrar limitación y motivo | pp. 7–8 | No clasificar como normal un segmento no evaluable |
 
-Las figuras del PDF **no se redistribuyen** como activos de la web en esta implementación. Se enlaza el documento del titular/proveedor. La descarga bajo `research/` sirve solo para comprobación y debe excluirse del paquete público. No se identificó aquí una licencia que permita reutilización irrestricta de todo el PDF.
+En la versión 6, por petición explícita del propietario que proporcionó los originales, se incorporan las dos plantillas MERIT y renderizados de las páginas pertinentes del artículo con sus avisos y atribución. La integración y la separación de anotaciones docentes se documentan en `docs/consensus-integration-v6.md`. No se declara una licencia CC para los originales ni se redistribuye el artículo completo como PDF dentro del paquete.
 
 ## Adquisición: fuentes complementarias
 
