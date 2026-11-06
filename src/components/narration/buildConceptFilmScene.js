@@ -154,7 +154,8 @@ function drawFilmScreen(ctx,s,film){
  if(film.family==='resolution'){
   const width=s.value*22;ctx.strokeStyle='#83d1dc';ctx.lineWidth=3;ctx.beginPath();for(let i=0;i<560;i++){const v=Math.exp(-(((i-220)/width)**2))+Math.exp(-(((i-320)/width)**2)),y=bottom-v*130;i?ctx.lineTo(35+i,y):ctx.moveTo(35+i,y);}ctx.stroke();ctx.fillStyle='#e4bd79';ctx.font='22px Arial';ctx.fillText(k==='axial'?'Pulso más corto: ecos más separables.':k==='lateral'?'Haz más estrecho: blancos laterales.':'Espesor y separación fuera del plano.',35,415);return;
  }
- let min=-s.nyquist,max=s.nyquist,baseline=mid;
+ // CW is not subject to the pulsed Nyquist limit. Expand its display window.
+ let max=k==='cw'?Math.max(s.nyquist,Math.abs(s.doppler)*1.25):s.nyquist,min=-max,baseline=mid;
  if(k==='baseline'){const range=baselineRangeHz(s.prf,s.value);min=range.min;max=range.max;baseline=top+max/(max-min)*height;}
  ctx.strokeStyle='#8ca9b9';ctx.beginPath();ctx.moveTo(30,baseline);ctx.lineTo(610,baseline);ctx.stroke();
  ctx.save();ctx.beginPath();ctx.rect(30,top,580,height);ctx.clip();ctx.strokeStyle='#9bdce2';ctx.lineWidth=k==='spectral-broadening'?3+s.value/15:k==='gate'?3+s.value:3;ctx.beginPath();
