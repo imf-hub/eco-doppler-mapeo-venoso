@@ -2,6 +2,10 @@
 
 Aplicación educativa estática para médicos que comienzan en ultrasonido. La experiencia prioriza demostraciones, adquisiciones publicadas y manipulación de controles.
 
+## Laboratorio 7.0 · Interacción en modo claro
+
+La portada es un banco 3D con válvulas, compresión, ángulo Doppler y anatomía. Volumen y corte comparten ajustes y fase. Navegación compacta, iluminación clara, cámara orbital suave e interrumpible, y metodología centrada en el gesto. Las tablas originales del consenso se consultan en un visor junto a la aplicación del símbolo. El texto de consulta permanece disponible en desplegables, que se abren al imprimir. Se conservan las 139 entradas y los documentos originales. Diseño y revisión: `docs/laboratory-redesign-v8.md`.
+
 ## Revisión 6.1 · Fidelidad documental
 
 Tablas originales en español y 17 fragmentos de símbolos tomados del PDF. Paleta compartida, aplasia identificada por separado, marca quirúrgica independiente y úlcera con contorno y cuadriculado. Tabla VI con 17 equivalencias en tres idiomas. Cotejo y límites: `docs/consensus-conformance-audit.md`.

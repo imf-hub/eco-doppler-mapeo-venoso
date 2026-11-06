@@ -12,5 +12,5 @@ export function readAcademyRoute(){
  const hash=window.location.hash.slice(1);
  if(hash&&!hash.startsWith('seccion-')){const [page,detail='',moment='']=hash.split('/');return {page,detail:decodeURIComponent(detail),moment:decodeURIComponent(moment)};}
  const path=window.location.pathname.slice(appRoot().pathname.length).split('/').filter(Boolean);
- return ['mapeo','glosario','consenso'].includes(path[0])?{page:path[0],detail:decodeURIComponent(path[1]||''),moment:decodeURIComponent(path[2]||'')}:{page:'mapeo',detail:'',moment:''};
+ return ['mapeo','glosario','consenso'].includes(path[0])?{page:path[0],detail:decodeURIComponent(path[1]||''),moment:decodeURIComponent(path[2]||'')}:{page:'inicio',detail:'',moment:''};
 }

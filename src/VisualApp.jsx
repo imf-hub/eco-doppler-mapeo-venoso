@@ -1,12 +1,14 @@
 import {lazy,Suspense,useEffect,useState} from 'react';
-import {Activity,Waves,ScanLine,Layers,Map,Images,BookOpen,ArrowUpRight,Menu,X,FileText as FileTextIcon} from 'lucide-react';
+import {Activity,Waves,ScanLine,Layers,Map,Images,BookOpen,ArrowUpRight,Menu,X,FlaskConical,FileText as FileTextIcon} from 'lucide-react';
 import {lessons,sources} from './data/lessons';
 import {visualConcepts,lessonVisualMap} from './data/visualCurriculum';
 import {mappingSteps} from './data/mapping';
 import VisualPlayer from './components/visual/VisualPlayer';
 import MediaLibrary from './components/visual/MediaLibrary';
 import './visualAcademy.css';
+import './laboratory.css';
 import {appRoot,methodologyHref,glossaryHref,consensusHref,readAcademyRoute} from './methodologyRoutes';
+const LaboratoryHome=lazy(()=>import('./components/visual/LaboratoryHome'));
 const ConsensusWebsite=lazy(()=>import('./components/consensus/ConsensusWebsite'));
 const GlossaryWebsite=lazy(()=>import('./components/glossary/GlossaryWebsite'));
 const MethodologyWebsite=lazy(()=>import('./components/methodology/MethodologyWebsite'));
@@ -16,13 +18,14 @@ const Simulator=lazy(()=>import('./components/Simulator'));
 const Cartography=lazy(()=>import('./components/Cartography'));
 const ScanTrainer=lazy(()=>import('./components/ScanTrainer'));
 const labels={preparar:'Preparación',equipo:'Equipo y sonda',posicion:'Posición del paciente',profundo:'Sistema profundo',ingle:'Unión safenofemoral',gsv:'Safena mayor',ssv:'Safena menor',tributarias:'Conexiones y perforantes',reflujo:'Maniobras y reflujo',diametros:'Medidas',cartografia:'Cartografía',informe:'Informe'};
-const navigation=[['mapeo','Mapeo paso a paso',Map],['consenso','El mapa del consenso',FileTextIcon],['fundamentos','Conceptos visuales',Waves],['glosario','Glosario animado',BookOpen],['laboratorio','Controles del equipo',ScanLine],['anatomia','Anatomía y adquisición',Layers],['cartografia','Construir el mapa',Map],['biblioteca','Imágenes y fuentes',Images]];
+const navigation=[['inicio','Laboratorio',FlaskConical],['mapeo','Mapeo paso a paso',Map],['consenso','El mapa del consenso',FileTextIcon],['fundamentos','Conceptos visuales',Waves],['glosario','Glosario animado',BookOpen],['laboratorio','Controles del equipo',ScanLine],['anatomia','Anatomía y adquisición',Layers],['cartografia','Construir el mapa',Map],['biblioteca','Imágenes y fuentes',Images]];
 const readRoute=readAcademyRoute;
 export default function VisualApp(){
  const [route,setRoute]=useState(readRoute),[menu,setMenu]=useState(false),[lesson,setLesson]=useState('sonido'),[topic,setTopic]=useState('sound'),[anatomyTab,setAnatomyTab]=useState(()=>readRoute().detail.startsWith('sonda')?'sonda':'atlas');
  useEffect(()=>{const onRoute=()=>{setRoute(readRoute());setMenu(false);window.scrollTo(0,0);};window.addEventListener('hashchange',onRoute);return()=>window.removeEventListener('hashchange',onRoute);},[]);
+ useEffect(()=>{const opened=[];const before=()=>document.querySelectorAll('.va-laboratory details:not([open])').forEach(el=>{el.open=true;opened.push(el);});const after=()=>{opened.splice(0).forEach(el=>{el.open=false;});};window.addEventListener('beforeprint',before);window.addEventListener('afterprint',after);return()=>{window.removeEventListener('beforeprint',before);window.removeEventListener('afterprint',after);after();};},[]);
  useEffect(()=>{if(route.page==='anatomia')setAnatomyTab(route.detail.startsWith('sonda')?'sonda':'atlas');},[route]);
- const page=['inicio','guias'].includes(route.page)?'mapeo':route.page==='casos'?'laboratorio':['visuales','efectos'].includes(route.page)?'fundamentos':route.page;
+ const page=route.page==='guias'?'mapeo':route.page==='casos'?'laboratorio':['visuales','efectos'].includes(route.page)?'fundamentos':route.page;
  const method=mappingSteps.find(s=>s.id===route.detail)?.id||'preparar',associatedLesson=route.page==='efectos'?'interacciones':route.page==='visuales'?Object.keys(lessonVisualMap).find(k=>lessonVisualMap[k].includes(route.detail)):lessons.some(l=>l.id===route.detail)?route.detail:lesson,lessonTopics=lessonVisualMap[associatedLesson||lesson]||['sound'];
  const concept=route.page==='visuales'&&visualConcepts.some(c=>c.id===route.detail)?route.detail:lessonTopics.includes(topic)?topic:lessonTopics[0];
  function navigate(id,detail=''){
@@ -34,9 +37,10 @@ export default function VisualApp(){
   if(window.location.hash==='#'+hash){setRoute(readRoute());setMenu(false);}else window.location.hash=hash;
  }
  function chooseVisualConcept(value){if(value==='__safety'){setLesson('seguridad');navigate('fundamentos');}else if(value==='__effects'){setLesson('interacciones');navigate('efectos');}else navigate('visuales',value);}
- return <div className="visual-academy"><a className="skip-link" href="#visual-main" onClick={e=>{e.preventDefault();document.getElementById('visual-main')?.focus();document.getElementById('visual-main')?.scrollIntoView();}}>Saltar al contenido</a><header className="va-header"><button className="va-brand" onClick={()=>navigate('mapeo')} aria-label="IMF, abrir aula visual"><span><Activity size={24}/></span><strong>IMF<small>AULA DE MAPEO VENOSO</small></strong></button><div className="va-course-name">Eco-Doppler <span>/</span> aprendizaje visual</div><a className="va-consensus" href={consensusHref()}>Consenso <ArrowUpRight size={15}/></a><button className="va-menu" aria-label="Abrir navegación" aria-expanded={menu} onClick={()=>setMenu(!menu)}>{menu?<X/>:<Menu/>}</button></header>
- <nav className={'va-nav '+(menu?'va-nav-open':'')} aria-label="Navegación principal">{navigation.map(([id,label,Icon])=><button key={id} onClick={()=>navigate(id)} aria-current={page===id?'page':undefined}><Icon size={18}/><span>{label}</span></button>)}</nav>
+ return <div className="visual-academy va-laboratory"><a className="skip-link" href="#visual-main" onClick={e=>{e.preventDefault();document.getElementById('visual-main')?.focus();document.getElementById('visual-main')?.scrollIntoView();}}>Saltar al contenido</a><header className="va-header"><button className="va-brand" onClick={()=>navigate('inicio')} aria-label="IMF, abrir laboratorio visual"><span><Activity size={24}/></span><strong>IMF<small>LABORATORIO VENOSO</small></strong></button><div className="va-course-name">Eco-Doppler <span>/</span> mapeo venoso</div><a className="va-consensus" href={consensusHref()}>Consenso <ArrowUpRight size={15}/></a><button className="va-menu" aria-label="Abrir navegación" aria-expanded={menu} onClick={()=>setMenu(!menu)}>{menu?<X/>:<Menu/>}</button></header>
+ <nav className={'va-nav '+(menu?'va-nav-open':'')} aria-label="Navegación principal">{navigation.map(([id,label,Icon])=><button key={id} onClick={()=>navigate(id)} title={label} aria-current={page===id?'page':undefined}><Icon size={18}/><span>{label}</span></button>)}</nav>
  <main id="visual-main" tabIndex={-1} className="va-main">
+ {page==='inicio'&&<Suspense fallback={<Loading/>}><LaboratoryHome navigate={navigate}/></Suspense>}
  {page==='consenso'&&<Suspense fallback={<Loading/>}><ConsensusWebsite chapterId={route.detail} navigate={navigate}/></Suspense>}
  {page==='glosario'&&<Suspense fallback={<Loading/>}><GlossaryWebsite termId={route.detail} navigate={navigate}/></Suspense>}
  {page==='mapeo'&&<Suspense fallback={<Loading/>}><MethodologyWebsite stepId={route.detail} momentId={route.moment} navigate={navigate}/></Suspense>}
