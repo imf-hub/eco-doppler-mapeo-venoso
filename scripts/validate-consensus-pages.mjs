@@ -11,4 +11,4 @@ for(const route of ['consenso',...consensusChapters.map(c=>'consenso/'+c.id)]){
 }
 const provenance=JSON.parse(fs.readFileSync('dist/media/consenso/provenance.json','utf8'));
 for(const f of provenance.files){const bytes=fs.readFileSync('dist/media/consenso/'+f.file);assert.equal(bytes.length,f.bytes);assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),f.sha256);}
-console.log('8 páginas de consenso y 9 activos originales verificados.');
+console.log(`8 páginas de consenso y ${provenance.files.length} activos originales verificados.`);

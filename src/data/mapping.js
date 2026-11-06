@@ -1,3 +1,4 @@
+import {CONSENSUS_SYMBOLS} from './consensusStandard.js';
 // Educational acquisition sequence. Cartography rules: Bottini et al. 2023.
 // Acquisition technique is explicitly attributed to complementary guidelines.
 export const mappingSources = {
@@ -272,25 +273,7 @@ export const glossary = [
   { term: 'Reentrada', name: 'Retorno desde el circuito superficial', english: 'Re-entry', definition: 'Conexión de retorno hacia el sistema profundo que forma parte del circuito observado.', source: 'consensus', page: 8 }
 ];
 
-export const symbols = [
-  { id: 'competent', label: 'Vena competente', type: 'color', color: '#2563eb', glyph: 'line', description: 'Azul en la cartografía. No significa alejamiento del haz Doppler.', page: 3 },
-  { id: 'reflux', label: 'Vena incompetente', type: 'color', color: '#dc2626', glyph: 'line', description: 'Rojo en la cartografía cuando se ha demostrado incompetencia.', page: 3 },
-  { id: 'ablated', label: 'Vena ablacionada', type: 'color', color: '#848b96', glyph: 'dotted', description: 'Gris; combinar con trazo y antecedentes para distinguir de aplasia.', page: 3 },
-  { id: 'thrombosed', label: 'Vena trombosada', type: 'color', color: '#16181d', glyph: 'line', description: 'Negro. La trombosis se establece mediante evaluación clínica y dúplex, no por ausencia de color aislada.', page: 3 },
-  { id: 'lymph', label: 'Estructura linfoganglionar', type: 'color', color: '#16a34a', glyph: 'oval', description: 'Verde para estructuras linfoganglionares relacionadas.', page: 3 },
-  { id: 'nonvascular', label: 'Otra estructura no vascular', type: 'color', color: '#eab308', glyph: 'oval', description: 'Amarillo para estructuras como nervio o quiste de Baker; no diagnosticar solo por su representación.', page: 3 },
-  { id: 'subfascial', label: 'Trayecto subfascial', type: 'stroke', color: '#2563eb', glyph: 'line', description: 'Línea recta continua: informa el plano fascial.', page: 3 },
-  { id: 'epifascial', label: 'Trayecto epifascial', type: 'stroke', color: '#dc2626', glyph: 'wavy', description: 'Línea ondulada: plano epifascial, no tortuosidad por sí sola.', page: 4 },
-  { id: 'hypoplasia', label: 'Trayecto hipoplásico', type: 'stroke', color: '#2563eb', glyph: 'dashed', description: 'Línea recta segmentada.', page: 3 },
-  { id: 'aplasia', label: 'Trayecto aplásico', type: 'stroke', color: '#2563eb', glyph: 'dotted', description: 'Línea recta punteada. El mismo tipo de trazo con gris representa ablación; el color y el contexto distinguen ambas condiciones.', page: 3 },
-  { id: 'synechiae', label: 'Bridas / sinequias', type: 'stroke', color: '#dc2626', glyph: 'crosses', description: 'Cruces negras superpuestas al trayecto safeno insuficiente con bridas tras trombosis o fracaso de ablación.', page: 4 },
-  { id: 'wall', label: 'Engrosamiento parietal', type: 'stroke', color: '#dc2626', glyph: 'outlined', description: 'Bordes negros finos sobre el trayecto safeno afectado; conservar la condición funcional mediante el color.', page: 4 },
-  { id: 'perforator', label: 'Perforante', type: 'shape', color: '#dc2626', glyph: 'circle', description: 'Circunferencia sin relleno. Añadir PV, diámetro y referencia de altura.', page: 6 },
-  { id: 'gulf', label: 'Golfo / trayecto subfascial ondulante', type: 'shape', color: '#dc2626', glyph: 'filled-circle', description: 'Círculo relleno colocado en el trayecto, según la leyenda del consenso.', page: 6 },
-  { id: 'oval', label: 'Estructura no vascular', type: 'shape', color: '#eab308', glyph: 'oval', description: 'Óvalo, con el color que corresponda a su clase.', page: 6 },
-  { id: 'surgery', label: 'Safenectomía / crossectomía', type: 'shape', color: '#16181d', glyph: 'ticks', description: 'Trazo con pequeñas paralelas perpendiculares.', page: 6 },
-  { id: 'ulcer', label: 'Úlcera venosa', type: 'shape', color: '#16181d', glyph: 'hatch', description: 'Área con cuadriculado negro, contorno y ubicación aproximados de la úlcera; su relación con el circuito es lo relevante.', page: 3 }
-];
+export const symbols = CONSENSUS_SYMBOLS;
 
 export const mappingQualityChecklist = [
   'Lado, posición y maniobras identificados',

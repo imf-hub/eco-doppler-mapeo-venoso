@@ -1,3 +1,4 @@
+import {CONSENSUS_NOMENCLATURE} from './consensusStandard.js';
 // Source assets supplied by the project owner on 6 November 2026.
 export const CONSENSUS_FOLDER='https://drive.google.com/drive/folders/1lXUTkjYLXQzfgql9SUTZpMqaRKkvTWiF';
 export const CONSENSUS_PDF='https://drive.google.com/file/d/1wgNyZX2CVucJ_DRirduj29OPn2DEddKX/view';
@@ -14,6 +15,11 @@ export const viewHeight=view=>view>=3?200:470;
 export const templateFile=(side,extension='png')=>'plantilla-'+(side==='izquierdo'?'izquierda':'derecha')+'.'+extension;
 export const templateRegion=(side,view)=>TEMPLATE_REGIONS[side==='izquierdo'?'izquierdo':'derecho'][view];
 export const consensusFigures={
+ colorsES:{file:'es-colores-trazos.jpg',title:'Colores del mapa: tabla original en español',locator:'PDF español proporcionado · p. 3 · sección 2.1',es:'Correspondencia: artículo original, tabla V, p. 54',alt:'Tabla original en español: azul competente, rojo incompetente, gris ablacionada, negro trombosada, verde linfoganglionar y amarillo no vascular no ganglionar.',crop:[250,420,1000,520],spanish:true},
+ strokesES:{file:'es-colores-trazos.jpg',title:'Trazos: tabla original en español',locator:'PDF español proporcionado · p. 3 · sección 2.2',es:'La última celda continúa en la página 4.',alt:'Trazos originales: recta continua subfascial, ondulante epifascial, segmentaria hipoplasia y punteada aplasia o ablación.',crop:[250,1400,1000,400],spanish:true},
+ strokeNotesES:{file:'es-trazos-notas.jpg',title:'Bridas, engrosamiento y notas del consenso',locator:'PDF español proporcionado · p. 4 · continuación de 2.2',es:'Incluye la aclaración original sobre plano fascial y morfología.',alt:'Continuación original del código de trazos con X negras, bordes negros y notas sobre el significado de líneas y cambios tras trombosis o ablación.',crop:[245,165,1005,1260],spanish:true},
+ shapesES:{file:'es-figuras-nomenclatura.jpg',title:'Figuras geométricas: tabla original en español',locator:'PDF español proporcionado · p. 6 · sección 2.3',es:'Correspondencia: artículo original, tabla V, p. 54',alt:'Figuras originales: circunferencia sin relleno, círculo relleno en trayecto, óvalo, paralelas perpendiculares y úlcera con cuadriculado y contorno.',crop:[250,315,1000,535],spanish:true},
+
  templates:{file:'articulo-figuras-2-3.jpg',title:'Plantilla y nueve ejemplos de representación de GSV',locator:'Artículo original · p. 52 · figuras 2 y 3',es:'PDF español · figuras 1 y 2 · pp. 2 y 5',alt:'Página original con tres caras, ampliaciones inguinal y poplítea y ejemplos de GSV competente, incompetente, hipoplásica, aplásica, ablacionada, operada, trombosada y con alteraciones parietales.'},
  symbols:{file:'articulo-tabla-v.jpg',title:'Código gráfico del consenso',locator:'Artículo original · p. 54 · tabla V',es:'PDF español · pp. 3–6',alt:'Tabla V original: colores, trazos y figuras geométricas con sus significados y notas sobre el plano fascial.'},
  measures:{file:'articulo-tabla-vi-figura-4.jpg',title:'Nomenclatura y ubicación de las medidas',locator:'Artículo original · p. 55 · tabla VI y figura 4',es:'PDF español · pp. 6–8 · figura 3',alt:'Tabla VI original de siglas en inglés, español y portugués, y figura 4 con diámetros, longitud de reflujo y alturas referidas a pliegue de rodilla o planta del pie.'},
@@ -29,7 +35,7 @@ export const consensusChapters=[
  {id:'construccion',title:'Construye el mapa',lead:'Traslada los datos demostrados a la plantilla proporcionada.',source:'Integración educativa de las secciones 1–4 del consenso'},
  {id:'informe',title:'Une mapa e informe',lead:'Comprueba que imágenes, dibujo y descripción conservan el mismo estudio.',source:'Alcance y limitaciones · español pp. 1 y 7–8; original pp. 51 y 53'}
 ];
-export const consensusTermIds=['GSV','SSV','AAGSV','PAGSV','SFJ','SPJ','PV','PPV','GPV','EPV','SCI','SEPi','CE SSV','ASSV','IV','LMV','CiV'];
+export const consensusTermIds=CONSENSUS_NOMENCLATURE.map(t=>t.term);
 export const buildingStages=[
  ['Identifica','Miembro derecho, tres caras y ampliaciones. Elige lado antes de registrar datos.'],
  ['Dibuja los ejes','GSV y SSV se representan aun cuando sean competentes. En este caso sus segmentos se evaluaron.'],

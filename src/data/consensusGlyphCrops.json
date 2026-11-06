@@ -1,0 +1,189 @@
+{
+  "competent": {
+    "file": "es-colores-trazos.jpg",
+    "viewBox": [
+      290,
+      456,
+      167,
+      24
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "reflux": {
+    "file": "es-colores-trazos.jpg",
+    "viewBox": [
+      290,
+      517,
+      167,
+      24
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "ablated": {
+    "file": "es-colores-trazos.jpg",
+    "viewBox": [
+      291,
+      580,
+      166,
+      22
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "thrombosed": {
+    "file": "es-colores-trazos.jpg",
+    "viewBox": [
+      290,
+      640,
+      167,
+      24
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "lymph": {
+    "file": "es-colores-trazos.jpg",
+    "viewBox": [
+      290,
+      701,
+      167,
+      24
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "nonvascular": {
+    "file": "es-colores-trazos.jpg",
+    "viewBox": [
+      290,
+      797,
+      167,
+      24
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "subfascial": {
+    "file": "es-colores-trazos.jpg",
+    "viewBox": [
+      292,
+      1440,
+      254,
+      23
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "epifascial": {
+    "file": "es-colores-trazos.jpg",
+    "viewBox": [
+      296,
+      1512,
+      147,
+      56
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "hypoplasia": {
+    "file": "es-colores-trazos.jpg",
+    "viewBox": [
+      296,
+      1625,
+      228,
+      24
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "aplasia": {
+    "file": "es-colores-trazos.jpg",
+    "viewBox": [
+      296,
+      1721,
+      203,
+      24
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "synechiae": {
+    "file": "es-trazos-notas.jpg",
+    "viewBox": [
+      293,
+      242,
+      124,
+      39
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "wall": {
+    "file": "es-trazos-notas.jpg",
+    "viewBox": [
+      292,
+      556,
+      178,
+      31
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "perforator": {
+    "file": "es-figuras-nomenclatura.jpg",
+    "viewBox": [
+      296,
+      329,
+      72,
+      70
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "gulf": {
+    "file": "es-figuras-nomenclatura.jpg",
+    "viewBox": [
+      296,
+      425,
+      142,
+      69
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "oval": {
+    "file": "es-figuras-nomenclatura.jpg",
+    "viewBox": [
+      296,
+      521,
+      119,
+      69
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "surgery": {
+    "file": "es-figuras-nomenclatura.jpg",
+    "viewBox": [
+      296,
+      617,
+      174,
+      67
+    ],
+    "width": 1416,
+    "height": 2000
+  },
+  "ulcer": {
+    "file": "es-figuras-nomenclatura.jpg",
+    "viewBox": [
+      262,
+      713,
+      183,
+      115
+    ],
+    "width": 1416,
+    "height": 2000
+  }
+}

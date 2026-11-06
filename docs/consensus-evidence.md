@@ -20,9 +20,9 @@ El documento normaliza **cómo representar** hallazgos del sistema superficial y
 | GSV y SSV se representan aun normales; accesorias y epifasciales si patológicas; perforantes si participan en circuito patológico | p. 2 | Checklist y retroalimentación de ejercicio |
 | Azul competente, rojo incompetente, gris ablacionada, negro trombosada, verde linfoganglionar, amarillo otras estructuras no vasculares | p. 3 | Leyenda separada de barra de Doppler color |
 | Úlcera: trama cuadriculada negra con contorno/ubicación | pp. 3 y 6 | Símbolo propio; no colorear según lecho |
-| Trazo recto/ondulado informa plano fascial, no geometría real | pp. 3–4 | Explicación y pregunta de recuperación |
+| Trazo recto/ondulado informa plano fascial, no geometría real | pp. 3–4 | Explicación y demostración visual |
 | Segmentado para hipoplasia; punteado para aplasia/ablación; cruces y bordes negros para alteraciones posrombóticas o posablación según leyenda | pp. 3–5 | Símbolos y variantes |
-| Circunferencia vacía perforante; círculo relleno golfo/trayecto subfascial ondulante; óvalo estructura no vascular; marcas perpendiculares cirugía | p. 6 | Biblioteca de símbolos de elaboración propia |
+| Circunferencia vacía perforante; círculo relleno golfo/trayecto subfascial ondulante; óvalo estructura no vascular; marcas perpendiculares cirugía | p. 6 | Tabla original y aplicación docente con el motor compartido |
 | Siglas inglesas con tabla de equivalencias | pp. 6–7 | GSV, SSV, AAGSV, PAGSV, SFJ, SPJ, PV, PPV, GPV, EPV, SCI, SEPi, CE SSV, ASSV, IV, LMV, CiV |
 | Diámetros en mm; longitudes y distancias en cm | pp. 7–8 | Campos con unidad visible |
 | Medición transversal de diámetros incluyendo pared | p. 8 | Instrucción de medición expresamente atribuida a este consenso |
@@ -81,3 +81,6 @@ Los casos son simulados y las visualizaciones sintéticas; no deben rotularse co
 ## Entregable de datos
 
 `src/data/mapping.js` contiene 12 pasos con acciones, errores, objetivos, observaciones y preguntas de recuperación, 26 términos, 17 símbolos, fuentes y checklist. La secuencia completa propuesta toma aproximadamente 110 minutos de estudio guiado; no es una estimación de duración de un estudio clínico ni una promesa de competencia tras ese tiempo.
+
+
+La revisión 6.1 incorpora además las tablas originales en español, el PDF español íntegro y el cotejo documentado en `consensus-conformance-audit.md`. El artículo inglés completo permanece como enlace al original proporcionado.

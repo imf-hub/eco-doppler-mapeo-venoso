@@ -56,6 +56,34 @@
       "bytes": 354547,
       "sha256": "206f1f4ba43c04fdd8e01ec61e72720d2ef268697e0d6f58e67cd75b650d6549",
       "origin": "Original PDF supplied in the project owner Drive folder, 2026-11-06. PNG/JPG files are unretouched page renders."
+    },
+    {
+      "file": "es-colores-trazos.jpg",
+      "bytes": 370444,
+      "sha256": "bc9f352bc74f89abc8c3548d6c9c9dfd7b4b679b3263c65e6a1297eca155b9a2",
+      "origin": "Spanish PDF provided by project owner in Drive, 2026-11-06. Unretouched full-page render, page 3. UI crops are viewports only.",
+      "sourceFileId": "1uFGKwxI_GxgaleVFBGvoZLJNZkSS4KBC"
+    },
+    {
+      "file": "es-trazos-notas.jpg",
+      "bytes": 352562,
+      "sha256": "169172d64443566a085d073473f2bbf286cde78dd985934320e8fe4ffffa400e",
+      "origin": "Spanish PDF provided by project owner in Drive, 2026-11-06. Unretouched full-page render, page 4. UI crops are viewports only.",
+      "sourceFileId": "1uFGKwxI_GxgaleVFBGvoZLJNZkSS4KBC"
+    },
+    {
+      "file": "es-figuras-nomenclatura.jpg",
+      "bytes": 392387,
+      "sha256": "3cf8a7d781cd799b4dfccaea3f01d093c6d944b58c6c555b772977417daff126",
+      "origin": "Spanish PDF provided by project owner in Drive, 2026-11-06. Unretouched full-page render, page 6. UI crops are viewports only.",
+      "sourceFileId": "1uFGKwxI_GxgaleVFBGvoZLJNZkSS4KBC"
+    },
+    {
+      "file": "consenso-espanol.pdf",
+      "bytes": 1036567,
+      "sha256": "ebdbb6658101f2fbf6c661e25cdd9cf3ef06a3917d72b927839c899c55a2c373",
+      "origin": "Spanish PDF provided by project owner in Drive, 2026-11-06. Original PDF copied byte-for-byte.",
+      "sourceFileId": "1uFGKwxI_GxgaleVFBGvoZLJNZkSS4KBC"
     }
   ]
 }

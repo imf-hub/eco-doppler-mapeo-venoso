@@ -973,3 +973,5 @@ Se rechazaron las figuras 4–7 del mismo artículo porque conservan números qu
 
 CONSENSUS SOURCE MATERIAL (provided by project owner, 2026-11-06)
 Bottini et al. The First Latin American Consensus on Superficial and Perforating Venous Mapping. Int Angiol. 2023;42:45-58. DOI: 10.23736/S0392-9590.23.04991-X. Copyright 2023 Edizioni Minerva Medica. Full original notices are retained in rendered reference pages. MERIT original right and left templates retain their original titles, logo and legend. No Creative Commons license is asserted for these supplied documents. Educational IMF overlays are identified separately. See docs/consensus-integration-v6.md and public/media/consenso/provenance.json.
+
+Version 6.1: the supplied original Spanish consensus PDF and full-page renders of pages 3, 4 and 6 are distributed with the same retained ownership. Source glyphs are displayed through SVG viewports/clipping without modifying the image files. See docs/consensus-conformance-audit.md.

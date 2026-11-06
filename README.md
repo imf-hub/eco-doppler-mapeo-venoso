@@ -2,6 +2,10 @@
 
 Aplicación educativa estática para médicos que comienzan en ultrasonido. La experiencia prioriza demostraciones, adquisiciones publicadas y manipulación de controles.
 
+## Revisión 6.1 · Fidelidad documental
+
+Tablas originales en español y 17 fragmentos de símbolos tomados del PDF. Paleta compartida, aplasia identificada por separado, marca quirúrgica independiente y úlcera con contorno y cuadriculado. Tabla VI con 17 equivalencias en tres idiomas. Cotejo y límites: `docs/consensus-conformance-audit.md`.
+
 ## Experiencia 6.0 · El mapa del consenso
 
 Ocho páginas dedicadas al consenso: plantillas originales MERIT de ambos lados, figuras y tablas de origen, nomenclatura, medidas, ampliaciones, construcción e informe. El constructor trabaja sobre la base proporcionada, admite tres caras y dos ampliaciones y exporta SVG/PDF con la plantilla incorporada y el informe del ejercicio. Trazabilidad: `docs/consensus-integration-v6.md`.

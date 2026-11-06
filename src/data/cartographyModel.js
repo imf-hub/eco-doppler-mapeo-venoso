@@ -1,8 +1,10 @@
 import {escapeXML} from '../lib.js';
+import {CONSENSUS_CONDITIONS} from './consensusStandard.js';
+import {perpendicularMarks,contourHatch} from '../simulation/cartographicGeometry.js';
 import {consensusAsset,templateFile,templateRegion,viewHeight,WORK_VIEWS} from './consensusAtlas.js';
 
 export const MAP_VIEWS=['Anteroexterna','Anterointerna','Posterior'];
-export const MAP_CONDITIONS={competent:{name:'Competente',color:'#2563eb'},reflux:{name:'Incompetente',color:'#dc2626'},ablated:{name:'Ablacionada',color:'#7c8490'},thrombosed:{name:'Trombosada',color:'#16181d'},lymph:{name:'Linfoganglionar',color:'#16803d'},nonvascular:{name:'No vascular',color:'#c28b00'}};
+export const MAP_CONDITIONS=CONSENSUS_CONDITIONS;
 export const DEFAULT_META={code:'SIM-001',side:'derecho',position:'',maneuver:'',indication:'',notes:'',limitations:'',views:[0,1,2]};
 const outlines=[
  'M61 38Q33 93 43 164L51 242Q37 275 45 322L61 409L57 430Q40 439 36 445Q63 457 96 442L102 417Q121 336 120 301Q128 265 115 242L135 143Q148 81 117 38Z',
@@ -24,43 +26,51 @@ export function mapPath(points,plane){
   else d+=`L${b[0]},${b[1]}`;
  }return d;
 }
-function crossMarks(points,surgery){let out='';for(let i=1;i<points.length;i++){const a=points[i-1],b=points[i],dx=b[0]-a[0],dy=b[1]-a[1],len=Math.hypot(dx,dy);if(!len)continue;for(let t=8;t<len;t+=surgery?10:22){const x=a[0]+dx*t/len,y=a[1]+dy*t/len,nx=-dy/len*4,ny=dx/len*4;out+=`<path d="M${x-nx},${y-ny}L${x+nx},${y+ny}${surgery?'':`M${x-3},${y+3}l6,-6`}" stroke="#20242a" stroke-width="1"/>`;}}return out;}
+const lineMarkup=(segments,width=1)=>segments.map(([a,b])=>`<path d="M${a[0]},${a[1]}L${b[0]},${b[1]}" stroke="#000000" stroke-width="${width}" fill="none"/>`).join('');
+function crossMarks(points,surgery){return lineMarkup(perpendicularMarks(points,{crosses:!surgery}));}
+
 const wrap=(s,n=16)=>String(s||'').match(new RegExp(`.{1,${n}}(?:\\s|$)|.{1,${n}}`,'g'))?.map(x=>x.trim())||[];
-export function markSVG(e,selected=false){
+export function markSVG(e,selected=false,{ink,annotations=true}={}){
  if(!e?.points?.length)return '';
- const [x,y]=e.points[0],color=MAP_CONDITIONS[e.condition]?.color||'#697586';let shape='';
+ const [x,y]=e.points[0],color=ink||MAP_CONDITIONS[e.condition]?.color||'#697586';let shape='';
  if(e.type==='perforator')shape=`<circle cx="${x}" cy="${y}" r="6" fill="white" stroke="${color}" stroke-width="2"/>`;
  else if(e.type==='gulf')shape=`<path d="M${x-13},${y}H${x+13}" stroke="${color}" stroke-width="3"/><circle cx="${x}" cy="${y}" r="6" fill="${color}"/>`;
  else if(e.type==='oval')shape=`<ellipse cx="${x}" cy="${y}" rx="11" ry="7" fill="none" stroke="${color}" stroke-width="1.7"/>`;
- else if(e.type==='ulcer'){for(let k=-9;k<=9;k+=4)shape+=`<path d="M${x-10} ${y+k}h20M${x+k} ${y-10}v20" stroke="#222" stroke-width=".7"/>`;shape+=`<rect x="${x-10}" y="${y-10}" width="20" height="20" fill="none" stroke="#222"/>`;}
+ else if(e.type==='ulcer'){
+  if(e.points.length>=3){shape=`<path d="${mapPath(e.points,'subfascial')}Z" fill="white" stroke="#000000" stroke-width="1.2"/>`+lineMarkup(contourHatch(e.points),.7);}
+  else shape=`<path d="M${x-7},${y}H${x+7}M${x},${y-7}V${y+7}" stroke="#697586" stroke-dasharray="2 2" fill="none"/>`;
+ }
+ else if(e.type==='surgery'){shape=`<path d="${mapPath(e.points,'subfascial')}" stroke="#000000" stroke-width="2" fill="none"/>`+crossMarks(e.points,true);}
  else if(e.type==='vessel'){
-  const d=mapPath(e.points,e.plane),dash=e.plane==='hypoplasia'?'8 5':e.plane==='aplasia'||e.condition==='ablated'?'1 5':'';
+  const d=mapPath(e.points,e.plane),dash=e.plane==='hypoplasia'?'8 5':e.plane==='aplasia'||['ablated','aplastic'].includes(e.condition)?'0 6':'';
   if(selected)shape+=`<path d="${d}" stroke="#caa8b6" stroke-width="8" opacity=".35" fill="none"/>`;
-  if(e.wall||e.plane==='wall')shape+=`<path d="${d}" fill="none" stroke="#20242a" stroke-width="5.4"/>`;
+  if(e.wall||e.plane==='wall')shape+=`<path d="${d}" fill="none" stroke="#000000" stroke-width="5.4"/>`;
   shape+=`<path d="${d}" fill="none" stroke="${color}" stroke-width="${e.lineWidth===6?6:3}" stroke-linecap="round" stroke-dasharray="${dash}"/>`;
   if(e.synechiae||e.plane==='synechiae')shape+=crossMarks(e.points,false);
   if(e.surgery||e.plane==='surgery')shape+=crossMarks(e.points,true);
  }
+ if(!annotations)return shape;
+ const annotationColor=['nonvascular','aplastic'].includes(e.condition)||['surgery','ulcer'].includes(e.type)?'#000000':color;
  const inside=e.type==='vessel'||e.type==='gulf',junction=e.view>=3,tx=Number.isFinite(e.labelX)?e.labelX:inside?86:139,ty=Number.isFinite(e.labelY)?e.labelY:Math.min(y+10,viewHeight(e.view)-42),lineHeight=junction?15:10,fontSize=junction?12:9;
- const rows=inside?[e.label,e.diameter?`${e.diameter} mm`:'',e.reflux?`${e.reflux} s`:'',e.length?`L ${e.length} cm`:'']:[e.label,e.diameter?`${e.diameter} mm`:'',e.height?`${e.height} cm`:'',e.height?e.reference:''];
+ const rows=inside?[e.label,e.diameter?`${e.diameter} mm`:'',e.reflux?`${e.reflux} s`:'',e.length?`L ${e.length} cm`:'']:[e.label,e.diameter?`${e.diameter} mm`:'',e.type==='ulcer'&&e.length?`${e.length}${e.ulcerWidth?' × '+e.ulcerWidth:''} cm`:'',e.height?`${e.height} cm`:'',e.height?e.reference:''];
  const lines=rows.filter(Boolean).flatMap(v=>wrap(v,inside?14:12));
- let annotation=`<text x="${tx}" y="${ty}" class="map-annotation" font-size="${fontSize}" stroke="white" stroke-width="1.6" paint-order="stroke" stroke-linejoin="round" text-anchor="${inside&&!junction?'middle':'start'}" fill="${color}">${lines.map((v,i)=>`<tspan x="${tx}" dy="${i?lineHeight:0}">${escapeXML(v)}</tspan>`).join('')}</text>`;
+ let annotation=`<text x="${tx}" y="${ty}" class="map-annotation" font-size="${fontSize}" stroke="white" stroke-width="1.6" paint-order="stroke" stroke-linejoin="round" text-anchor="${inside&&!junction?'middle':'start'}" fill="${annotationColor}">${lines.map((v,i)=>`<tspan x="${tx}" dy="${i?lineHeight:0}">${escapeXML(v)}</tspan>`).join('')}</text>`;
  if(!inside)annotation=`<path d="M${x+6},${y}L135,${ty-3}" fill="none" stroke="${color}" stroke-width=".6"/>`+annotation;
  if(inside&&e.height){const hx=junction?tx:145,hy=junction?ty+lines.length*lineHeight+7:y+10;annotation+=text(hx,hy,`${e.height} cm`,junction?11:7,color)+wrap(e.reference||'Referencia pendiente',junction?20:13).map((line,i)=>text(hx,hy+(junction?13:9)*(i+1),line,junction?9:6.5,color)).join('');}
  return shape+annotation;
 }
-export function serializeMap(entries,meta){return JSON.stringify({schemaVersion:2,educativo:true,meta:{...meta,views:[0,1,2]},entries},null,2);}
+export function serializeMap(entries,meta){return JSON.stringify({schemaVersion:3,educativo:true,meta:{...meta,views:[0,1,2]},entries},null,2);}
 export function parseMap(value){
  const data=typeof value==='string'?JSON.parse(value):value;
  if(!data||!Array.isArray(data.entries)||!data.meta||typeof data.meta!=='object'||Array.isArray(data.meta)||data.entries.length>160)throw new Error('El archivo no contiene una cartografía de práctica válida.');
- const types=['vessel','perforator','gulf','oval','ulcer','annotation'];const seen=new Set();
+ const types=['vessel','perforator','gulf','oval','ulcer','annotation','surgery'];const seen=new Set();
  const entries=data.entries.map((e,i)=>{
   if(!e||!types.includes(e.type)||!Number.isInteger(e.view)||e.view<0||e.view>4||!Array.isArray(e.points)||!e.points.length||e.points.length>200)throw new Error(`Elemento ${i+1}: estructura o cara no válida.`);
   const points=e.points.map(p=>{if(!Array.isArray(p)||p.length!==2||!p.every(Number.isFinite)||p[0]<0||p[0]>200||p[1]<0||p[1]>viewHeight(e.view))throw new Error(`Elemento ${i+1}: coordenadas fuera de la plantilla.`);return [...p];});
-  if(e.type==='vessel'&&points.length<2)throw new Error('Un trayecto necesita dos puntos.');
+  if(['vessel','surgery'].includes(e.type)&&points.length<2)throw new Error('Un trayecto necesita dos puntos.');
   const id=String(e.id||`import-${i}`).slice(0,80);if(seen.has(id))throw new Error('Hay identificadores repetidos.');seen.add(id);
   const clean={id,type:e.type,view:e.view,points};
-  for(const key of ['label','condition','plane','diameter','reflux','length','height','reference','region','flowRole'])clean[key]=String(e[key]??'').slice(0,key==='label'||key==='reference'?70:35);
+  for(const key of ['label','condition','plane','diameter','reflux','length','height','reference','region','flowRole','ulcerWidth'])clean[key]=String(e[key]??'').slice(0,key==='label'||key==='reference'?70:35);
   for(const key of ['wall','synechiae','surgery'])clean[key]=e[key]===true;
   clean.lineWidth=e.lineWidth===6?6:3;
   for(const key of ['labelX','labelY'])if(Number.isFinite(e[key])&&e[key]>=0&&e[key]<=(key==='labelX'?200:viewHeight(e.view)))clean[key]=e[key];

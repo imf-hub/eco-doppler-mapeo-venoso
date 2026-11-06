@@ -1,3 +1,4 @@
+import {validContour} from '../simulation/cartographicGeometry.js';
 // Educational documentation checks only. No inference of diagnosis or anatomical correctness.
 const normal = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim().toLowerCase();
 const textPresent = value => normal(value).length > 0;
@@ -7,7 +8,7 @@ const numberValue = value => {
   if (typeof value === 'string' && !value.trim()) return null;
   return Number(typeof value === 'string' ? value.trim().replace(',', '.') : value);
 };
-const knownConditions = new Set(['competent', 'reflux', 'ablated', 'thrombosed', 'lymph', 'nonvascular', 'unknown', 'not-evaluated']);
+const knownConditions = new Set(['competent', 'reflux', 'ablated', 'aplastic', 'thrombosed', 'lymph', 'nonvascular', 'unknown', 'not-evaluated']);
 const named = (entry, vein) => new RegExp(`(?:^|[^a-z])${vein}(?:$|[^a-z])`, 'i').test(normal(entry.label));
 const vascularType = entry => ['vessel', 'perforator', 'gulf'].includes(entry.type);
 const unavailable = entry => ['annotation', 'note'].includes(entry.type) && /no evaluad|no visualiz|no interpretable|limitad/.test(normal(entry.label));
@@ -58,15 +59,26 @@ export function validateEducationalMap(entries, meta = {}) {
     const pointsValid = Array.isArray(entry.points) && entry.points.length > 0 && entry.points.every(p => Array.isArray(p) && p.length >= 2 && Number.isFinite(p[0]) && Number.isFinite(p[1]));
     if (!pointsValid) push(`points-${id}`, 'error', 'La posición del elemento contiene coordenadas inválidas. No puede exportarse con fiabilidad.', id);
     else if(entry.points.some(p=>p[0]<0||p[0]>200||p[1]<0||p[1]>(entry.view>=3?200:470))) push(`point-bounds-${id}`,'error','El elemento queda fuera de la cara o ampliación seleccionada.',id);
-    else if (entry.type === 'vessel' && entry.points.length < 2) push(`path-${id}`, 'error', 'Un trayecto necesita al menos dos puntos distintos.', id);
+    else if (['vessel','surgery'].includes(entry.type) && entry.points.length < 2) push(`path-${id}`, 'error', 'Un trayecto necesita al menos dos puntos distintos.', id);
     else if (entry.type === 'vessel' && entry.points.every(p => p[0] === entry.points[0][0] && p[1] === entry.points[0][1])) push(`path-${id}`, 'warning', 'Los puntos del trayecto coinciden. Revisa que la vena tenga una representación visible.', id);
     if (vascularType(entry) && !textPresent(entry.condition)) push(`condition-missing-${id}`, 'error', 'La vena no tiene una condición documentada. No permitas que un color por defecto sustituya el hallazgo.', id);
     if (textPresent(entry.condition) && !knownConditions.has(entry.condition)) push(`condition-${id}`, 'warning', 'La condición elegida no pertenece a la leyenda disponible. Revísala antes de compartir el ejercicio.', id);
     if (vascularType(entry) && ['lymph', 'nonvascular'].includes(entry.condition)) push(`vascular-color-${id}`, 'error', 'El verde y el amarillo identifican estructuras no venosas. Revisa el tipo de elemento o su código de color.', id);
     if (entry.type === 'oval' && !['lymph','nonvascular','unknown','not-evaluated'].includes(entry.condition)) push(`structure-color-${id}`, 'warning', 'Para una estructura no vascular usa el código correspondiente: verde linfoganglionar o amarillo para las demás.', id);
+    if (entry.type==='vessel' && entry.plane==='aplasia' && !['aplastic','ablated'].includes(entry.condition)) push(`aplasia-condition-${id}`,'error','El punteado de aplasia o ablación requiere identificar cuál de esas situaciones está documentada; no equivale a una vena competente, incompetente o trombosada.',id);
+    if (entry.condition==='aplastic' && (entry.type!=='vessel'||entry.plane!=='aplasia'||textPresent(entry.diameter)||textPresent(entry.reflux))) push(`aplasia-data-${id}`,'error','La aplasia representa ausencia documentada: usa trazo punteado y revisa cualquier diámetro o duración asignados a ese mismo segmento.',id);
+    if (entry.type==='ulcer') {
+      if(!pointsValid||entry.points.length<3) push(`ulcer-contour-${id}`,'error','Dibuja el contorno de la úlcera con al menos tres puntos. Un marcador puntual no representa su morfología.',id);
+      else if(!validContour(entry.points)) push(`ulcer-shape-${id}`,'error','El contorno debe delimitar una superficie sin cruces ni puntos consecutivos repetidos. Revisa el orden del trazado.',id);
+      if(!textPresent(entry.length)||!textPresent(entry.ulcerWidth)) push(`ulcer-size-${id}`,'warning','Consigna las dimensiones medidas de la úlcera en cm; los puntos del contorno no son una escala del paciente.',id);
+    }
+    if (entry.type==='vessel' && entry.plane==='epifascial' && entry.condition==='competent') push(`epifascial-inclusion-${id}`,'warning','El consenso incluye los trayectos epifasciales cuando son patológicos. Revisa la justificación de este elemento.',id);
+    if (entry.type==='vessel' && (entry.synechiae||entry.plane==='synechiae') && entry.condition!=='reflux') push(`synechiae-condition-${id}`,'warning','La tabla V describe las X sobre un trayecto subfascial incompetente. Coteja la condición y el registro dúplex.',id);
+    if (entry.type==='vessel' && entry.surgery) push(`legacy-surgery-${id}`,'warning','Se conserva la antigua marca quirúrgica superpuesta. Para separar el antecedente de la condición venosa, sustitúyela por el elemento Cirugía.',id);
+    if (entry.type==='vessel' && entry.view<3 && /femoral|poplitea/.test(normal(entry.label))) push(`deep-scope-${id}`,'warning','El mapa del consenso es superficial y perforante. La vena femoral o poplítea se muestra como contexto en la ampliación; el sistema profundo se describe en el informe.',id);
     for(const key of ['labelX','labelY'])if(entry[key]!==undefined&&(!Number.isFinite(entry[key])||entry[key]<0||entry[key]>(key==='labelX'?200:entry.view>=3?200:470)))push(`${key}-${id}`,'error','Sitúa la etiqueta dentro de la cara o ampliación seleccionada.',id);
 
-    for (const [field, title, strictlyPositive, unusual] of [['diameter','diámetro en mm',true,100],['reflux','duración en s',false,30],['length','longitud en cm',true,150],['height','altura en cm',false,150]]) {
+    for (const [field, title, strictlyPositive, unusual] of [['diameter','diámetro en mm',true,100],['reflux','duración en s',false,30],['length','longitud en cm',true,150],['ulcerWidth','ancho de úlcera en cm',true,100],['height','altura en cm',false,150]]) {
       const value = numberValue(entry[field]);
       if (value === null) continue;
       if (!Number.isFinite(value) || value < 0 || (strictlyPositive && value === 0)) push(`${field}-${id}`, 'error', `Revisa el ${title}: debe ser un número ${strictlyPositive?'mayor que cero':'no negativo'}.`, id);

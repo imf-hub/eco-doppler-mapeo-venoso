@@ -33,8 +33,8 @@ export async function exportMapPDF(entries,meta){
   block('Limitaciones',meta.limitations);
   ensure(20);pdf.setFont('helvetica','bold');pdf.text('Registro de hallazgos: cotejar cada fila con el mapa y la evidencia dúplex',12,y);y+=7;
   for(const entry of entries){
-   const measure=[entry.diameter&&`Diámetro ${entry.diameter} mm`,entry.reflux&&`Retrógrado ${entry.reflux} s`,entry.length&&`Longitud ${entry.length} cm`,entry.height&&`Altura ${entry.height} cm desde ${entry.reference||'referencia pendiente'}`,entry.flowRole,entry.wall&&'Engrosamiento parietal',entry.synechiae&&'Sinequias',entry.surgery&&'Safenectomía documentada'].filter(Boolean).join(' · ');
-   const identity=`${entry.label||'Sin identificación'} · ${WORK_VIEWS[entry.view]} · ${MAP_CONDITIONS[entry.condition]?.name||'Anotación'}${entry.region?' · '+entry.region:''}`;
+   const measure=[entry.diameter&&`Diámetro ${entry.diameter} mm`,entry.reflux&&`Retrógrado ${entry.reflux} s`,entry.length&&(entry.type==='ulcer'?`Úlcera ${entry.length}${entry.ulcerWidth?' × '+entry.ulcerWidth:''} cm`:`Longitud ${entry.length} cm`),entry.height&&`Altura ${entry.height} cm desde ${entry.reference||'referencia pendiente'}`,entry.flowRole,entry.wall&&'Engrosamiento parietal',entry.synechiae&&'Sinequias',entry.surgery&&'Safenectomía documentada'].filter(Boolean).join(' · ');
+   const identity=`${entry.label||'Sin identificación'} · ${WORK_VIEWS[entry.view]} · ${entry.type==='surgery'?'Marca quirúrgica':entry.type==='ulcer'?'Úlcera venosa':MAP_CONDITIONS[entry.condition]?.name||'Anotación'}${entry.region?' · '+entry.region:''}`;
    const lines=pdf.splitTextToSize(printable(measure||'Sin medidas consignadas'),186),heading=pdf.splitTextToSize(printable(identity),186);
    ensure(8+(lines.length+heading.length)*5);pdf.setDrawColor('#dde3e9');pdf.line(12,y-3,198,y-3);pdf.setFont('helvetica','bold');for(const line of heading){ensure(6);pdf.text(line,12,y);y+=5;}pdf.setFont('helvetica','normal');
    for(const line of lines){ensure(6);pdf.text(line,12,y);y+=5;}y+=2;
