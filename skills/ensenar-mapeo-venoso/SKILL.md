@@ -5,6 +5,10 @@ description: Mantener y ampliar la plataforma educativa IMF de Eco-Doppler y map
 
 # Enseñar mapeo venoso en el Aula IMF
 
+## Referencia visual compartida
+
+Por indicación del propietario, consultar `docs/animation-reference-flebo.md` al crear o mejorar escenas. Adopta los patrones comprobados de Flebo Animaciones: estructuras editables, inserciones coherentes, deformación continua, selección/aislamiento, separación didáctica de capas, cámara interrumpible, rótulos priorizados y recursos reutilizados. La web actual usa Three.js r186 modular; el motor de referencia usa r128 global. Adaptar patrones sin mezclar motores ni copiar dependencias implícitamente. Leer solo las guías externas pertinentes y conservar procedencia/licencias al reutilizar recursos. El documento distingue capacidades existentes y mejoras pendientes; no afirmar una migración por haber incorporado estas instrucciones. Mantener la prohibición de cuestionarios establecida más abajo.
+
 El público conoce flebología y comienza en ultrasonido. Priorizar preparación, rastreo, maniobras, registro e informe hasta una cartografía reproducible. Las explicaciones físicas y la botonología deben servir a esa competencia.
 
 Antes de modificar reglas médicas o cartográficas, leer `docs/consensus-evidence.md` en la raíz de este proyecto y consultar la fuente primaria correspondiente. El consenso de 2023 regula representación; no atribuirle un protocolo completo de adquisición. Las guías complementarias se identifican por separado. Consultar `docs/resource-audit.md` para valorar activos y `docs/media-credits.md` al integrar media.

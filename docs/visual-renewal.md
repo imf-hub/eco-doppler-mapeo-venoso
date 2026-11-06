@@ -1,5 +1,7 @@
 # Renovación de explicaciones visuales — 6 de noviembre de 2026
 
+Referencia adicional del propietario: [Flebo Animaciones y sus criterios de construcción](animation-reference-flebo.md). Se adopta como comparación para anatomía editable, mecanismos, cámara, selección y claridad espacial; el documento distingue lo que ya existe aquí de las capacidades que requieren una nueva implementación.
+
 La actualización sustituye el laboratorio de una sola onda, el atlas anatómico procedural y el muñeco de adquisición por un sistema de representaciones relacionadas. Está dirigido al médico que conoce flebología y comienza en ultrasonido. La finalidad es comprender una acción y su consecuencia antes de trasladarla a práctica supervisada.
 
 ## Qué se integra
