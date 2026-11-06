@@ -1,0 +1,3854 @@
+[
+  {
+    "id": "sonido",
+    "title": "Sonido",
+    "animation": "sound",
+    "family": "wave",
+    "control": {
+      "label": "Frecuencia ilustrativa",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "initial": 4,
+      "unit": "u.e."
+    },
+    "before": 4,
+    "after": 4,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Perturbación mecánica que transporta energía mediante variaciones de presión y desplazamientos locales de las partículas de un medio material.",
+        "caption": "Sigue una compresión que avanza.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "En una onda longitudinal, las partículas oscilan alrededor de su posición mientras avanzan compresiones y rarefacciones.",
+        "caption": "Observa la partícula marcada oscilando localmente.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "No interpretes las partículas como sangre transportada desde el transductor; aquí representan el medio acústico.",
+        "caption": "Distingue transporte de energía y desplazamiento de materia.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.1, ondas ultrasónicas unidimensionales"
+      }
+    ],
+    "objective": "Perturbación mecánica que transporta energía mediante variaciones de presión y desplazamientos locales de las partículas de un medio material.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "ultrasonido",
+    "title": "Ultrasonido",
+    "animation": "ultrasound",
+    "family": "wave",
+    "control": {
+      "label": "Frecuencia portadora",
+      "min": 1,
+      "max": 15,
+      "step": 0.5,
+      "initial": 5,
+      "unit": "MHz"
+    },
+    "before": 3,
+    "after": 10,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Sonido de frecuencia superior al límite audible humano convencional de veinte kilohertz; la ecografía diagnóstica utiliza habitualmente frecuencias expresadas en megahertz.",
+        "caption": "Identifica los ciclos de la portadora.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El transductor genera ciclos rápidos de presión y recibe ecos.",
+        "caption": "Cambia MHz sin cambiar el tipo de onda.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Las velocidades de reproducción no corresponden a la frecuencia real del ecógrafo.",
+        "caption": "Separa la onda acústica de su visualización ralentizada.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.1 y §12.2, ultrasonido y ondas"
+      },
+      {
+        "id": "fda",
+        "section": "Description"
+      }
+    ],
+    "objective": "Sonido de frecuencia superior al límite audible humano convencional de veinte kilohertz; la ecografía diagnóstica utiliza habitualmente frecuencias expresadas en megahertz.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "frecuencia",
+    "title": "Frecuencia",
+    "animation": "frequency",
+    "family": "wave",
+    "control": {
+      "label": "Frecuencia",
+      "min": 1,
+      "max": 15,
+      "step": 0.5,
+      "initial": 5,
+      "unit": "MHz"
+    },
+    "before": 2,
+    "after": 9,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Número de ciclos de la onda acústica que ocurren por segundo; en ecografía se expresa habitualmente en megahertz.",
+        "caption": "Cuenta ciclos en un mismo intervalo.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Con velocidad de propagación fija, aumentar f reduce período y longitud de onda: T=1/f y lambda=c/f.",
+        "caption": "Compara la separación entre frentes.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "No confundas frecuencia portadora en megahercios con frecuencia de repetición de pulsos en kilohercios ni con rapidez de la animación.",
+        "caption": "Mantén constante la velocidad del medio.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.1, frecuencia, período y longitud de onda"
+      }
+    ],
+    "objective": "Número de ciclos de la onda acústica que ocurren por segundo; en ecografía se expresa habitualmente en megahertz.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "periodo",
+    "title": "Período",
+    "animation": "period",
+    "family": "wave",
+    "control": {
+      "label": "Período",
+      "min": 0.1,
+      "max": 1,
+      "step": 0.05,
+      "initial": 0.2,
+      "unit": "µs"
+    },
+    "before": 0.8,
+    "after": 0.15,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Tiempo que tarda un ciclo completo de la onda portadora; es el inverso de su frecuencia y suele expresarse en microsegundos.",
+        "caption": "Localiza dos crestas consecutivas.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El intervalo entre dos crestas consecutivas de una misma oscilación es T.",
+        "caption": "Sigue el intervalo temporal señalado.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Período de la portadora y período de repetición de pulsos son magnitudes distintas.",
+        "caption": "Relaciona un período menor con frecuencia mayor.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.1, descripción temporal de ondas"
+      }
+    ],
+    "objective": "Tiempo que tarda un ciclo completo de la onda portadora; es el inverso de su frecuencia y suele expresarse en microsegundos.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "longitud-de-onda",
+    "title": "Longitud de onda",
+    "animation": "wavelength",
+    "family": "wave",
+    "control": {
+      "label": "Longitud de onda",
+      "min": 0.1,
+      "max": 1.5,
+      "step": 0.05,
+      "initial": 0.3,
+      "unit": "mm"
+    },
+    "before": 1.2,
+    "after": 0.25,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Distancia recorrida durante un ciclo de la onda acústica; relaciona velocidad de propagación y frecuencia mediante la expresión lambda=c/f.",
+        "caption": "Busca dos compresiones consecutivas.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Dos puntos consecutivos con la misma fase están separados por lambda.",
+        "caption": "Sigue la distancia marcada en milímetros.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "La longitud de onda no equivale por sí sola a la resolución de toda la imagen.",
+        "caption": "Distingue distancia espacial de intervalo temporal.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.1, ondas ultrasónicas y λ=c/f"
+      }
+    ],
+    "objective": "Distancia recorrida durante un ciclo de la onda acústica; relaciona velocidad de propagación y frecuencia mediante la expresión λ=c/f.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "amplitud",
+    "title": "Amplitud",
+    "animation": "amplitude",
+    "family": "wave",
+    "control": {
+      "label": "Amplitud relativa",
+      "min": 0.2,
+      "max": 1,
+      "step": 0.05,
+      "initial": 0.6,
+      "unit": "u.e."
+    },
+    "before": 0.2,
+    "after": 0.9,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Magnitud máxima de una oscilación respecto de su valor de equilibrio; puede describir presión acústica o amplitud de una señal recibida.",
+        "caption": "Compara altura de las oscilaciones.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Cambiar amplitud modifica la excursión de la onda, no necesariamente sus ciclos.",
+        "caption": "Conserva separación entre ciclos.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una onda más alta no significa más ciclos ni mayor velocidad de propagación.",
+        "caption": "Distingue amplitud, frecuencia e intensidad.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.2, presión acústica e intensidad"
+      }
+    ],
+    "objective": "Magnitud máxima de una oscilación respecto de su valor de equilibrio; puede describir presión acústica o amplitud de una señal recibida.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "velocidad-propagacion",
+    "title": "Velocidad de propagación",
+    "animation": "propagation",
+    "family": "wave",
+    "control": {
+      "label": "Velocidad del medio",
+      "min": 1400,
+      "max": 1650,
+      "step": 10,
+      "initial": 1540,
+      "unit": "m/s"
+    },
+    "before": 1400,
+    "after": 1650,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Rapidez con que avanza la perturbación acústica por el medio; depende de sus propiedades y no del movimiento sanguíneo.",
+        "caption": "Conserva un mismo trayecto de ida y vuelta.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El equipo suele convertir retrasos en profundidad asumiendo 1540 m/s para tejido blando.",
+        "caption": "Compara el tiempo de llegada del eco.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "1540 m/s es una aproximación de reconstrucción, no la velocidad exacta de todos los tejidos.",
+        "caption": "Separa velocidad acústica y velocidad sanguínea.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.3.1, velocidad del sonido e impedancia"
+      }
+    ],
+    "objective": "Rapidez con que avanza la perturbación acústica por el medio; depende de sus propiedades y no del movimiento sanguíneo.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "impedancia-acustica",
+    "title": "Impedancia acústica",
+    "animation": "impedance",
+    "family": "interface",
+    "control": {
+      "label": "Impedancia del segundo medio",
+      "min": 1,
+      "max": 10,
+      "step": 0.1,
+      "initial": 3,
+      "unit": "MRayl"
+    },
+    "before": 1.5,
+    "after": 6,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Propiedad del medio definida como densidad por velocidad acústica; la diferencia entre impedancias influye en la reflexión en una interfaz.",
+        "caption": "Identifica los dos medios y su interfaz.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "A incidencia normal y en el modelo de medios ideales, la fracción de intensidad reflejada depende de ((Z₂−Z₁)/(Z₂+Z₁))².",
+        "caption": "Compara señal reflejada y transmitida.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "La reflexión depende también de la geometría; esta relación ideal no caracteriza por sí sola una lesión.",
+        "caption": "Observa el efecto del contraste de impedancias.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.3 y §12.3.1, reflexión e impedancia"
+      }
+    ],
+    "objective": "Propiedad del medio definida como densidad por velocidad acústica; la diferencia entre impedancias influye en la reflexión en una interfaz.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "eco",
+    "title": "Eco y tiempo de vuelo",
+    "animation": "echo",
+    "family": "receiver",
+    "control": {
+      "label": "Profundidad del reflector",
+      "min": 1,
+      "max": 12,
+      "step": 0.5,
+      "initial": 4,
+      "unit": "cm"
+    },
+    "before": 2,
+    "after": 8,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Señal acústica que regresa al transductor después de interactuar con estructuras; su retraso permite estimar profundidad y su amplitud participa en el brillo.",
+        "caption": "Sigue el pulso que sale.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El tiempo medido incluye ida y vuelta.",
+        "caption": "Distingue la señal que regresa.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Un eco tardío puede proceder de trayectorias múltiples; no siempre representa un reflector directamente más profundo.",
+        "caption": "Relaciona el retraso doble con la profundidad.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.4, transducción y pulso–eco"
+      },
+      {
+        "id": "fda",
+        "section": "Description: amplitud y tiempo de vuelo"
+      }
+    ],
+    "objective": "Señal acústica que regresa al transductor después de interactuar con estructuras; su retraso permite estimar profundidad y su amplitud participa en el brillo.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "reflexion",
+    "title": "Reflexión",
+    "animation": "reflection",
+    "family": "interface",
+    "control": {
+      "label": "Impedancia del segundo medio",
+      "min": 1,
+      "max": 10,
+      "step": 0.1,
+      "initial": 3,
+      "unit": "MRayl"
+    },
+    "before": 1.5,
+    "after": 6,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Retorno de parte de la energía acústica al encontrar una interfaz; sus características dependen del contraste de impedancias y de la incidencia.",
+        "caption": "Sigue el rayo incidente hasta la interfaz.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Una interfaz grande y lisa puede reflejar especularmente: la dirección reflejada cambia con la incidencia.",
+        "caption": "Distingue retorno de transmisión.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una pared poco visible por incidencia desfavorable no demuestra que la estructura haya desaparecido.",
+        "caption": "Relaciona orientación y recepción del eco.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.3, reflexión y transmisión"
+      }
+    ],
+    "objective": "Retorno de parte de la energía acústica al encontrar una interfaz; sus características dependen del contraste de impedancias y de la incidencia.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "refraccion",
+    "title": "Refracción",
+    "animation": "refraction",
+    "family": "interface",
+    "control": {
+      "label": "Incidencia respecto de la normal",
+      "min": 0,
+      "max": 55,
+      "step": 1,
+      "initial": 30,
+      "unit": "°"
+    },
+    "before": 10,
+    "after": 40,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Cambio de dirección de una onda al atravesar oblicuamente una interfaz entre medios con diferentes velocidades de propagación del sonido.",
+        "caption": "Localiza la normal a la interfaz.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La dirección transmitida obedece a la ley de Snell.",
+        "caption": "Compara incidencia y transmisión.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "No midas los ángulos desde la superficie ni apliques una trayectoria recta a un haz refractado.",
+        "caption": "Observa la desviación al cambiar el ángulo.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.3, transmisión y refracción"
+      }
+    ],
+    "objective": "Cambio de dirección de una onda al atravesar oblicuamente una interfaz entre medios con diferentes velocidades de propagación del sonido.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "dispersion",
+    "title": "Dispersión",
+    "animation": "scattering",
+    "family": "interface",
+    "control": {
+      "label": "Dispersores del esquema",
+      "min": 3,
+      "max": 14,
+      "step": 1,
+      "initial": 8,
+      "unit": "u.e."
+    },
+    "before": 3,
+    "after": 12,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Redistribución de energía acústica en distintas direcciones por estructuras pequeñas o irregularidades; parte de esa energía puede regresar como retrodispersión.",
+        "caption": "Sigue señales emitidas desde pequeños dispersores.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Numerosos dispersores contribuyen al eco recibido.",
+        "caption": "Identifica la porción que vuelve al receptor.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "El número de puntos del modelo no estima hematocrito ni concentración celular de un paciente.",
+        "caption": "Distingue dispersión de reflexión especular.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.3.2, scattering"
+      }
+    ],
+    "objective": "Redistribución de energía acústica en distintas direcciones por estructuras pequeñas o irregularidades; parte de esa energía puede regresar como retrodispersión.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "absorcion",
+    "title": "Absorción",
+    "animation": "absorption",
+    "family": "interface",
+    "control": {
+      "label": "Coeficiente del modelo",
+      "min": 0.1,
+      "max": 1,
+      "step": 0.05,
+      "initial": 0.5,
+      "unit": "dB/(cm·MHz)"
+    },
+    "before": 0.1,
+    "after": 0.9,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Conversión de parte de la energía acústica en otras formas de energía, principalmente calor, durante su propagación a través del medio.",
+        "caption": "Sigue la reducción durante el recorrido.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La absorción contribuye a la atenuación.",
+        "caption": "Distingue energía perdida de eco reflejado.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Un coeficiente del simulador no identifica tejido ni permite predecir temperatura clínica.",
+        "caption": "Compara trayectos con diferente coeficiente.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.4 y §12.6.1, atenuación y mecanismos térmicos"
+      }
+    ],
+    "objective": "Conversión de parte de la energía acústica en otras formas de energía, principalmente calor, durante su propagación a través del medio.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "atenuacion",
+    "title": "Atenuación",
+    "animation": "attenuation",
+    "family": "interface",
+    "control": {
+      "label": "Frecuencia",
+      "min": 1,
+      "max": 12,
+      "step": 0.5,
+      "initial": 5,
+      "unit": "MHz"
+    },
+    "before": 2,
+    "after": 10,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Disminución de la señal acústica durante su recorrido por absorción, dispersión y otras pérdidas; suele aumentar con frecuencia y distancia en tejidos blandos.",
+        "caption": "Compara señal superficial y profunda.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Un eco profundo ha atravesado el trayecto de ida y de retorno.",
+        "caption": "Sigue la pérdida en ida y vuelta.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Más ganancia no garantiza recuperar un eco ausente ni mejora por sí sola la penetración.",
+        "caption": "Distingue atenuación de amplificación posterior.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.4 y §12.3.1, atenuación y coeficientes"
+      }
+    ],
+    "objective": "Disminución de la señal acústica durante su recorrido por absorción, dispersión y otras pérdidas; suele aumentar con frecuencia y distancia en tejidos blandos.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "acoplamiento",
+    "title": "Acoplamiento y gel",
+    "animation": "coupling",
+    "family": "interface",
+    "control": {
+      "label": "Separación ilustrativa",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "initial": 0,
+      "unit": "mm"
+    },
+    "before": 0.8,
+    "after": 0,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Continuidad acústica entre transductor y superficie explorada; el gel reduce la presencia de aire, cuya interfaz dificulta la transmisión útil.",
+        "caption": "Identifica la cara activa del transductor.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El aire interpuesto produce una gran discontinuidad de impedancia.",
+        "caption": "Compara aire interpuesto y gel continuo.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Apretar más no sustituye el gel y puede colapsar la vena al valorar flujo o calibre.",
+        "caption": "Distingue contacto acústico de presión excesiva.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "fda",
+        "section": "Description: transductor, piel y capa de gel"
+      },
+      {
+        "id": "peripheral",
+        "section": "Quality and Safety: Infection Control"
+      }
+    ],
+    "objective": "Continuidad acústica entre transductor y superficie explorada; el gel reduce la presencia de aire, cuya interfaz dificulta la transmisión útil.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "piezoelectricidad",
+    "title": "Piezoelectricidad",
+    "animation": "piezo",
+    "family": "transducer",
+    "control": {
+      "label": "Excitación relativa",
+      "min": 0.2,
+      "max": 1,
+      "step": 0.05,
+      "initial": 0.6,
+      "unit": "u.e."
+    },
+    "before": 0.25,
+    "after": 0.85,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Acoplamiento entre deformación mecánica y carga eléctrica de ciertos materiales, utilizado para emitir ultrasonido y convertir los ecos recibidos en señales eléctricas.",
+        "caption": "Relaciona excitación eléctrica y deformación.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La excitación eléctrica deforma los elementos; un eco provoca deformación y respuesta eléctrica.",
+        "caption": "Sigue la onda que se transmite.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "La animación amplía enormemente la deformación; no muestra dimensiones ni voltajes reales del equipo.",
+        "caption": "Observa la respuesta eléctrica durante recepción.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.4, ultrasonic transduction"
+      }
+    ],
+    "objective": "Acoplamiento entre deformación mecánica y carga eléctrica de ciertos materiales, utilizado para emitir ultrasonido y convertir los ecos recibidos en señales eléctricas.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "arreglo-lineal",
+    "title": "Arreglo lineal",
+    "animation": "linear-array",
+    "family": "transducer",
+    "control": {
+      "label": "Elementos representados",
+      "min": 8,
+      "max": 32,
+      "step": 1,
+      "initial": 16,
+      "unit": "elementos"
+    },
+    "before": 8,
+    "after": 32,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Conjunto de elementos dispuestos en línea que permite formar, enfocar y desplazar haces electrónicos para obtener una imagen habitualmente rectangular.",
+        "caption": "Localiza la fila de elementos.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Grupos de elementos participan en emisión y recepción.",
+        "caption": "Sigue el grupo activo durante el barrido.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "El número de elementos del dibujo no es una recomendación de compra ni un ajuste clínico.",
+        "caption": "Relaciona su posición con una línea de imagen.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2, principios de sistemas de arreglos"
+      }
+    ],
+    "objective": "Conjunto de elementos dispuestos en línea que permite formar, enfocar y desplazar haces electrónicos para obtener una imagen habitualmente rectangular.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "formacion-haz",
+    "title": "Formación del haz",
+    "animation": "beamforming",
+    "family": "transducer",
+    "control": {
+      "label": "Profundidad focal del modelo",
+      "min": 1,
+      "max": 6,
+      "step": 0.25,
+      "initial": 3,
+      "unit": "cm"
+    },
+    "before": 1,
+    "after": 4,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Combinación temporal de señales de múltiples elementos para orientar o enfocar la sensibilidad acústica, tanto durante emisión como durante recepción.",
+        "caption": "Compara activaciones entre elementos.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Los retardos hacen que contribuciones de distintos elementos coincidan en una región o dirección.",
+        "caption": "Sigue frentes que convergen en el objetivo.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Enfocar y dirigir el haz no son equivalentes a girar físicamente la sonda sobre la piel.",
+        "caption": "Relaciona retardos con foco y dirección.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2.1, electronic focusing and beam steering"
+      }
+    ],
+    "objective": "Combinación temporal de señales de múltiples elementos para orientar o enfocar la sensibilidad acústica, tanto durante emisión como durante recepción.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "campo-cercano",
+    "title": "Campo cercano y divergencia",
+    "animation": "nearfield",
+    "family": "transducer",
+    "control": {
+      "label": "Diámetro del emisor ideal",
+      "min": 2,
+      "max": 12,
+      "step": 0.5,
+      "initial": 6,
+      "unit": "mm"
+    },
+    "before": 2,
+    "after": 10,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Región próxima al emisor donde la interferencia produce una distribución compleja del campo; más lejos predomina la divergencia del haz.",
+        "caption": "Identifica apertura del emisor ideal.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La extensión depende de apertura y longitud de onda.",
+        "caption": "Distingue zona próxima y divergencia lejana.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "El esquema ideal no proporciona una profundidad focal clínica ni una frontera exacta para todas las sondas.",
+        "caption": "Observa cómo cambia la extensión con la apertura.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.4, características de los transductores"
+      },
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2.2, array beam characteristics"
+      }
+    ],
+    "objective": "Región próxima al emisor donde la interferencia produce una distribución compleja del campo; más lejos predomina la divergencia del haz.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "foco",
+    "title": "Foco",
+    "animation": "focus",
+    "family": "transducer",
+    "control": {
+      "label": "Profundidad focal",
+      "min": 1,
+      "max": 6,
+      "step": 0.25,
+      "initial": 3,
+      "unit": "cm"
+    },
+    "before": 1,
+    "after": 4,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Región donde el haz tiene menor anchura en un plano determinado; colocarla cerca del objetivo puede favorecer la resolución lateral.",
+        "caption": "Busca la cintura del haz.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El haz converge y después diverge.",
+        "caption": "Compara anchura en el objetivo y fuera de él.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Un foco bien situado no compensa por sí solo mala señal, acoplamiento o frecuencia inadecuada.",
+        "caption": "Mantén el objetivo fijo al mover el foco.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2.1–13.2.3, enfoque electrónico y multifocal"
+      }
+    ],
+    "objective": "Región donde el haz tiene menor anchura en un plano determinado; colocarla cerca del objetivo puede favorecer la resolución lateral.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "resolucion-axial",
+    "title": "Resolución axial",
+    "animation": "axial",
+    "family": "resolution",
+    "control": {
+      "label": "Longitud espacial del pulso",
+      "min": 0.2,
+      "max": 2,
+      "step": 0.1,
+      "initial": 1,
+      "unit": "mm"
+    },
+    "before": 1.8,
+    "after": 0.4,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Capacidad para distinguir reflectores próximos situados a lo largo del eje del haz; depende especialmente de la respuesta temporal del sistema.",
+        "caption": "Localiza blancos uno detrás del otro.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "En el modelo simple, se separan ecos cuando su separación evita superposición; la resolución axial se aproxima a la mitad de la longitud espacial del pulso.",
+        "caption": "Compara ecos separados y superpuestos.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Cambiar brillo o ampliar píxeles no equivale a mejorar resolución axial adquirida.",
+        "caption": "Relaciona pulso más corto con separación axial.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2.2, características del haz y resolución; formación de imagen pulso–eco"
+      }
+    ],
+    "objective": "Capacidad para distinguir reflectores próximos situados a lo largo del eje del haz; depende especialmente de la respuesta temporal del sistema.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "resolucion-lateral",
+    "title": "Resolución lateral",
+    "animation": "lateral",
+    "family": "resolution",
+    "control": {
+      "label": "Ancho del haz",
+      "min": 0.2,
+      "max": 3,
+      "step": 0.1,
+      "initial": 1.2,
+      "unit": "mm"
+    },
+    "before": 2.8,
+    "after": 0.6,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Capacidad para distinguir reflectores próximos situados lado a lado en el plano de imagen, transversalmente a la dirección del haz.",
+        "caption": "Identifica los dos blancos laterales.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Un haz ancho mezcla respuestas de blancos cercanos.",
+        "caption": "Compara haz estrecho y ancho.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Más líneas no eliminan la limitación impuesta por un haz demasiado ancho.",
+        "caption": "Sigue la unión o separación de sus respuestas.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2.2, array beam characteristics y resolución lateral"
+      }
+    ],
+    "objective": "Capacidad para distinguir reflectores próximos situados lado a lado en el plano de imagen, transversalmente a la dirección del haz.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "resolucion-elevacional",
+    "title": "Resolución elevacional",
+    "animation": "elevation",
+    "family": "resolution",
+    "control": {
+      "label": "Espesor del haz",
+      "min": 0.5,
+      "max": 5,
+      "step": 0.25,
+      "initial": 2,
+      "unit": "mm"
+    },
+    "before": 5,
+    "after": 1,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Capacidad para distinguir estructuras separadas perpendicularmente al plano de imagen; se relaciona con el espesor del haz o del corte adquirido.",
+        "caption": "Localiza el plano central de imagen.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La imagen bidimensional integra señales dentro de un volumen de espesor finito.",
+        "caption": "Observa el espesor que lo rodea.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "El corte ecográfico no es una lámina sin espesor; estructuras fuera de su centro pueden aportar ecos.",
+        "caption": "Sigue qué blancos quedan incluidos al ensancharlo.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2.2, características elevacionales del haz"
+      }
+    ],
+    "objective": "Capacidad para distinguir estructuras separadas perpendicularmente al plano de imagen; se relaciona con el espesor del haz o del corte adquirido.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "pulso",
+    "title": "Pulso ultrasónico",
+    "animation": "pulse",
+    "family": "pulse",
+    "control": {
+      "label": "Ciclos por pulso",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "initial": 3,
+      "unit": "ciclos"
+    },
+    "before": 2,
+    "after": 7,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Tren breve de ciclos ultrasónicos emitido como una unidad, seguido por un intervalo de escucha para recibir y localizar ecos.",
+        "caption": "Cuenta ciclos dentro de un pulso.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Cada pulso contiene varias oscilaciones de la portadora.",
+        "caption": "Separa emisión y escucha.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Frecuencia portadora y número de pulsos por segundo no son la misma magnitud.",
+        "caption": "Distingue ciclos internos de pulsos sucesivos.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.4, funcionamiento pulso–eco y transducción"
+      }
+    ],
+    "objective": "Tren breve de ciclos ultrasónicos emitido como una unidad, seguido por un intervalo de escucha para recibir y localizar ecos.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "duracion-pulso",
+    "title": "Duración del pulso",
+    "animation": "pulse-duration",
+    "family": "pulse",
+    "control": {
+      "label": "Duración",
+      "min": 0.2,
+      "max": 2,
+      "step": 0.1,
+      "initial": 0.6,
+      "unit": "µs"
+    },
+    "before": 0.4,
+    "after": 1.6,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Tiempo ocupado por un único pulso desde su inicio hasta su final; depende del número de ciclos y del período portador.",
+        "caption": "Marca principio y final del mismo tren.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Para un tren de n ciclos, duración=nT.",
+        "caption": "Cuenta sus ciclos completos.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "La duración del pulso no es la duración de exploración ni el tiempo de una maniobra clínica.",
+        "caption": "Compara duración de pulso y período de repetición.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.4, pulsos y respuesta del transductor"
+      }
+    ],
+    "objective": "Tiempo ocupado por un único pulso desde su inicio hasta su final; depende del número de ciclos y del período portador.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "longitud-espacial-pulso",
+    "title": "Longitud espacial del pulso",
+    "animation": "spl",
+    "family": "pulse",
+    "control": {
+      "label": "Ciclos con λ fija",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "initial": 3,
+      "unit": "ciclos"
+    },
+    "before": 2,
+    "after": 7,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Distancia ocupada por un pulso en el medio, equivalente al número de ciclos multiplicado por su longitud de onda.",
+        "caption": "Delimita el frente y la cola del pulso.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "SPL=nlambda=c·duración.",
+        "caption": "Cuenta los ciclos incluidos.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "No confundas la longitud del pulso con la anchura lateral ni con el espesor del haz.",
+        "caption": "Relaciona longitud espacial y separación axial.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.4, pulso ultrasónico"
+      },
+      {
+        "id": "terminology",
+        "section": "Entrada: spatial pulse length"
+      }
+    ],
+    "objective": "Distancia ocupada por un pulso en el medio, equivalente al número de ciclos multiplicado por su longitud de onda.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "prf",
+    "title": "Frecuencia de repetición de pulsos",
+    "animation": "prf",
+    "family": "pulse",
+    "control": {
+      "label": "PRF",
+      "min": 0.5,
+      "max": 10,
+      "step": 0.25,
+      "initial": 3,
+      "unit": "kHz"
+    },
+    "before": 0.5,
+    "after": 6,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Número de pulsos emitidos por segundo; determina el muestreo temporal del Doppler pulsado y debe permitir escuchar ecos a la profundidad requerida.",
+        "caption": "Cuenta inicios de pulsos sucesivos.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "frecuencia de repetición de pulsos=1/período de repetición de pulsos.",
+        "caption": "Observa cómo cambia el intervalo de escucha.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "frecuencia de repetición de pulsos no es frecuencia portadora.",
+        "caption": "Relaciona PRF con el límite de Nyquist.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.3, pulsed wave Doppler"
+      }
+    ],
+    "objective": "Número de pulsos emitidos por segundo; determina el muestreo temporal del Doppler pulsado y debe permitir escuchar ecos a la profundidad requerida.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "prp",
+    "title": "Período de repetición de pulsos",
+    "animation": "prp",
+    "family": "pulse",
+    "control": {
+      "label": "PRP",
+      "min": 0.1,
+      "max": 2,
+      "step": 0.05,
+      "initial": 0.5,
+      "unit": "ms"
+    },
+    "before": 2,
+    "after": 0.2,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Intervalo entre el inicio de un pulso y el inicio del siguiente; incluye emisión y el tiempo disponible para escuchar ecos.",
+        "caption": "Identifica dos inicios consecutivos.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Es el inverso de frecuencia de repetición de pulsos.",
+        "caption": "Distingue emisión del intervalo de escucha.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "período de repetición de pulsos no es el período de un ciclo de la portadora ni solamente la duración del silencio.",
+        "caption": "Relaciona intervalo largo con repetición menor.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.3, muestreo de Doppler pulsado y alcance"
+      }
+    ],
+    "objective": "Intervalo entre el inicio de un pulso y el inicio del siguiente; incluye emisión y el tiempo disponible para escuchar ecos.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "ciclo-trabajo",
+    "title": "Ciclo de trabajo",
+    "animation": "duty-cycle",
+    "family": "pulse",
+    "control": {
+      "label": "Fracción temporal de emisión",
+      "min": 0.05,
+      "max": 2,
+      "step": 0.05,
+      "initial": 0.3,
+      "unit": "%"
+    },
+    "before": 0.1,
+    "after": 1.5,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Fracción del tiempo durante la cual se emite ultrasonido; para pulsos idénticos se obtiene dividiendo duración del pulso entre período de repetición de pulsos.",
+        "caption": "Compara tiempo de emisión y escucha.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El porcentaje expresa emisión respecto del ciclo completo.",
+        "caption": "Mantén visible el ciclo completo.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Un porcentaje aislado no determina seguridad ni puede variar independientemente de duración y frecuencia de repetición de pulsos en un mismo modelo.",
+        "caption": "Relaciona el porcentaje con ambas duraciones.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.6.2, métricas de salida acústica"
+      },
+      {
+        "id": "terminology",
+        "section": "Entrada: duty factor"
+      }
+    ],
+    "objective": "Fracción del tiempo durante la cual se emite ultrasonido; para pulsos idénticos se obtiene dividiendo duración del pulso entre PRP.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "profundidad",
+    "title": "Profundidad",
+    "animation": "depth",
+    "family": "receiver",
+    "control": {
+      "label": "Campo de profundidad",
+      "min": 1,
+      "max": 12,
+      "step": 0.5,
+      "initial": 5,
+      "unit": "cm"
+    },
+    "before": 2,
+    "after": 10,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Extensión del campo representado desde la superficie; depende del tiempo de escucha y debe incluir el objetivo junto con referencias anatómicas útiles.",
+        "caption": "Localiza el objetivo dentro del campo.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Ecos más tardíos se sitúan más profundos según la velocidad asumida.",
+        "caption": "Conserva una referencia por debajo del vaso.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Cambiar el campo mostrado no garantiza que la onda penetre ni que exista información útil a esa profundidad.",
+        "caption": "Relaciona el límite profundo con tiempo de escucha.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.3, instrumentación B y formación de imagen"
+      }
+    ],
+    "objective": "Extensión del campo representado desde la superficie; depende del tiempo de escucha y debe incluir el objetivo junto con referencias anatómicas útiles.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "tasa-cuadros",
+    "title": "Resolución temporal y tasa de cuadros",
+    "animation": "frame-rate",
+    "family": "receiver",
+    "control": {
+      "label": "Tasa del esquema",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "initial": 25,
+      "unit": "cuadros/s"
+    },
+    "before": 10,
+    "after": 60,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Número de imágenes completas actualizadas por segundo; condiciona la capacidad para seguir movimientos y cambios rápidos durante una exploración en tiempo real.",
+        "caption": "Compara movimiento continuo con actualizaciones discretas.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Cada cuadro requiere adquirir líneas y procesarlas.",
+        "caption": "Observa retraso entre posiciones sucesivas.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una reproducción de vídeo más rápida no añade cuadros que no se adquirieron.",
+        "caption": "Distingue tasa de cuadros de frecuencia portadora.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2–13.3, adquisición de líneas y actualización de imagen"
+      }
+    ],
+    "objective": "Número de imágenes completas actualizadas por segundo; condiciona la capacidad para seguir movimientos y cambios rápidos durante una exploración en tiempo real.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "densidad-lineas",
+    "title": "Densidad de líneas",
+    "animation": "line-density",
+    "family": "receiver",
+    "control": {
+      "label": "Líneas por cuadro del modelo",
+      "min": 32,
+      "max": 192,
+      "step": 16,
+      "initial": 96,
+      "unit": "líneas"
+    },
+    "before": 32,
+    "after": 160,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Cantidad de líneas acústicas utilizadas para construir una región de imagen; modifica su muestreo espacial y el tiempo necesario para adquirirla.",
+        "caption": "Sigue el barrido de líneas sucesivas.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Más líneas reducen separación de muestreo, pero pueden reducir cuadros por segundo si los demás factores permanecen constantes.",
+        "caption": "Compara separación espacial entre líneas.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Densidad de líneas y resolución lateral no son sinónimos; un haz ancho no se vuelve estrecho por añadir líneas.",
+        "caption": "Relaciona más líneas con tiempo por cuadro.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2 y §13.3, sistema de arreglos y B-mode"
+      }
+    ],
+    "objective": "Cantidad de líneas acústicas utilizadas para construir una región de imagen; modifica su muestreo espacial y el tiempo necesario para adquirirla.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "modo-b",
+    "title": "Modo B",
+    "animation": "bmode",
+    "family": "receiver",
+    "control": {
+      "label": "Ganancia ilustrativa",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "initial": 50,
+      "unit": "u.e."
+    },
+    "before": 50,
+    "after": 50,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Representación bidimensional donde la posición del eco localiza estructuras y su amplitud procesada determina el brillo, ofreciendo la referencia anatómica del estudio dúplex.",
+        "caption": "Relaciona reflector con su posición en pantalla.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Cada línea coloca ecos por tiempo de vuelo y los convierte en niveles de gris.",
+        "caption": "Compara amplitud recibida y brillo.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una zona negra no identifica por sí sola una vena ni demuestra permeabilidad.",
+        "caption": "Reconoce luz, paredes y tejidos vecinos.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.3, B-mode instrumentation and signal processing"
+      }
+    ],
+    "objective": "Representación bidimensional donde la posición del eco localiza estructuras y su amplitud procesada determina el brillo, ofreciendo la referencia anatómica del estudio dúplex.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "modo-m",
+    "title": "Modo M",
+    "animation": "mmode",
+    "family": "receiver",
+    "control": {
+      "label": "Excursión del reflector",
+      "min": 1,
+      "max": 10,
+      "step": 0.5,
+      "initial": 4,
+      "unit": "mm"
+    },
+    "before": 1,
+    "after": 7,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Representación del movimiento a lo largo de una línea acústica en función del tiempo, conservando profundidad como una dimensión de la imagen.",
+        "caption": "Localiza la línea seleccionada en la anatomía.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La misma línea se repite y cada adquisición ocupa una columna temporal.",
+        "caption": "Sigue la profundidad del reflector móvil.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una trayectoria en modo M no es un espectro Doppler ni una medición automática de flujo sanguíneo.",
+        "caption": "Relaciona columnas sucesivas con el tiempo.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.3, modos de presentación de ecos"
+      },
+      {
+        "id": "terminology",
+        "section": "Entrada: M-mode"
+      }
+    ],
+    "objective": "Representación del movimiento a lo largo de una línea acústica en función del tiempo, conservando profundidad como una dimensión de la imagen.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "ganancia",
+    "title": "Ganancia de recepción",
+    "animation": "gain",
+    "family": "receiver",
+    "control": {
+      "label": "Ganancia del modelo",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "initial": 50,
+      "unit": "u.e."
+    },
+    "before": 25,
+    "after": 85,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Amplificación aplicada a las señales recibidas antes de su presentación; cambia el brillo y la visibilidad del ruido sin aumentar la emisión acústica.",
+        "caption": "Conserva constante el pulso emitido.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Con la misma anatomía y eco de entrada, más ganancia amplifica señales y ruido.",
+        "caption": "Observa la amplificación tras la recepción.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Ganancia de recepción no es potencia acústica ni garantiza recuperar información ausente.",
+        "caption": "Compara pared y luz al variar brillo.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.3, amplificación y procesamiento de recepción"
+      }
+    ],
+    "objective": "Amplificación aplicada a las señales recibidas antes de su presentación; cambia el brillo y la visibilidad del ruido sin aumentar la emisión acústica.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "tgc",
+    "title": "Compensación de ganancia en el tiempo",
+    "animation": "tgc",
+    "family": "receiver",
+    "control": {
+      "label": "Compensación profunda",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "initial": 50,
+      "unit": "u.e."
+    },
+    "before": 10,
+    "after": 85,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Amplificación de recepción que varía con el tiempo de regreso del eco, utilizado como referencia de profundidad para compensar diferencias de señal.",
+        "caption": "Compara amplificación superficial y profunda.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La compensación puede amplificar más ecos tardíos que tempranos.",
+        "caption": "Sigue el eco antes del procesamiento.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Un fondo más brillante tras compensación de ganancia en el tiempo no demuestra mayor penetración ni un cambio real del tejido.",
+        "caption": "Distingue compensación por nivel de ganancia global.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.3, time gain compensation y recepción B"
+      }
+    ],
+    "objective": "Amplificación de recepción que varía con el tiempo de regreso del eco, utilizado como referencia de profundidad para compensar diferencias de señal.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "rango-dinamico",
+    "title": "Rango dinámico",
+    "animation": "dynamic-range",
+    "family": "receiver",
+    "control": {
+      "label": "Rango mostrado",
+      "min": 35,
+      "max": 85,
+      "step": 5,
+      "initial": 60,
+      "unit": "dB"
+    },
+    "before": 35,
+    "after": 85,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Intervalo de amplitudes de señal que se representa en la escala visible; su compresión permite mostrar ecos de intensidades muy diferentes.",
+        "caption": "Mantén iguales los ecos de entrada.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La conversión logarítmica y la asignación de grises reducen un amplio rango recibido.",
+        "caption": "Compara su distribución en la escala de grises.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Más contraste no significa más información anatómica ni mejor resolución; las implementaciones dependen del equipo.",
+        "caption": "Distingue contraste presentado de resolución espacial.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.3, compresión de amplitud y visualización B"
+      }
+    ],
+    "objective": "Intervalo de amplitudes de señal que se representa en la escala visible; su compresión permite mostrar ecos de intensidades muy diferentes.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "zoom",
+    "title": "Zoom",
+    "animation": "zoom",
+    "family": "receiver",
+    "control": {
+      "label": "Ampliación del ejemplo",
+      "min": 1,
+      "max": 3,
+      "step": 0.25,
+      "initial": 1.5,
+      "unit": "×"
+    },
+    "before": 1,
+    "after": 3,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Ampliación de una región de imagen cuya utilidad depende de si modifica la adquisición o solamente presenta más grandes los datos existentes.",
+        "caption": "Identifica la región seleccionada.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El zoom posterior a la adquisición redistribuye o interpola píxeles existentes.",
+        "caption": "Sigue los mismos píxeles al ampliarlos.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Ampliar una captura no revela automáticamente bordes o información que el estudio no adquirió.",
+        "caption": "Distingue tamaño de pantalla de detalle adquirido.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.3, muestreo y presentación de imagen"
+      },
+      {
+        "id": "terminology",
+        "section": "Entrada: zoom"
+      }
+    ],
+    "objective": "Ampliación de una región de imagen cuya utilidad depende de si modifica la adquisición o solamente presenta más grandes los datos existentes.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "efecto-doppler",
+    "title": "Efecto Doppler",
+    "animation": "doppler",
+    "family": "flow",
+    "control": {
+      "label": "Rapidez del flujo",
+      "min": 1,
+      "max": 40,
+      "step": 1,
+      "initial": 15,
+      "unit": "cm/s"
+    },
+    "before": 3,
+    "after": 30,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Cambio de frecuencia de los ecos procedentes de dispersores en movimiento relativo al transductor; informa sobre la componente de movimiento alineada con el haz.",
+        "caption": "Sigue los dispersores mientras avanza el haz.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Para el modelo habitual de retrodispersión, Δf=2f₀v·costheta/c.",
+        "caption": "Identifica la componente del movimiento sobre el haz.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Ausencia de desplazamiento detectable no equivale a ausencia de flujo.",
+        "caption": "Compara frecuencia emitida y recibida.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.1, the Doppler effect"
+      }
+    ],
+    "objective": "Cambio de frecuencia de los ecos procedentes de dispersores en movimiento relativo al transductor; informa sobre la componente de movimiento alineada con el haz.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "angulo-doppler",
+    "title": "Ángulo Doppler",
+    "animation": "doppler-angle",
+    "family": "flow",
+    "control": {
+      "label": "Ángulo haz–flujo",
+      "min": 0,
+      "max": 90,
+      "step": 1,
+      "initial": 55,
+      "unit": "°"
+    },
+    "before": 0,
+    "after": 90,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Ángulo entre la dirección del haz acústico y la dirección local del flujo; determina cuánto movimiento contribuye al desplazamiento Doppler medido.",
+        "caption": "Localiza el vector del haz y el del flujo.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La proyección depende de costheta.",
+        "caption": "Compara su proyección al cambiar el ángulo.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "No midas este ángulo entre la carcasa y la piel ni asumas que eje largo significa ángulo favorable.",
+        "caption": "Observa movimiento presente con señal Doppler reducida.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.1, ecuación Doppler y dependencia angular"
+      }
+    ],
+    "objective": "Ángulo entre la dirección del haz acústico y la dirección local del flujo; determina cuánto movimiento contribuye al desplazamiento Doppler medido.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "correccion-angular",
+    "title": "Corrección angular",
+    "animation": "angle-correction",
+    "family": "flow",
+    "control": {
+      "label": "Ángulo declarado; real 60°",
+      "min": 0,
+      "max": 85,
+      "step": 1,
+      "initial": 60,
+      "unit": "°"
+    },
+    "before": 30,
+    "after": 60,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Declaración de la dirección del flujo utilizada para convertir desplazamiento Doppler en una estimación de velocidad; requiere coherencia con la anatomía observada.",
+        "caption": "Conserva el ángulo real del modelo.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El equipo divide por el coseno del ángulo declarado.",
+        "caption": "Cambia únicamente el ángulo declarado.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "La corrección angular no crea señal ausente ni es necesaria para convertir segundos de reflujo en velocidad.",
+        "caption": "Compara velocidad real y calculada.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.1–12.5.3, ecuación Doppler y estimación de velocidad"
+      }
+    ],
+    "objective": "Declaración de la dirección del flujo utilizada para convertir desplazamiento Doppler en una estimación de velocidad; requiere coherencia con la anatomía observada.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "linea-base",
+    "title": "Línea de base",
+    "animation": "baseline",
+    "family": "flow",
+    "control": {
+      "label": "Desplazamiento de la base",
+      "min": -70,
+      "max": 70,
+      "step": 5,
+      "initial": 0,
+      "unit": "%"
+    },
+    "before": 0,
+    "after": 60,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Referencia de desplazamiento Doppler cero en la presentación espectral; moverla redistribuye el espacio mostrado para señales de uno u otro signo.",
+        "caption": "Identifica el cero antes de moverlo.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El desplazamiento de la base cambia la ventana de representación.",
+        "caption": "Conserva señal y PRF constantes.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Mover la base no cambia la fisiología ni aumenta el límite total de muestreo.",
+        "caption": "Compara espacio disponible a ambos lados de la base.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.3, presentación de Doppler pulsado"
+      },
+      {
+        "id": "terminology",
+        "section": "Entrada: baseline shift"
+      }
+    ],
+    "objective": "Referencia de desplazamiento Doppler cero en la presentación espectral; moverla redistribuye el espacio mostrado para señales de uno u otro signo.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "doppler-color",
+    "title": "Doppler color",
+    "animation": "color",
+    "family": "flow",
+    "control": {
+      "label": "Velocidad proyectada del esquema",
+      "min": -30,
+      "max": 30,
+      "step": 1,
+      "initial": 12,
+      "unit": "cm/s"
+    },
+    "before": 12,
+    "after": -12,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Mapa superpuesto a la anatomía que codifica estimaciones de desplazamiento Doppler dentro de una región, según una barra de color y ajustes definidos.",
+        "caption": "Relaciona color con la luz en B.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El sistema muestrea ecos repetidamente y estima información de movimiento en cada posición.",
+        "caption": "Lee la barra antes de interpretar el signo.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Rojo y azul no identifican por sí solos arteria o vena, oxigenación ni competencia valvular.",
+        "caption": "Mantén anatomía y flujo al variar la escala.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.5, Colour Flow Imaging"
+      }
+    ],
+    "objective": "Mapa superpuesto a la anatomía que codifica estimaciones de desplazamiento Doppler dentro de una región, según una barra de color y ajustes definidos.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "mapa-color",
+    "title": "Mapa de color",
+    "animation": "color-map",
+    "family": "flow",
+    "control": {
+      "label": "Mapa ilustrativo: 0 normal, 1 invertido",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "initial": 0,
+      "unit": "u.e."
+    },
+    "before": 0,
+    "after": 1,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Leyenda que asigna colores a valores y signos de la señal Doppler; su lectura debe comprobarse en la barra del equipo.",
+        "caption": "Localiza el cero y ambos extremos de la barra.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Invertir la asignación cambia el color presentado sin invertir el flujo.",
+        "caption": "Invierte el mapa conservando el movimiento real.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "El código de color Doppler no es el código de condición usado en la cartografía del consenso.",
+        "caption": "Relaciona un mismo signo con su nuevo color.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.5, asignación y presentación de color"
+      }
+    ],
+    "objective": "Leyenda que asigna colores a valores y signos de la señal Doppler; su lectura debe comprobarse en la barra del equipo.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "direccion-flujo",
+    "title": "Dirección del flujo",
+    "animation": "flow-direction",
+    "family": "flow",
+    "control": {
+      "label": "Ángulo haz–flujo",
+      "min": 0,
+      "max": 180,
+      "step": 5,
+      "initial": 55,
+      "unit": "°"
+    },
+    "before": 55,
+    "after": 125,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Sentido anatómico del movimiento sanguíneo, relacionado con el signo Doppler mediante la orientación del haz y la convención de presentación utilizada.",
+        "caption": "Sigue el movimiento dentro del vaso.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La proyección sobre el haz puede ser positiva, negativa o cercana a cero.",
+        "caption": "Relaciona el sentido con el haz y la barra.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "La ubicación sobre o bajo la base no significa universalmente flujo proximal, distal o reflujo.",
+        "caption": "Distingue signo en pantalla de proximal y distal.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.1, signo de desplazamiento y geometría Doppler"
+      }
+    ],
+    "objective": "Sentido anatómico del movimiento sanguíneo, relacionado con el signo Doppler mediante la orientación del haz y la convención de presentación utilizada.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "ganancia-color",
+    "title": "Ganancia de color",
+    "animation": "color-gain",
+    "family": "flow",
+    "control": {
+      "label": "Ganancia Doppler",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "initial": 50,
+      "unit": "u.e."
+    },
+    "before": 25,
+    "after": 90,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Amplificación de las señales Doppler utilizadas para formar el mapa; modifica su visibilidad y puede mostrar ruido fuera de la luz vascular.",
+        "caption": "Conserva el contorno de la vena en B.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Con señal y anatomía constantes, aumentar ganancia puede recuperar señales débiles o provocar desborde.",
+        "caption": "Compara relleno intraluminal y ruido extraluminal.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Más color no demuestra más flujo, una conexión anatómica ni una vena de mayor tamaño.",
+        "caption": "Relaciona ganancia excesiva con desborde.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.5, recepción y procesamiento de señales color"
+      }
+    ],
+    "objective": "Amplificación de las señales Doppler utilizadas para formar el mapa; modifica su visibilidad y puede mostrar ruido fuera de la luz vascular.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "escala-doppler",
+    "title": "Escala Doppler",
+    "animation": "scale",
+    "family": "flow",
+    "control": {
+      "label": "PRF ilustrativa",
+      "min": 0.5,
+      "max": 5,
+      "step": 0.25,
+      "initial": 2,
+      "unit": "kHz"
+    },
+    "before": 0.5,
+    "after": 5,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Intervalo de frecuencias o velocidades presentado por el sistema Doppler; en modos pulsados se relaciona con la repetición y el procesamiento de muestras.",
+        "caption": "Conserva velocidad y orientación del ejemplo.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Modificar la escala puede cambiar frecuencia de repetición de pulsos y los límites mostrados.",
+        "caption": "Compara la señal con los límites mostrados.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Los números del esquema no son un preset universal; verifica modo, unidades y equipo.",
+        "caption": "Distingue reajuste de escala de cambio de flujo.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.3, muestreo PW"
+      },
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.5, escala en color"
+      }
+    ],
+    "objective": "Intervalo de frecuencias o velocidades presentado por el sistema Doppler; en modos pulsados se relaciona con la repetición y el procesamiento de muestras.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "limite-nyquist",
+    "title": "Límite de Nyquist",
+    "animation": "nyquist",
+    "family": "flow",
+    "control": {
+      "label": "PRF",
+      "min": 0.5,
+      "max": 5,
+      "step": 0.25,
+      "initial": 2,
+      "unit": "kHz"
+    },
+    "before": 0.5,
+    "after": 5,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Mitad de la frecuencia de muestreo; en el modelo convencional de Doppler pulsado establece el límite de desplazamiento distinguible antes de la ambigüedad.",
+        "caption": "Identifica PRF y su mitad.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Con frecuencia de repetición de pulsos constante, señales que exceden el intervalo permitido pueden representarse en el extremo opuesto.",
+        "caption": "Compara la frecuencia Doppler con el límite.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "frecuencia de repetición de pulsos/2 es un límite de frecuencia Doppler; no una velocidad universal ni un umbral de enfermedad.",
+        "caption": "Conserva señal al aumentar el muestreo.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.3, Nyquist y aliasing en PW"
+      }
+    ],
+    "objective": "Mitad de la frecuencia de muestreo; en el modelo convencional de Doppler pulsado establece el límite de desplazamiento distinguible antes de la ambigüedad.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "aliasing",
+    "title": "Aliasing",
+    "animation": "aliasing",
+    "family": "flow",
+    "control": {
+      "label": "Desplazamiento Doppler; PRF 2 kHz",
+      "min": 0.2,
+      "max": 3,
+      "step": 0.1,
+      "initial": 1.4,
+      "unit": "kHz"
+    },
+    "before": 0.4,
+    "after": 2.5,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Ambigüedad por muestreo insuficiente que representa una frecuencia fuera del intervalo distinguible como otra dentro de él, pudiendo invertir su apariencia.",
+        "caption": "Sigue la señal real y las muestras.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La señal se envuelve en el intervalo de muestreo, en lugar de recortarse sin más.",
+        "caption": "Observa el salto al extremo opuesto.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Aliasing aislado no demuestra reflujo, turbulencia ni una velocidad válida de forma automática.",
+        "caption": "Distingue envoltura de inversión fisiológica del flujo.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.3, aliasing de Doppler pulsado"
+      }
+    ],
+    "objective": "Ambigüedad por muestreo insuficiente que representa una frecuencia fuera del intervalo distinguible como otra dentro de él, pudiendo invertir su apariencia.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "inversion",
+    "title": "Inversión de la presentación",
+    "animation": "invert",
+    "family": "flow",
+    "control": {
+      "label": "Presentación: 0 normal, 1 invertida",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "initial": 0,
+      "unit": "u.e."
+    },
+    "before": 0,
+    "after": 1,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Cambio de la asignación de signo o color en la presentación Doppler, sin alterar por sí mismo el movimiento sanguíneo que originó la señal.",
+        "caption": "Mantén el movimiento real constante.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La misma señal puede mostrarse en el lado contrario de la base o con otro color.",
+        "caption": "Invierte únicamente la presentación.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una inversión electrónica no significa que el paciente haya desarrollado reflujo.",
+        "caption": "Compara señal, barra y línea de base.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5, presentación de signo Doppler"
+      },
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.5, mapa color"
+      }
+    ],
+    "objective": "Cambio de la asignación de signo o color en la presentación Doppler, sin alterar por sí mismo el movimiento sanguíneo que originó la señal.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "filtro-pared",
+    "title": "Filtro de pared",
+    "animation": "wall-filter",
+    "family": "flow",
+    "control": {
+      "label": "Corte ilustrativo del filtro",
+      "min": 0,
+      "max": 400,
+      "step": 20,
+      "initial": 100,
+      "unit": "Hz"
+    },
+    "before": 0,
+    "after": 300,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Procesamiento que suprime componentes de baja frecuencia asociadas principalmente con movimiento de tejidos, pero puede eliminar también señales sanguíneas lentas.",
+        "caption": "Compara componentes de tejido y sangre.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Tejido y sangre pueden ocupar regiones de frecuencia próximas.",
+        "caption": "Desplaza el corte del filtro.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una vena sin señal después de filtrar no debe considerarse automáticamente sin flujo.",
+        "caption": "Observa señales lentas que dejan de mostrarse.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.5, clutter y filtrado de señales de flujo"
+      }
+    ],
+    "objective": "Procesamiento que suprime componentes de baja frecuencia asociadas principalmente con movimiento de tejidos, pero puede eliminar también señales sanguíneas lentas.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "clutter",
+    "title": "Clutter: señal de tejidos",
+    "animation": "clutter",
+    "family": "flow",
+    "control": {
+      "label": "Rapidez de tejido del modelo",
+      "min": 0.1,
+      "max": 3,
+      "step": 0.1,
+      "initial": 0.5,
+      "unit": "cm/s"
+    },
+    "before": 0.1,
+    "after": 3,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Señales intensas procedentes del movimiento de paredes o tejidos que pueden interferir con las señales Doppler sanguíneas, especialmente en bajas frecuencias.",
+        "caption": "Distingue pared móvil y dispersores sanguíneos.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El tejido puede producir ecos mucho más intensos que la sangre.",
+        "caption": "Compara amplitud y frecuencia de sus señales.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "La señal de tejido no es una vena adicional ni equivale a aumento real de perfusión.",
+        "caption": "Observa la información retenida tras el filtrado.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.5, supresión de clutter en imagen de flujo"
+      }
+    ],
+    "objective": "Señales intensas procedentes del movimiento de paredes o tejidos que pueden interferir con las señales Doppler sanguíneas, especialmente en bajas frecuencias.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "persistencia",
+    "title": "Persistencia",
+    "animation": "persistence",
+    "family": "flow",
+    "control": {
+      "label": "Cuadros promediados del modelo",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "initial": 3,
+      "unit": "cuadros"
+    },
+    "before": 1,
+    "after": 6,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Combinación de información de cuadros sucesivos para suavizar la presentación, con posible pérdida de respuesta temporal ante cambios rápidos de flujo o movimiento.",
+        "caption": "Compara el objeto actual y la imagen promediada.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Un promedio temporal conserva parte de cuadros anteriores.",
+        "caption": "Observa retraso al iniciar o detener movimiento.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una señal persistente en pantalla no demuestra que el flujo haya permanecido igual durante ese intervalo.",
+        "caption": "Distingue estabilidad visual de información temporal nueva.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.3 y §13.5, procesamiento temporal y persistencia"
+      }
+    ],
+    "objective": "Combinación de información de cuadros sucesivos para suavizar la presentación, con posible pérdida de respuesta temporal ante cambios rápidos de flujo o movimiento.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "caja-color",
+    "title": "Caja de color",
+    "animation": "color-box",
+    "family": "flow",
+    "control": {
+      "label": "Anchura relativa de la caja",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "initial": 40,
+      "unit": "%"
+    },
+    "before": 20,
+    "after": 100,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Región de interés donde se adquiere y presenta información Doppler color, superpuesta al modo B para localizarla anatómicamente en la imagen.",
+        "caption": "Localiza el vaso dentro de la caja.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Cubrir más líneas o profundidad exige más adquisición.",
+        "caption": "Compara anchura de región y líneas adquiridas.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Fuera de la caja no se está mostrando color; esa ausencia no significa ausencia de flujo.",
+        "caption": "Conserva la anatomía útil fuera de la caja.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.5, región de interés y adquisición color"
+      }
+    ],
+    "objective": "Región de interés donde se adquiere y presenta información Doppler color, superpuesta al modo B para localizarla anatómicamente en la imagen.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "orientacion-haz",
+    "title": "Orientación electrónica del haz",
+    "animation": "steering",
+    "family": "flow",
+    "control": {
+      "label": "Dirección respecto de la normal",
+      "min": -35,
+      "max": 35,
+      "step": 1,
+      "initial": 20,
+      "unit": "°"
+    },
+    "before": 0,
+    "after": 30,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Dirección electrónica del haz respecto del arreglo, que permite modificar la geometría Doppler sin realizar el mismo movimiento que una rotación física.",
+        "caption": "Localiza la normal al transductor.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Retardos entre elementos cambian la dirección del frente de onda.",
+        "caption": "Sigue el frente dirigido por los elementos.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Steering no garantiza un ángulo favorable ni sustituye recuperar el vaso en un plano reconocible.",
+        "caption": "Relaciona la nueva dirección con el flujo.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2.1, electronic focusing and beam steering"
+      }
+    ],
+    "objective": "Dirección electrónica del haz respecto del arreglo, que permite modificar la geometría Doppler sin realizar el mismo movimiento que una rotación física.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "doppler-pulsado",
+    "title": "Doppler pulsado",
+    "animation": "pw",
+    "family": "flow",
+    "control": {
+      "label": "Profundidad de la muestra",
+      "min": 1,
+      "max": 8,
+      "step": 0.5,
+      "initial": 3,
+      "unit": "cm"
+    },
+    "before": 1,
+    "after": 3,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Técnica Doppler que emite pulsos y selecciona ecos por su tiempo de regreso para estudiar movimiento en una región de profundidad definida.",
+        "caption": "Separa emisión y escucha.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La ventana temporal de recepción permite localizar la muestra.",
+        "caption": "Relaciona retraso recibido con profundidad de muestra.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Seleccionar profundidad no elimina la influencia del tamaño de muestra, del haz ni del ángulo.",
+        "caption": "Sigue las muestras usadas para construir el espectro.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.3, pulsed wave Doppler"
+      }
+    ],
+    "objective": "Técnica Doppler que emite pulsos y selecciona ecos por su tiempo de regreso para estudiar movimiento en una región de profundidad definida.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "volumen-muestra",
+    "title": "Volumen de muestra",
+    "animation": "gate",
+    "family": "flow",
+    "control": {
+      "label": "Longitud de la muestra",
+      "min": 1,
+      "max": 8,
+      "step": 0.5,
+      "initial": 3,
+      "unit": "mm"
+    },
+    "before": 1,
+    "after": 8,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Región espacial de la que se aceptan señales en Doppler pulsado; su longitud y el ancho del haz determinan qué movimientos contribuyen.",
+        "caption": "Localiza el gate dentro de la luz.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El gate selecciona un intervalo de retrasos, no un punto sin dimensiones.",
+        "caption": "Cambia su longitud conservando el vaso.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una muestra grande no garantiza mejor registro y puede incorporar tejido o vasos vecinos.",
+        "caption": "Identifica qué señales quedan incluidas o excluidas.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.3, range gating y volumen de muestra"
+      }
+    ],
+    "objective": "Región espacial de la que se aceptan señales en Doppler pulsado; su longitud y el ancho del haz determinan qué movimientos contribuyen.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "ensanchamiento-espectral",
+    "title": "Ensanchamiento espectral",
+    "animation": "spectral-broadening",
+    "family": "flow",
+    "control": {
+      "label": "Diversidad de velocidades del ejemplo",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "initial": 60,
+      "unit": "%"
+    },
+    "before": 0,
+    "after": 100,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Distribución de señal Doppler sobre un intervalo de frecuencias o velocidades; puede depender del flujo y también de la adquisición y el procesamiento.",
+        "caption": "Compara un valor único con una distribución.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Distintas velocidades, ángulos y regiones dentro de la muestra contribuyen al espectro.",
+        "caption": "Observa qué regiones alimentan la muestra.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "El ensanchamiento aislado no demuestra turbulencia ni estenosis; primero revisa contexto y técnica.",
+        "caption": "Relaciona dispersión de señales con anchura espectral.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.2–12.5.3, espectros y volumen de muestra"
+      }
+    ],
+    "objective": "Distribución de señal Doppler sobre un intervalo de frecuencias o velocidades; puede depender del flujo y también de la adquisición y el procesamiento.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "doppler-continuo",
+    "title": "Doppler continuo",
+    "animation": "cw",
+    "family": "flow",
+    "control": {
+      "label": "Rapidez de un dispersor del ejemplo",
+      "min": 20,
+      "max": 120,
+      "step": 5,
+      "initial": 60,
+      "unit": "cm/s"
+    },
+    "before": 20,
+    "after": 100,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Técnica que transmite y recibe de forma continua, recogiendo contribuciones del volumen donde coinciden los haces sin seleccionar una única profundidad por tiempo.",
+        "caption": "Distingue emisor y receptor simultáneos.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Elementos de emisión y recepción operan simultáneamente.",
+        "caption": "Sigue dispersores a distintas profundidades.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Un espectro Doppler continuo no permite atribuir automáticamente una señal a una profundidad concreta.",
+        "caption": "Observa su contribución al mismo espectro.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.5.2, continuous wave Doppler"
+      }
+    ],
+    "objective": "Técnica que transmite y recibe de forma continua, recogiendo contribuciones del volumen donde coinciden los haces sin seleccionar una única profundidad por tiempo.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "power-doppler",
+    "title": "Power Doppler",
+    "animation": "power",
+    "family": "flow",
+    "control": {
+      "label": "Potencia relativa recibida",
+      "min": 0.2,
+      "max": 1,
+      "step": 0.05,
+      "initial": 0.6,
+      "unit": "u.e."
+    },
+    "before": 0.2,
+    "after": 1,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Presentación de la potencia de la señal Doppler recibida; en su forma convencional no codifica dirección ni velocidad mediante el mismo mapa que color.",
+        "caption": "Compara magnitud recibida con brillo de Power.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Integra magnitud de señal en lugar de mostrar el desplazamiento medio con signo.",
+        "caption": "Conserva el color al invertir el sentido del flujo.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Power convencional no demuestra dirección ni duración de reflujo.",
+        "caption": "Observa la interferencia producida por movimiento.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.5, power Doppler y presentación de flujo"
+      }
+    ],
+    "objective": "Presentación de la potencia de la señal Doppler recibida; en su forma convencional no codifica dirección ni velocidad mediante el mismo mapa que color.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "artefacto-movimiento",
+    "title": "Artefacto de movimiento",
+    "animation": "flash",
+    "family": "artifact",
+    "control": {
+      "label": "Movimiento de sonda ilustrativo",
+      "min": 0,
+      "max": 4,
+      "step": 0.25,
+      "initial": 1.5,
+      "unit": "mm"
+    },
+    "before": 0,
+    "after": 4,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Señal Doppler aparente causada por movimiento de la sonda o de tejidos, que puede colorear una región amplia sin representar flujo sanguíneo local.",
+        "caption": "Compara sonda estable y desplazada.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Un desplazamiento del campo produce cambios de fase en numerosos ecos.",
+        "caption": "Observa el destello fuera de la luz.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Un destello de color o Power no demuestra por sí solo perfusión, conexión o reflujo.",
+        "caption": "Distingue movimiento global de señal vascular localizada.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.5, artefactos de movimiento en imagen de flujo"
+      }
+    ],
+    "objective": "Señal Doppler aparente causada por movimiento de la sonda o de tejidos, que puede colorear una región amplia sin representar flujo sanguíneo local.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "sombra-acustica",
+    "title": "Sombra acústica",
+    "animation": "shadow",
+    "family": "artifact",
+    "control": {
+      "label": "Atenuación relativa del obstáculo",
+      "min": 0.2,
+      "max": 1,
+      "step": 0.05,
+      "initial": 0.8,
+      "unit": "u.e."
+    },
+    "before": 0.2,
+    "after": 1,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Reducción de ecos detrás de una estructura que atenúa o desvía fuertemente el haz, comparada con regiones vecinas situadas a profundidad semejante.",
+        "caption": "Identifica el obstáculo y el trayecto posterior.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Llega menos energía o regresa menos señal por el trayecto posterior.",
+        "caption": "Compara señal detrás y a ambos lados.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una sombra aislada no identifica su causa ni demuestra ausencia anatómica detrás del obstáculo.",
+        "caption": "Sigue la reducción sin cambiar el tejido vecino.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.3–12.2.4, reflexión y atenuación"
+      },
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: formación B: artefactos de propagación"
+      }
+    ],
+    "objective": "Reducción de ecos detrás de una estructura que atenúa o desvía fuertemente el haz, comparada con regiones vecinas situadas a profundidad semejante.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "refuerzo-posterior",
+    "title": "Refuerzo posterior",
+    "animation": "enhancement",
+    "family": "artifact",
+    "control": {
+      "label": "Menor atenuación relativa del trayecto",
+      "min": 0.2,
+      "max": 1,
+      "step": 0.05,
+      "initial": 0.7,
+      "unit": "u.e."
+    },
+    "before": 0.2,
+    "after": 1,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Aumento relativo de brillo detrás de un trayecto menos atenuante que sus vecinos, observado al comparar regiones situadas a profundidad semejante.",
+        "caption": "Compara trayectos con diferente atenuación.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La compensación de recepción se aplica a ecos que han sufrido pérdidas distintas.",
+        "caption": "Busca el brillo posterior relativo.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "El patrón no identifica automáticamente un líquido ni una lesión; integra anatomía, planos y contexto.",
+        "caption": "Mantén profundidad y ganancia de comparación.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.4, atenuación"
+      },
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: formación B: artefactos de propagación y compensación"
+      }
+    ],
+    "objective": "Aumento relativo de brillo detrás de un trayecto menos atenuante que sus vecinos, observado al comparar regiones situadas a profundidad semejante.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "reverberacion",
+    "title": "Reverberación",
+    "animation": "reverberation",
+    "family": "artifact",
+    "control": {
+      "label": "Separación entre interfaces",
+      "min": 0.5,
+      "max": 3,
+      "step": 0.25,
+      "initial": 1.5,
+      "unit": "cm"
+    },
+    "before": 0.5,
+    "after": 3,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Repetición aparente de ecos producida por trayectorias con reflexiones múltiples, que el sistema puede situar a profundidades sucesivamente mayores por su retraso.",
+        "caption": "Sigue cada rebote entre interfaces.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La onda rebota entre interfaces antes de volver.",
+        "caption": "Relaciona regresos tardíos con ecos repetidos.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Las repeticiones no son necesariamente estructuras anatómicas distintas a diferentes profundidades.",
+        "caption": "Compara reflector real y posiciones reconstruidas.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.3, reflexión"
+      },
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: formación B: artefactos por reflexiones múltiples"
+      }
+    ],
+    "objective": "Repetición aparente de ecos producida por trayectorias con reflexiones múltiples, que el sistema puede situar a profundidades sucesivamente mayores por su retraso.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "imagen-espejo",
+    "title": "Imagen en espejo",
+    "animation": "mirror",
+    "family": "artifact",
+    "control": {
+      "label": "Distancia al reflector del modelo",
+      "min": 1,
+      "max": 6,
+      "step": 0.5,
+      "initial": 3,
+      "unit": "cm"
+    },
+    "before": 1,
+    "after": 6,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Duplicación aparente de una estructura cuando una trayectoria acústica indirecta, asociada a un reflector fuerte, se reconstruye suponiendo un recorrido recto.",
+        "caption": "Identifica el objeto real y el reflector fuerte.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El retraso de una reflexión adicional coloca una copia en una posición falsa.",
+        "caption": "Sigue la trayectoria indirecta del eco.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una copia especular no confirma una segunda estructura ni su localización anatómica.",
+        "caption": "Compara la ubicación real con la copia reconstruida.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.3, trayectorias de reflexión"
+      },
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: formación de imagen: artefactos de localización"
+      }
+    ],
+    "objective": "Duplicación aparente de una estructura cuando una trayectoria acústica indirecta, asociada a un reflector fuerte, se reconstruye suponiendo un recorrido recto.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "lobulos-laterales",
+    "title": "Lóbulos laterales",
+    "animation": "sidelobes",
+    "family": "artifact",
+    "control": {
+      "label": "Reflectividad del blanco lateral",
+      "min": 0.2,
+      "max": 1,
+      "step": 0.05,
+      "initial": 0.6,
+      "unit": "u.e."
+    },
+    "before": 0.2,
+    "after": 1,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Componentes del campo acústico fuera del lóbulo principal que pueden recibir ecos de reflectores laterales y situarlos como si procedieran del eje principal.",
+        "caption": "Distingue lóbulo principal y componentes laterales.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La reconstrucción asigna los ecos a la dirección de la línea explorada.",
+        "caption": "Sigue el eco desde el blanco fuera del eje.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Ecos dentro de una luz no prueban material real si pueden proceder de fuera del haz principal.",
+        "caption": "Observa su posición errónea en la línea reconstruida.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2.2, array beam characteristics y lóbulos laterales"
+      }
+    ],
+    "objective": "Componentes del campo acústico fuera del lóbulo principal que pueden recibir ecos de reflectores laterales y situarlos como si procedieran del eje principal.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "espesor-corte",
+    "title": "Artefacto de espesor de corte",
+    "animation": "slice-thickness",
+    "family": "resolution",
+    "control": {
+      "label": "Espesor representado",
+      "min": 0.5,
+      "max": 5,
+      "step": 0.25,
+      "initial": 2,
+      "unit": "mm"
+    },
+    "before": 5,
+    "after": 1,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Inclusión de ecos originados dentro del espesor elevacional del haz, pero fuera del plano central que la imagen bidimensional parece representar.",
+        "caption": "Localiza el plano central y el volumen alrededor.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Un corte de espesor finito puede integrar una estructura adyacente.",
+        "caption": "Sigue el blanco fuera del plano central.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "La imagen bidimensional no excluye contribuciones fuera de su plano central; cambia de plano antes de atribuir material intraluminal.",
+        "caption": "Compara inclusión de ecos al cambiar el espesor.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.2.2, características elevacionales y espesor del haz"
+      }
+    ],
+    "objective": "Inclusión de ecos originados dentro del espesor elevacional del haz, pero fuera del plano central que la imagen bidimensional parece representar.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "anisotropia",
+    "title": "Dependencia angular de la reflexión",
+    "animation": "anisotropy",
+    "family": "artifact",
+    "control": {
+      "label": "Incidencia respecto de la normal",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "initial": 25,
+      "unit": "°"
+    },
+    "before": 0,
+    "after": 60,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Variación de la apariencia ecográfica con la orientación del haz respecto de una estructura organizada o una interfaz con reflexión marcadamente direccional.",
+        "caption": "Mantén fija la interfaz.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Al variar la incidencia, una fracción diferente del eco regresa a la sonda.",
+        "caption": "Cambia la incidencia respecto de su normal.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una estructura más oscura al inclinar la sonda no demuestra por sí sola lesión ni pérdida de continuidad.",
+        "caption": "Relaciona retorno de eco y brillo presentado.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.2.3, reflexión especular"
+      },
+      {
+        "id": "terminology",
+        "section": "Entrada: anisotropy"
+      }
+    ],
+    "objective": "Variación de la apariencia ecográfica con la orientación del haz respecto de una estructura organizada o una interfaz con reflexión marcadamente direccional.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "compresibilidad",
+    "title": "Compresibilidad venosa",
+    "animation": "compression",
+    "family": "venous",
+    "control": {
+      "label": "Deformación ilustrativa",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "initial": 40,
+      "unit": "u.e."
+    },
+    "before": 0,
+    "after": 85,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Respuesta de una vena a la compresión controlada en el plano adecuado, observando aproximación y coaptación de sus paredes en el mismo segmento.",
+        "caption": "Centra el mismo segmento en transversal.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Se conserva la identidad del vaso antes, durante y después de comprimir.",
+        "caption": "Sigue ambas paredes durante la presión.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una única imagen o la desaparición por salir del plano no excluyen TVP ni demuestran compresión completa.",
+        "caption": "Libera antes de valorar flujo o diámetro.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "peripheral",
+        "section": "Specification: Venous Thromboembolic Disease, Lower Extremity; Technique 2 y Recording"
+      }
+    ],
+    "objective": "Respuesta de una vena a la compresión controlada en el plano adecuado, observando aproximación y coaptación de sus paredes en el mismo segmento.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "aumento-distal",
+    "title": "Aumento distal y liberación",
+    "animation": "augmentation",
+    "family": "venous",
+    "control": {
+      "label": "Intensidad relativa del ejemplo",
+      "min": 0.2,
+      "max": 1,
+      "step": 0.1,
+      "initial": 0.6,
+      "unit": "u.e."
+    },
+    "before": 0.2,
+    "after": 1,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Maniobra de compresión realizada distal al punto de muestreo para provocar una respuesta de flujo, cuya liberación también se observa y documenta.",
+        "caption": "Distingue mano distal y contacto de la sonda.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La sonda mantiene contacto local ligero mientras otra acción distal modifica el flujo.",
+        "caption": "Observa aumento y liberación como fases distintas.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Comprimir el vaso con la sonda no equivale a aumento distal ni sustituye un protocolo completo.",
+        "caption": "Conserva el segmento y el contexto del registro.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "peripheral",
+        "section": "Venous Insufficiency: Lower Extremity; Technique 1–5"
+      }
+    ],
+    "objective": "Maniobra de compresión realizada distal al punto de muestreo para provocar una respuesta de flujo, cuya liberación también se observa y documenta.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "fasicidad-respiratoria",
+    "title": "Fasicidad respiratoria",
+    "animation": "phasicity",
+    "family": "venous",
+    "control": {
+      "label": "Ritmo respiratorio del modelo",
+      "min": 8,
+      "max": 24,
+      "step": 1,
+      "initial": 12,
+      "unit": "ciclos/min"
+    },
+    "before": 8,
+    "after": 24,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Variación del flujo venoso relacionada con la respiración, evaluada en un registro espectral identificado y dentro del contexto anatómico y clínico correspondiente.",
+        "caption": "Relaciona el ciclo respiratorio con la envolvente.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Cambios de presión asociados a la respiración modulan el retorno venoso.",
+        "caption": "Distingue respiración de pulsos cardíacos.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Un patrón aislado no localiza ni confirma obstrucción; integra técnica, comparación y el examen indicado.",
+        "caption": "Compara registros bajo condiciones respiratorias equivalentes.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "peripheral",
+        "section": "Venous Thromboembolic Disease: Lower Extremity, Technique 4; Upper Extremity, Recording 3"
+      }
+    ],
+    "objective": "Variación del flujo venoso relacionada con la respiración, evaluada en un registro espectral identificado y dentro del contexto anatómico y clínico correspondiente.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "pulsatilidad",
+    "title": "Pulsatilidad",
+    "animation": "pulsatility",
+    "family": "venous",
+    "control": {
+      "label": "Ritmo cardíaco del modelo",
+      "min": 40,
+      "max": 120,
+      "step": 5,
+      "initial": 70,
+      "unit": "latidos/min"
+    },
+    "before": 40,
+    "after": 120,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Variación periódica de la señal asociada al ciclo cardíaco, que puede observarse en registros vasculares y debe interpretarse según territorio y contexto.",
+        "caption": "Sigue la periodicidad del ciclo cardíaco.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La transmisión de variaciones de presión puede modular el flujo venoso.",
+        "caption": "Compara su ritmo con la respiración.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "La pulsatilidad venosa no permite atribuir automáticamente una enfermedad cardíaca ni una obstrucción a partir del esquema.",
+        "caption": "Distingue un patrón temporal de un diagnóstico.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "peripheral",
+        "section": "Venous Thromboembolic Disease: Upper Extremity, Recording; comparación de pulsatility y respiratory phasicity"
+      }
+    ],
+    "objective": "Variación periódica de la señal asociada al ciclo cardíaco, que puede observarse en registros vasculares y debe interpretarse según territorio y contexto.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "valvula-venosa",
+    "title": "Válvula venosa",
+    "animation": "valve",
+    "family": "venous",
+    "control": {
+      "label": "Desafío retrógrado ilustrativo",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "initial": 0.5,
+      "unit": "u.e."
+    },
+    "before": 0,
+    "after": 1,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Estructura intraluminal con valvas que favorecen el avance venoso y limitan el retorno; su función se evalúa junto con la respuesta hemodinámica.",
+        "caption": "Localiza valvas y paredes dentro de la luz.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El esquema relaciona diferencias de presión, apertura y coaptación.",
+        "caption": "Relaciona avance proximal con apertura.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Una válvula que se mueve, un color del dibujo o una imagen aislada no demuestran competencia clínica.",
+        "caption": "Sigue coaptación frente al intento de retorno.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "peripheral",
+        "section": "Venous Insufficiency: Lower Extremity; Technique 1–5 y Recording 1"
+      }
+    ],
+    "objective": "Estructura intraluminal con valvas que favorecen el avance venoso y limitan el retorno; su función se evalúa junto con la respuesta hemodinámica.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "reflujo-venoso",
+    "title": "Reflujo venoso",
+    "animation": "reflux",
+    "family": "venous",
+    "control": {
+      "label": "Duración inventada del retorno",
+      "min": 0.2,
+      "max": 1.5,
+      "step": 0.05,
+      "initial": 0.85,
+      "unit": "s"
+    },
+    "before": 0.2,
+    "after": 1.2,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Flujo retrógrado observado en un segmento venoso bajo condiciones y maniobras identificadas; su interpretación requiere duración, anatomía, posición y criterio aplicable.",
+        "caption": "Distingue basal, provocación y respuesta.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El registro conserva basal y respuesta provocada.",
+        "caption": "Confirma el sentido anatómico del retorno.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Retorno breve, aliasing o inversión de pantalla no equivalen automáticamente a reflujo patológico.",
+        "caption": "Relaciona duración y segmento documentado.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "peripheral",
+        "section": "Venous Insufficiency: Lower Extremity; Technique 1–5"
+      },
+      {
+        "id": "svs",
+        "section": "Definiciones 1.3.1 y adquisición dúplex 1.4"
+      }
+    ],
+    "objective": "Flujo retrógrado observado en un segmento venoso bajo condiciones y maniobras identificadas; su interpretación requiere duración, anatomía, posición y criterio aplicable.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "duracion-reflujo",
+    "title": "Medición temporal del reflujo",
+    "animation": "reflux-duration",
+    "family": "venous",
+    "control": {
+      "label": "Intervalo retrógrado del ejemplo",
+      "min": 0.2,
+      "max": 1.5,
+      "step": 0.05,
+      "initial": 0.85,
+      "unit": "s"
+    },
+    "before": 0.2,
+    "after": 1.2,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Intervalo temporal entre inicio y final del flujo retrógrado observado, delimitado con cursores sobre un registro espectral interpretable e identificado por segmento.",
+        "caption": "Ubica el inicio del flujo retrógrado.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Los cursores miden la señal, no el tiempo de compresión o esfuerzo.",
+        "caption": "Sitúa el segundo cursor al final observado.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "No utilices un umbral único para todo el sistema profundo ni conviertas el tiempo inventado en diagnóstico.",
+        "caption": "Lee segundos o milisegundos sin medir la maniobra.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "peripheral",
+        "section": "Venous Insufficiency: Lower Extremity; Technique 1 y Recording 1"
+      },
+      {
+        "id": "svs",
+        "section": "1.3.1: >500 ms en ejes superficiales, tibiales, femoral profunda y perforantes; >1 s en femoral común, femoral y poplítea"
+      }
+    ],
+    "objective": "Intervalo temporal entre inicio y final del flujo retrógrado observado, delimitado con cursores sobre un registro espectral interpretable e identificado por segmento.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "alara",
+    "title": "ALARA",
+    "animation": "alara",
+    "family": "safety",
+    "control": {
+      "label": "Tiempo de observación ilustrativo",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "initial": 20,
+      "unit": "s"
+    },
+    "before": 0,
+    "after": 60,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Principio de utilizar la exposición acústica tan baja como sea razonablemente posible para obtener la información necesaria con una indicación clínica justificada.",
+        "caption": "Separa recepción de emisión acústica.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "La técnica, recepción, salida acústica y tiempo de permanencia se consideran juntos.",
+        "caption": "Observa el tiempo de permanencia del haz.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "ALARA no significa una imagen insuficiente ni un valor universal seguro de tiempo, índice térmico o índice mecánico.",
+        "caption": "Relaciona la información necesaria con la exposición utilizada.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "alara",
+        "section": "Principio ALARA: salida acústica y tiempo"
+      },
+      {
+        "id": "fda",
+        "section": "Information for Health Care Providers"
+      }
+    ],
+    "objective": "Principio de utilizar la exposición acústica tan baja como sea razonablemente posible para obtener la información necesaria con una indicación clínica justificada.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "indice-termico",
+    "title": "Índice térmico",
+    "animation": "ti",
+    "family": "safety",
+    "control": {
+      "label": "TI mostrado en el modelo",
+      "min": 0.1,
+      "max": 2,
+      "step": 0.1,
+      "initial": 0.7,
+      "unit": "índice"
+    },
+    "before": 0.1,
+    "after": 2,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Índice adimensional que relaciona salida acústica con un modelo de calentamiento tisular; orienta sobre potencial térmico, sin medir directamente la temperatura del paciente.",
+        "caption": "Identifica el índice en la pantalla.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El índice térmico se basa en modelos y condiciones de exposición.",
+        "caption": "Distingue un índice de una temperatura medida.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "índice térmico=1 no demuestra que la temperatura del paciente haya subido exactamente 1  gradosC ni establece seguridad universal.",
+        "caption": "Conserva el tiempo como condición separada.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "ods",
+        "section": "Thermal index y tipos de modelo térmico"
+      },
+      {
+        "id": "prudent",
+        "section": "Índices de salida y exposición"
+      }
+    ],
+    "objective": "Índice adimensional que relaciona salida acústica con un modelo de calentamiento tisular; orienta sobre potencial térmico, sin medir directamente la temperatura del paciente.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "indice-mecanico",
+    "title": "Índice mecánico",
+    "animation": "mi",
+    "family": "safety",
+    "control": {
+      "label": "Presión rarefaccional atenuada; f = 2 MHz",
+      "min": 0.1,
+      "max": 2,
+      "step": 0.1,
+      "initial": 0.8,
+      "unit": "MPa"
+    },
+    "before": 0.1,
+    "after": 2,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Índice adimensional relacionado con la presión rarefaccional acústica y la frecuencia, utilizado para orientar sobre el potencial de efectos mecánicos no térmicos.",
+        "caption": "Identifica presión y frecuencia como factores distintos.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "En su formulación, índice mecánico=pᵣ,derated/√f, con presión en MPa y frecuencia en megahercios.",
+        "caption": "Sigue la relación con el índice calculado.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "índice mecánico no es una probabilidad individual de lesión, una presión en MPa ni un umbral universal de seguridad.",
+        "caption": "Separa MI de temperatura y duración.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "ods",
+        "section": "Mechanical index y presión derated"
+      },
+      {
+        "id": "terminology",
+        "section": "Entrada: mechanical index"
+      }
+    ],
+    "objective": "Índice adimensional relacionado con la presión rarefaccional acústica y la frecuencia, utilizado para orientar sobre el potencial de efectos mecánicos no térmicos.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "potencia-acustica",
+    "title": "Potencia acústica de emisión",
+    "animation": "output-power",
+    "family": "safety",
+    "control": {
+      "label": "Emisión relativa ilustrativa",
+      "min": 0.2,
+      "max": 1,
+      "step": 0.05,
+      "initial": 0.6,
+      "unit": "u.e."
+    },
+    "before": 0.2,
+    "after": 1,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Energía acústica emitida por unidad de tiempo; modificar la salida del transductor afecta la exposición y es distinto de amplificar señales ya recibidas.",
+        "caption": "Localiza el cambio antes de entrar al tejido.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "El control de salida actúa sobre la emisión.",
+        "caption": "Conserva separada la amplificación del receptor.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "El brillo de la pantalla no mide potencia acústica ni permite deducir índice térmico o índice mecánico de un paciente.",
+        "caption": "Compara emisión y brillo de presentación.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 12, Physics of Ultrasound: §12.6.2–12.6.3, métricas acústicas y seguridad"
+      },
+      {
+        "id": "alara",
+        "section": "Control de salida y exposición necesaria"
+      }
+    ],
+    "objective": "Energía acústica emitida por unidad de tiempo; modificar la salida del transductor afecta la exposición y es distinto de amplificar señales ya recibidas.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  },
+  {
+    "id": "duplex-triplex",
+    "title": "Dúplex y tríplex",
+    "animation": "duplex",
+    "family": "flow",
+    "control": {
+      "label": "Modos del esquema: B / B+color / B+color+PW",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "initial": 3,
+      "unit": "modos"
+    },
+    "before": 1,
+    "after": 3,
+    "scenes": [
+      {
+        "id": "idea",
+        "title": "La idea central",
+        "text": "Combinación de imagen anatómica y evaluación Doppler; la presentación tríplex integra B, color y espectro, con compromisos de adquisición dependientes del equipo.",
+        "caption": "Relaciona la muestra con la anatomía en B.",
+        "camera": "context"
+      },
+      {
+        "id": "mechanism",
+        "title": "Cómo ocurre",
+        "text": "Los modos aportan información complementaria: B localiza anatomía, color ayuda a situar señal y Doppler pulsado registra su distribución temporal en una muestra.",
+        "caption": "Localiza señal mediante la superposición de color.",
+        "camera": "focus"
+      },
+      {
+        "id": "meaning",
+        "title": "Qué debes recordar",
+        "text": "Mostrar tres modos no acredita por sí solo calidad diagnóstica ni elimina sus límites de ángulo y muestreo.",
+        "caption": "Sigue la distribución temporal en el espectro.",
+        "camera": "consequence"
+      }
+    ],
+    "sources": [
+      {
+        "id": "iaea",
+        "section": "Capítulo 13, Ultrasound Imaging: §13.3 y §13.5, combinación de B y flujo"
+      },
+      {
+        "id": "peripheral",
+        "section": "Equipment Specifications; imagen y análisis de flujo dúplex"
+      }
+    ],
+    "objective": "Combinación de imagen anatómica y evaluación Doppler; la presentación tríplex integra B, color y espectro, con compromisos de adquisición dependientes del equipo.",
+    "simplification": "Geometría y tiempos ilustrativos, ampliados para enseñanza. No representa una adquisición ni predice hallazgos de un paciente."
+  }
+]

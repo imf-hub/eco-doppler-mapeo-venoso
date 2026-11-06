@@ -1,0 +1,370 @@
+{
+  "id": "frecuencia",
+  "file": "frecuencia-d435c8688625.mp3",
+  "duration": 27.506938,
+  "providerDuration": 27.506938775510203,
+  "hash": "d435c8688625d00c6cddfa00601256dde03fc50228f003627fef8e448b137c8c",
+  "provider": "HeyGen",
+  "voiceId": "84854979e66846989bc6c5855f53268f",
+  "voiceName": "Rocío - Calm & Trustworthy",
+  "requestedEngine": "omitted; saved provider default",
+  "returnedEngine": "orca",
+  "requestedSpeed": "omitted",
+  "playbackRate": 1,
+  "processing": "Original MP3, no speed or audio edits",
+  "scriptHash": "ec29237e6978562121a280c9d3b32126488684621d28155c615347c5743ef268",
+  "ssml": "<speak>Número de ciclos de la onda acústica que ocurren por segundo; en ecografía se expresa habitualmente en megahertz.<break time=\"0.9s\"/>Con velocidad de propagación fija, aumentar f reduce período y longitud de onda: T=1/f y lambda=c/f.<break time=\"0.9s\"/>No confundas frecuencia portadora en megahercios con frecuencia de repetición de pulsos en kilohercios ni con rapidez de la animación.<break time=\"1.2s\"/></speak>",
+  "cues": [
+    {
+      "start": 0,
+      "end": 7.061,
+      "text": "Número de ciclos de la onda acústica que ocurren por segundo; en ecografía se expresa habitualmente en megahertz."
+    },
+    {
+      "start": 7.061,
+      "end": 18.019,
+      "text": "Con velocidad de propagación fija, aumentar f reduce período y longitud de onda: T=1/f y lambda=c/f."
+    },
+    {
+      "start": 18.019,
+      "end": 27.506938,
+      "text": "No confundas frecuencia portadora en megahercios con frecuencia de repetición de pulsos en kilohercios ni con rapidez de la animación."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.299,
+      "end": 4.309,
+      "text": "Número de ciclos de la onda acústica que ocurren por segundo; en ecografía"
+    },
+    {
+      "start": 4.352,
+      "end": 6.161,
+      "text": "se expresa habitualmente en megahertz."
+    },
+    {
+      "start": 7.061,
+      "end": 12.265999999999998,
+      "text": "Con velocidad de propagación fija, aumentar f reduce período y longitud de"
+    },
+    {
+      "start": 12.309,
+      "end": 17.119,
+      "text": "onda: T=1/f y lambda=c/f."
+    },
+    {
+      "start": 18.019,
+      "end": 22.328999999999997,
+      "text": "No confundas frecuencia portadora en megahercios con frecuencia de"
+    },
+    {
+      "start": 22.371999999999996,
+      "end": 26.076526077097505,
+      "text": "repetición de pulsos en kilohercios ni con rapidez de la animación."
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0.0,
+      "end": 0.0
+    },
+    {
+      "word": "Número",
+      "start": 0.299,
+      "end": 0.64
+    },
+    {
+      "word": "de",
+      "start": 0.683,
+      "end": 0.725
+    },
+    {
+      "word": "ciclos",
+      "start": 0.768,
+      "end": 1.067
+    },
+    {
+      "word": "de",
+      "start": 1.109,
+      "end": 1.195
+    },
+    {
+      "word": "la",
+      "start": 1.237,
+      "end": 1.28
+    },
+    {
+      "word": "onda",
+      "start": 1.323,
+      "end": 1.536
+    },
+    {
+      "word": "acústica",
+      "start": 1.579,
+      "end": 1.9627
+    },
+    {
+      "word": "que",
+      "start": 2.091,
+      "end": 2.2187
+    },
+    {
+      "word": "ocurren",
+      "start": 2.261,
+      "end": 2.517
+    },
+    {
+      "word": "por",
+      "start": 2.56,
+      "end": 2.688
+    },
+    {
+      "word": "segundo;",
+      "start": 2.731,
+      "end": 3.157
+    },
+    {
+      "word": "en",
+      "start": 3.243,
+      "end": 3.712
+    },
+    {
+      "word": "ecografía",
+      "start": 3.755,
+      "end": 4.309
+    },
+    {
+      "word": "se",
+      "start": 4.352,
+      "end": 4.48
+    },
+    {
+      "word": "expresa",
+      "start": 4.523,
+      "end": 4.864
+    },
+    {
+      "word": "habitualmente",
+      "start": 4.907,
+      "end": 5.376
+    },
+    {
+      "word": "en",
+      "start": 5.547,
+      "end": 5.589
+    },
+    {
+      "word": "megahertz.",
+      "start": 5.632,
+      "end": 6.161
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 6.161,
+      "end": 7.061
+    },
+    {
+      "word": "Con",
+      "start": 7.061,
+      "end": 7.359999999999999
+    },
+    {
+      "word": "velocidad",
+      "start": 7.401999999999999,
+      "end": 7.829
+    },
+    {
+      "word": "de",
+      "start": 7.8709999999999996,
+      "end": 7.957
+    },
+    {
+      "word": "propagación",
+      "start": 7.999,
+      "end": 8.469
+    },
+    {
+      "word": "fija,",
+      "start": 8.511,
+      "end": 9.024
+    },
+    {
+      "word": "aumentar",
+      "start": 9.193999999999999,
+      "end": 9.748999999999999
+    },
+    {
+      "word": "f",
+      "start": 9.834,
+      "end": 10.004999999999999
+    },
+    {
+      "word": "reduce",
+      "start": 10.431,
+      "end": 10.729999999999999
+    },
+    {
+      "word": "período",
+      "start": 10.857999999999999,
+      "end": 11.37
+    },
+    {
+      "word": "y",
+      "start": 11.456,
+      "end": 11.626
+    },
+    {
+      "word": "longitud",
+      "start": 11.668999999999999,
+      "end": 12.137999999999998
+    },
+    {
+      "word": "de",
+      "start": 12.181,
+      "end": 12.265999999999998
+    },
+    {
+      "word": "onda:",
+      "start": 12.309,
+      "end": 12.756999999999998
+    },
+    {
+      "word": "T=1/f",
+      "start": 12.990999999999998,
+      "end": 14.485
+    },
+    {
+      "word": "y",
+      "start": 14.569999999999999,
+      "end": 15.124999999999998
+    },
+    {
+      "word": "lambda=c/f.",
+      "start": 15.166999999999998,
+      "end": 17.119
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 17.119,
+      "end": 18.019
+    },
+    {
+      "word": "No",
+      "start": 18.019,
+      "end": 18.488999999999997
+    },
+    {
+      "word": "confundas",
+      "start": 18.531999999999996,
+      "end": 19.043999999999997
+    },
+    {
+      "word": "frecuencia",
+      "start": 19.128999999999998,
+      "end": 19.598
+    },
+    {
+      "word": "portadora",
+      "start": 19.641,
+      "end": 20.195999999999998
+    },
+    {
+      "word": "en",
+      "start": 20.237999999999996,
+      "end": 20.409
+    },
+    {
+      "word": "megahercios",
+      "start": 20.493999999999996,
+      "end": 21.176999999999996
+    },
+    {
+      "word": "con",
+      "start": 21.346999999999998,
+      "end": 21.688999999999997
+    },
+    {
+      "word": "frecuencia",
+      "start": 21.730999999999998,
+      "end": 22.200999999999997
+    },
+    {
+      "word": "de",
+      "start": 22.243,
+      "end": 22.328999999999997
+    },
+    {
+      "word": "repetición",
+      "start": 22.371999999999996,
+      "end": 22.926
+    },
+    {
+      "word": "de",
+      "start": 22.968999999999998,
+      "end": 23.054
+    },
+    {
+      "word": "pulsos",
+      "start": 23.096999999999998,
+      "end": 23.438
+    },
+    {
+      "word": "en",
+      "start": 23.480999999999998,
+      "end": 23.566
+    },
+    {
+      "word": "kilohercios",
+      "start": 23.608999999999998,
+      "end": 24.249
+    },
+    {
+      "word": "ni",
+      "start": 24.418999999999997,
+      "end": 24.589999999999996
+    },
+    {
+      "word": "con",
+      "start": 24.633,
+      "end": 24.717999999999996
+    },
+    {
+      "word": "rapidez",
+      "start": 24.760999999999996,
+      "end": 25.144999999999996
+    },
+    {
+      "word": "de",
+      "start": 25.229999999999997,
+      "end": 25.272999999999996
+    },
+    {
+      "word": "la",
+      "start": 25.314999999999998,
+      "end": 25.400999999999996
+    },
+    {
+      "word": "animación.",
+      "start": 25.400999999999996,
+      "end": 26.076526077097505
+    },
+    {
+      "word": "<break time=\"1.2s\"/>",
+      "start": 26.076526077097505,
+      "end": 27.276526077097504
+    },
+    {
+      "word": "<end>",
+      "start": 27.506938775510203,
+      "end": 27.506938775510203
+    }
+  ],
+  "requestId": "a717388b70a6452bbc6ebe896a7858a7",
+  "sources": [
+    {
+      "id": "iaea",
+      "section": "Capítulo 12, Physics of Ultrasound: §12.2.1, frecuencia, período y longitud de onda"
+    }
+  ]
+}

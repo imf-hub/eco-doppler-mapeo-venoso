@@ -1,0 +1,325 @@
+{
+  "id": "longitud-de-onda",
+  "file": "longitud-de-onda-478585b39394.mp3",
+  "duration": 21.916719,
+  "providerDuration": 21.91673469387755,
+  "hash": "478585b39394c0ccd8b5c0cbb8426682652c4a42d3cf4662abe2985f3a31a1f6",
+  "provider": "HeyGen",
+  "voiceId": "84854979e66846989bc6c5855f53268f",
+  "voiceName": "Rocío - Calm & Trustworthy",
+  "requestedEngine": "omitted; saved provider default",
+  "returnedEngine": "orca",
+  "requestedSpeed": "omitted",
+  "playbackRate": 1,
+  "processing": "Original MP3, no speed or audio edits",
+  "scriptHash": "cecd080c6b211a4dd4cea16419919ca2872efeb47a9514381bff1e86a832495d",
+  "ssml": "<speak>Distancia recorrida durante un ciclo de la onda acústica; relaciona velocidad de propagación y frecuencia mediante la expresión lambda=c/f.<break time=\"0.9s\"/>Dos puntos consecutivos con la misma fase están separados por lambda.<break time=\"0.9s\"/>La longitud de onda no equivale por sí sola a la resolución de toda la imagen.<break time=\"1.2s\"/></speak>",
+  "cues": [
+    {
+      "start": 0,
+      "end": 10.819,
+      "text": "Distancia recorrida durante un ciclo de la onda acústica; relaciona velocidad de propagación y frecuencia mediante la expresión lambda=c/f."
+    },
+    {
+      "start": 10.819,
+      "end": 15.819,
+      "text": "Dos puntos consecutivos con la misma fase están separados por lambda."
+    },
+    {
+      "start": 15.819,
+      "end": 21.916719,
+      "text": "La longitud de onda no equivale por sí sola a la resolución de toda la imagen."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.299,
+      "end": 4.181,
+      "text": "Distancia recorrida durante un ciclo de la onda acústica; relaciona"
+    },
+    {
+      "start": 4.224,
+      "end": 9.919,
+      "text": "velocidad de propagación y frecuencia mediante la expresión lambda=c/f."
+    },
+    {
+      "start": 10.819,
+      "end": 14.919,
+      "text": "Dos puntos consecutivos con la misma fase están separados por lambda."
+    },
+    {
+      "start": 15.819,
+      "end": 19.873,
+      "text": "La longitud de onda no equivale por sí sola a la resolución de toda la"
+    },
+    {
+      "start": 19.915000000000003,
+      "end": 20.469,
+      "text": "imagen."
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0.0,
+      "end": 0.0
+    },
+    {
+      "word": "Distancia",
+      "start": 0.299,
+      "end": 0.853
+    },
+    {
+      "word": "recorrida",
+      "start": 0.896,
+      "end": 1.3227
+    },
+    {
+      "word": "durante",
+      "start": 1.408,
+      "end": 1.5787
+    },
+    {
+      "word": "un",
+      "start": 1.749,
+      "end": 1.792
+    },
+    {
+      "word": "ciclo",
+      "start": 1.835,
+      "end": 2.176
+    },
+    {
+      "word": "de",
+      "start": 2.219,
+      "end": 2.304
+    },
+    {
+      "word": "la",
+      "start": 2.347,
+      "end": 2.389
+    },
+    {
+      "word": "onda",
+      "start": 2.432,
+      "end": 2.6027
+    },
+    {
+      "word": "acústica;",
+      "start": 2.645,
+      "end": 3.264
+    },
+    {
+      "word": "relaciona",
+      "start": 3.499,
+      "end": 4.181
+    },
+    {
+      "word": "velocidad",
+      "start": 4.224,
+      "end": 4.651
+    },
+    {
+      "word": "de",
+      "start": 4.693,
+      "end": 4.736
+    },
+    {
+      "word": "propagación",
+      "start": 4.779,
+      "end": 5.419
+    },
+    {
+      "word": "y",
+      "start": 5.547,
+      "end": 5.632
+    },
+    {
+      "word": "frecuencia",
+      "start": 5.675,
+      "end": 6.3147
+    },
+    {
+      "word": "mediante",
+      "start": 6.357,
+      "end": 6.613
+    },
+    {
+      "word": "la",
+      "start": 6.741,
+      "end": 6.784
+    },
+    {
+      "word": "expresión",
+      "start": 6.827,
+      "end": 7.296
+    },
+    {
+      "word": "lambda=c/f.",
+      "start": 7.467,
+      "end": 9.919
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 9.919,
+      "end": 10.819
+    },
+    {
+      "word": "Dos",
+      "start": 10.819,
+      "end": 11.160000000000002
+    },
+    {
+      "word": "puntos",
+      "start": 11.245000000000001,
+      "end": 11.544
+    },
+    {
+      "word": "consecutivos",
+      "start": 11.587000000000002,
+      "end": 12.269000000000002
+    },
+    {
+      "word": "con",
+      "start": 12.312000000000001,
+      "end": 12.440000000000001
+    },
+    {
+      "word": "la",
+      "start": 12.483,
+      "end": 12.568000000000001
+    },
+    {
+      "word": "misma",
+      "start": 12.611,
+      "end": 12.824000000000002
+    },
+    {
+      "word": "fase",
+      "start": 12.867,
+      "end": 13.123000000000001
+    },
+    {
+      "word": "están",
+      "start": 13.293000000000001,
+      "end": 13.805000000000001
+    },
+    {
+      "word": "separados",
+      "start": 13.848,
+      "end": 14.275000000000002
+    },
+    {
+      "word": "por",
+      "start": 14.360000000000001,
+      "end": 14.488000000000001
+    },
+    {
+      "word": "lambda.",
+      "start": 14.573000000000002,
+      "end": 14.919
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 14.919,
+      "end": 15.819
+    },
+    {
+      "word": "La",
+      "start": 15.819,
+      "end": 15.99
+    },
+    {
+      "word": "longitud",
+      "start": 16.033,
+      "end": 16.417
+    },
+    {
+      "word": "de",
+      "start": 16.459,
+      "end": 16.587
+    },
+    {
+      "word": "onda",
+      "start": 16.63,
+      "end": 16.886000000000003
+    },
+    {
+      "word": "no",
+      "start": 16.929000000000002,
+      "end": 17.185000000000002
+    },
+    {
+      "word": "equivale",
+      "start": 17.227,
+      "end": 17.697000000000003
+    },
+    {
+      "word": "por",
+      "start": 17.739,
+      "end": 17.825
+    },
+    {
+      "word": "sí",
+      "start": 17.91,
+      "end": 18.038
+    },
+    {
+      "word": "sola",
+      "start": 18.081,
+      "end": 18.337
+    },
+    {
+      "word": "a",
+      "start": 18.422,
+      "end": 18.55
+    },
+    {
+      "word": "la",
+      "start": 18.593,
+      "end": 18.678
+    },
+    {
+      "word": "resolución",
+      "start": 18.721,
+      "end": 19.275000000000002
+    },
+    {
+      "word": "de",
+      "start": 19.318,
+      "end": 19.403000000000002
+    },
+    {
+      "word": "toda",
+      "start": 19.446,
+      "end": 19.702
+    },
+    {
+      "word": "la",
+      "start": 19.745,
+      "end": 19.873
+    },
+    {
+      "word": "imagen.",
+      "start": 19.915000000000003,
+      "end": 20.469
+    },
+    {
+      "word": "<break time=\"1.2s\"/>",
+      "start": 20.469,
+      "end": 21.669
+    },
+    {
+      "word": "<end>",
+      "start": 21.91673469387755,
+      "end": 21.91673469387755
+    }
+  ],
+  "requestId": "18cfdd653c324eacb5c3191125897320",
+  "sources": [
+    {
+      "id": "iaea",
+      "section": "Capítulo 12, Physics of Ultrasound: §12.2.1, ondas ultrasónicas y λ=c/f"
+    }
+  ]
+}

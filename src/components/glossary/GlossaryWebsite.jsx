@@ -11,6 +11,7 @@ import ConceptIndex from '../learning/ConceptIndex';
 import LearningNext from '../learning/LearningNext';
 import {courseTermOrder,courseLocation} from '../../data/conceptCourse';
 import '../learning/learning.css';
+const ConceptFilm=lazy(()=>import('../narration/ConceptFilm'));
 const VisualPlayer=lazy(()=>import('../visual/VisualPlayer'));
 const Acoustic=lazy(()=>import('./AcousticGlossaryAnimation'));
 const Doppler=lazy(()=>import('./DopplerGlossaryAnimation'));
@@ -91,7 +92,7 @@ function TermPage({term}){
  function continueTo(ref){ref.current?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});ref.current?.focus({preventScroll:true});}
  return <article className="glossary-site learn-lesson" data-glossary-term={term.id}><div className="g5-content">
   <div className="g5-breadcrumb"><a href={glossaryHref()}><ArrowLeft size={15}/> Índice de conceptos</a><span>{location?.chapter.title}</span></div>
-  <header className="g5-term-header learn-header"><span className="g5-eyebrow">{location?.number} · {location?.group.title}</span><h1>{term.title}</h1><p>{term.definition}</p>{term.aliases.length>0&&<small>{term.aliases.join(' · ')}</small>}</header>
+  <div className="learn-intro-grid"><header className="g5-term-header learn-header"><span className="g5-eyebrow">{location?.number} · {location?.group.title}</span><h1>{term.title}</h1><p>{term.definition}</p>{term.aliases.length>0&&<small>{term.aliases.join(' · ')}</small>}</header><Suspense fallback={<div className="g5-loading" role="status">Preparando explicación narrada…</div>}><ConceptFilm termId={term.id}/></Suspense></div>
   <section className="learn-section" aria-labelledby="idea-title"><h2 id="idea-title"><span>1</span> Mira la idea central</h2><p className="learn-instruction">Observa la demostración. Puedes pausarla o volver a verla antes de continuar.</p><ConceptStage term={term} simple interactive={false}/><LearningNext onClick={()=>continueTo(practice)} kicker="Después de observar" title="Ahora cambia un ajuste" description="Prueba qué cambia y comprende por qué." compact/></section>
   <section className="learn-section" aria-labelledby="practice-title"><h2 id="practice-title" ref={practice} tabIndex={-1}><span>2</span> Cambia un ajuste</h2><p>{term.mechanism}</p><p className="learn-instruction">Mueve únicamente «{term.control.label}» y compara el resultado. Usa «Restablecer ajuste inicial» para volver al punto de partida.</p><ConceptStage term={term} simple/><aside className="learn-pitfall"><strong>Evita esta confusión</strong><p>{term.pitfall}</p></aside><LearningNext onClick={()=>continueTo(application)} kicker="Conecta lo que viste" title="Llévalo a la exploración" compact/></section>
   <section className="learn-section" aria-labelledby="application-title"><h2 id="application-title" ref={application} tabIndex={-1}><span>3</span> Relaciónalo con la exploración</h2><PublishedReference term={term}/><ApplicationLink term={term}/></section>

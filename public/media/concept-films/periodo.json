@@ -1,0 +1,325 @@
+{
+  "id": "periodo",
+  "file": "periodo-33b8801cd8bb.mp3",
+  "duration": 20.610594,
+  "providerDuration": 20.610612244897958,
+  "hash": "33b8801cd8bba6a0c4c4031e35f42eda22f127723dc23ef7abbf6bcf5036f621",
+  "provider": "HeyGen",
+  "voiceId": "84854979e66846989bc6c5855f53268f",
+  "voiceName": "Rocío - Calm & Trustworthy",
+  "requestedEngine": "omitted; saved provider default",
+  "returnedEngine": "orca",
+  "requestedSpeed": "omitted",
+  "playbackRate": 1,
+  "processing": "Original MP3, no speed or audio edits",
+  "scriptHash": "c5de1e775165b131708a3fbb6f09619c64db79790d73b6e0f89cd568e9fe887e",
+  "ssml": "<speak>Tiempo que tarda un ciclo completo de la onda portadora; es el inverso de su frecuencia y suele expresarse en microsegundos.<break time=\"0.9s\"/>El intervalo entre dos crestas consecutivas de una misma oscilación es T.<break time=\"0.9s\"/>Período de la portadora y período de repetición de pulsos son magnitudes distintas.<break time=\"1.2s\"/></speak>",
+  "cues": [
+    {
+      "start": 0,
+      "end": 8.379,
+      "text": "Tiempo que tarda un ciclo completo de la onda portadora; es el inverso de su frecuencia y suele expresarse en microsegundos."
+    },
+    {
+      "start": 8.379,
+      "end": 14.16,
+      "text": "El intervalo entre dos crestas consecutivas de una misma oscilación es T."
+    },
+    {
+      "start": 14.16,
+      "end": 20.610594,
+      "text": "Período de la portadora y período de repetición de pulsos son magnitudes distintas."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.299,
+      "end": 4.693,
+      "text": "Tiempo que tarda un ciclo completo de la onda portadora; es el inverso de"
+    },
+    {
+      "start": 4.736,
+      "end": 7.596,
+      "text": "su frecuencia y suele expresarse en microsegundos."
+    },
+    {
+      "start": 8.379,
+      "end": 13.26,
+      "text": "El intervalo entre dos crestas consecutivas de una misma oscilación es T."
+    },
+    {
+      "start": 14.16,
+      "end": 18.342,
+      "text": "Período de la portadora y período de repetición de pulsos son magnitudes"
+    },
+    {
+      "start": 18.384,
+      "end": 19.186,
+      "text": "distintas."
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0.0,
+      "end": 0.0
+    },
+    {
+      "word": "Tiempo",
+      "start": 0.299,
+      "end": 0.64
+    },
+    {
+      "word": "que",
+      "start": 0.683,
+      "end": 0.8107
+    },
+    {
+      "word": "tarda",
+      "start": 0.853,
+      "end": 1.109
+    },
+    {
+      "word": "un",
+      "start": 1.152,
+      "end": 1.237
+    },
+    {
+      "word": "ciclo",
+      "start": 1.28,
+      "end": 1.664
+    },
+    {
+      "word": "completo",
+      "start": 1.707,
+      "end": 2.0907
+    },
+    {
+      "word": "de",
+      "start": 2.261,
+      "end": 2.304
+    },
+    {
+      "word": "la",
+      "start": 2.347,
+      "end": 2.432
+    },
+    {
+      "word": "onda",
+      "start": 2.475,
+      "end": 2.645
+    },
+    {
+      "word": "portadora;",
+      "start": 2.688,
+      "end": 3.307
+    },
+    {
+      "word": "es",
+      "start": 3.413,
+      "end": 3.925
+    },
+    {
+      "word": "el",
+      "start": 3.968,
+      "end": 4.053
+    },
+    {
+      "word": "inverso",
+      "start": 4.096,
+      "end": 4.5227
+    },
+    {
+      "word": "de",
+      "start": 4.608,
+      "end": 4.693
+    },
+    {
+      "word": "su",
+      "start": 4.736,
+      "end": 4.7787
+    },
+    {
+      "word": "frecuencia",
+      "start": 4.821,
+      "end": 5.376
+    },
+    {
+      "word": "y",
+      "start": 5.461,
+      "end": 5.632
+    },
+    {
+      "word": "suele",
+      "start": 5.675,
+      "end": 5.845
+    },
+    {
+      "word": "expresarse",
+      "start": 5.931,
+      "end": 6.485
+    },
+    {
+      "word": "en",
+      "start": 6.571,
+      "end": 6.613
+    },
+    {
+      "word": "microsegundos.",
+      "start": 6.656,
+      "end": 7.596
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 7.596,
+      "end": 8.379
+    },
+    {
+      "word": "El",
+      "start": 8.379,
+      "end": 8.507
+    },
+    {
+      "word": "intervalo",
+      "start": 8.592,
+      "end": 8.976
+    },
+    {
+      "word": "entre",
+      "start": 9.019,
+      "end": 9.19
+    },
+    {
+      "word": "dos",
+      "start": 9.275,
+      "end": 9.573
+    },
+    {
+      "word": "crestas",
+      "start": 9.701,
+      "end": 10.043
+    },
+    {
+      "word": "consecutivas",
+      "start": 10.085,
+      "end": 10.768
+    },
+    {
+      "word": "de",
+      "start": 10.811,
+      "end": 10.896
+    },
+    {
+      "word": "una",
+      "start": 10.939,
+      "end": 11.067
+    },
+    {
+      "word": "misma",
+      "start": 11.11,
+      "end": 11.536
+    },
+    {
+      "word": "oscilación",
+      "start": 11.579,
+      "end": 12.091
+    },
+    {
+      "word": "es",
+      "start": 12.219,
+      "end": 12.603
+    },
+    {
+      "word": "T.",
+      "start": 12.902,
+      "end": 13.26
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 13.26,
+      "end": 14.16
+    },
+    {
+      "word": "Período",
+      "start": 14.16,
+      "end": 14.629999999999999
+    },
+    {
+      "word": "de",
+      "start": 14.671999999999999,
+      "end": 14.715
+    },
+    {
+      "word": "la",
+      "start": 14.758,
+      "end": 14.801
+    },
+    {
+      "word": "portadora",
+      "start": 14.843,
+      "end": 15.398
+    },
+    {
+      "word": "y",
+      "start": 15.482999999999999,
+      "end": 15.610999999999999
+    },
+    {
+      "word": "período",
+      "start": 15.654,
+      "end": 16.08
+    },
+    {
+      "word": "de",
+      "start": 16.122999999999998,
+      "end": 16.166
+    },
+    {
+      "word": "repetición",
+      "start": 16.208,
+      "end": 16.721
+    },
+    {
+      "word": "de",
+      "start": 16.762999999999998,
+      "end": 16.806
+    },
+    {
+      "word": "pulsos",
+      "start": 16.848,
+      "end": 17.19
+    },
+    {
+      "word": "son",
+      "start": 17.488,
+      "end": 17.701999999999998
+    },
+    {
+      "word": "magnitudes",
+      "start": 17.787,
+      "end": 18.342
+    },
+    {
+      "word": "distintas.",
+      "start": 18.384,
+      "end": 19.186
+    },
+    {
+      "word": "<break time=\"1.2s\"/>",
+      "start": 19.186,
+      "end": 20.386
+    },
+    {
+      "word": "<end>",
+      "start": 20.610612244897958,
+      "end": 20.610612244897958
+    }
+  ],
+  "requestId": "9f9e7f43dce74acabe5bc1fcc400b1df",
+  "sources": [
+    {
+      "id": "iaea",
+      "section": "Capítulo 12, Physics of Ultrasound: §12.2.1, descripción temporal de ondas"
+    }
+  ]
+}

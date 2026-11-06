@@ -1,0 +1,319 @@
+{
+  "id": "ultrasonido",
+  "file": "ultrasonido-414e4870975c.mp3",
+  "duration": 21.838344,
+  "providerDuration": 21.838367346938774,
+  "hash": "414e4870975c989186ee0ad12dc959ee620dc22c758b8758498190665ecfac1b",
+  "provider": "HeyGen",
+  "voiceId": "84854979e66846989bc6c5855f53268f",
+  "voiceName": "Rocío - Calm & Trustworthy",
+  "requestedEngine": "omitted; saved provider default",
+  "returnedEngine": "orca",
+  "requestedSpeed": "omitted",
+  "playbackRate": 1,
+  "processing": "Original MP3, no speed or audio edits",
+  "scriptHash": "7ac36e96a13a34b7b13b8a705777f3482fc268f640b5690c926927771fb7a67b",
+  "ssml": "<speak>Sonido de frecuencia superior al límite audible humano convencional de veinte kilohertz; la ecografía diagnóstica utiliza habitualmente frecuencias expresadas en megahertz.<break time=\"0.9s\"/>El transductor genera ciclos rápidos de presión y recibe ecos.<break time=\"0.9s\"/>Las velocidades de reproducción no corresponden a la frecuencia real del ecógrafo.<break time=\"1.2s\"/></speak>",
+  "cues": [
+    {
+      "start": 0,
+      "end": 10.594000000000001,
+      "text": "Sonido de frecuencia superior al límite audible humano convencional de veinte kilohertz; la ecografía diagnóstica utiliza habitualmente frecuencias expresadas en megahertz."
+    },
+    {
+      "start": 10.594000000000001,
+      "end": 15.628000000000002,
+      "text": "El transductor genera ciclos rápidos de presión y recibe ecos."
+    },
+    {
+      "start": 15.628000000000002,
+      "end": 21.838344,
+      "text": "Las velocidades de reproducción no corresponden a la frecuencia real del ecógrafo."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.256,
+      "end": 3.883,
+      "text": "Sonido de frecuencia superior al límite audible humano convencional de"
+    },
+    {
+      "start": 3.925,
+      "end": 7.552,
+      "text": "veinte kilohertz; la ecografía diagnóstica utiliza habitualmente"
+    },
+    {
+      "start": 7.68,
+      "end": 9.694,
+      "text": "frecuencias expresadas en megahertz."
+    },
+    {
+      "start": 10.594000000000001,
+      "end": 14.728000000000002,
+      "text": "El transductor genera ciclos rápidos de presión y recibe ecos."
+    },
+    {
+      "start": 15.628000000000002,
+      "end": 19.639,
+      "text": "Las velocidades de reproducción no corresponden a la frecuencia real del"
+    },
+    {
+      "start": 19.682,
+      "end": 20.393795918367346,
+      "text": "ecógrafo."
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0.0,
+      "end": 0.0
+    },
+    {
+      "word": "Sonido",
+      "start": 0.256,
+      "end": 0.683
+    },
+    {
+      "word": "de",
+      "start": 0.725,
+      "end": 0.768
+    },
+    {
+      "word": "frecuencia",
+      "start": 0.811,
+      "end": 1.237
+    },
+    {
+      "word": "superior",
+      "start": 1.28,
+      "end": 1.664
+    },
+    {
+      "word": "al",
+      "start": 1.835,
+      "end": 1.9627
+    },
+    {
+      "word": "límite",
+      "start": 2.005,
+      "end": 2.261
+    },
+    {
+      "word": "audible",
+      "start": 2.432,
+      "end": 2.645
+    },
+    {
+      "word": "humano",
+      "start": 2.773,
+      "end": 2.944
+    },
+    {
+      "word": "convencional",
+      "start": 3.072,
+      "end": 3.541
+    },
+    {
+      "word": "de",
+      "start": 3.755,
+      "end": 3.883
+    },
+    {
+      "word": "veinte",
+      "start": 3.925,
+      "end": 4.1387
+    },
+    {
+      "word": "kilohertz;",
+      "start": 4.267,
+      "end": 5.056
+    },
+    {
+      "word": "la",
+      "start": 5.333,
+      "end": 5.5467
+    },
+    {
+      "word": "ecografía",
+      "start": 5.589,
+      "end": 6.016
+    },
+    {
+      "word": "diagnóstica",
+      "start": 6.059,
+      "end": 6.485
+    },
+    {
+      "word": "utiliza",
+      "start": 6.613,
+      "end": 6.912
+    },
+    {
+      "word": "habitualmente",
+      "start": 7.04,
+      "end": 7.552
+    },
+    {
+      "word": "frecuencias",
+      "start": 7.68,
+      "end": 8.149
+    },
+    {
+      "word": "expresadas",
+      "start": 8.192,
+      "end": 8.789
+    },
+    {
+      "word": "en",
+      "start": 8.875,
+      "end": 8.96
+    },
+    {
+      "word": "megahertz.",
+      "start": 9.045,
+      "end": 9.694
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 9.694,
+      "end": 10.594000000000001
+    },
+    {
+      "word": "El",
+      "start": 10.594000000000001,
+      "end": 11.020000000000001
+    },
+    {
+      "word": "transductor",
+      "start": 11.105000000000002,
+      "end": 11.447000000000001
+    },
+    {
+      "word": "genera",
+      "start": 11.703000000000001,
+      "end": 12.001000000000001
+    },
+    {
+      "word": "ciclos",
+      "start": 12.044000000000002,
+      "end": 12.471000000000002
+    },
+    {
+      "word": "rápidos",
+      "start": 12.514000000000001,
+      "end": 12.983000000000002
+    },
+    {
+      "word": "de",
+      "start": 13.025000000000002,
+      "end": 13.111000000000002
+    },
+    {
+      "word": "presión",
+      "start": 13.153000000000002,
+      "end": 13.537000000000003
+    },
+    {
+      "word": "y",
+      "start": 13.708000000000002,
+      "end": 13.879000000000001
+    },
+    {
+      "word": "recibe",
+      "start": 13.921000000000001,
+      "end": 14.263000000000002
+    },
+    {
+      "word": "ecos.",
+      "start": 14.391000000000002,
+      "end": 14.728000000000002
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 14.728000000000002,
+      "end": 15.628000000000002
+    },
+    {
+      "word": "Las",
+      "start": 15.628000000000002,
+      "end": 16.055
+    },
+    {
+      "word": "velocidades",
+      "start": 16.098,
+      "end": 16.524
+    },
+    {
+      "word": "de",
+      "start": 16.61,
+      "end": 16.738
+    },
+    {
+      "word": "reproducción",
+      "start": 16.781000000000002,
+      "end": 17.335
+    },
+    {
+      "word": "no",
+      "start": 17.421,
+      "end": 17.762
+    },
+    {
+      "word": "corresponden",
+      "start": 17.805,
+      "end": 18.274
+    },
+    {
+      "word": "a",
+      "start": 18.402,
+      "end": 18.487
+    },
+    {
+      "word": "la",
+      "start": 18.53,
+      "end": 18.572
+    },
+    {
+      "word": "frecuencia",
+      "start": 18.615,
+      "end": 19.127
+    },
+    {
+      "word": "real",
+      "start": 19.169999999999998,
+      "end": 19.298
+    },
+    {
+      "word": "del",
+      "start": 19.511,
+      "end": 19.639
+    },
+    {
+      "word": "ecógrafo.",
+      "start": 19.682,
+      "end": 20.393795918367346
+    },
+    {
+      "word": "<break time=\"1.2s\"/>",
+      "start": 20.393795918367346,
+      "end": 21.59379591836735
+    },
+    {
+      "word": "<end>",
+      "start": 21.838367346938774,
+      "end": 21.838367346938774
+    }
+  ],
+  "requestId": "9875adc57a354a9a92b29b385455653b",
+  "sources": [
+    {
+      "id": "iaea",
+      "section": "Capítulo 12, Physics of Ultrasound: §12.1 y §12.2, ultrasonido y ondas"
+    },
+    {
+      "id": "fda",
+      "section": "Description"
+    }
+  ]
+}

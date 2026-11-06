@@ -1,0 +1,350 @@
+{
+  "id": "sonido",
+  "file": "sonido-d45a3cc7766c.mp3",
+  "duration": 24.528969,
+  "providerDuration": 24.528979591836734,
+  "hash": "d45a3cc7766c55fcf525ca3a448be50a6915e089cbbedc5d4daf961552c4223f",
+  "provider": "HeyGen",
+  "voiceId": "84854979e66846989bc6c5855f53268f",
+  "voiceName": "Rocío - Calm & Trustworthy",
+  "requestedEngine": "omitted; saved provider default",
+  "returnedEngine": "orca",
+  "requestedSpeed": "omitted",
+  "playbackRate": 1,
+  "processing": "Original MP3, no speed or audio edits",
+  "scriptHash": "7add12e7edd9fff3afc96484451bd8e848c2e5e51f3406af65524e3508742a9b",
+  "ssml": "<speak>Perturbación mecánica que transporta energía mediante variaciones de presión y desplazamientos locales de las partículas de un medio material.<break time=\"0.9s\"/>En una onda longitudinal, las partículas oscilan alrededor de su posición mientras avanzan compresiones y rarefacciones.<break time=\"0.9s\"/>No interpretes las partículas como sangre transportada desde el transductor; aquí representan el medio acústico.<break time=\"1.2s\"/></speak>",
+  "cues": [
+    {
+      "start": 0,
+      "end": 8.38,
+      "text": "Perturbación mecánica que transporta energía mediante variaciones de presión y desplazamientos locales de las partículas de un medio material."
+    },
+    {
+      "start": 8.38,
+      "end": 16.400000000000002,
+      "text": "En una onda longitudinal, las partículas oscilan alrededor de su posición mientras avanzan compresiones y rarefacciones."
+    },
+    {
+      "start": 16.400000000000002,
+      "end": 24.528969,
+      "text": "No interpretes las partículas como sangre transportada desde el transductor; aquí representan el medio acústico."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.299,
+      "end": 3.797,
+      "text": "Perturbación mecánica que transporta energía mediante variaciones de"
+    },
+    {
+      "start": 3.84,
+      "end": 7.48,
+      "text": "presión y desplazamientos locales de las partículas de un medio material."
+    },
+    {
+      "start": 8.38,
+      "end": 12.775,
+      "text": "En una onda longitudinal, las partículas oscilan alrededor de su posición"
+    },
+    {
+      "start": 12.86,
+      "end": 15.672,
+      "text": "mientras avanzan compresiones y rarefacciones."
+    },
+    {
+      "start": 16.400000000000002,
+      "end": 19.686,
+      "text": "No interpretes las partículas como sangre transportada desde el"
+    },
+    {
+      "start": 19.728,
+      "end": 23.094877551020407,
+      "text": "transductor; aquí representan el medio acústico."
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0.0,
+      "end": 0.0
+    },
+    {
+      "word": "Perturbación",
+      "start": 0.299,
+      "end": 0.981
+    },
+    {
+      "word": "mecánica",
+      "start": 1.024,
+      "end": 1.408
+    },
+    {
+      "word": "que",
+      "start": 1.579,
+      "end": 1.7067
+    },
+    {
+      "word": "transporta",
+      "start": 1.749,
+      "end": 2.2187
+    },
+    {
+      "word": "energía",
+      "start": 2.261,
+      "end": 2.688
+    },
+    {
+      "word": "mediante",
+      "start": 2.731,
+      "end": 2.9867
+    },
+    {
+      "word": "variaciones",
+      "start": 3.115,
+      "end": 3.669
+    },
+    {
+      "word": "de",
+      "start": 3.712,
+      "end": 3.797
+    },
+    {
+      "word": "presión",
+      "start": 3.84,
+      "end": 4.224
+    },
+    {
+      "word": "y",
+      "start": 4.352,
+      "end": 4.6507
+    },
+    {
+      "word": "desplazamientos",
+      "start": 4.693,
+      "end": 5.333
+    },
+    {
+      "word": "locales",
+      "start": 5.419,
+      "end": 5.717
+    },
+    {
+      "word": "de",
+      "start": 5.803,
+      "end": 5.888
+    },
+    {
+      "word": "las",
+      "start": 5.931,
+      "end": 6.016
+    },
+    {
+      "word": "partículas",
+      "start": 6.059,
+      "end": 6.613
+    },
+    {
+      "word": "de",
+      "start": 6.656,
+      "end": 6.741
+    },
+    {
+      "word": "un",
+      "start": 6.784,
+      "end": 6.869
+    },
+    {
+      "word": "medio",
+      "start": 6.912,
+      "end": 7.168
+    },
+    {
+      "word": "material.",
+      "start": 7.211,
+      "end": 7.48
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 7.48,
+      "end": 8.38
+    },
+    {
+      "word": "En",
+      "start": 8.38,
+      "end": 8.935
+    },
+    {
+      "word": "una",
+      "start": 8.978,
+      "end": 9.148
+    },
+    {
+      "word": "onda",
+      "start": 9.190999999999999,
+      "end": 9.362
+    },
+    {
+      "word": "longitudinal,",
+      "start": 9.404,
+      "end": 10.193999999999999
+    },
+    {
+      "word": "las",
+      "start": 10.343,
+      "end": 10.471
+    },
+    {
+      "word": "partículas",
+      "start": 10.556,
+      "end": 11.026
+    },
+    {
+      "word": "oscilan",
+      "start": 11.068,
+      "end": 11.495
+    },
+    {
+      "word": "alrededor",
+      "start": 11.538,
+      "end": 12.007
+    },
+    {
+      "word": "de",
+      "start": 12.092,
+      "end": 12.177999999999999
+    },
+    {
+      "word": "su",
+      "start": 12.22,
+      "end": 12.263
+    },
+    {
+      "word": "posición",
+      "start": 12.306,
+      "end": 12.775
+    },
+    {
+      "word": "mientras",
+      "start": 12.86,
+      "end": 13.158999999999999
+    },
+    {
+      "word": "avanzan",
+      "start": 13.202,
+      "end": 13.586
+    },
+    {
+      "word": "compresiones",
+      "start": 13.628,
+      "end": 14.439
+    },
+    {
+      "word": "y",
+      "start": 14.524,
+      "end": 14.738
+    },
+    {
+      "word": "rarefacciones.",
+      "start": 14.738,
+      "end": 15.672
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 15.672,
+      "end": 16.400000000000002
+    },
+    {
+      "word": "No",
+      "start": 16.400000000000002,
+      "end": 16.784
+    },
+    {
+      "word": "interpretes",
+      "start": 16.826999999999998,
+      "end": 17.339
+    },
+    {
+      "word": "las",
+      "start": 17.382,
+      "end": 17.51
+    },
+    {
+      "word": "partículas",
+      "start": 17.552,
+      "end": 18.107
+    },
+    {
+      "word": "como",
+      "start": 18.15,
+      "end": 18.32
+    },
+    {
+      "word": "sangre",
+      "start": 18.406,
+      "end": 18.747
+    },
+    {
+      "word": "transportada",
+      "start": 18.79,
+      "end": 19.344
+    },
+    {
+      "word": "desde",
+      "start": 19.43,
+      "end": 19.6
+    },
+    {
+      "word": "el",
+      "start": 19.643,
+      "end": 19.686
+    },
+    {
+      "word": "transductor;",
+      "start": 19.728,
+      "end": 20.219
+    },
+    {
+      "word": "aquí",
+      "start": 20.368,
+      "end": 21.051
+    },
+    {
+      "word": "representan",
+      "start": 21.094,
+      "end": 21.52
+    },
+    {
+      "word": "el",
+      "start": 21.819,
+      "end": 21.947
+    },
+    {
+      "word": "medio",
+      "start": 22.032,
+      "end": 22.331
+    },
+    {
+      "word": "acústico.",
+      "start": 22.374,
+      "end": 23.094877551020407
+    },
+    {
+      "word": "<break time=\"1.2s\"/>",
+      "start": 23.094877551020407,
+      "end": 24.294877551020406
+    },
+    {
+      "word": "<end>",
+      "start": 24.528979591836734,
+      "end": 24.528979591836734
+    }
+  ],
+  "requestId": "9dbc5bbd7eb5400393d081b005c45fff",
+  "sources": [
+    {
+      "id": "iaea",
+      "section": "Capítulo 12, Physics of Ultrasound: §12.2.1, ondas ultrasónicas unidimensionales"
+    }
+  ]
+}

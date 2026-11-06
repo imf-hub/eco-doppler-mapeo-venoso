@@ -39,3 +39,7 @@ Para mantener la pertinencia de miembro inferior, estos archivos se guardan úni
 - [Doppler de vena porta en cirrosis, Mikael Häggström](https://commons.wikimedia.org/wiki/File:Doppler_ultrasonography_of_the_portal_vein_in_cirrhosis.jpg), CC0 1.0. Útil para reconocer un espectro, pero no representa hemodinámica del miembro inferior.
 
 Estas dos piezas seleccionadas no constituyen un banco completo de adquisición normal, compresión, PW y power. Los simuladores originales de la web se deben rotular como simulaciones y no como casos clínicos reales.
+
+## Microexplicaciones 3D y voz · 8.2
+
+Geometrías, monitores sintéticos y guiones educativos originales del Aula IMF; referencias por concepto en `docs/animation/concept-films/`. Ocho MP3 generados con HeyGen, Rocío - Calm & Trustworthy, voz verificada por identificador, sin aceleración ni edición. Metadatos y marcas originales publicados junto a cada audio; no se atribuye licencia libre al catálogo de voces. Las escenas no reutilizan fotografías ni figuras médicas como supuestas adquisiciones. Los originales del proyecto Flebo Animaciones se consultaron y se mantuvieron intactos.

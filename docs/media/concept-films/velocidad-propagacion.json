@@ -1,0 +1,335 @@
+{
+  "id": "velocidad-propagacion",
+  "file": "velocidad-propagacion-ea514768e459.mp3",
+  "duration": 23.510188,
+  "providerDuration": 23.510204081632654,
+  "hash": "ea514768e459fefe3608cd317c535827c963882e38931a7f16932c85ca5b964d",
+  "provider": "HeyGen",
+  "voiceId": "84854979e66846989bc6c5855f53268f",
+  "voiceName": "Rocío - Calm & Trustworthy",
+  "requestedEngine": "omitted; saved provider default",
+  "returnedEngine": "orca",
+  "requestedSpeed": "omitted",
+  "playbackRate": 1,
+  "processing": "Original MP3, no speed or audio edits",
+  "scriptHash": "66da09fee664ddc829cf797d0d4fae6441545b23455fa081d5fdde1d0d5608f7",
+  "ssml": "<speak>Rapidez con que avanza la perturbación acústica por el medio; depende de sus propiedades y no del movimiento sanguíneo.<break time=\"0.9s\"/>El equipo suele convertir retrasos en profundidad asumiendo 1540 m/s para tejido blando.<break time=\"0.9s\"/>1540 m/s es una aproximación de reconstrucción, no la velocidad exacta de todos los tejidos.<break time=\"1.2s\"/></speak>",
+  "cues": [
+    {
+      "start": 0,
+      "end": 7.799,
+      "text": "Rapidez con que avanza la perturbación acústica por el medio; depende de sus propiedades y no del movimiento sanguíneo."
+    },
+    {
+      "start": 7.799,
+      "end": 14.790999999999999,
+      "text": "El equipo suele convertir retrasos en profundidad asumiendo 1540 m/s para tejido blando."
+    },
+    {
+      "start": 14.790999999999999,
+      "end": 23.510188,
+      "text": "1540 m/s es una aproximación de reconstrucción, no la velocidad exacta de todos los tejidos."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.256,
+      "end": 4.352,
+      "text": "Rapidez con que avanza la perturbación acústica por el medio; depende de"
+    },
+    {
+      "start": 4.395,
+      "end": 6.899,
+      "text": "sus propiedades y no del movimiento sanguíneo."
+    },
+    {
+      "start": 7.799,
+      "end": 13.088999999999999,
+      "text": "El equipo suele convertir retrasos en profundidad asumiendo 1540 m/s para"
+    },
+    {
+      "start": 13.132,
+      "end": 13.911999999999999,
+      "text": "tejido blando."
+    },
+    {
+      "start": 14.790999999999999,
+      "end": 20.935000000000002,
+      "text": "1540 m/s es una aproximación de reconstrucción, no la velocidad exacta de"
+    },
+    {
+      "start": 20.978,
+      "end": 22.077750566893425,
+      "text": "todos los tejidos."
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0.0,
+      "end": 0.0
+    },
+    {
+      "word": "Rapidez",
+      "start": 0.256,
+      "end": 0.8107
+    },
+    {
+      "word": "con",
+      "start": 0.939,
+      "end": 1.0667
+    },
+    {
+      "word": "que",
+      "start": 1.109,
+      "end": 1.1947
+    },
+    {
+      "word": "avanza",
+      "start": 1.237,
+      "end": 1.493
+    },
+    {
+      "word": "la",
+      "start": 1.536,
+      "end": 1.621
+    },
+    {
+      "word": "perturbación",
+      "start": 1.664,
+      "end": 2.2187
+    },
+    {
+      "word": "acústica",
+      "start": 2.261,
+      "end": 2.688
+    },
+    {
+      "word": "por",
+      "start": 2.773,
+      "end": 2.901
+    },
+    {
+      "word": "el",
+      "start": 2.944,
+      "end": 2.9867
+    },
+    {
+      "word": "medio;",
+      "start": 3.072,
+      "end": 3.605
+    },
+    {
+      "word": "depende",
+      "start": 3.883,
+      "end": 4.224
+    },
+    {
+      "word": "de",
+      "start": 4.309,
+      "end": 4.352
+    },
+    {
+      "word": "sus",
+      "start": 4.395,
+      "end": 4.48
+    },
+    {
+      "word": "propiedades",
+      "start": 4.565,
+      "end": 4.992
+    },
+    {
+      "word": "y",
+      "start": 5.205,
+      "end": 5.4187
+    },
+    {
+      "word": "no",
+      "start": 5.461,
+      "end": 5.6747
+    },
+    {
+      "word": "del",
+      "start": 5.717,
+      "end": 5.8027
+    },
+    {
+      "word": "movimiento",
+      "start": 5.845,
+      "end": 6.3147
+    },
+    {
+      "word": "sanguíneo.",
+      "start": 6.357,
+      "end": 6.899
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 6.899,
+      "end": 7.799
+    },
+    {
+      "word": "El",
+      "start": 7.799,
+      "end": 7.9270000000000005
+    },
+    {
+      "word": "equipo",
+      "start": 7.969,
+      "end": 8.225
+    },
+    {
+      "word": "suele",
+      "start": 8.267999999999999,
+      "end": 8.395999999999999
+    },
+    {
+      "word": "convertir",
+      "start": 8.481,
+      "end": 8.908
+    },
+    {
+      "word": "retrasos",
+      "start": 8.950999999999999,
+      "end": 9.376999999999999
+    },
+    {
+      "word": "en",
+      "start": 9.42,
+      "end": 9.504999999999999
+    },
+    {
+      "word": "profundidad",
+      "start": 9.548,
+      "end": 10.103
+    },
+    {
+      "word": "asumiendo",
+      "start": 10.187999999999999,
+      "end": 10.742999999999999
+    },
+    {
+      "word": "1540",
+      "start": 10.785,
+      "end": 11.809
+    },
+    {
+      "word": "m/s",
+      "start": 12.065,
+      "end": 12.833
+    },
+    {
+      "word": "para",
+      "start": 12.876,
+      "end": 13.088999999999999
+    },
+    {
+      "word": "tejido",
+      "start": 13.132,
+      "end": 13.472999999999999
+    },
+    {
+      "word": "blando.",
+      "start": 13.516,
+      "end": 13.911999999999999
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 13.911999999999999,
+      "end": 14.790999999999999
+    },
+    {
+      "word": "1540",
+      "start": 14.790999999999999,
+      "end": 15.815
+    },
+    {
+      "word": "m/s",
+      "start": 16.071,
+      "end": 16.839000000000002
+    },
+    {
+      "word": "es",
+      "start": 16.925,
+      "end": 17.095000000000002
+    },
+    {
+      "word": "una",
+      "start": 17.138,
+      "end": 17.309
+    },
+    {
+      "word": "aproximación",
+      "start": 17.351000000000003,
+      "end": 18.119
+    },
+    {
+      "word": "de",
+      "start": 18.162000000000003,
+      "end": 18.205000000000002
+    },
+    {
+      "word": "reconstrucción,",
+      "start": 18.247,
+      "end": 19.229000000000003
+    },
+    {
+      "word": "no",
+      "start": 19.442,
+      "end": 19.741
+    },
+    {
+      "word": "la",
+      "start": 19.783,
+      "end": 19.826
+    },
+    {
+      "word": "velocidad",
+      "start": 19.869,
+      "end": 20.295
+    },
+    {
+      "word": "exacta",
+      "start": 20.381,
+      "end": 20.765
+    },
+    {
+      "word": "de",
+      "start": 20.85,
+      "end": 20.935000000000002
+    },
+    {
+      "word": "todos",
+      "start": 20.978,
+      "end": 21.234
+    },
+    {
+      "word": "los",
+      "start": 21.277,
+      "end": 21.362000000000002
+    },
+    {
+      "word": "tejidos.",
+      "start": 21.447000000000003,
+      "end": 22.077750566893425
+    },
+    {
+      "word": "<break time=\"1.2s\"/>",
+      "start": 22.077750566893425,
+      "end": 23.277750566893424
+    },
+    {
+      "word": "<end>",
+      "start": 23.510204081632654,
+      "end": 23.510204081632654
+    }
+  ],
+  "requestId": "c0d05aba610b450588181d086a86427f",
+  "sources": [
+    {
+      "id": "iaea",
+      "section": "Capítulo 12, Physics of Ultrasound: §12.3.1, velocidad del sonido e impedancia"
+    }
+  ]
+}

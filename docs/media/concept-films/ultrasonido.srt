@@ -1,0 +1,23 @@
+1
+00:00:00,256 --> 00:00:03,883
+Sonido de frecuencia superior al límite audible humano convencional de
+
+2
+00:00:03,925 --> 00:00:07,552
+veinte kilohertz; la ecografía diagnóstica utiliza habitualmente
+
+3
+00:00:07,680 --> 00:00:09,694
+frecuencias expresadas en megahertz.
+
+4
+00:00:10,594 --> 00:00:14,728
+El transductor genera ciclos rápidos de presión y recibe ecos.
+
+5
+00:00:15,628 --> 00:00:19,639
+Las velocidades de reproducción no corresponden a la frecuencia real del
+
+6
+00:00:19,682 --> 00:00:20,394
+ecógrafo.

@@ -1,0 +1,424 @@
+{
+  "impedancia-acustica": {
+    "file": "impedancia-acustica-7f90eaf7845c.mp3",
+    "duration": 28.395094,
+    "hash": "7f90eaf7845c0ed19f3463ddd00cb54f589f9223c68f352e053452b5c60bb59d",
+    "cues": [
+      {
+        "start": 0,
+        "end": 9.225,
+        "text": "Propiedad del medio definida como densidad por velocidad acústica; la diferencia entre impedancias influye en la reflexión en una interfaz."
+      },
+      {
+        "start": 9.225,
+        "end": 20.256,
+        "text": "A incidencia normal y en el modelo de medios ideales, la fracción de intensidad reflejada depende de ((Z₂−Z₁)/(Z₂+Z₁))²."
+      },
+      {
+        "start": 20.256,
+        "end": 28.395094,
+        "text": "La reflexión depende también de la geometría; esta relación ideal no caracteriza por sí sola una lesión."
+      }
+    ],
+    "captions": [
+      {
+        "start": 0.299,
+        "end": 4.9067,
+        "text": "Propiedad del medio definida como densidad por velocidad acústica; la"
+      },
+      {
+        "start": 4.949,
+        "end": 8.325,
+        "text": "diferencia entre impedancias influye en la reflexión en una interfaz."
+      },
+      {
+        "start": 9.225,
+        "end": 13.449,
+        "text": "A incidencia normal y en el modelo de medios ideales, la fracción de"
+      },
+      {
+        "start": 13.491999999999999,
+        "end": 19.355999999999998,
+        "text": "intensidad reflejada depende de ((Z₂−Z₁)/(Z₂+Z₁))²."
+      },
+      {
+        "start": 20.256,
+        "end": 24.906,
+        "text": "La reflexión depende también de la geometría; esta relación ideal no"
+      },
+      {
+        "start": 24.949,
+        "end": 26.95450566893424,
+        "text": "caracteriza por sí sola una lesión."
+      }
+    ]
+  },
+  "amplitud": {
+    "file": "amplitud-acdaa2de9092.mp3",
+    "duration": 19.513469,
+    "hash": "acdaa2de909272e6544f93ea715a1e9038c81483848aa94f85bfb248ba8b9788",
+    "cues": [
+      {
+        "start": 0,
+        "end": 8.603,
+        "text": "Magnitud máxima de una oscilación respecto de su valor de equilibrio; puede describir presión acústica o amplitud de una señal recibida."
+      },
+      {
+        "start": 8.603,
+        "end": 13.817,
+        "text": "Cambiar amplitud modifica la excursión de la onda, no necesariamente sus ciclos."
+      },
+      {
+        "start": 13.817,
+        "end": 19.513469,
+        "text": "Una onda más alta no significa más ciclos ni mayor velocidad de propagación."
+      }
+    ],
+    "captions": [
+      {
+        "start": 0.299,
+        "end": 3.84,
+        "text": "Magnitud máxima de una oscilación respecto de su valor de equilibrio;"
+      },
+      {
+        "start": 4.011,
+        "end": 7.703,
+        "text": "puede describir presión acústica o amplitud de una señal recibida."
+      },
+      {
+        "start": 8.603,
+        "end": 12.443,
+        "text": "Cambiar amplitud modifica la excursión de la onda, no necesariamente sus"
+      },
+      {
+        "start": 12.486,
+        "end": 12.917,
+        "text": "ciclos."
+      },
+      {
+        "start": 13.817,
+        "end": 17.188000000000002,
+        "text": "Una onda más alta no significa más ciclos ni mayor velocidad de"
+      },
+      {
+        "start": 17.231,
+        "end": 18.07460090702948,
+        "text": "propagación."
+      }
+    ]
+  },
+  "longitud-de-onda": {
+    "file": "longitud-de-onda-478585b39394.mp3",
+    "duration": 21.916719,
+    "hash": "478585b39394c0ccd8b5c0cbb8426682652c4a42d3cf4662abe2985f3a31a1f6",
+    "cues": [
+      {
+        "start": 0,
+        "end": 10.819,
+        "text": "Distancia recorrida durante un ciclo de la onda acústica; relaciona velocidad de propagación y frecuencia mediante la expresión lambda=c/f."
+      },
+      {
+        "start": 10.819,
+        "end": 15.819,
+        "text": "Dos puntos consecutivos con la misma fase están separados por lambda."
+      },
+      {
+        "start": 15.819,
+        "end": 21.916719,
+        "text": "La longitud de onda no equivale por sí sola a la resolución de toda la imagen."
+      }
+    ],
+    "captions": [
+      {
+        "start": 0.299,
+        "end": 4.181,
+        "text": "Distancia recorrida durante un ciclo de la onda acústica; relaciona"
+      },
+      {
+        "start": 4.224,
+        "end": 9.919,
+        "text": "velocidad de propagación y frecuencia mediante la expresión lambda=c/f."
+      },
+      {
+        "start": 10.819,
+        "end": 14.919,
+        "text": "Dos puntos consecutivos con la misma fase están separados por lambda."
+      },
+      {
+        "start": 15.819,
+        "end": 19.873,
+        "text": "La longitud de onda no equivale por sí sola a la resolución de toda la"
+      },
+      {
+        "start": 19.915000000000003,
+        "end": 20.469,
+        "text": "imagen."
+      }
+    ]
+  },
+  "periodo": {
+    "file": "periodo-33b8801cd8bb.mp3",
+    "duration": 20.610594,
+    "hash": "33b8801cd8bba6a0c4c4031e35f42eda22f127723dc23ef7abbf6bcf5036f621",
+    "cues": [
+      {
+        "start": 0,
+        "end": 8.379,
+        "text": "Tiempo que tarda un ciclo completo de la onda portadora; es el inverso de su frecuencia y suele expresarse en microsegundos."
+      },
+      {
+        "start": 8.379,
+        "end": 14.16,
+        "text": "El intervalo entre dos crestas consecutivas de una misma oscilación es T."
+      },
+      {
+        "start": 14.16,
+        "end": 20.610594,
+        "text": "Período de la portadora y período de repetición de pulsos son magnitudes distintas."
+      }
+    ],
+    "captions": [
+      {
+        "start": 0.299,
+        "end": 4.693,
+        "text": "Tiempo que tarda un ciclo completo de la onda portadora; es el inverso de"
+      },
+      {
+        "start": 4.736,
+        "end": 7.596,
+        "text": "su frecuencia y suele expresarse en microsegundos."
+      },
+      {
+        "start": 8.379,
+        "end": 13.26,
+        "text": "El intervalo entre dos crestas consecutivas de una misma oscilación es T."
+      },
+      {
+        "start": 14.16,
+        "end": 18.342,
+        "text": "Período de la portadora y período de repetición de pulsos son magnitudes"
+      },
+      {
+        "start": 18.384,
+        "end": 19.186,
+        "text": "distintas."
+      }
+    ]
+  },
+  "sonido": {
+    "file": "sonido-d45a3cc7766c.mp3",
+    "duration": 24.528969,
+    "hash": "d45a3cc7766c55fcf525ca3a448be50a6915e089cbbedc5d4daf961552c4223f",
+    "cues": [
+      {
+        "start": 0,
+        "end": 8.38,
+        "text": "Perturbación mecánica que transporta energía mediante variaciones de presión y desplazamientos locales de las partículas de un medio material."
+      },
+      {
+        "start": 8.38,
+        "end": 16.400000000000002,
+        "text": "En una onda longitudinal, las partículas oscilan alrededor de su posición mientras avanzan compresiones y rarefacciones."
+      },
+      {
+        "start": 16.400000000000002,
+        "end": 24.528969,
+        "text": "No interpretes las partículas como sangre transportada desde el transductor; aquí representan el medio acústico."
+      }
+    ],
+    "captions": [
+      {
+        "start": 0.299,
+        "end": 3.797,
+        "text": "Perturbación mecánica que transporta energía mediante variaciones de"
+      },
+      {
+        "start": 3.84,
+        "end": 7.48,
+        "text": "presión y desplazamientos locales de las partículas de un medio material."
+      },
+      {
+        "start": 8.38,
+        "end": 12.775,
+        "text": "En una onda longitudinal, las partículas oscilan alrededor de su posición"
+      },
+      {
+        "start": 12.86,
+        "end": 15.672,
+        "text": "mientras avanzan compresiones y rarefacciones."
+      },
+      {
+        "start": 16.400000000000002,
+        "end": 19.686,
+        "text": "No interpretes las partículas como sangre transportada desde el"
+      },
+      {
+        "start": 19.728,
+        "end": 23.094877551020407,
+        "text": "transductor; aquí representan el medio acústico."
+      }
+    ]
+  },
+  "frecuencia": {
+    "file": "frecuencia-d435c8688625.mp3",
+    "duration": 27.506938,
+    "hash": "d435c8688625d00c6cddfa00601256dde03fc50228f003627fef8e448b137c8c",
+    "cues": [
+      {
+        "start": 0,
+        "end": 7.061,
+        "text": "Número de ciclos de la onda acústica que ocurren por segundo; en ecografía se expresa habitualmente en megahertz."
+      },
+      {
+        "start": 7.061,
+        "end": 18.019,
+        "text": "Con velocidad de propagación fija, aumentar f reduce período y longitud de onda: T=1/f y lambda=c/f."
+      },
+      {
+        "start": 18.019,
+        "end": 27.506938,
+        "text": "No confundas frecuencia portadora en megahercios con frecuencia de repetición de pulsos en kilohercios ni con rapidez de la animación."
+      }
+    ],
+    "captions": [
+      {
+        "start": 0.299,
+        "end": 4.309,
+        "text": "Número de ciclos de la onda acústica que ocurren por segundo; en ecografía"
+      },
+      {
+        "start": 4.352,
+        "end": 6.161,
+        "text": "se expresa habitualmente en megahertz."
+      },
+      {
+        "start": 7.061,
+        "end": 12.265999999999998,
+        "text": "Con velocidad de propagación fija, aumentar f reduce período y longitud de"
+      },
+      {
+        "start": 12.309,
+        "end": 17.119,
+        "text": "onda: T=1/f y lambda=c/f."
+      },
+      {
+        "start": 18.019,
+        "end": 22.328999999999997,
+        "text": "No confundas frecuencia portadora en megahercios con frecuencia de"
+      },
+      {
+        "start": 22.371999999999996,
+        "end": 26.076526077097505,
+        "text": "repetición de pulsos en kilohercios ni con rapidez de la animación."
+      }
+    ]
+  },
+  "velocidad-propagacion": {
+    "file": "velocidad-propagacion-ea514768e459.mp3",
+    "duration": 23.510188,
+    "hash": "ea514768e459fefe3608cd317c535827c963882e38931a7f16932c85ca5b964d",
+    "cues": [
+      {
+        "start": 0,
+        "end": 7.799,
+        "text": "Rapidez con que avanza la perturbación acústica por el medio; depende de sus propiedades y no del movimiento sanguíneo."
+      },
+      {
+        "start": 7.799,
+        "end": 14.790999999999999,
+        "text": "El equipo suele convertir retrasos en profundidad asumiendo 1540 m/s para tejido blando."
+      },
+      {
+        "start": 14.790999999999999,
+        "end": 23.510188,
+        "text": "1540 m/s es una aproximación de reconstrucción, no la velocidad exacta de todos los tejidos."
+      }
+    ],
+    "captions": [
+      {
+        "start": 0.256,
+        "end": 4.352,
+        "text": "Rapidez con que avanza la perturbación acústica por el medio; depende de"
+      },
+      {
+        "start": 4.395,
+        "end": 6.899,
+        "text": "sus propiedades y no del movimiento sanguíneo."
+      },
+      {
+        "start": 7.799,
+        "end": 13.088999999999999,
+        "text": "El equipo suele convertir retrasos en profundidad asumiendo 1540 m/s para"
+      },
+      {
+        "start": 13.132,
+        "end": 13.911999999999999,
+        "text": "tejido blando."
+      },
+      {
+        "start": 14.790999999999999,
+        "end": 20.935000000000002,
+        "text": "1540 m/s es una aproximación de reconstrucción, no la velocidad exacta de"
+      },
+      {
+        "start": 20.978,
+        "end": 22.077750566893425,
+        "text": "todos los tejidos."
+      }
+    ]
+  },
+  "ultrasonido": {
+    "file": "ultrasonido-414e4870975c.mp3",
+    "duration": 21.838344,
+    "hash": "414e4870975c989186ee0ad12dc959ee620dc22c758b8758498190665ecfac1b",
+    "cues": [
+      {
+        "start": 0,
+        "end": 10.594000000000001,
+        "text": "Sonido de frecuencia superior al límite audible humano convencional de veinte kilohertz; la ecografía diagnóstica utiliza habitualmente frecuencias expresadas en megahertz."
+      },
+      {
+        "start": 10.594000000000001,
+        "end": 15.628000000000002,
+        "text": "El transductor genera ciclos rápidos de presión y recibe ecos."
+      },
+      {
+        "start": 15.628000000000002,
+        "end": 21.838344,
+        "text": "Las velocidades de reproducción no corresponden a la frecuencia real del ecógrafo."
+      }
+    ],
+    "captions": [
+      {
+        "start": 0.256,
+        "end": 3.883,
+        "text": "Sonido de frecuencia superior al límite audible humano convencional de"
+      },
+      {
+        "start": 3.925,
+        "end": 7.552,
+        "text": "veinte kilohertz; la ecografía diagnóstica utiliza habitualmente"
+      },
+      {
+        "start": 7.68,
+        "end": 9.694,
+        "text": "frecuencias expresadas en megahertz."
+      },
+      {
+        "start": 10.594000000000001,
+        "end": 14.728000000000002,
+        "text": "El transductor genera ciclos rápidos de presión y recibe ecos."
+      },
+      {
+        "start": 15.628000000000002,
+        "end": 19.639,
+        "text": "Las velocidades de reproducción no corresponden a la frecuencia real del"
+      },
+      {
+        "start": 19.682,
+        "end": 20.393795918367346,
+        "text": "ecógrafo."
+      }
+    ]
+  }
+}

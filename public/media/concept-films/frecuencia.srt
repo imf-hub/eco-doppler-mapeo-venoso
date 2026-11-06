@@ -1,0 +1,23 @@
+1
+00:00:00,299 --> 00:00:04,309
+Número de ciclos de la onda acústica que ocurren por segundo; en ecografía
+
+2
+00:00:04,352 --> 00:00:06,161
+se expresa habitualmente en megahertz.
+
+3
+00:00:07,061 --> 00:00:12,266
+Con velocidad de propagación fija, aumentar f reduce período y longitud de
+
+4
+00:00:12,309 --> 00:00:17,119
+onda: T=1/f y lambda=c/f.
+
+5
+00:00:18,019 --> 00:00:22,329
+No confundas frecuencia portadora en megahercios con frecuencia de
+
+6
+00:00:22,372 --> 00:00:26,077
+repetición de pulsos en kilohercios ni con rapidez de la animación.

@@ -1,0 +1,19 @@
+1
+00:00:00,299 --> 00:00:04,181
+Distancia recorrida durante un ciclo de la onda acústica; relaciona
+
+2
+00:00:04,224 --> 00:00:09,919
+velocidad de propagación y frecuencia mediante la expresión lambda=c/f.
+
+3
+00:00:10,819 --> 00:00:14,919
+Dos puntos consecutivos con la misma fase están separados por lambda.
+
+4
+00:00:15,819 --> 00:00:19,873
+La longitud de onda no equivale por sí sola a la resolución de toda la
+
+5
+00:00:19,915 --> 00:00:20,469
+imagen.

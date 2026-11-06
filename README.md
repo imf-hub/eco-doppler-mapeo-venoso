@@ -2,6 +2,12 @@
 
 Aplicación educativa estática para médicos que comienzan en ultrasonido. La experiencia prioriza demostraciones, adquisiciones publicadas y manipulación de controles.
 
+## Conceptos 8.2 · Explicación 3D junto a la definición
+
+Las 80 páginas incluyen una microexplicación 3D de tres tomas, con cámara guiada, pausa, búsqueda y ampliación. Ocho ya tienen narración original de Rocío a 1×, sincronizada mediante marcas reales de palabra. Las 72 restantes se reproducen visualmente y señalan que su voz está pendiente; la generación está detenida tras un error de HeyGen, a la espera de autorización para continuar. No hay voz del navegador ni MP4 exportado.
+
+Se conserva el aprendizaje progresivo y el editor lateral 8.1. Código y entrega editable: [método, storyboards, guiones y recursos](docs/animation/concept-films/README.md).
+
 ## Editor 8.1 · Lienzo vacío y paneles laterales
 
 El constructor abre una plantilla vacía aunque exista una copia guardada. Recuperar el ejercicio es una acción explícita y muestra su origen. Antes de sustituir una copia previa con el nuevo trabajo se conserva una copia anterior; las acciones de nuevo mapa, recuperación y borrado también admiten deshacer. El ejemplo resuelto se consulta en un visor de solo lectura que no modifica ni guarda el ejercicio.

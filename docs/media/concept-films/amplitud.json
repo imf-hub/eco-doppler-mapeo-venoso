@@ -1,0 +1,330 @@
+{
+  "id": "amplitud",
+  "file": "amplitud-acdaa2de9092.mp3",
+  "duration": 19.513469,
+  "providerDuration": 19.5134693877551,
+  "hash": "acdaa2de909272e6544f93ea715a1e9038c81483848aa94f85bfb248ba8b9788",
+  "provider": "HeyGen",
+  "voiceId": "84854979e66846989bc6c5855f53268f",
+  "voiceName": "Rocío - Calm & Trustworthy",
+  "requestedEngine": "omitted; saved provider default",
+  "returnedEngine": "orca",
+  "requestedSpeed": "omitted",
+  "playbackRate": 1,
+  "processing": "Original MP3, no speed or audio edits",
+  "scriptHash": "6fa6fcf55d1dffa026d9bd9786e4f19b9be6fba03bba2029f23358d585340ff1",
+  "ssml": "<speak>Magnitud máxima de una oscilación respecto de su valor de equilibrio; puede describir presión acústica o amplitud de una señal recibida.<break time=\"0.9s\"/>Cambiar amplitud modifica la excursión de la onda, no necesariamente sus ciclos.<break time=\"0.9s\"/>Una onda más alta no significa más ciclos ni mayor velocidad de propagación.<break time=\"1.2s\"/></speak>",
+  "cues": [
+    {
+      "start": 0,
+      "end": 8.603,
+      "text": "Magnitud máxima de una oscilación respecto de su valor de equilibrio; puede describir presión acústica o amplitud de una señal recibida."
+    },
+    {
+      "start": 8.603,
+      "end": 13.817,
+      "text": "Cambiar amplitud modifica la excursión de la onda, no necesariamente sus ciclos."
+    },
+    {
+      "start": 13.817,
+      "end": 19.513469,
+      "text": "Una onda más alta no significa más ciclos ni mayor velocidad de propagación."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.299,
+      "end": 3.84,
+      "text": "Magnitud máxima de una oscilación respecto de su valor de equilibrio;"
+    },
+    {
+      "start": 4.011,
+      "end": 7.703,
+      "text": "puede describir presión acústica o amplitud de una señal recibida."
+    },
+    {
+      "start": 8.603,
+      "end": 12.443,
+      "text": "Cambiar amplitud modifica la excursión de la onda, no necesariamente sus"
+    },
+    {
+      "start": 12.486,
+      "end": 12.917,
+      "text": "ciclos."
+    },
+    {
+      "start": 13.817,
+      "end": 17.188000000000002,
+      "text": "Una onda más alta no significa más ciclos ni mayor velocidad de"
+    },
+    {
+      "start": 17.231,
+      "end": 18.07460090702948,
+      "text": "propagación."
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0.0,
+      "end": 0.0
+    },
+    {
+      "word": "Magnitud",
+      "start": 0.299,
+      "end": 0.8107
+    },
+    {
+      "word": "máxima",
+      "start": 0.853,
+      "end": 1.3227
+    },
+    {
+      "word": "de",
+      "start": 1.365,
+      "end": 1.4507
+    },
+    {
+      "word": "una",
+      "start": 1.493,
+      "end": 1.621
+    },
+    {
+      "word": "oscilación",
+      "start": 1.664,
+      "end": 2.176
+    },
+    {
+      "word": "respecto",
+      "start": 2.219,
+      "end": 2.6027
+    },
+    {
+      "word": "de",
+      "start": 2.645,
+      "end": 2.7307
+    },
+    {
+      "word": "su",
+      "start": 2.773,
+      "end": 2.859
+    },
+    {
+      "word": "valor",
+      "start": 2.901,
+      "end": 3.072
+    },
+    {
+      "word": "de",
+      "start": 3.157,
+      "end": 3.2427
+    },
+    {
+      "word": "equilibrio;",
+      "start": 3.285,
+      "end": 3.84
+    },
+    {
+      "word": "puede",
+      "start": 4.011,
+      "end": 4.3947
+    },
+    {
+      "word": "describir",
+      "start": 4.437,
+      "end": 4.7787
+    },
+    {
+      "word": "presión",
+      "start": 4.907,
+      "end": 5.2907
+    },
+    {
+      "word": "acústica",
+      "start": 5.333,
+      "end": 5.717
+    },
+    {
+      "word": "o",
+      "start": 5.931,
+      "end": 6.101
+    },
+    {
+      "word": "amplitud",
+      "start": 6.144,
+      "end": 6.5707
+    },
+    {
+      "word": "de",
+      "start": 6.613,
+      "end": 6.6987
+    },
+    {
+      "word": "una",
+      "start": 6.741,
+      "end": 6.8267
+    },
+    {
+      "word": "señal",
+      "start": 6.869,
+      "end": 7.168
+    },
+    {
+      "word": "recibida.",
+      "start": 7.211,
+      "end": 7.703
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 7.703,
+      "end": 8.603
+    },
+    {
+      "word": "Cambiar",
+      "start": 8.603,
+      "end": 9.03
+    },
+    {
+      "word": "amplitud",
+      "start": 9.073,
+      "end": 9.499
+    },
+    {
+      "word": "modifica",
+      "start": 9.542,
+      "end": 9.926
+    },
+    {
+      "word": "la",
+      "start": 10.011,
+      "end": 10.097
+    },
+    {
+      "word": "excursión",
+      "start": 10.139,
+      "end": 10.566
+    },
+    {
+      "word": "de",
+      "start": 10.609,
+      "end": 10.693999999999999
+    },
+    {
+      "word": "la",
+      "start": 10.737,
+      "end": 10.822
+    },
+    {
+      "word": "onda,",
+      "start": 10.865,
+      "end": 11.249
+    },
+    {
+      "word": "no",
+      "start": 11.419,
+      "end": 11.547
+    },
+    {
+      "word": "necesariamente",
+      "start": 11.59,
+      "end": 12.273
+    },
+    {
+      "word": "sus",
+      "start": 12.315,
+      "end": 12.443
+    },
+    {
+      "word": "ciclos.",
+      "start": 12.486,
+      "end": 12.917
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 12.917,
+      "end": 13.817
+    },
+    {
+      "word": "Una",
+      "start": 13.817,
+      "end": 14.116
+    },
+    {
+      "word": "onda",
+      "start": 14.158999999999999,
+      "end": 14.372
+    },
+    {
+      "word": "más",
+      "start": 14.415,
+      "end": 14.543
+    },
+    {
+      "word": "alta",
+      "start": 14.584999999999999,
+      "end": 14.841
+    },
+    {
+      "word": "no",
+      "start": 14.927,
+      "end": 15.055
+    },
+    {
+      "word": "significa",
+      "start": 15.097,
+      "end": 15.481
+    },
+    {
+      "word": "más",
+      "start": 15.609,
+      "end": 15.78
+    },
+    {
+      "word": "ciclos",
+      "start": 15.823,
+      "end": 16.207
+    },
+    {
+      "word": "ni",
+      "start": 16.249000000000002,
+      "end": 16.377
+    },
+    {
+      "word": "mayor",
+      "start": 16.42,
+      "end": 16.633
+    },
+    {
+      "word": "velocidad",
+      "start": 16.676000000000002,
+      "end": 17.103
+    },
+    {
+      "word": "de",
+      "start": 17.145000000000003,
+      "end": 17.188000000000002
+    },
+    {
+      "word": "propagación.",
+      "start": 17.231,
+      "end": 18.07460090702948
+    },
+    {
+      "word": "<break time=\"1.2s\"/>",
+      "start": 18.07460090702948,
+      "end": 19.27460090702948
+    },
+    {
+      "word": "<end>",
+      "start": 19.5134693877551,
+      "end": 19.5134693877551
+    }
+  ],
+  "requestId": "24afc18b7a45430fa21456da8ae31b89",
+  "sources": [
+    {
+      "id": "iaea",
+      "section": "Capítulo 12, Physics of Ultrasound: §12.2.2, presión acústica e intensidad"
+    }
+  ]
+}

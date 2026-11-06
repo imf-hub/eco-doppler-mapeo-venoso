@@ -1,0 +1,375 @@
+{
+  "id": "impedancia-acustica",
+  "file": "impedancia-acustica-7f90eaf7845c.mp3",
+  "duration": 28.395094,
+  "providerDuration": 28.395102040816326,
+  "hash": "7f90eaf7845c0ed19f3463ddd00cb54f589f9223c68f352e053452b5c60bb59d",
+  "provider": "HeyGen",
+  "voiceId": "84854979e66846989bc6c5855f53268f",
+  "voiceName": "Rocío - Calm & Trustworthy",
+  "requestedEngine": "omitted; saved provider default",
+  "returnedEngine": "orca",
+  "requestedSpeed": "omitted",
+  "playbackRate": 1,
+  "processing": "Original MP3, no speed or audio edits",
+  "scriptHash": "94b56926f8af02dba1190cc618b97316084d68f35c822720d7835aec66e17076",
+  "ssml": "<speak>Propiedad del medio definida como densidad por velocidad acústica; la diferencia entre impedancias influye en la reflexión en una interfaz.<break time=\"0.9s\"/>A incidencia normal y en el modelo de medios ideales, la fracción de intensidad reflejada depende de ((Z₂−Z₁)/(Z₂+Z₁))².<break time=\"0.9s\"/>La reflexión depende también de la geometría; esta relación ideal no caracteriza por sí sola una lesión.<break time=\"1.2s\"/></speak>",
+  "cues": [
+    {
+      "start": 0,
+      "end": 9.225,
+      "text": "Propiedad del medio definida como densidad por velocidad acústica; la diferencia entre impedancias influye en la reflexión en una interfaz."
+    },
+    {
+      "start": 9.225,
+      "end": 20.256,
+      "text": "A incidencia normal y en el modelo de medios ideales, la fracción de intensidad reflejada depende de ((Z₂−Z₁)/(Z₂+Z₁))²."
+    },
+    {
+      "start": 20.256,
+      "end": 28.395094,
+      "text": "La reflexión depende también de la geometría; esta relación ideal no caracteriza por sí sola una lesión."
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.299,
+      "end": 4.9067,
+      "text": "Propiedad del medio definida como densidad por velocidad acústica; la"
+    },
+    {
+      "start": 4.949,
+      "end": 8.325,
+      "text": "diferencia entre impedancias influye en la reflexión en una interfaz."
+    },
+    {
+      "start": 9.225,
+      "end": 13.449,
+      "text": "A incidencia normal y en el modelo de medios ideales, la fracción de"
+    },
+    {
+      "start": 13.491999999999999,
+      "end": 19.355999999999998,
+      "text": "intensidad reflejada depende de ((Z₂−Z₁)/(Z₂+Z₁))²."
+    },
+    {
+      "start": 20.256,
+      "end": 24.906,
+      "text": "La reflexión depende también de la geometría; esta relación ideal no"
+    },
+    {
+      "start": 24.949,
+      "end": 26.95450566893424,
+      "text": "caracteriza por sí sola una lesión."
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0.0,
+      "end": 0.0
+    },
+    {
+      "word": "Propiedad",
+      "start": 0.299,
+      "end": 0.768
+    },
+    {
+      "word": "del",
+      "start": 0.811,
+      "end": 0.9387
+    },
+    {
+      "word": "medio",
+      "start": 0.981,
+      "end": 1.28
+    },
+    {
+      "word": "definida",
+      "start": 1.365,
+      "end": 1.92
+    },
+    {
+      "word": "como",
+      "start": 2.005,
+      "end": 2.176
+    },
+    {
+      "word": "densidad",
+      "start": 2.261,
+      "end": 2.901
+    },
+    {
+      "word": "por",
+      "start": 3.072,
+      "end": 3.2
+    },
+    {
+      "word": "velocidad",
+      "start": 3.285,
+      "end": 3.712
+    },
+    {
+      "word": "acústica;",
+      "start": 3.755,
+      "end": 4.437
+    },
+    {
+      "word": "la",
+      "start": 4.736,
+      "end": 4.9067
+    },
+    {
+      "word": "diferencia",
+      "start": 4.949,
+      "end": 5.376
+    },
+    {
+      "word": "entre",
+      "start": 5.419,
+      "end": 5.5467
+    },
+    {
+      "word": "impedancias",
+      "start": 5.589,
+      "end": 6.229
+    },
+    {
+      "word": "influye",
+      "start": 6.485,
+      "end": 6.869
+    },
+    {
+      "word": "en",
+      "start": 6.912,
+      "end": 6.955
+    },
+    {
+      "word": "la",
+      "start": 6.997,
+      "end": 7.04
+    },
+    {
+      "word": "reflexión",
+      "start": 7.083,
+      "end": 7.595
+    },
+    {
+      "word": "en",
+      "start": 7.637,
+      "end": 7.68
+    },
+    {
+      "word": "una",
+      "start": 7.723,
+      "end": 7.893
+    },
+    {
+      "word": "interfaz.",
+      "start": 7.936,
+      "end": 8.325
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 8.325,
+      "end": 9.225
+    },
+    {
+      "word": "A",
+      "start": 9.225,
+      "end": 9.737
+    },
+    {
+      "word": "incidencia",
+      "start": 9.78,
+      "end": 10.248999999999999
+    },
+    {
+      "word": "normal",
+      "start": 10.292,
+      "end": 10.42
+    },
+    {
+      "word": "y",
+      "start": 10.676,
+      "end": 10.931999999999999
+    },
+    {
+      "word": "en",
+      "start": 10.974,
+      "end": 11.017
+    },
+    {
+      "word": "el",
+      "start": 11.059999999999999,
+      "end": 11.101999999999999
+    },
+    {
+      "word": "modelo",
+      "start": 11.187999999999999,
+      "end": 11.401
+    },
+    {
+      "word": "de",
+      "start": 11.529,
+      "end": 11.613999999999999
+    },
+    {
+      "word": "medios",
+      "start": 11.657,
+      "end": 11.913
+    },
+    {
+      "word": "ideales,",
+      "start": 11.998,
+      "end": 12.574
+    },
+    {
+      "word": "la",
+      "start": 12.766,
+      "end": 12.979999999999999
+    },
+    {
+      "word": "fracción",
+      "start": 13.022,
+      "end": 13.321
+    },
+    {
+      "word": "de",
+      "start": 13.363999999999999,
+      "end": 13.449
+    },
+    {
+      "word": "intensidad",
+      "start": 13.491999999999999,
+      "end": 13.918
+    },
+    {
+      "word": "reflejada",
+      "start": 13.961,
+      "end": 14.43
+    },
+    {
+      "word": "depende",
+      "start": 14.600999999999999,
+      "end": 15.027999999999999
+    },
+    {
+      "word": "de",
+      "start": 15.07,
+      "end": 15.155999999999999
+    },
+    {
+      "word": "((Z₂−Z₁)/(Z₂+Z₁))².",
+      "start": 15.197999999999999,
+      "end": 19.355999999999998
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 19.355999999999998,
+      "end": 20.256
+    },
+    {
+      "word": "La",
+      "start": 20.256,
+      "end": 20.768
+    },
+    {
+      "word": "reflexión",
+      "start": 20.81,
+      "end": 21.237000000000002
+    },
+    {
+      "word": "depende",
+      "start": 21.28,
+      "end": 21.621
+    },
+    {
+      "word": "también",
+      "start": 21.664,
+      "end": 22.005
+    },
+    {
+      "word": "de",
+      "start": 22.048000000000002,
+      "end": 22.09
+    },
+    {
+      "word": "la",
+      "start": 22.133,
+      "end": 22.176000000000002
+    },
+    {
+      "word": "geometría;",
+      "start": 22.218,
+      "end": 22.922
+    },
+    {
+      "word": "esta",
+      "start": 23.114,
+      "end": 23.754
+    },
+    {
+      "word": "relación",
+      "start": 23.797,
+      "end": 24.181
+    },
+    {
+      "word": "ideal",
+      "start": 24.224,
+      "end": 24.437
+    },
+    {
+      "word": "no",
+      "start": 24.608,
+      "end": 24.906
+    },
+    {
+      "word": "caracteriza",
+      "start": 24.949,
+      "end": 25.546
+    },
+    {
+      "word": "por",
+      "start": 25.589,
+      "end": 25.717
+    },
+    {
+      "word": "sí",
+      "start": 25.76,
+      "end": 25.888
+    },
+    {
+      "word": "sola",
+      "start": 25.93,
+      "end": 26.144000000000002
+    },
+    {
+      "word": "una",
+      "start": 26.186,
+      "end": 26.357
+    },
+    {
+      "word": "lesión.",
+      "start": 26.4,
+      "end": 26.95450566893424
+    },
+    {
+      "word": "<break time=\"1.2s\"/>",
+      "start": 26.95450566893424,
+      "end": 28.154505668934238
+    },
+    {
+      "word": "<end>",
+      "start": 28.395102040816326,
+      "end": 28.395102040816326
+    }
+  ],
+  "requestId": "069985a15d23485b8beb315dbf761332",
+  "sources": [
+    {
+      "id": "iaea",
+      "section": "Capítulo 12, Physics of Ultrasound: §12.2.3 y §12.3.1, reflexión e impedancia"
+    }
+  ]
+}
