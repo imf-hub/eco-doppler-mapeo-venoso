@@ -15,6 +15,8 @@ import ScientificDiagram from '../visual/ScientificDiagram';
 import ProcedureArtwork from './ProcedureIllustration';
 import MethodErrorIllustration from './MethodErrorIllustration';
 import './MethodologyWebsite.css';
+import LearningNext from '../learning/LearningNext';
+import '../learning/learning.css';
 import {ConsensusBridge,ConsensusFigure} from '../consensus/ConsensusWebsite';
 const Volume=lazy(()=>import('../visual/ConceptVolumeScene'));
 const SHORT={preparar:'Preparación',equipo:'Equipo y sonda',posicion:'Posición',profundo:'Sistema profundo',ingle:'Unión safenofemoral',gsv:'Safena mayor',ssv:'Safena menor',tributarias:'Conexiones y perforantes',reflujo:'Maniobras y reflujo',diametros:'Medidas',cartografia:'Cartografía',informe:'Informe'};
@@ -57,7 +59,7 @@ function Pager({page,moment}){
  const si=methodologyPages.findIndex(p=>p.id===page.id),mi=moment?page.steps.findIndex(s=>s.id===moment.id):-1;
  const previous=mi>0?{href:methodologyHref(page.id,page.steps[mi-1].id),title:page.steps[mi-1].title}:si>0?{href:methodologyHref(methodologyPages[si-1].id),title:SHORT[methodologyPages[si-1].id]}:{href:methodologyHref(),title:'Ruta completa'};
  const next=moment&&mi<page.steps.length-1?{href:methodologyHref(page.id,page.steps[mi+1].id),title:page.steps[mi+1].title}:si<11?{href:methodologyHref(methodologyPages[si+1].id),title:SHORT[methodologyPages[si+1].id]}:{href:methodologyHref(),title:'Volver a la metodología'};
- return <nav className="m4-pager" aria-label="Continuar la metodología"><a href={previous.href}><ArrowLeft/><span><small>ANTERIOR</small>{previous.title}</span></a><a href={next.href}><span><small>SIGUIENTE</small>{next.title}</span><ArrowRight/></a></nav>;
+ return <><LearningNext href={next.href} kicker={moment&&mi<page.steps.length-1?'Continúa con la siguiente maniobra':si<11?'Continúa con el paso '+(si+2)+' de 12':'Recorre de nuevo la metodología'} title={next.title}/><nav className="m4-pager" aria-label="Continuar la metodología"><a href={previous.href}><ArrowLeft/><span><small>ANTERIOR</small>{previous.title}</span></a><a href={next.href}><span><small>SIGUIENTE</small>{next.title}</span><ArrowRight/></a></nav></>;
 }
 function SequenceLinks({page,active}){
  const list=useRef(null);

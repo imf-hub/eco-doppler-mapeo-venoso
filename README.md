@@ -2,7 +2,15 @@
 
 Aplicación educativa estática para médicos que comienzan en ultrasonido. La experiencia prioriza demostraciones, adquisiciones publicadas y manipulación de controles.
 
-## Laboratorio 7.0 · Interacción en modo claro
+## Aprendizaje 8.0 · Un concepto a la vez
+
+La entrada de conceptos es un índice jerárquico de siete capítulos, con 80 conceptos y búsqueda que reconoce también «ganancias». Cada lección presenta definición → observación animada → práctica con un ajuste → aplicación a la exploración → laboratorio avanzado opcional al final. Las escenas 3D, cortes, gráficas y referencias previas se conservan. Los enlaces antiguos a conceptos se abren en esta ruta progresiva.
+
+El constructor amplía una cara de la plantilla MERIT a la vez. Todas las herramientas usan borrador y confirmación explícita, incluidas las perforantes de un solo punto. La selección admite proximidad y el centro de la circunferencia; ofrece edición, borrado, arrastre y movimiento con flechas, además de deshacer/rehacer. El símbolo original se muestra junto a la instrucción; las tablas originales están en el constructor y en su sección del consenso. SVG/PDF/impresión esperan a confirmar o cancelar los borradores; JSON conserva los elementos confirmados.
+
+Los siete pasos del consenso y las páginas de adquisición tienen una llamada grande a continuar, con movimiento breve respetando reducción de movimiento. Descargar la plantilla es una acción secundaria. No hay evaluaciones, bloqueos ni acreditaciones automáticas.
+
+### Laboratorio visual conservado
 
 La portada es un banco 3D con válvulas, compresión, ángulo Doppler y anatomía. Volumen y corte comparten ajustes y fase. Navegación compacta, iluminación clara, cámara orbital suave e interrumpible, y metodología centrada en el gesto. Las tablas originales del consenso se consultan en un visor junto a la aplicación del símbolo. El texto de consulta permanece disponible en desplegables, que se abren al imprimir. Se conservan las 139 entradas y los documentos originales. Diseño y revisión: `docs/laboratory-redesign-v8.md`.
 
@@ -17,7 +25,7 @@ Ocho páginas dedicadas al consenso: plantillas originales MERIT de ambos lados,
 ## Experiencia 5.0
 
 - Glosario animado con 80 términos: definiciones, mecanismos específicos, controles físicos, observaciones y referencias por término.
-- 81 páginas nuevas de glosario, búsqueda por sigla/nombre/definición, índice alfabético y áreas temáticas.
+- 81 páginas de conceptos, búsqueda por sigla/nombre/definición y sinónimos, índice por capítulos y subtemas.
 - Ampliación de láminas, reproducción lenta, pausa y manipulación manual para reducción de movimiento.
 
 - Metodología con una página de ruta, doce páginas de etapa y 37 subpáginas de maniobra; entradas HTML y direcciones independientes.

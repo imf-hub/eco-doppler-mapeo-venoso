@@ -12,7 +12,7 @@ for(const step of mappingSteps){
  pages.push({parts:['mapeo',step.id],title:step.title,description:step.objective});
  for(const frame of methodologyByStep[step.id].frames)pages.push({parts:['mapeo',step.id,frame.id],title:frame.title,description:frame.action});
 }
-pages.push({parts:['glosario'],title:'Glosario animado de Eco-Doppler',description:'Ochenta conceptos de sonido, transductor, imagen, Doppler, artefactos y flujo venoso con demostraciones controlables y referencias.'});
+pages.push({parts:['glosario'],title:'Índice de conceptos de Eco-Doppler',description:'80 conceptos organizados de lo básico a la exploración: definición breve, animación guiada, un ajuste para experimentar y laboratorio avanzado.'});
 for(const term of glossarySpecs)pages.push({parts:['glosario',term.id],title:term.title,description:glossaryContent[term.id].definition});
 pages.push({parts:['consenso'],title:'El mapa del consenso latinoamericano',description:'Plantillas MERIT originales, figuras del consenso, simbología, nomenclatura, medidas y construcción del mapa venoso.'});
 for(const chapter of consensusChapters)pages.push({parts:['consenso',chapter.id],title:chapter.title,description:chapter.lead});
