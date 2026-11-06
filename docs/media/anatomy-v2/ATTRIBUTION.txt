@@ -14,3 +14,5 @@ https://creativecommons.org/licenses/by-sa/4.0/
 https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html
 
 Sin garantías de exactitud clínica. Los esquemas y variantes deben evaluarse por un docente y confirmarse en el paciente.
+
+Visualización postural v3: una copia reflejada de la piel derecha completa la silueta contralateral. No constituye un atlas izquierdo ni datos contralaterales de un paciente. Se conserva CC BY-SA 4.0 para esta adaptación visual. El torso, la bata y las manos procedurales son ilustraciones originales de contexto postural; no son mallas anatómicas clínicas de Z-Anatomy.

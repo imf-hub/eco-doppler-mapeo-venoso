@@ -1,11 +1,2 @@
-import {lazy,Suspense,useEffect,useState} from 'react';
-import {ArrowRight} from 'lucide-react';
-import Quiz from './Quiz';
-import ClinicalGallery from './ClinicalGallery';
-import Atlas from './visual/VisualExplainer';
-const ScanTrainer=lazy(()=>import('./ScanTrainer'));
-export default function AnatomySection({detail,onComplete,navigate}){
- const [tab,setTab]=useState(detail?.startsWith('sonda')?'sonda':'atlas');
- useEffect(()=>setTab(detail?.startsWith('sonda')?'sonda':'atlas'),[detail]);
- return <><div className="section-heading"><div><span className="eyebrow">03 · Anatomía, orientación y adquisición</span><h1>Relaciona la mano con la imagen.</h1><p>El atlas enseña relaciones espaciales. El taller conecta posición, marcador, plano, barrido y respuesta de una vena permeable.</p></div></div><div className="view-switcher anatomy-switch"><button aria-pressed={tab==='atlas'} onClick={()=>setTab('atlas')}>Explorar anatomía 3D</button><button aria-pressed={tab==='sonda'} onClick={()=>setTab('sonda')}>Taller de paciente y sonda</button></div><Suspense fallback={<div className="card" role="status">Cargando el recurso 3D…</div>}>{tab==='atlas'?<Atlas conceptId="anatomy" initialView="volume"/>:<ScanTrainer initialRegion={detail==='sonda-ssv'?'ssv':detail==='sonda-sfj'?'sfj':'gsv'} onOpenMethodology={()=>navigate('guias','posicion')} onComplete={onComplete} onOpenDoppler={()=>navigate('laboratorio')}/>}</Suspense><div className="three-columns anatomy-tasks"><div className="card"><span className="eyebrow">Demuestra una relación</span><h3>Sigue una continuidad</h3><p>Localiza GSV en el compartimento safeno y síguela hacia SFJ. Después cambia a SSV: su terminación debe demostrarse en el paciente y puede variar.</p></div><div className="card"><span className="eyebrow">Ensaya una acción</span><h3>Transversal no es longitudinal</h3><p>Comprime el modelo en transversal y libera. Gira a longitudinal para la interrogación Doppler. Inclinar y rotar son acciones diferentes.</p><button className="text-btn" onClick={()=>setTab('sonda')}>Practicar con la sonda <ArrowRight size={15}/></button></div><Quiz compact quiz={{question:'¿Qué confirma la identidad de un vaso?',options:['Solo el color o el brillo','Continuidad, relaciones anatómicas y evaluación en planos adecuados'],answer:1,explanation:'Un atlas orienta; el rastreo demuestra la anatomía individual. No todas las variantes están representadas.'}} onPass={()=>onComplete('anatomia')}/></div><button className="btn" onClick={()=>navigate('mapeo')}>Aplicar la secuencia de mapeo <ArrowRight size={16}/></button><ClinicalGallery/></>;
-}
+import VisualPlayer from './visual/VisualPlayer';
+export default function AnatomySection(){return <VisualPlayer conceptId="anatomy"/>;}

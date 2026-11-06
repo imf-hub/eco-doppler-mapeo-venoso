@@ -1,67 +1,39 @@
-# Aula IMF · Eco-Doppler y Mapeo Venoso
+# Aula visual IMF · Eco-Doppler y mapeo venoso
 
-Plataforma educativa en español para médicos con formación en flebología que comienzan en ultrasonido. El recorrido central conduce desde la preparación hasta la cartografía superficial y perforante del miembro inferior.
+Aplicación educativa estática para médicos que comienzan en ultrasonido. La experiencia prioriza demostraciones, adquisiciones publicadas y manipulación de controles.
 
-## Contenido funcional
+## Experiencia 3.0
 
-- 10 lecciones de fundamentos con preguntas y exploradores visuales relacionados.
-- Cuatro experimentos guiados con corrección de imagen y razonamiento; medición de señal retrógrada con cursores.
-- Ecógrafo didáctico original: modo B, color, PW y Power; ganancia, profundidad, frecuencia, foco, TGC, rango dinámico, escala/PRF, filtro, ángulo, presión, persistencia y volumen de muestra.
-- Anatomía 3D de referencia Z-Anatomy/BodyParts3D: 143 mallas, capas, cámaras, objetivos anatómicos y crédito CC BY-SA 4.0.
-- Taller 3D de paciente y sonda: barrido, rotación, inclinación, presión, marcador y cambios en la imagen.
-- 12 etapas de mapeo con preparación del paciente, orientación de sonda, evidencia en pantalla, capturas, criterios de calidad y fuentes localizables.
-- 37 momentos visuales: reproducción, pausa, recorrido manual, error/corrección, anatomía/sonda 3D, cortes, maniobras, medidas, mapa e informe.
-- Guías rápidas de las 12 etapas, alertas de detención y PDF descargable de tres páginas.
-- Cartografía de tres caras: trazos, condiciones, anotaciones, perforantes, medidas e informe de práctica. Exportación SVG/JSON recuperable y PDF con mapa, informe y registro de medidas.
-- 6 casos ficticios con 18 preguntas, retroalimentación y rúbrica docente.
-- 26 términos, 17 códigos de representación y dos recursos clínicos CC0 con contexto y créditos.
+- Recorrido visual de doce etapas y 37 momentos, desde preparación hasta informe y cartografía.
+- 34 conceptos con 144 microescenas, cortes, gráficas, comparaciones y secuencias de objetos.
+- Laboratorio acústico 3D: propagación, transductor, cristales, gel, tejidos, foco y recepción.
+- Seis interacciones/artefactos y demostración de uso prudente y ergonomía.
+- 19 referencias auténticas (16 imágenes y 3 vídeos), con región, licencia, normalidad o patología identificadas.
+- Imagen real junto al modelo; ampliación, reproducción lenta y avance por fotogramas.
+- Atlas derecho por capas y contexto postural completo para posición y apoyos.
+- Ecógrafo didáctico B, color, PW y Power, con controles causales y medición ilustrativa.
+- Cartografía de tres caras, símbolos, medidas e informe, con exportación SVG/JSON/PDF.
 
-## Renovación visual 2.0
+No hay cuestionarios, preguntas al alumno, calificaciones ni bloqueos por respuestas. La explicación extensa y las fuentes se consultan a demanda.
 
-34 conceptos con cuatro representaciones por concepto: volumen 3D, corte/señal, relaciones gráficas y comparación. Incluye movimiento controlable, escenas espaciales, gráficas originales y referencias gráficas primarias. Consultar [recursos e implementación](docs/visual-renewal.md), [procedencia anatómica](docs/visual-assets-3d.md) y [matriz visual](docs/visual-curriculum-evidence.md).
+## Fundamento y créditos
 
-## Fundamento clínico
+El consenso latinoamericano estandariza representación cartográfica. La adquisición se apoya además en las guías identificadas de AIUM, ESVS y SVS/AVF/AVLS. El programa no acredita competencia clínica ni sustituye adquisición supervisada.
 
-El [consenso latinoamericano](https://pubmed.ncbi.nlm.nih.gov/36892521/) estandariza la **representación cartográfica**. La adquisición se apoya adicionalmente en AIUM, ESVS y SVS/AVF/AVLS. Véase [la matriz de evidencia](docs/consensus-evidence.md).
+- [Diseño y límites de esta versión](docs/visual-learning-v3.md)
+- [Matriz clínica](docs/consensus-evidence.md)
+- [Referencias auténticas](docs/media-visual-v3.md)
+- [Anatomía: procedencia y licencia](docs/visual-assets-3d.md)
+- [Licencias de software y activos](THIRD_PARTY_NOTICES.txt)
 
-El simulador muestra relaciones causales simplificadas; no es un motor acústico validado ni un equipo médico. La finalización de ejercicios no certifica competencia clínica. La revisión clínica institucional y la práctica supervisada son necesarias antes de integrar esta herramienta en un programa formal. Los dos recursos clínicos reales se distinguen de las escenas sintéticas.
+Las mallas adaptadas de Z-Anatomy/BodyParts3D conservan CC BY-SA 4.0. El paciente postural es una ilustración contextual: no un modelo clínico de cuerpo completo.
 
-## Ejecutar y construir
+## Desarrollo y publicación
 
-Node.js 22.12 o posterior compatible con Vite 7.
+Requiere Node compatible con Vite 7. Instalación: npm ci. Desarrollo: npm run dev. Verificación técnica: npm test. Construcción: npm run build.
 
-```sh
-npm ci
-npm run dev
-npm test
-npm run build
-```
+El resultado dist/ es portable a Hostinger: subir su contenido a public_html. No requiere servidor Node, base de datos ni credenciales. Las rutas usan fragmentos # y los activos usan direcciones relativas.
 
-`dist/` contiene una aplicación estática portable. No requiere servidor Node, base de datos, cuenta de usuario ni credenciales para funcionar. Las rutas usan fragmentos `#`, por lo que no necesita reglas de reescritura.
+Para GitHub Pages, ejecutar node scripts/prepare-pages.mjs después de construir. Publicar main, carpeta /docs. Los documentos de evidencia se conservan al preparar esa carpeta.
 
-```sh
-node scripts/prepare-pages.mjs
-```
-
-Este último comando copia el resultado a `docs/` para GitHub Pages, conservando los documentos de evidencia. Configuración Pages: rama `main`, carpeta `/docs`. El proceso de construcción es local; una publicación posterior debe volver a construir y actualizar esa carpeta.
-
-## Hostinger
-
-Subir **el contenido de `dist/`** a `public_html/` o a una subcarpeta del dominio. También se entrega un ZIP listo para alojar. Consulta [la guía de instalación](docs/hostinger.md). No se requiere WordPress ni un plan con Node.js.
-
-## Datos y conservación
-
-El progreso y la cartografía se conservan en `localStorage` del navegador; no se sincronizan entre dispositivos. Pueden exportarse para conservar una copia. No introducir información identificable de pacientes. El repositorio no incluye los PDF privados ni los archivos de investigación descargados.
-
-## Estructura y mantenimiento
-
-- `src/data/`: contenido docente, evidencia, casos y manifiesto de media.
-- `src/components/`: simulación, anatomía, recorrido, casos y cartografía.
-- `tests/`: 23 comprobaciones de unidades, Nyquist, señal, cursores, recuperación de mapas, datos, escape de texto y coherencia del currículo.
-- `docs/quality-review.md`: diagnóstico, correcciones, pruebas y límites de la revisión 1.1.
-- `docs/methodology-quality-1.2.md`: ampliación metodológica, pruebas y límites de la versión 1.2.
-- `docs/resource-audit.md`: selección de 17 recursos internacionales y sus licencias.
-- `docs/media-credits.md`: procedencia de los dos archivos clínicos incorporados.
-- `skills/ensenar-mapeo-venoso/`: instrucciones reutilizables para mantener esta plataforma.
-
-React, Vite, Three.js y Lucide conservan sus licencias. Los avisos se distribuyen en `THIRD_PARTY_NOTICES.txt`. La licencia de una biblioteca no convierte el consenso o los libros de consulta en contenido de libre redistribución. Los documentos externos se enlazan desde su fuente.
+Los ejercicios se guardan localmente en el navegador. No introducir datos identificables de pacientes en los ejercicios o informes.
