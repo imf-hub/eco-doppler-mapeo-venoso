@@ -2,6 +2,14 @@
 
 Aplicación educativa estática para médicos que comienzan en ultrasonido. La experiencia prioriza demostraciones, adquisiciones publicadas y manipulación de controles.
 
+## Editor 8.1 · Lienzo vacío y paneles laterales
+
+El constructor abre una plantilla vacía aunque exista una copia guardada. Recuperar el ejercicio es una acción explícita y muestra su origen. Antes de sustituir una copia previa con el nuevo trabajo se conserva una copia anterior; las acciones de nuevo mapa, recuperación y borrado también admiten deshacer. El ejemplo resuelto se consulta en un visor de solo lectura que no modifica ni guarda el ejercicio.
+
+La distribución de escritorio es herramientas y elementos a la izquierda, lienzo estable al centro e inspector del hallazgo a la derecha. Símbolos, condiciones, planos y nombres frecuentes se eligen mediante botones; no hay selectores desplegables en el área de dibujo. El tamaño del lienzo permanece estable al cambiar de herramienta o confirmar. Hay ampliación, selección por proximidad, movimiento y atajos, con captura de teclas limitada al editor y sin interferir con los campos de texto. En móvil se alternan herramientas, lienzo y hallazgo.
+
+El recorte visual de cada cara aísla las impresiones vecinas sin cambiar las coordenadas de los hallazgos ni los archivos originales. El PDF/SVG de entrega sigue usando la plantilla completa y las cinco regiones del consenso. Las referencias grises o negras impresas se identifican como parte del documento original. Punteado por sí solo no asigna aplasia o ablación: esa condición se elige expresamente.
+
 ## Aprendizaje 8.0 · Un concepto a la vez
 
 La entrada de conceptos es un índice jerárquico de siete capítulos, con 80 conceptos y búsqueda que reconoce también «ganancias». Cada lección presenta definición → observación animada → práctica con un ajuste → aplicación a la exploración → laboratorio avanzado opcional al final. Las escenas 3D, cortes, gráficas y referencias previas se conservan. Los enlaces antiguos a conceptos se abren en esta ruta progresiva.
