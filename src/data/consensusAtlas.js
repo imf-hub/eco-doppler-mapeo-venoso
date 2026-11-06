@@ -38,3 +38,8 @@ export const buildingStages=[
  ['Anota las medidas','Diámetros en mm; longitud segmentaria y alturas en cm. Toda altura lleva referencia.'],
  ['Relaciona el informe','El texto identifica posición, maniobras, extensión y límites del caso. Coteja los tres registros.']
 ];
+export function buildingStageEntries(entries,stage){
+ if(stage===0)return [];
+ if(stage<=2){const ids=new Set(stage===1?['gsv-prox','gsv-dist','ssv']:['gsv-prox','gsv-ref','gsv-dist','ssv']);return entries.filter(e=>ids.has(e.id));}
+ return entries.filter(e=>stage>=4||e.type!=='annotation');
+}

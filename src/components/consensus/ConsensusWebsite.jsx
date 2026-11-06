@@ -1,7 +1,7 @@
 import {useEffect,useRef,useState} from 'react';
 import {useAnimationFrame,useInView,useReducedMotion} from 'motion/react';
 import {ArrowLeft,ArrowRight,Download,Maximize2,Pause,Play,RotateCcw} from 'lucide-react';
-import {consensusChapters,consensusFigures,consensusAsset,consensusTermIds,CONSENSUS_PDF,CONSENSUS_SPANISH,buildingStages,templateFile,templateRegion,WORK_VIEWS} from '../../data/consensusAtlas';
+import {consensusChapters,consensusFigures,consensusAsset,consensusTermIds,CONSENSUS_PDF,CONSENSUS_SPANISH,buildingStages,buildingStageEntries,templateFile,templateRegion,WORK_VIEWS} from '../../data/consensusAtlas';
 import {EXAMPLE_MAP,officialMapMarkup,markSVG,diagramBackground,MAP_CONDITIONS} from '../../data/cartographyModel';
 import {glossary,symbols} from '../../data/mapping';
 import {consensusHref,methodologyHref} from '../../methodologyRoutes';
@@ -48,8 +48,7 @@ function BuildingLesson({navigate}){
  const [stage,setStage]=useState(0),[progress,setProgress]=useState(1),[playing,setPlaying]=useState(false),ref=useRef(null),inside=useInView(ref),reduce=useReducedMotion();
  useAnimationFrame((_,delta)=>{if(playing&&inside&&!reduce&&!document.hidden)setProgress(p=>{const next=Math.min(1,p+Math.min(delta,64)/5000);if(next===1)setPlaying(false);return next;});});
  useEffect(()=>{if(reduce)setPlaying(false);},[reduce]);
- const ids=stage<1?[]:stage<2?['gsv-prox','gsv-ref','gsv-dist','ssv']:stage<3?['gsv-prox','gsv-ref','gsv-dist','ssv']:EXAMPLE_MAP.entries.map(e=>e.id);
- const entries=EXAMPLE_MAP.entries.filter(e=>ids.includes(e.id)).map(e=>({...e,condition:stage===1&&e.id==='gsv-ref'?'':e.condition})).filter(e=>e.condition);
+ const entries=buildingStageEntries(EXAMPLE_MAP.entries,stage);
  const revealed=entries.slice(0,Math.max(0,Math.ceil(progress*entries.length)));
  return <section className="c6-practice-row c6-build" ref={ref}><div className="c6-sticky-copy"><span className="c6-kicker">CASO FICTICIO · CONSTRUCCIÓN SOBRE PLANTILLA</span><h2>{buildingStages[stage][0]}</h2><p>{buildingStages[stage][1]}</p><div className="c6-build-controls"><button onClick={()=>{setProgress(progress===1?0:progress);setPlaying(!playing);}} disabled={!!reduce}>{playing?<Pause size={16}/>:<Play size={16}/>} {playing?'Pausar':'Ver incorporación'}</button><button aria-label="Reiniciar incorporación" onClick={()=>{setProgress(0);setPlaying(false);}}><RotateCcw size={16}/></button><input aria-label="Progreso de incorporación al mapa" type="range" min="0" max="100" value={Math.round(progress*100)} onChange={e=>{setProgress(+e.target.value/100);setPlaying(false);}}/></div><ol className="c6-building-steps">{buildingStages.map(([label],i)=><li key={label}><button aria-pressed={stage===i} onClick={()=>{setStage(i);setProgress(1);setPlaying(false);}}><span>{i+1}</span>{label}</button></li>)}</ol>{stage===5&&<p className="c6-case-report">{EXAMPLE_MAP.meta.notes}</p>}<button className="c6-action" onClick={()=>navigate('cartografia')}>Practicar en la plantilla original <ArrowRight size={17}/></button><small>En el paso de ejes se reserva el segmento todavía sin codificar. La competencia se agrega únicamente con el dato demostrado.</small></div><div><OfficialSheet entries={revealed} meta={EXAMPLE_MAP.meta} activeView={stage===0?Math.min(4,Math.floor(progress*5)):-1} showLabels={stage>=4}/><p className="c6-caption">Plantilla MERIT original + anotaciones educativas IMF. Coordenadas y tiempos no son medidas clínicas.</p></div></section>;
 }

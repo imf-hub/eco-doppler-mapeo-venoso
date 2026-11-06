@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {TEMPLATE_REGIONS,consensusFigures,consensusChapters,consensusTermIds,WORK_VIEWS,viewHeight} from '../src/data/consensusAtlas.js';
+import {TEMPLATE_REGIONS,consensusFigures,consensusChapters,consensusTermIds,WORK_VIEWS,viewHeight,buildingStageEntries} from '../src/data/consensusAtlas.js';
 import {officialMapMarkup,createMapSVG,parseMap,serializeMap,EXAMPLE_MAP,diagramBackground} from '../src/data/cartographyModel.js';
 import {validateEducationalMap} from '../src/data/mapValidation.js';
 
@@ -28,4 +28,12 @@ test('las referencias originales y las dos plantillas están disponibles como ac
  for(const f of Object.values(consensusFigures)){assert.ok(fs.statSync('public/media/consenso/'+f.file).size>1000);assert.ok(f.locator&&f.es&&f.alt);}
  for(const side of ['derecha','izquierda']){const bytes=fs.readFileSync('public/media/consenso/plantilla-'+side+'.pdf');assert.equal(bytes.subarray(0,5).toString(),'%PDF-');}
  const markup=officialMapMarkup(EXAMPLE_MAP.entries,EXAMPLE_MAP.meta);assert.ok(markup.includes('width="566" height="800"'));assert.equal((markup.match(/data-map-view=/g)||[]).length,5);
+});
+test('la secuencia de medidas conserva todas las referencias del mapa entregable',()=>{
+ const before=JSON.stringify(EXAMPLE_MAP.entries);
+ for(const stage of [4,5])assert.deepEqual(buildingStageEntries(EXAMPLE_MAP.entries,stage),EXAMPLE_MAP.entries);
+ const measures=buildingStageEntries(EXAMPLE_MAP.entries,4),start=measures.find(e=>e.id==='gsv-ref'),end=measures.find(e=>e.id==='gsv-end-note');
+ assert.equal(Number(start.height)-Number(end.height),Number(start.length));
+ assert.match(start.reference,/rodilla/);assert.match(end.reference,/rodilla/);
+ assert.equal(JSON.stringify(EXAMPLE_MAP.entries),before);
 });
