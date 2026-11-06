@@ -2,7 +2,11 @@
 
 Aplicación educativa estática para médicos que comienzan en ultrasonido. La experiencia prioriza demostraciones, adquisiciones publicadas y manipulación de controles.
 
-## Experiencia 4.0
+## Experiencia 5.0
+
+- Glosario animado con 80 términos: definiciones, mecanismos específicos, controles físicos, observaciones y referencias por término.
+- 81 páginas nuevas de glosario, búsqueda por sigla/nombre/definición, índice alfabético y áreas temáticas.
+- Ampliación de láminas, reproducción lenta, pausa y manipulación manual para reducción de movimiento.
 
 - Metodología con una página de ruta, doce páginas de etapa y 37 subpáginas de maniobra; entradas HTML y direcciones independientes.
 - Escena exterior, mano y sonda, plano, 3D, imagen publicada, error/corrección y registro en secuencia editorial visible.
@@ -21,6 +25,7 @@ No hay cuestionarios, preguntas al alumno, calificaciones ni bloqueos por respue
 
 El consenso latinoamericano estandariza representación cartográfica. La adquisición se apoya además en las guías identificadas de AIUM, ESVS y SVS/AVF/AVLS. El programa no acredita competencia clínica ni sustituye adquisición supervisada.
 
+- [Glosario: fuentes, mecanismos y límites](docs/glossary-evidence-v5.md)
 - [Páginas de metodología y límites](docs/methodology-pages-v4.md)
 - [Fundamentos visuales](docs/visual-learning-v3.md)
 - [Matriz clínica](docs/consensus-evidence.md)
@@ -32,9 +37,9 @@ Las mallas adaptadas de Z-Anatomy/BodyParts3D conservan CC BY-SA 4.0. El pacient
 
 ## Desarrollo y publicación
 
-Requiere Node compatible con Vite 7. Instalación: npm ci. Desarrollo: npm run dev. Verificación técnica: npm test. Construcción: npm run build. La construcción genera las cincuenta entradas de metodología. Validarlas: node scripts/validate-methodology-pages.mjs.
+Requiere Node compatible con Vite 7. Instalación: npm ci. Desarrollo: npm run dev. Verificación técnica: npm test. Construcción: npm run build. La construcción genera 50 entradas de metodología y 81 de glosario. Validarlas con node scripts/validate-methodology-pages.mjs y node scripts/validate-glossary-pages.mjs. La auditoría reproducible de los mecanismos se ejecuta con node scripts/audit-glossary-animations.mjs.
 
-El resultado dist/ es portable a Hostinger: subir su contenido a public_html. No requiere servidor Node, base de datos ni credenciales. La metodología tiene entradas físicas bajo mapeo/; las demás secciones conservan fragmentos #. Los activos se resuelven desde una base relativa, también en las subpáginas.
+El resultado dist/ es portable a Hostinger: subir su contenido a public_html. No requiere servidor Node, base de datos ni credenciales. La metodología y el glosario tienen entradas físicas bajo mapeo/ y glosario/; las demás secciones conservan fragmentos #. Los activos se resuelven desde una base relativa, también en las subpáginas.
 
 Para GitHub Pages, ejecutar node scripts/prepare-pages.mjs después de construir. Publicar main, carpeta /docs. Los documentos de evidencia se conservan al preparar esa carpeta.
 

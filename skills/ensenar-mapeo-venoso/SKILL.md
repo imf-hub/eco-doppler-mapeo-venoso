@@ -33,3 +33,8 @@ Preferencia explícita del usuario (6-XI-2026): NO cuestionarios, preguntas, tes
 ## Organización del mapeo (preferencia explícita, noviembre de 2026)
 
 La metodología se publica en páginas independientes, con ruta de etapas y subpáginas por maniobra. Usar secuencia editorial con escena exterior, paciente, mano/transductor, plano anatómico, señal, referencias reales pertinentes y registro. No agrupar toda la enseñanza en una tarjeta ni ocultar las representaciones esenciales detrás de pestañas. Mantener texto breve y contextual, sin cuestionarios ni calificaciones. Las imágenes publicadas no se sustituyen por esquemas ni se cambian de región o contexto.
+
+
+## Glosario y precisión de los mecanismos
+
+Cada concepto de Eco-Doppler dispone de una página con animación específica, control causal, observaciones y referencia por término. No simular cobertura cambiando únicamente un título. Distinguir portadora/PRF, presión/intensidad, ganancia/potencia y plano/haz. En figuras Doppler, el signo y la muestra deben ser coherentes con el haz y el flujo; no dibujar señal útil a90° sin explicar el contexto. TI no es temperatura, y MI requiere presión rarefaccional atenuada y frecuencia en las unidades declaradas. Auditar extremos y fases, y conservar pausa y control manual.
