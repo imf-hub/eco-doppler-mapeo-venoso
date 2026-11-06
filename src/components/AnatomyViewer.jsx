@@ -34,17 +34,40 @@ const VESSELS = [
     ultrasound: 'Orienta el transductor en la fosa poplítea. Identifica las relaciones con la arteria y sigue los vasos antes de documentar la unión safenopoplítea.',
     task: 'Cambia a la vista posterior y localiza la VSP llegando a la VP. Recuerda que esta anatomía puede variar.', target: [.04,-.6,-.3] },
   { id: 'perforators', label: 'Venas perforantes', short: 'P', system: 'perforantes', color: '#d69b51', radius: .044,
-    paths: [[[-.55,-2.25,.42],[-.35,-2.17,.26],[.06,-2.1,-.06]], [[-.76,.68,.25],[-.35,.74,.12],[.09,.8,-.14]]],
+    paths: [[[-.55,-2.25,.42],[-.35,-2.17,.26],[-.16,-2.1,-.06]], [[-.76,.68,.25],[-.35,.74,.12],[.09,.8,-.14]]],
     location: 'Comunican los sistemas superficial y profundo atravesando la fascia muscular. Se representan dos conexiones didácticas, sin epónimos ni niveles clínicos fijos.',
     ultrasound: 'Demuestra el cruce fascial y la conexión. Registra localización, diámetro y dirección del flujo con la maniobra indicada; ver una perforante no implica incompetencia.',
-    task: 'Activa solo «Perforantes» y observa cómo las conexiones atraviesan desde la superficie hacia el eje profundo.', target: [-.25,-2.2,.17] },
+    task: 'Activa solo «Perforantes» y observa cómo las conexiones atraviesan desde la superficie hacia el eje profundo. Reactiva «Todos» para verificar ambas terminaciones.', target: [-.25,-2.2,.17] },
+  { id:'asv',label:'Safena anterior',short:'ASV',international:'ASV · anterior saphenous vein',system:'superficial',color:'#50c5ff',radius:.05,
+    points:[[.28,.7,.38],[.32,1.4,.45],[.2,2.2,.51],[-.18,3,.32],[-.1,3.42,.07]],target:[.28,1.7,.47],
+    location:'Eje superficial anterior del muslo dentro de un compartimento fascial. Se muestra una de sus posibles configuraciones proximales; su conexión real debe rastrearse.',
+    ultrasound:'Comprueba el plano fascial y la continuidad. ASV es la terminología recomendada en 2024 para la antes llamada safena accesoria anterior; no asumir que toda tributaria anterior es ASV.',
+    task:'Usa la vista anterior y distingue su trayecto del de GSV. Después sigue su conexión proximal sin deducir competencia por su color.' },
+  { id:'ptv',label:'Venas tibiales posteriores',short:'VTP',international:'PTV · posterior tibial veins',system:'profundo',color:'#385df2',radius:.055,
+    paths:[[[-.18,-3.75,-.15],[-.16,-2.1,-.06],[.09,-1.65,-.24]],[[-.05,-3.75,-.15],[-.04,-2.1,-.06],[.09,-1.65,-.24]]],target:[-.16,-2.1,-.06],
+    location:'Venas profundas acompañantes de la arteria tibial posterior. Se representan dos canales y una confluencia proximal simplificada.',
+    ultrasound:'La evaluación de pantorrilla exige buscar vasos pares, seguirlos y reconocer sus relaciones con la tibia y la arteria. El modelo no muestra todos los canales ni variantes.',
+    task:'Localiza la conexión de la perforante medial de pantorrilla con el eje tibial posterior. Un puente que termina en el profundo debe demostrarse por continuidad.' },
+  { id:'fibular',label:'Venas fibulares / peroneas',short:'VFi',international:'Fibular / peroneal veins',system:'profundo',color:'#385df2',radius:.047,
+    paths:[[[.27,-3.55,-.21],[.32,-2.6,-.28],[.28,-1.9,-.31],[.09,-1.65,-.24]],[[.37,-3.55,-.21],[.43,-2.6,-.28],[.39,-1.9,-.31],[.09,-1.65,-.24]]],target:[.33,-2.6,-.28],
+    location:'Venas profundas pares de la pantorrilla relacionadas con la fibula. Sus confluencias se simplifican para orientar el rastreo.',
+    ultrasound:'La corteza ósea y la arteria acompañante ayudan a orientarte. No clasifiques el vaso solo por su profundidad o por un corte circular.',
+    task:'Activa «Profundo» y reconoce que la evaluación no termina en la vena poplítea. El protocolo y la indicación determinan la extensión del estudio.' },
+  { id:'gastrocnemial',label:'Venas gastrocnemias',short:'VG',international:'Gastrocnemial veins',system:'profundo',color:'#385df2',radius:.055,
+    paths:[[[-.34,-1.6,-.39],[-.33,-.95,-.44],[.02,-.58,-.31]],[[.33,-1.6,-.39],[.31,-.95,-.44],[.02,-.58,-.31]]],target:[-.3,-1.1,-.42],
+    location:'Drenaje muscular profundo de la pantorrilla. Se muestran dos tributarias que llegan a la poplítea como esquema de relación, no una anatomía universal.',
+    ultrasound:'Distingue sus desembocaduras de SSV y de una unión safenopoplítea. Las venas musculares tienen variantes y requieren continuidad anatómica.',
+    task:'Selecciona la vista posterior. Compara el drenaje muscular con la SSV, que pertenece al sistema superficial.' },
 ];
+
+export const ANATOMY_STRUCTURE_COUNT=VESSELS.length;
 
 const FILTERS = [['all','Todos'],['superficial','Superficial'],['profundo','Profundo'],['perforantes','Perforantes']];
 
 function EchoCorrelation({ vessel, plane, setPlane }) {
   const patternId = useId().replaceAll(':','');
   const superficial = vessel.system === 'superficial';
+  const perforating = vessel.system === 'perforantes';
   const y = superficial ? 69 : 111;
   return <section className="av-echo" aria-label="Correlación ecográfica ilustrada">
     <div className="av-echo-head"><strong>Del volumen a la imagen</strong><div className="av-plane-tabs" role="group" aria-label="Plano ecográfico">
@@ -57,7 +80,12 @@ function EchoCorrelation({ vessel, plane, setPlane }) {
       <rect x="10" y="19" width="340" height="128" fill={`url(#${patternId})`} opacity=".7"/>
       <path d="M10 28 Q180 21 350 28" stroke="#d9e0e8" fill="none" strokeWidth="3"/>
       <path d="M10 94 Q180 107 350 94" stroke="#8592a3" fill="none" strokeWidth="2"/>
-      {plane==='transverse'?<>
+      {perforating&&plane==='longitudinal'?<>
+        <path d="M70 54 Q135 55 160 86 Q180 113 275 118" stroke="#d7e0e8" strokeWidth="18" fill="none"/>
+        <path d="M70 54 Q135 55 160 86 Q180 113 275 118" stroke="#050b12" strokeWidth="12" fill="none"/>
+        <path d="M18 88H337" stroke="#d69b51" strokeDasharray="5 4" strokeWidth="2"/><text x="225" y="83" fill="#d6b17d" fontSize="9">Fascia muscular</text>
+        <text x="46" y="41" fill="#c5d5e4" fontSize="9">Superficial</text><text x="240" y="136" fill="#c5d5e4" fontSize="9">Profundo</text>
+      </>:plane==='transverse'?<>
         {superficial&&<><path d="M106 68 Q180 31 254 68 Q180 107 106 68" fill="none" stroke="#c2cbd8" strokeWidth="2"/><text x="263" y="65" fill="#a8b4c5" fontSize="9">Fascia</text></>}
         <ellipse cx="180" cy={y} rx={superficial?19:26} ry={superficial?13:18} fill="#060b12" stroke="#cdd5de" strokeWidth="2.5"/>
         <path d={`M209 ${y} H270`} stroke={vessel.color}/><text x="277" y={y+3} fill="#e4eaf1" fontSize="11">{vessel.short}</text>
@@ -67,7 +95,7 @@ function EchoCorrelation({ vessel, plane, setPlane }) {
       </>}
       <text x="18" y="143" fill="#98a8bc" fontSize="9">ESQUEMA · NO ES UNA ECOGRAFÍA CLÍNICA</text>
     </svg>
-    <p>{plane==='transverse'?'El haz corta el vaso: aparece una sección redonda u oval. La forma depende del plano y de la presión.':'El haz sigue el vaso: permite observar sus paredes a lo largo del trayecto. Un corte oblicuo puede falsear su tamaño.'}</p>
+    <p>{perforating?(plane==='longitudinal'?'Sigue el eje de la perforante: debes demostrar el cruce de fascia y las conexiones superficial y profunda. «Longitudinal al vaso» no siempre coincide con el eje largo de la pierna.':'Una sección aislada de la perforante no demuestra su conexión. Gira el plano y rastrea su trayecto a través de la fascia.'):plane==='transverse'?'El plano de imagen corta el eje del vaso: aparece una sección redonda u oval. La forma cambia si el corte es oblicuo o si comprimes.':'El plano de imagen incluye el eje del vaso. Para Doppler, además debes inclinar o dirigir el haz: una sonda en eje largo no garantiza por sí sola un ángulo favorable.'}</p>
   </section>;
 }
 
@@ -98,6 +126,8 @@ export default function AnatomyViewer({ onSelect }) {
     if (!next) return;
     setSelected(id); selectedRef.current=id;
     runtime.current?.highlight(id);
+    const preferred=['ssv','pop','gastrocnemial'].includes(id)?'posterior':id==='asv'?'anterior':'medial';
+    setView(preferred);viewRef.current=preferred;runtime.current?.setView(preferred);
     onSelectRef.current?.(next);
   }
 
@@ -131,7 +161,8 @@ export default function AnatomyViewer({ onSelect }) {
         const key=new THREE.DirectionalLight(0xffffff,3.5); key.position.set(-4,6,8);scene.add(key);
         const rim=new THREE.DirectionalLight(0x6b90ff,3);rim.position.set(4,1,-6);scene.add(rim);
         const meshes=[];
-        const point=arr=>new THREE.Vector3(...arr);
+        // Right limb: viewed from anterior, medial is on the viewer's right.
+        const point=arr=>new THREE.Vector3(-arr[0],arr[1],arr[2]);
         for(const item of VESSELS){
           for(const path of (item.paths||[item.points])){
             const curve=new THREE.CatmullRomCurve3(path.map(point));
@@ -154,7 +185,9 @@ export default function AnatomyViewer({ onSelect }) {
         const bones=new THREE.Group();
         const upper=new THREE.Mesh(new THREE.CapsuleGeometry(.12,3.7,4,12),boneMaterial);upper.position.set(.15,2.07,-.09);bones.add(upper);
         const lower=new THREE.Mesh(new THREE.CapsuleGeometry(.1,3.25,4,12),boneMaterial);lower.position.set(.13,-2.04,.04);bones.add(lower);
+        const fibula=new THREE.Mesh(new THREE.CapsuleGeometry(.055,3.05,4,10),boneMaterial);fibula.position.set(-.27,-2.05,-.03);bones.add(fibula);
         const patella=new THREE.Mesh(new THREE.SphereGeometry(.22,16,12),boneMaterial);patella.scale.set(.75,1,.4);patella.position.set(.1,-.12,.36);bones.add(patella);group.add(bones);
+        const foot=new THREE.Mesh(new THREE.SphereGeometry(1,24,12),skin.material.clone());foot.scale.set(.33,.22,.74);foot.position.set(-.06,-4.06,.38);group.add(foot);
         const ringGeometry=new THREE.TorusGeometry(.35,.008,4,64);
         const ring=new THREE.Mesh(ringGeometry,new THREE.MeshBasicMaterial({color:0x87b4cf,transparent:true,opacity:.32}));
         ring.rotation.x=Math.PI/2;ring.position.y=-4.05;ring.scale.set(3.2,2.4,1);group.add(ring);
@@ -163,8 +196,19 @@ export default function AnatomyViewer({ onSelect }) {
         const slice=new THREE.Mesh(sliceGeometry,new THREE.MeshBasicMaterial({color:0x85d4ed,transparent:true,opacity:.07,side:THREE.DoubleSide,depthWrite:false}));
         const sliceBorder=new THREE.LineSegments(new THREE.EdgesGeometry(sliceGeometry),new THREE.LineBasicMaterial({color:0x87d8ed,transparent:true,opacity:.55,depthWrite:false}));
         const sliceGroup=new THREE.Group();sliceGroup.add(slice,sliceBorder);group.add(sliceGroup);
-        const positionSlice=(id)=>{const item=VESSELS.find(v=>v.id===id);if(item)sliceGroup.position.set(...item.target);};
-        const setPlane=(kind)=>{sliceGroup.rotation.x=kind==='transverse'?Math.PI/2:0;sliceGroup.scale.y=kind==='transverse'?1:1.8;};
+        let localPlane=planeRef.current;
+        const positionSlice=(id)=>{
+          const item=VESSELS.find(v=>v.id===id);if(!item)return;
+          const origin=point(item.target),path=(item.points||item.paths[0]).map(point);
+          let nearest=0,best=Infinity;path.forEach((p,i)=>{const d=p.distanceToSquared(origin);if(d<best){best=d;nearest=i;}});
+          const tangent=path[Math.min(nearest+1,path.length-1)].clone().sub(path[Math.max(0,nearest-1)]).normalize();
+          const outward=new THREE.Vector3(origin.x,0,origin.z).normalize();
+          const normal=localPlane==='transverse'?tangent:new THREE.Vector3().crossVectors(tangent,outward).normalize();
+          if(normal.lengthSq()<.1)normal.set(0,0,1);
+          sliceGroup.position.copy(origin);sliceGroup.quaternion.setFromUnitVectors(new THREE.Vector3(0,0,1),normal);
+          sliceGroup.scale.y=localPlane==='transverse'?1:1.6;
+        };
+        const setPlane=(kind)=>{localPlane=kind;positionSlice(selectedRef.current);};
 
         const highlight=(id)=>{
           meshes.forEach(mesh=>{
@@ -175,11 +219,12 @@ export default function AnatomyViewer({ onSelect }) {
           positionSlice(id);
         };
         const setSystem=(id)=>meshes.forEach(mesh=>{mesh.visible=id==='all'||mesh.userData.system===id;});
-        const setTissue=(show)=>{skin.visible=show;skinEdges.visible=show;bones.visible=show;};
-        const views={anterior:[0,.9,14],medial:[-10,.9,9],posterior:[0,.9,-14]};
+        const setTissue=(show)=>{skin.visible=show;foot.visible=show;skinEdges.visible=show;bones.visible=show;};
+        const views={anterior:[0,.9,14],medial:[10,.9,9],posterior:[0,.9,-14]};
         const setView=(name)=>{camera.position.set(...(views[name]||views.medial));controls.target.set(0,.1,0);controls.update();};
         const reset=()=>{setView('medial');};
-        runtime.current={highlight,setSystem,setTissue,setView,setPlane,reset};
+        const focusSelected=()=>{const target=point((VESSELS.find(v=>v.id===selectedRef.current)||VESSELS[0]).target);const direction=camera.position.clone().sub(controls.target).normalize();controls.target.copy(target);camera.position.copy(target.clone().addScaledVector(direction,7.5));controls.update();};
+        runtime.current={highlight,setSystem,setTissue,setView,setPlane,reset,focusSelected};
         highlight(selectedRef.current);setSystem(filterRef.current);setTissue(tissueRef.current);setView(viewRef.current);setPlane(planeRef.current);
 
         const pointer=new THREE.Vector2(),raycaster=new THREE.Raycaster();
@@ -237,7 +282,7 @@ export default function AnatomyViewer({ onSelect }) {
     </div>
     <div className="av-layout">
       <div className="av-stage">
-        <div className="av-stage-caption"><span>ANATOMÍA ESPACIAL</span><strong>Miembro inferior derecho</strong></div>
+        <div className="av-stage-caption"><span>ANATOMÍA ESPACIAL · {ANATOMY_STRUCTURE_COUNT} GRUPOS</span><strong>Miembro inferior derecho · esquema original</strong></div>
         <div ref={host} className="av-canvas" aria-describedby={helpId}/>
         {status==='loading'&&<div className="av-loading" role="status">Preparando el modelo 3D…</div>}
         {status==='fallback'&&<div className="av-fallback"><svg viewBox="0 0 180 400" role="img" aria-label="Esquema alternativo del sistema venoso"><path d="M40 15 Q20 75 48 170 Q35 210 60 370 L105 370 Q130 230 110 170 Q138 70 115 15Z" fill="#d5e4ef" fillOpacity=".1" stroke="#6d91ae"/><path d="M77 28 L76 160 L83 340" fill="none" stroke="#385df2" strokeWidth="9"/><path d="M64 345 Q33 180 45 70 Q48 30 77 38 M95 345 Q112 240 77 165" fill="none" stroke="#50c5ff" strokeWidth="5"/><path d="M51 230 L80 220 M48 115 L77 111" stroke="#d69b51" strokeWidth="4"/></svg><p>Vista esquemática. El modelo 3D no está disponible en este dispositivo; puedes explorar todas las estructuras con la lista.</p></div>}
@@ -245,8 +290,8 @@ export default function AnatomyViewer({ onSelect }) {
         <div className="av-view-controls" role="group" aria-label="Orientación de la cámara">
           {[['anterior','Anterior'],['medial','Medial'],['posterior','Posterior']].map(([id,label])=><button key={id} type="button" aria-pressed={view===id} onClick={()=>changeView(id)}>{label}</button>)}
         </div>
-        <div className="av-stage-footer"><label><input type="checkbox" checked={tissue} onChange={e=>{setTissue(e.target.checked);tissueRef.current=e.target.checked;runtime.current?.setTissue(e.target.checked);}}/> Tejido transparente</label><button type="button" onClick={()=>{changeView('medial');runtime.current?.reset();}}>Restablecer vista</button></div>
-        <p id={helpId} className="av-gesture">Arrastra para girar · Rueda para acercar · Rectángulo: plano {plane==='transverse'?'transversal':'longitudinal'} ilustrativo</p>
+        <div className="av-stage-footer"><label><input type="checkbox" checked={tissue} onChange={e=>{setTissue(e.target.checked);tissueRef.current=e.target.checked;runtime.current?.setTissue(e.target.checked);}}/> Tejido transparente</label><button type="button" onClick={()=>runtime.current?.focusSelected()}>Acercar estructura</button><button type="button" onClick={()=>{changeView('medial');runtime.current?.reset();}}>Restablecer vista</button></div>
+        <p id={helpId} className="av-gesture">Arrastra para girar · Rueda para acercar · Plano {plane==='transverse'?'transversal al vaso':'que incluye el eje del vaso'}. La cámara es tu punto de vista, no la posición del paciente.</p>
       </div>
       <div className="av-detail">
         <div className="av-vessel-list" role="group" aria-label="Estructuras venosas">
@@ -260,6 +305,6 @@ export default function AnatomyViewer({ onSelect }) {
       </div>
     </div>
     <EchoCorrelation vessel={vessel} plane={plane} setPlane={setPlane}/>
-    <p className="av-note">Modelo original y simplificado para orientación espacial. Calibres, trayectos y conexiones no están a escala; se omiten vasos y variantes. El azul identifica venas en esta ilustración, sin codificar competencia ni dirección Doppler. La anatomía real debe confirmarse por rastreo.</p>
+    <p className="av-note">Modelo original y simplificado para orientación espacial. Calibres, trayectos y conexiones no están a escala; se omiten vasos y variantes, incluidas venas tibiales anteriores y redes musculares completas. Los azules y el ocre distinguen grupos anatómicos, sin codificar competencia ni dirección Doppler. La anatomía real debe confirmarse por rastreo. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5381851/" target="_blank" rel="noreferrer">Referencia anatómica: Lee et al., 2017.</a></p>
   </div>;
 }

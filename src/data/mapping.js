@@ -3,9 +3,109 @@
 export const mappingSources = {
   consensus: { id: 'consensus', title: 'Primer Consenso Latinoamericano de Mapa Venoso Superficial y Perforante', year: 2023, url: 'https://meriteamwork.org/wp-content/uploads/2024/07/Consenso-Mapa-venoso-ESPANOL.pdf', citation: 'Bottini O, Rodriguez Santos F, Boroda A, et al. Int Angiol. 2023;42:45–58. doi:10.23736/S0392-9590.23.04991-X', scope: 'Representación del mapa superficial y perforante; no constituye por sí solo un protocolo completo de adquisición.' },
   svs: { id: 'svs', title: 'Guías SVS / AVF / AVLS: evaluación dúplex', year: 2023, url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11523430/', citation: 'Gloviczki P, et al. The 2023 SVS, AVF, and AVLS clinical practice guidelines. Part II. J Vasc Surg Venous Lymphat Disord.', scope: 'Posición, maniobras, documentación y criterios de reflujo: apartados 1.3–1.4.' },
-  aium: { id: 'aium', title: 'AIUM: ultrasonido venoso periférico, revisión 2024', year: 2026, url: 'https://onlinelibrary.wiley.com/doi/10.1002/jum.70049', citation: 'AIUM Practice Parameter for the Performance of a Peripheral Venous Ultrasound Examination, 2024 Revision. J Ultrasound Med. 2026;45:E1–E9. doi:10.1002/jum.70049', scope: 'Técnica, registro, equipo, seguridad y límites de la exploración.' },
-  esvs: { id: 'esvs', title: 'ESVS 2022: enfermedad venosa crónica', year: 2022, url: 'https://esvs.org/wp-content/uploads/2023/03/ESVS-2022-CVD-Guidelines.pdf', citation: 'De Maeseneer MG, et al. ESVS 2022 Clinical Practice Guidelines on the Management of Chronic Venous Disease of the Lower Limbs. Eur J Vasc Endovasc Surg. 2022;63:184–267. doi:10.1016/j.ejvs.2021.12.024', scope: 'Evaluación anatómica y hemodinámica, sección 2.3.' },
+  aium: { id: 'aium', title: 'AIUM: ultrasonido venoso periférico, revisión 2024', year: 2026, url: 'https://doi.org/10.1002/jum.70049', citation: 'AIUM Practice Parameter for the Performance of a Peripheral Venous Ultrasound Examination, 2024 Revision. J Ultrasound Med. 2026;45:E1–E9. doi:10.1002/jum.70049', scope: 'Técnica, registro, equipo, seguridad y límites de la exploración.' },
+  esvs: { id: 'esvs', title: 'ESVS 2022: enfermedad venosa crónica', year: 2022, url: 'https://doi.org/10.1016/j.ejvs.2021.12.024', citation: 'De Maeseneer MG, et al. ESVS 2022 Clinical Practice Guidelines on the Management of Chronic Venous Disease of the Lower Limbs. Eur J Vasc Endovasc Surg. 2022;63:184–267. doi:10.1016/j.ejvs.2021.12.024', scope: 'Evaluación anatómica y hemodinámica, sección 2.3.' },
   asv: { id: 'asv', title: 'Actualización de término: vena safena anterior (ASV)', year: 2024, url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11523399/', citation: 'Meissner MH, Boyle EM, Labropoulos N, et al. The anterior saphenous vein. Part 1. J Vasc Surg Venous Lymphat Disord. 2024;12:101721. doi:10.1016/j.jvsv.2023.101721', scope: 'Recomienda ASV en lugar de AASV; se conserva AAGSV al enseñar la tabla histórica del consenso de 2023.' }
+};
+
+// Original teaching prompts: acquisition and representation remain distinct.
+const acquisitionByStep = {
+  preparar: {
+    patient: 'Explica el objetivo y verifica tolerancia, movilidad y apoyos antes de decidir la posición.',
+    probe: 'Prepara sonda, gel y limpieza según el contacto y el fabricante.',
+    screen: 'Abre un caso ficticio identificado por lado y objetivo; evita empezar con una conclusión predeterminada.',
+    capture: ['Hoja de trabajo con indicación, antecedentes relevantes y territorios que deben evaluarse.'],
+    quality: ['La pregunta clínica y el alcance del examen quedan explícitos.'],
+    nextDecision: 'Si hay una sospecha clínica aguda, sigue el protocolo asistencial correspondiente; este recorrido de reflujo no la resuelve por sí solo.'
+  },
+  equipo: {
+    patient: 'Acerca el territorio al operador sin mantener hombro elevado o muñeca forzada.',
+    probe: 'Comprueba qué lado del transductor tiene marcador y qué lado de la pantalla le corresponde, según la convención del laboratorio.',
+    screen: 'Empieza en B: encuadra luz, pared y referencias; después optimiza el Doppler para la señal que intentas detectar.',
+    capture: ['Imagen B legible y región Doppler delimitada al objetivo.'],
+    quality: ['Puedes explicar el efecto de cada ajuste antes de cambiar otro.'],
+    nextDecision: 'Si no hay señal, corrige técnica y ajustes antes de atribuir la ausencia a una enfermedad.'
+  },
+  posicion: {
+    patient: 'Para reflujo, paciente estable, miembro examinado dependiente, relajado y sin carga; documenta la alternativa si no puede estar de pie.',
+    probe: 'Usa gel suficiente y contacto ligero para no vaciar la vena que quieres interrogar.',
+    screen: 'Confirma que la vena permanece visible al retirar presión excesiva.',
+    capture: ['Posición utilizada y cualquier limitación de tolerancia o acceso.'],
+    quality: ['La posición permite estudiar el objetivo y mantiene la seguridad del paciente.'],
+    nextDecision: 'Ante intolerancia, cambia a una alternativa apropiada y conserva esa condición en el informe.'
+  },
+  profundo: {
+    patient: 'La posición puede cambiar entre valorar compresión y valorar reflujo; documenta ambas si corresponde.',
+    probe: 'En transversal, centra el segmento y comprime de forma controlada hasta valorar la coaptación, sin deslizarte fuera del vaso.',
+    screen: 'Relaciona la secuencia antes/durante compresión con el mismo segmento anatómico.',
+    capture: ['B sin/con compresión: femoral común, femoral proximal-media-distal y poplítea; completa el protocolo indicado.'],
+    quality: ['No confundes una vena duplicada sin evaluar con compresión completa del eje.'],
+    nextDecision: 'Un examen de reflujo o un esquema de puntos aislados no equivale a excluir TVP con un protocolo completo.'
+  },
+  ingle: {
+    patient: 'Facilita acceso inguinal manteniendo privacidad y una posición tolerada.',
+    probe: 'Localiza la confluencia en transversal; gira siguiendo la luz y recupera el eje largo antes del espectro.',
+    screen: 'Verifica continuidad de GSV con la unión; no asignes nombres únicamente por la forma de una imagen.',
+    capture: ['Anatomía de la unión y espectro basal más la maniobra identificada.'],
+    quality: ['La unión y las tributarias relevantes tienen evidencia localizable.'],
+    nextDecision: 'Si el origen del reflujo no está demostrado, continúa el rastreo sin etiquetar SFJ por defecto.'
+  },
+  gsv: {
+    patient: 'Acceso medial con miembro relajado y dependiente para evaluar reflujo.',
+    probe: 'Avanza con pequeños barridos continuos; vuelve al último punto reconocido si pierdes la vena.',
+    screen: 'Reconoce las relaciones fasciales y confirma cada bifurcación en más de un plano.',
+    capture: ['GSV: registros en muslo superior, medio, distal y pantorrilla; conserva límites de los segmentos anormales.'],
+    quality: ['Puedes volver desde una tributaria al eje y justificar cuál trayecto seguiste.'],
+    nextDecision: 'Detalla la variante observada; no conviertas la pérdida de imagen en ausencia anatómica.'
+  },
+  ssv: {
+    patient: 'Acceso posterior seguro, evitando pedir una postura inestable para alcanzar la fosa poplítea.',
+    probe: 'Sigue SSV cranealmente y localiza su terminación real antes de nombrar la unión.',
+    screen: 'Distingue eje poplíteo, venas gastrocnemias y posible extensión craneal.',
+    capture: ['Trayecto, terminación y respuesta hemodinámica de SSV; ampliación regional si aporta claridad.'],
+    quality: ['La conexión dibujada coincide con una continuidad que sí se observó.'],
+    nextDecision: 'Una SPJ típica no visualizada no debe completarse de memoria en la plantilla.'
+  },
+  tributarias: {
+    patient: 'Explora las conexiones que explican el patrón clínico, sin limitarte a las venas visibles.',
+    probe: 'Sigue cada rama hasta demostrar su relación con ejes, fascia o sistema profundo.',
+    screen: 'Relaciona dirección y respuesta a maniobras con la anatomía, sin deducir función del calibre.',
+    capture: ['Origen demostrado, propagación, conexiones y reentrada si puede establecerse.'],
+    quality: ['Distingues una comunicante superficial de una perforante que atraviesa fascia.'],
+    nextDecision: 'Documenta conexiones no resueltas y solicita evaluación adicional cuando el territorio exceda el estudio.'
+  },
+  reflujo: {
+    patient: 'Mantén la posición identificada y explica la maniobra que se repetirá.',
+    probe: 'Obtén eje largo, sitúa muestra dentro de la luz y orienta el haz para registrar una señal interpretable.',
+    screen: 'Guarda antes, durante y después de la provocación; identifica dirección anatómica y línea de base.',
+    capture: ['Espectro con escala temporal y cursores entre inicio y final del flujo retrógrado, con vena, lado y maniobra.'],
+    quality: ['La duración procede del flujo observado, no del tiempo que mantuviste la compresión.'],
+    nextDecision: 'Repite un registro equívoco; aplica el umbral de la guía al segmento concreto.'
+  },
+  diametros: {
+    patient: 'Registra posición y evita que la sonda reduzca el diámetro por presión.',
+    probe: 'Obtén un corte verdaderamente transversal; no midas una sección oblicua como diámetro.',
+    screen: 'Para este mapa incluye pared venosa y especifica unidades y convención.',
+    capture: ['Diámetros rotulados en mm; longitudes y alturas en cm con referencia anatómica.'],
+    quality: ['Una dilatación focal queda diferenciada del calibre representativo de un segmento rectilíneo.'],
+    nextDecision: 'Si el borde o el nivel no son reproducibles, registra la limitación en vez de inventar una medida.'
+  },
+  cartografia: {
+    patient: 'Transfiere al mapa la lateralidad y las condiciones ya documentadas.',
+    probe: 'Utiliza las imágenes guardadas para comprobar cada trayecto y conexión, sin añadir observaciones que no se adquirieron.',
+    screen: 'Separa color de condición, trazo de plano y símbolos; conserva las tres caras y usa ampliaciones pertinentes.',
+    capture: ['Mapa superficial/perforante legible que concuerda con el registro del estudio.'],
+    quality: ['Los ejes normales también quedan documentados y las incertidumbres siguen visibles.'],
+    nextDecision: 'Si dos caras o el informe discrepan, vuelve a la evidencia y corrige antes de cerrar.'
+  },
+  informe: {
+    patient: 'El informe de práctica usa un código ficticio; el ejercicio no sustituye un estudio asistencial.',
+    probe: 'Comprueba que el registro permite a otra persona localizar los segmentos explorados.',
+    screen: 'Resume anatomía, función, medidas y limitaciones por territorio.',
+    capture: ['Informe descriptivo, mapa e imágenes concordantes para revisión con docente.'],
+    quality: ['No declaras normal un territorio no evaluado ni conviertes una medida en una indicación terapéutica automática.'],
+    nextDecision: 'La evaluación de habilidad práctica y la revisión clínica corresponden a formación supervisada.'
+  }
 };
 
 export const mappingSteps = [
@@ -43,7 +143,7 @@ export const mappingSteps = [
     id: 'profundo', number: 4, phase: 'Rastreo', title: 'Revisa el sistema profundo', duration: '8 min',
     objective: 'Reconocer que excluirlo del dibujo superficial no equivale a omitir su estudio.',
     explanation: 'El consenso latinoamericano limita qué se representa en su mapa superficial y perforante. La exploración dúplex clínica debe evaluar también el sistema profundo conforme a la indicación y al protocolo del laboratorio.',
-    actions: ['Identifica y sigue los segmentos profundos pertinentes: femoral común, femoral y poplítea, ampliando según la indicación.', 'En los segmentos accesibles, obtén vistas transversales antes y durante compresión para valorar coaptación, junto con la información Doppler.', 'Registra anatomía, permeabilidad, cambios parietales y hemodinámica. Busca duplicaciones para no dejar un canal sin evaluar.', 'Si hay hallazgos sugestivos de trombosis, obstrucción o limitación técnica, documenta y sigue el circuito clínico correspondiente; no fuerces el caso dentro de un ejercicio de reflujo superficial.'],
+    actions: ['Identifica y sigue los segmentos profundos previstos por el protocolo: femoral común, femoral proximal, media y distal y poplítea; evalúa pantorrilla y territorios adicionales cuando corresponda a la indicación.', 'En los segmentos accesibles, obtén vistas transversales antes y durante compresión para valorar coaptación, junto con la información Doppler. No sustituyas un protocolo completo de TVP por una revisión de puntos aislados.', 'Registra anatomía, permeabilidad, cambios parietales y hemodinámica. Busca duplicaciones para no dejar un canal sin evaluar; documenta espectros profundos según el protocolo de reflujo.', 'Si hay hallazgos sugestivos de trombosis, obstrucción o limitación técnica, documenta y sigue el circuito clínico correspondiente; no fuerces el caso dentro de un ejercicio de reflujo superficial.'],
     observe: 'Compresibilidad de segmentos accesibles, señal y variación del flujo; imágenes identificadas por lado y nivel.',
     pitfalls: ['Llamar “vena femoral superficial” a la vena femoral y asumir que no es profunda.', 'Excluir TVP con una sola imagen o porque hay color.', 'Considerar que toda vena no compresible tiene la misma causa o antigüedad.'],
     checkpoint: { question: 'El sistema profundo no se dibuja en esta cartografía. ¿Se omite su evaluación?', options: ['Sí', 'No: su estudio se registra en el informe y las imágenes'], answer: 1, feedback: 'El alcance del mapa no define por sí solo el alcance de la exploración clínica.' },
@@ -93,7 +193,7 @@ export const mappingSteps = [
     id: 'reflujo', number: 9, phase: 'Medición', title: 'Demuestra y mide el reflujo', duration: '10 min',
     objective: 'Medir tiempo de flujo retrógrado en un espectro interpretable.',
     explanation: 'El color orienta y el Doppler pulsado documenta la evolución en el tiempo. Rojo y azul en la pantalla representan dirección respecto del haz según la barra activa, no competencia ni oxigenación.',
-    actions: ['En longitudinal, coloca la muestra en la luz, ajusta escala, filtro, ganancia y barrido para registrar flujo basal, maniobra y recuperación.', 'Provoca la maniobra pertinente, suelta la compresión distal cuando corresponda y registra el flujo retrógrado posterior.', 'Usa cursores sobre el eje temporal para medir el intervalo retrógrado observado. Repite si hay artefactos o resultado equívoco.', 'Como referencia SVS/AVF/AVLS: >0.5 s en ejes superficiales, tibiales, femoral profunda y perforantes; >1 s en femoral común, femoral y poplítea.', 'No extrapoles la definición de perforante patológica en C2 a todo contexto: esta guía combina flujo hacia afuera >0.5 s y diámetro >3.5 mm. El contexto y otros consensos importan.'],
+    actions: ['En longitudinal, coloca la muestra en la luz, ajusta escala, filtro, ganancia y barrido para registrar flujo basal, maniobra y recuperación.', 'En femoral común/SFJ utiliza Valsalva o aumento distal según el protocolo; en segmentos más distales utiliza aumento distal. En compresión distal, observa el aumento y el flujo al liberar; con Valsalva, identifica la respuesta durante la maniobra sin confundir ambos momentos.', 'Usa cursores sobre el eje temporal para medir el intervalo retrógrado observado, no la duración de la compresión o del esfuerzo. Repite si hay artefactos o resultado equívoco.', 'Como referencia SVS/AVF/AVLS: >0.5 s en ejes superficiales, tibiales, femoral profunda y perforantes; >1 s en femoral común, femoral y poplítea.', 'No extrapoles la definición de perforante patológica en C2 a todo contexto: esta guía combina flujo hacia afuera >0.5 s y diámetro >3.5 mm. El contexto y otros consensos importan.'],
     observe: 'Tiempo, segmento, maniobra y posición registrados; criterio utilizado identificado.',
     pitfalls: ['Medir el pico de compresión como si fuera reflujo.', 'Confundir aliasing con inversión real de flujo.', 'Llamar patológica a toda perforante por diámetro aislado.', 'Atribuir los umbrales al consenso de cartografía, que no los define.'],
     checkpoint: { question: 'GSV con 0.8 s de flujo retrógrado reproducible tras la maniobra: según SVS, ¿supera el umbral?', options: ['Sí, supera 0.5 s', 'No, todas las venas requieren más de 1 s'], answer: 0, feedback: 'Los umbrales dependen del segmento; la calidad de adquisición y el contexto siguen siendo necesarios.' },
@@ -131,6 +231,7 @@ export const mappingSteps = [
   }
 ].map(step => ({
   ...step,
+  acquisition: acquisitionByStep[step.id],
   shortTitle: step.title,
   intro: step.explanation,
   checkpoint: { ...step.checkpoint, explanation: step.checkpoint.feedback },
