@@ -5,7 +5,7 @@ import {conceptById} from '../../data/visualCurriculum';
 import {conceptSequences,methodSequences} from '../../data/visualSequences';
 import {methodologyByStep} from '../../data/methodology';
 import {mappingSteps,mappingSources} from '../../data/mapping';
-import {interpolateVisual,beamFlowAngle} from '../../simulation/methodologyMotion';
+import {interpolateVisual,beamFlowAngle,animateAcquisitionGesture} from '../../simulation/methodologyMotion';
 import {VISUAL_DEFAULTS} from '../../simulation/visualScience';
 import ScientificDiagram from './ScientificDiagram';
 import VisualProcessStrip from './VisualProcessStrip';
@@ -30,7 +30,7 @@ export default function VisualPlayer({mode='concept',conceptId='sound',stepId='p
  if(mode==='method'){
   const actual=scene.visual||guide.frames[index]?.visual,error=scene.errorVisual||guide.frames[index]?.errorVisual;
   guided={...actual};if(variant==='error'){guided={...error};isError=true;}else if(variant==='correction'){guided=interpolateVisual(error,actual,phase);isError=phase<.5;}
-  else if(playing){if(actual.kind==='scan')guided.level=Math.max(0,actual.level-18)+phase*18;if(actual.kind==='orient'){guided.rotation=actual.rotation;guided.tilt=actual.tilt*phase;}if(actual.kind==='compression')guided.pressure=actual.pressure>=90?phase*actual.pressure:90*(1-phase);}
+  else if(playing)guided=animateAcquisitionGesture(actual,scene.id,phase);
  }
  const p={...VISUAL_DEFAULTS,...(['filter','power'].includes(id)?{speed:3}:{}),[primary.key]:primary.initial,...scene.parameters,...(value===null?{}:{[primary.key]:value})};
  if(guided){Object.assign(p,{level:guided.level,pressure:guided.pressure,rotation:guided.rotation,inverted:guided.marker,mode:guided.mode,region:guided.region,maneuver:guided.maneuver,position:guided.position,support:guided.support,unloaded:guided.unloaded});p.angle=['orientation','perforator'].includes(id)?guided.rotation:id==='position'?(guided.position==='standing'?90:guided.position==='reverse'?45:0):beamFlowAngle(guided.rotation,guided.tilt);if(id==='documentation')p.gain=variant==='correction'?30+phase*70:isError?30:100;}

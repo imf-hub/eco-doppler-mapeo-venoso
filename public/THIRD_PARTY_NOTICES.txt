@@ -947,3 +947,26 @@ https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html
 Sin garantías de exactitud clínica. Los esquemas y variantes deben evaluarse por un docente y confirmarse en el paciente.
 
 Visualización postural v3: una copia reflejada de la piel derecha completa la silueta contralateral. No constituye un atlas izquierdo ni datos contralaterales de un paciente. Se conserva CC BY-SA 4.0 para esta adaptación visual. El torso, la bata y las manos procedurales son ilustraciones originales de contexto postural; no son mallas anatómicas clínicas de Z-Anatomy.
+
+
+REFERENCIAS DE METODOLOGÍA V4
+# Referencias visuales del procedimiento · v4
+
+Se incorporan cuatro figuras publicadas, sin reconstrucción. Tres proceden del artículo original de investigación de Carlos Alberto Engelhorn, Ana Luiza Dias Valiente Engelhorn, Elisa da Silva de Oliveira, Julia Marques de Macedo, Leticia Bressan Anizelli y Maria Luiza Oliveira de Mendonça: **The role of the giacomini vein in preoperative mapping of lower limb varicose veins**. Jornal Vascular Brasileiro. 2024;23:e20240058. [Artículo y metadatos](https://pmc.ncbi.nlm.nih.gov/articles/PMC11614100/), [DOI de la versión inglesa](https://doi.org/10.1590/1677-5449.202400582), [PDF editorial](https://jvascbras.org/article/10.1590/1677-5449.202400581/pdf/jvb-23-e20240058-trans1.pdf).
+
+Licencia: **Creative Commons Attribution 4.0 International**, [texto y condiciones](https://creativecommons.org/licenses/by/4.0/). La declaración de copyright de la página 1 del PDF confirma que los autores autorizan reproducción y distribución con atribución; su enlace de licencia apunta a CC BY 4.0.
+
+## Archivos y límites de uso docente
+
+- `giacomini-reflujo-pw.jpg`: figura 1, página 3. Imagen Doppler color + espectral PW de Giacomini con reflujo. Los cursores indican 1372 ms y el pie original redondea a 1,3 s. Útil para reconocer muestra, base y delimitación temporal; la posición relativa a la línea de base no equivale por sí sola a dirección anatómica. Es un caso publicado, no una imagen normal ni un preajuste del equipo.
+- `giacomini-profundidad.jpg`: figura 2, página 3. Cortes transversal y longitudinal de Giacomini. La cifra de 13 mm mide **profundidad desde la piel**, no diámetro. No se atribuye competencia ni normalidad al estudio.
+- `giacomini-conexiones.png`: figura 3, página 4. **Esquema publicado**, no ecografía. Compara conexiones de Giacomini con tributarias, unión safenopoplítea y safena parva. Los porcentajes pertenecen a esta cohorte y no son universales. No es la plantilla ni la simbología oficial del consenso latinoamericano.
+- `vsm-diametro-calibradores.jpg`: figura 2 de Vinicius Adorno Gonçalves, Daniel Martins Vieira Zimmermann y Fábio Hüsemann Menezes, **Correlations between ultrasound, tomographic, and intraoperative measurements of the great saphenous vein used as an arterial graft**. J Vasc Bras. 2023;22:e20220121. [Artículo](https://pmc.ncbi.nlm.nih.gov/articles/PMC10275644/), [DOI](https://doi.org/10.1590/1677-5449.202201212), [PDF](https://jvascbras.org/article/10.1590/1677-5449.202201211/pdf/jvb-22-e20220121-trans1.pdf). Licencia **CC BY 4.0**, confirmada mediante el enlace de licencia en la primera página del PDF. [JPEG original](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/1617/10275644/19c39c843f33/jvb-22-e20220121-g02-en.jpg). Se conserva el archivo original, sin recorte ni alteraciones. Muestra calibradores transversales y unidades; el artículo describe diámetro externo y presión mínima. **Contexto: evaluación en supino para injerto arterial, no estudio hemodinámico de reflujo.** No transferir posición ni umbrales de injerto a la metodología del mapa. No muestra nombre, expediente ni fecha individual visible.
+
+Adaptaciones: las tres figuras de Engelhorn se extrajeron de las imágenes embebidas en el PDF mediante pypdf. Sus bytes se copiaron sin alteraciones; no hay recortes, filtros, generación de píxeles ni sustitución de rótulos. La figura de Gonçalves se descargó como JPEG del repositorio PMC y se conservó sin modificación. Sus dimensiones, tamaño y SHA-256 están en `media-manifest.json`. Se sirven los propios archivos como miniaturas por su tamaño reducido (cada uno menor de 180 kB).
+
+## Revisión y exclusiones
+
+Revisadas visualmente las imágenes completas el 6 de noviembre de 2026. Las figuras 1 y 2 conservan fecha/hora del equipo y nombre del laboratorio; no muestran nombre de paciente ni número de expediente visible. La figura 3 es un dibujo sin datos individuales.
+
+Se rechazaron las figuras 4–7 del mismo artículo porque conservan números que podrían ser identificadores de expediente. Se rechazaron las fotografías de “living anatomy” de Simka et al. (2024, figuras 13–14) como ejemplo de técnica: su contexto de clase no debe presentarse como postura ideal de un examen clínico y muestran personas reconocibles. Otras revisiones excelentes de ultrasonido venoso se limitaron a referencia bibliográfica cuando la licencia era NC/ND, todos los derechos reservados o no suficientemente clara. No se reconstruyó ninguna ecografía faltante como si fuera real.

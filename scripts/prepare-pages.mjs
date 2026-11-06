@@ -4,7 +4,7 @@ const root=process.cwd(),dist=path.resolve(root,'dist'),docs=path.resolve(root,'
 if(!fs.existsSync(path.join(dist,'index.html')))throw new Error('Primero ejecuta npm run build');
 fs.mkdirSync(docs,{recursive:true});
 // Remove only generated folders; preserve the clinical and maintenance documents.
-for(const name of ['assets','media']){
+for(const name of ['assets','media','mapeo']){
  const target=path.resolve(docs,name);
  if(!target.startsWith(docs+path.sep)||!docs.startsWith(root+path.sep))throw new Error('Ruta de salida no válida');
  fs.rmSync(target,{recursive:true,force:true});

@@ -10,6 +10,15 @@ export function interpolateVisual(from,to,progress){
  return result;
 }
 export function beamFlowAngle(rotation,tilt){return Math.acos(Math.min(1,Math.abs(Math.sin(rotation*Math.PI/180)*Math.sin(tilt*Math.PI/180))))*180/Math.PI;}
+// Animate the intended action. Centering is not a pressure-release maneuver.
+// Pressure numbers are illustration coordinates, not clinical force settings.
+export function animateAcquisitionGesture(state,frameId,progress){
+ const phase=Math.max(0,Math.min(1,progress)),result={...state};
+ if(state.kind==='scan')result.level=Math.max(0,state.level-18)+phase*18;
+ if(state.kind==='orient')result.tilt=state.tilt*phase;
+ if(state.kind==='compression')result.pressure=frameId==='liberar-y-completar'?90*(1-phase):state.pressure>=90?phase*state.pressure:0;
+ return result;
+}
 export function preparedForReflux(state){return !!(state.support&&state.unloaded&&['standing','reverse'].includes(state.position));}
 export function scanCoverage(levels){
  const clean=levels.filter(Number.isFinite).map(v=>Math.min(100,Math.max(0,v)));

@@ -2,25 +2,27 @@
 
 Aplicación educativa estática para médicos que comienzan en ultrasonido. La experiencia prioriza demostraciones, adquisiciones publicadas y manipulación de controles.
 
-## Experiencia 3.0
+## Experiencia 4.0
 
-- Recorrido visual de doce etapas y 37 momentos, desde preparación hasta informe y cartografía.
+- Metodología con una página de ruta, doce páginas de etapa y 37 subpáginas de maniobra; entradas HTML y direcciones independientes.
+- Escena exterior, mano y sonda, plano, 3D, imagen publicada, error/corrección y registro en secuencia editorial visible.
 - 34 conceptos con 144 microescenas, cortes, gráficas, comparaciones y secuencias de objetos.
 - Laboratorio acústico 3D: propagación, transductor, cristales, gel, tejidos, foco y recepción.
 - Seis interacciones/artefactos y demostración de uso prudente y ergonomía.
-- 19 referencias auténticas (16 imágenes y 3 vídeos), con región, licencia, normalidad o patología identificadas.
+- 23 referencias publicadas, incluidas imágenes ecográficas, fotografías, un esquema anatómico publicado y tres vídeos; con modo, región, licencia y contexto.
 - Imagen real junto al modelo; ampliación, reproducción lenta y avance por fotogramas.
 - Atlas derecho por capas y contexto postural completo para posición y apoyos.
 - Ecógrafo didáctico B, color, PW y Power, con controles causales y medición ilustrativa.
 - Cartografía de tres caras, símbolos, medidas e informe, con exportación SVG/JSON/PDF.
 
-No hay cuestionarios, preguntas al alumno, calificaciones ni bloqueos por respuestas. La explicación extensa y las fuentes se consultan a demanda.
+No hay cuestionarios, preguntas al alumno, calificaciones ni bloqueos por respuestas. Las páginas de metodología muestran el texto clínico junto a cada ilustración; los fundamentos conservan sus notas ampliables.
 
 ## Fundamento y créditos
 
 El consenso latinoamericano estandariza representación cartográfica. La adquisición se apoya además en las guías identificadas de AIUM, ESVS y SVS/AVF/AVLS. El programa no acredita competencia clínica ni sustituye adquisición supervisada.
 
-- [Diseño y límites de esta versión](docs/visual-learning-v3.md)
+- [Páginas de metodología y límites](docs/methodology-pages-v4.md)
+- [Fundamentos visuales](docs/visual-learning-v3.md)
 - [Matriz clínica](docs/consensus-evidence.md)
 - [Referencias auténticas](docs/media-visual-v3.md)
 - [Anatomía: procedencia y licencia](docs/visual-assets-3d.md)
@@ -30,9 +32,9 @@ Las mallas adaptadas de Z-Anatomy/BodyParts3D conservan CC BY-SA 4.0. El pacient
 
 ## Desarrollo y publicación
 
-Requiere Node compatible con Vite 7. Instalación: npm ci. Desarrollo: npm run dev. Verificación técnica: npm test. Construcción: npm run build.
+Requiere Node compatible con Vite 7. Instalación: npm ci. Desarrollo: npm run dev. Verificación técnica: npm test. Construcción: npm run build. La construcción genera las cincuenta entradas de metodología. Validarlas: node scripts/validate-methodology-pages.mjs.
 
-El resultado dist/ es portable a Hostinger: subir su contenido a public_html. No requiere servidor Node, base de datos ni credenciales. Las rutas usan fragmentos # y los activos usan direcciones relativas.
+El resultado dist/ es portable a Hostinger: subir su contenido a public_html. No requiere servidor Node, base de datos ni credenciales. La metodología tiene entradas físicas bajo mapeo/; las demás secciones conservan fragmentos #. Los activos se resuelven desde una base relativa, también en las subpáginas.
 
 Para GitHub Pages, ejecutar node scripts/prepare-pages.mjs después de construir. Publicar main, carpeta /docs. Los documentos de evidencia se conservan al preparar esa carpeta.
 

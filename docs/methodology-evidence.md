@@ -6,7 +6,7 @@ Revisión: 6 de noviembre de 2026. Alcance: preparación, posición, manejo del 
 
 | Fuente | Localizador comprobado | Regla incorporada |
 | --- | --- | --- |
-| [AIUM, revisión 2024, publicada en enero de 2026](https://doi.org/10.1002/jum.70049) | Venous Insufficiency: Lower Extremity, Technique 1–5 y Recording 1–7; Documentation | Evaluación anatómica/funcional, registro y posición en dependencia; identificación de limitaciones. |
+| [AIUM, revisión 2024, volumen 45 de 2026; primera publicación electrónica 16 de septiembre de 2025](https://doi.org/10.1002/jum.70049) | Venous Insufficiency: Lower Extremity, Technique 1–5 y Recording 1–7; Documentation | Evaluación anatómica/funcional, registro y posición en dependencia; identificación de limitaciones. |
 | [SVS/AVF/AVLS 2023, parte II](https://pmc.ncbi.nlm.nih.gov/articles/PMC11523430/) | Good Practice Statements 1.4.1–1.4.5; Implementation Remarks 1.3.2 | Posición, provocación por segmento, rastreo hasta origen, imágenes con/sin compresión y registro temporal. |
 | [Necas, 2010](https://pmc.ncbi.nlm.nih.gov/articles/PMC5024873/) | Testing for venous incompetence; Fig. 2–3 y discusión de maniobras | Diferencia entre Valsalva y aumento distal; variabilidad de respuesta a posición y ejecución. Apoyo técnico complementario, no nueva regla terapéutica. |
 | [Consenso latinoamericano, PDF español](https://meriteamwork.org/wp-content/uploads/2024/07/Consenso-Mapa-venoso-ESPANOL.pdf) | pp. 1–2; pp. 3–6; pp. 7–8; pp. 9–12 | Plantillas, códigos, medidas, referencias, limitaciones y ampliaciones. Regula representación, no todo el protocolo de adquisición. |
