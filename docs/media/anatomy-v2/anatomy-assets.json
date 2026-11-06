@@ -1,0 +1,3332 @@
+{
+  "version": "2026.11.06-visual-v2",
+  "sourceRelease": "2026.10.29-uniones2",
+  "sourceCommitAtlas": "a26b7a9a4c7a4e3af169593092150cca3d95fbe5",
+  "files": [
+    {
+      "id": "vascular",
+      "url": "./media/anatomy-v2/vascular.glb",
+      "bytes": 3618576,
+      "sha256": "9430c5c84c1ebb48ccb97f92ca3c4aa2a5880096aa1d1582b0d5bfacc5e87159",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "Z-Anatomy · selección/adaptación IMF 2026.10.29-uniones2",
+      "sourceUrl": "https://github.com/LluisV/Z-Anatomy/tree/PC-Version/Resources/Models/FBX",
+      "description": "Venas y arterias del miembro inferior derecho y pelvis, con complementos y uniones adaptadas del atlas IMF.",
+      "optional": false,
+      "meshes": 50
+    },
+    {
+      "id": "surface",
+      "url": "./media/anatomy-v2/surface.glb",
+      "bytes": 812620,
+      "sha256": "e49e295f0a51b8ad97db44addc42da7be9ee0ba0be1083eecc70604975429911",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "Z-Anatomy · selección/adaptación IMF 2026.10.29-uniones2",
+      "sourceUrl": "https://github.com/LluisV/Z-Anatomy/tree/PC-Version/Resources/Models/FBX",
+      "description": "Regiones de superficie y fascias del miembro inferior derecho.",
+      "optional": false,
+      "meshes": 30
+    },
+    {
+      "id": "bones",
+      "url": "./media/anatomy-v2/bones.glb",
+      "bytes": 738240,
+      "sha256": "389cf6ee35813544ac815964582d2898b695bff0f01422ca64fb8ef54b9a2d57",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "Z-Anatomy · selección/adaptación IMF 2026.10.29-uniones2",
+      "sourceUrl": "https://github.com/LluisV/Z-Anatomy/tree/PC-Version/Resources/Models/FBX",
+      "description": "Huesos del miembro inferior derecho y pelvis seleccionada.",
+      "optional": false,
+      "meshes": 33
+    },
+    {
+      "id": "muscles",
+      "url": "./media/anatomy-v2/muscles.glb",
+      "bytes": 2781936,
+      "sha256": "f50bf68f8737ad1b8ae84c14c8c42bc068854a0b51eca9fb77c851ba05a73d66",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "Z-Anatomy · selección/adaptación IMF 2026.10.29-uniones2",
+      "sourceUrl": "https://github.com/LluisV/Z-Anatomy/tree/PC-Version/Resources/Models/FBX",
+      "description": "Músculos del miembro inferior derecho; capa opcional.",
+      "optional": true,
+      "meshes": 30
+    }
+  ],
+  "bounds": {
+    "min": [
+      -9.184698104858398,
+      -0.038236990571022034,
+      -11.834403991699219
+    ],
+    "max": [
+      15.142611503601074,
+      106.77314758300781,
+      17.56473731994629
+    ]
+  },
+  "orientationNotes": [
+    "Miembro inferior derecho y pelvis parcial; laterality indicada por nombres originales terminados en r y selección del atlas IMF.",
+    "Coordenadas horneadas, unidades editoriales en cm: +Y proximal/altura desde planta, +X medial, +Z anterior.",
+    "Los cuatro archivos comparten coordenadas; no centrar o escalar cada capa por separado.",
+    "Para normalización conjunta sugerida: modelo.position = -center; escala uniforme 0.08 a 0.1; conservar relaciones entre capas.",
+    "No es anatomía individual de un paciente. Diámetros, uniones y variantes requieren confirmación clínica.",
+    "Las venas tibiales/fibulares representan grupos; no modelan por separado todas las venas acompañantes. Sin válvulas en las mallas fuente."
+  ],
+  "suggestedCameras": {
+    "anterior": [
+      0,
+      50,
+      150
+    ],
+    "medial": [
+      150,
+      50,
+      0
+    ],
+    "posterior": [
+      0,
+      50,
+      -150
+    ],
+    "oblique": [
+      100,
+      60,
+      120
+    ]
+  },
+  "anchors": {
+    "vic": [
+      7.763996782437177,
+      100.64197873397613,
+      5.001607414702295
+    ],
+    "vii": [
+      6.609950344379132,
+      96.32094673743616,
+      2.878858233415164
+    ],
+    "vie": [
+      5.401120288555439,
+      92.92199161236103,
+      4.668670247151302
+    ],
+    "glu": [
+      4.509728056223605,
+      90.44544018650555,
+      -1.207988594277367
+    ],
+    "sac": [
+      7.81068368348919,
+      91.81446373110911,
+      -1.7989568999556245
+    ],
+    "pud": [
+      5.892248741785686,
+      83.7041239420573,
+      0.694148817492856
+    ],
+    "vfp": [
+      0.08161670751425436,
+      70.86007821702064,
+      5.152724282704992
+    ],
+    "circ": [
+      -0.3222482429295671,
+      84.07218254753975,
+      2.8473052016430573
+    ],
+    "vsm": [
+      5.187275013825272,
+      67,
+      5.869762842552739
+    ],
+    "vsp": [
+      1.0526986084724899,
+      32,
+      -7.164611641515969
+    ],
+    "vpop": [
+      1.3308393868840789,
+      47,
+      -2.549411906606965
+    ],
+    "vat": [
+      -1.4121134740039394,
+      28.990384317342205,
+      -0.0031502882805828267
+    ],
+    "vpt": [
+      1.987750460988835,
+      26.79999999999998,
+      -1.732167280107387
+    ],
+    "vfib": [
+      -1.334163337884729,
+      26.79999999999998,
+      -3.0917610389683166
+    ],
+    "arcd": [
+      -1.6834925168181119,
+      4.235785073168103,
+      6.186640983129646
+    ],
+    "dig": [
+      -2.152148778872056,
+      2.0771871817044234,
+      12.780110647732561
+    ],
+    "plan": [
+      -1.3588986065197983,
+      1.5048509179719858,
+      9.937190647907848
+    ],
+    "arcp": [
+      0.2669490842871327,
+      2.9599876657861177,
+      3.903255401087589
+    ],
+    "epi": [
+      4.7423371066354685,
+      96.60214788355056,
+      12.176447495060785
+    ],
+    "epud": [
+      6.885983015885993,
+      80.64165359041584,
+      8.473085684562797
+    ],
+    "gen": [
+      0.2642732652269001,
+      44.76872180696919,
+      1.1489067334776908
+    ],
+    "vfc": [
+      4.934759556705093,
+      86.5,
+      7.541884013958641
+    ],
+    "vf": [
+      3.2223878447631336,
+      65,
+      5.446784877525097
+    ],
+    "aic": [
+      8.145914074090811,
+      100.83694381713867,
+      5.527149591079126
+    ],
+    "aie": [
+      4.485550431347398,
+      93.93800995841859,
+      3.824023752616196
+    ],
+    "afp": [
+      1.0348154127597808,
+      70.27949676513671,
+      3.249032252530257
+    ],
+    "apop": [
+      1.2754823437859029,
+      46.16429210887235,
+      -1.6225967536253085
+    ],
+    "ata": [
+      -0.7506162564757144,
+      26.017454115443403,
+      0.7609062136349205
+    ],
+    "atp": [
+      1.9439045000190098,
+      17.088319762794388,
+      -2.0836656924363823
+    ],
+    "afib": [
+      -0.9326877784165534,
+      16.937962280946785,
+      -3.2607433295848627
+    ],
+    "adp": [
+      1.2645758495268682,
+      7.067014596361291,
+      4.020348799733464
+    ],
+    "ase": [
+      2.7379300428644364,
+      94.8382080132043,
+      10.936113894477188
+    ],
+    "afc": [
+      3.7809867010278215,
+      87.09738960912672,
+      7.0199338036068415
+    ],
+    "af": [
+      2.7963152413281285,
+      71.91299315421811,
+      5.939520515532848
+    ],
+    "vsaa": [
+      2.068972127314876,
+      74.84809435395633,
+      8.571059147575323
+    ],
+    "giac": [
+      4.146511737069412,
+      62.4754791129537,
+      -2.0411090434420296
+    ],
+    "varq": [
+      3.658984645176029,
+      24.964662612494774,
+      -4.631832409623856
+    ],
+    "obt": [
+      4.664069259867949,
+      90.08934918571921,
+      2.951084000904576
+    ],
+    "pdodd": [
+      4.221737737701434,
+      64.04810303485408,
+      5.377241623501817
+    ],
+    "pboyd": [
+      2.0518075923601975,
+      35.84807209321717,
+      -0.524025760845872
+    ],
+    "pcock": [
+      2.803722473658195,
+      17.173607568256184,
+      -3.57164281995452
+    ]
+  },
+  "landmarks": {
+    "sfj": [
+      4.938625842364989,
+      85.34999999999995,
+      7.8114384660540255
+    ]
+  },
+  "structures": [
+    {
+      "name": "Common_iliac_veinr",
+      "id": "vic",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Common_iliac_veinr",
+      "bounds": {
+        "min": [
+          6.592121124267578,
+          97.71126556396484,
+          3.6421260833740234
+        ],
+        "max": [
+          8.979467391967773,
+          103.1740951538086,
+          6.352341175079346
+        ]
+      }
+    },
+    {
+      "name": "External_iliac_veinr",
+      "id": "vie",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "External_iliac_veinr",
+      "bounds": {
+        "min": [
+          4.05637264251709,
+          88.14990234375,
+          2.8477790355682373
+        ],
+        "max": [
+          7.808941841125488,
+          98.41471099853516,
+          7.488278388977051
+        ]
+      }
+    },
+    {
+      "name": "Inferior_gluteal_veinsr",
+      "id": "glu",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Inferior_gluteal_veinsr",
+      "bounds": {
+        "min": [
+          2.393827438354492,
+          81.12629699707031,
+          -3.7637500762939453
+        ],
+        "max": [
+          6.660946369171143,
+          94.37897491455078,
+          1.925386667251587
+        ]
+      }
+    },
+    {
+      "name": "Superior_gluteal_veinsr",
+      "id": "glu",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Superior_gluteal_veinsr",
+      "bounds": {
+        "min": [
+          1.4279747009277344,
+          90.89273071289062,
+          -4.444225788116455
+        ],
+        "max": [
+          6.65814208984375,
+          95.3088150024414,
+          1.9251224994659424
+        ]
+      }
+    },
+    {
+      "name": "Lateral_sacral_veinsr",
+      "id": "sac",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Lateral_sacral_veinsr",
+      "bounds": {
+        "min": [
+          6.150509834289551,
+          88.91238403320312,
+          -4.012226104736328
+        ],
+        "max": [
+          8.260847091674805,
+          93.49729919433594,
+          0.789055585861206
+        ]
+      }
+    },
+    {
+      "name": "Internal_pudendal_veinr",
+      "id": "pud",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Internal_pudendal_veinr",
+      "bounds": {
+        "min": [
+          3.749270439147949,
+          81.00363159179688,
+          -2.5580081939697266
+        ],
+        "max": [
+          8.885613441467285,
+          89.75498962402344,
+          6.545238494873047
+        ]
+      }
+    },
+    {
+      "name": "Deep_femoral_veinr",
+      "id": "vfp",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Deep_femoral_veinr",
+      "bounds": {
+        "min": [
+          -0.2882242202758789,
+          59.469242095947266,
+          3.6989238262176514
+        ],
+        "max": [
+          4.355278968811035,
+          84.47916412353516,
+          7.883420944213867
+        ]
+      }
+    },
+    {
+      "name": "Perforating_veinsr",
+      "id": "vfp",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Perforating_veinsr",
+      "bounds": {
+        "min": [
+          -3.555232048034668,
+          61.706390380859375,
+          2.5385451316833496
+        ],
+        "max": [
+          1.3492140769958496,
+          78.5774917602539,
+          6.384009838104248
+        ]
+      }
+    },
+    {
+      "name": "Medial_circumflex_femoral_veinsr",
+      "id": "circ",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Medial_circumflex_femoral_veinsr",
+      "bounds": {
+        "min": [
+          -1.690058708190918,
+          83.37491607666016,
+          0.28128528594970703
+        ],
+        "max": [
+          4.235335826873779,
+          86.54717254638672,
+          7.690036773681641
+        ]
+      }
+    },
+    {
+      "name": "Lateral_circumflex_femoral_veinsr",
+      "id": "circ",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Lateral_circumflex_femoral_veinsr",
+      "bounds": {
+        "min": [
+          -5.590113639831543,
+          81.9515380859375,
+          -0.7787792682647705
+        ],
+        "max": [
+          4.991826057434082,
+          86.40515899658203,
+          7.922086238861084
+        ]
+      }
+    },
+    {
+      "name": "Popliteal_veinr",
+      "id": "vpop",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Popliteal_veinr",
+      "bounds": {
+        "min": [
+          -0.3795356750488281,
+          40.759613037109375,
+          -4.035460472106934
+        ],
+        "max": [
+          2.4313101768493652,
+          57.17476272583008,
+          1.8507788181304932
+        ]
+      }
+    },
+    {
+      "name": "Anterior_tibial_veinsr",
+      "id": "vat",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Anterior_tibial_veinsr",
+      "bounds": {
+        "min": [
+          -2.495266914367676,
+          11.9192533493042,
+          -3.0246176719665527
+        ],
+        "max": [
+          0.18764972686767578,
+          41.050819396972656,
+          1.7029577493667603
+        ]
+      }
+    },
+    {
+      "name": "Fibular_veinsr",
+      "id": "vfib",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Fibular_veinsr",
+      "bounds": {
+        "min": [
+          -1.7239580154418945,
+          3.2982611656188965,
+          -4.3102707862854
+        ],
+        "max": [
+          0.6203413009643555,
+          35.439796447753906,
+          -1.0669026374816895
+        ]
+      }
+    },
+    {
+      "name": "Dorsal_venous_arch_of_footr",
+      "id": "arcd",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Dorsal_venous_arch_of_footr",
+      "bounds": {
+        "min": [
+          -2.270395278930664,
+          4.393311977386475,
+          -0.01589369773864746
+        ],
+        "max": [
+          2.281299591064453,
+          6.39341926574707,
+          6.451154708862305
+        ]
+      }
+    },
+    {
+      "name": "Dorsal_metatarsal_veinsr",
+      "id": "arcd",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Dorsal_metatarsal_veinsr",
+      "bounds": {
+        "min": [
+          -4.850798606872559,
+          1.954232096672058,
+          2.9237611293792725
+        ],
+        "max": [
+          1.2606520652770996,
+          6.361057758331299,
+          11.290938377380371
+        ]
+      }
+    },
+    {
+      "name": "Dorsal_digital_veins_of_footr",
+      "id": "dig",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Dorsal_digital_veins_of_footr",
+      "bounds": {
+        "min": [
+          -5.63539981842041,
+          1.3574249744415283,
+          8.461980819702148
+        ],
+        "max": [
+          0.6651134490966797,
+          3.0261378288269043,
+          16.163410186767578
+        ]
+      }
+    },
+    {
+      "name": "Medial_plantar_veinsr",
+      "id": "plan",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Medial_plantar_veinsr",
+      "bounds": {
+        "min": [
+          2.1996865272521973,
+          1.8225725889205933,
+          -0.09824275970458984
+        ],
+        "max": [
+          3.1444311141967773,
+          3.9096128940582275,
+          9.87765121459961
+        ]
+      }
+    },
+    {
+      "name": "Lateral_plantar_veinsr",
+      "id": "plan",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Lateral_plantar_veinsr",
+      "bounds": {
+        "min": [
+          -1.2773923873901367,
+          1.5029141902923584,
+          -0.0748298168182373
+        ],
+        "max": [
+          2.6916637420654297,
+          3.5980865955352783,
+          1.9432563781738281
+        ]
+      }
+    },
+    {
+      "name": "Plantar_metatarsal_veinsr",
+      "id": "plan",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Plantar_metatarsal_veinsr",
+      "bounds": {
+        "min": [
+          -3.296006202697754,
+          0.8752132654190063,
+          2.8642449378967285
+        ],
+        "max": [
+          0.70556640625,
+          3.959287405014038,
+          11.30363941192627
+        ]
+      }
+    },
+    {
+      "name": "Plantar_digital_veinsr",
+      "id": "plan",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Plantar_digital_veinsr",
+      "bounds": {
+        "min": [
+          -5.402143478393555,
+          0.3449542224407196,
+          1.8381826877593994
+        ],
+        "max": [
+          2.891833782196045,
+          1.9460848569869995,
+          16.62555694580078
+        ]
+      }
+    },
+    {
+      "name": "Plantar_venous_archr",
+      "id": "arcp",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Plantar_venous_archr",
+      "bounds": {
+        "min": [
+          -1.3223886489868164,
+          1.5028173923492432,
+          1.8317649364471436
+        ],
+        "max": [
+          3.1156110763549805,
+          3.8696835041046143,
+          4.843416213989258
+        ]
+      }
+    },
+    {
+      "name": "Superficial_epigastric_veinr",
+      "id": "epi",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Superficial_epigastric_veinr",
+      "bounds": {
+        "min": [
+          0.6445484161376953,
+          85.23534393310547,
+          7.5740580558776855
+        ],
+        "max": [
+          7.572309494018555,
+          106.5908203125,
+          13.966638565063477
+        ]
+      }
+    },
+    {
+      "name": "External_pudendal_veinsr",
+      "id": "epud",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "External_pudendal_veinsr",
+      "bounds": {
+        "min": [
+          5.377773284912109,
+          73.87364196777344,
+          7.472868919372559
+        ],
+        "max": [
+          9.070000648498535,
+          84.04907989501953,
+          9.753034591674805
+        ]
+      }
+    },
+    {
+      "name": "Genicular_veinsr",
+      "id": "gen",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Genicular_veinsr",
+      "bounds": {
+        "min": [
+          -3.1119089126586914,
+          36.78191375732422,
+          -4.001773357391357
+        ],
+        "max": [
+          5.356006145477295,
+          53.2491340637207,
+          4.6546759605407715
+        ]
+      }
+    },
+    {
+      "name": "Femoral_common_segment",
+      "id": "vfc",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Femoral_veinr",
+      "bounds": {
+        "min": [
+          3.5723390579223633,
+          84.25,
+          6.569429397583008
+        ],
+        "max": [
+          5.443209171295166,
+          88.53155517578125,
+          8.170844078063965
+        ]
+      }
+    },
+    {
+      "name": "Common_iliac_arteryr",
+      "id": "aic",
+      "system": "arterial",
+      "kind": "art",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Common_iliac_arteryr",
+      "bounds": {
+        "min": [
+          5.6098809242248535,
+          97.87586212158203,
+          3.561661958694458
+        ],
+        "max": [
+          10.426562309265137,
+          103.25060272216797,
+          7.0420308113098145
+        ]
+      }
+    },
+    {
+      "name": "External_iliac_arteryr",
+      "id": "aie",
+      "system": "arterial",
+      "kind": "art",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "External_iliac_arteryr",
+      "bounds": {
+        "min": [
+          3.1122145652770996,
+          89.15321350097656,
+          2.5333755016326904
+        ],
+        "max": [
+          6.609278678894043,
+          98.70112609863281,
+          6.274895668029785
+        ]
+      }
+    },
+    {
+      "name": "Deep_femoral_arteryr",
+      "id": "afp",
+      "system": "arterial",
+      "kind": "art",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Deep_femoral_arteryr",
+      "bounds": {
+        "min": [
+          -0.4664335250854492,
+          59.10047912597656,
+          -0.003757476806640625
+        ],
+        "max": [
+          3.784130573272705,
+          85.0780029296875,
+          7.837749004364014
+        ]
+      }
+    },
+    {
+      "name": "Popliteal_arteryr",
+      "id": "apop",
+      "system": "arterial",
+      "kind": "art",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Popliteal_arteryr",
+      "bounds": {
+        "min": [
+          -0.5655622482299805,
+          37.36519241333008,
+          -3.8615946769714355
+        ],
+        "max": [
+          2.9433932304382324,
+          56.56412887573242,
+          1.9100877046585083
+        ]
+      }
+    },
+    {
+      "name": "Anterior_tibial_arteryr",
+      "id": "ata",
+      "system": "arterial",
+      "kind": "art",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Anterior_tibial_arteryr",
+      "bounds": {
+        "min": [
+          -1.8149433135986328,
+          8.437051773071289,
+          -2.4648399353027344
+        ],
+        "max": [
+          1.99183988571167,
+          38.79922103881836,
+          2.1879889965057373
+        ]
+      }
+    },
+    {
+      "name": "Posterior_tibial_arteryr",
+      "id": "atp",
+      "system": "arterial",
+      "kind": "art",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Posterior_tibial_arteryr",
+      "bounds": {
+        "min": [
+          -0.647613525390625,
+          3.860053777694702,
+          -3.1773195266723633
+        ],
+        "max": [
+          3.734590530395508,
+          37.5084114074707,
+          -0.030236482620239258
+        ]
+      }
+    },
+    {
+      "name": "Fibular_arteryr",
+      "id": "afib",
+      "system": "arterial",
+      "kind": "art",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Fibular_arteryr",
+      "bounds": {
+        "min": [
+          -2.3113298416137695,
+          5.461485862731934,
+          -4.679775714874268
+        ],
+        "max": [
+          0.018619537353515625,
+          37.511962890625,
+          -1.7651143074035645
+        ]
+      }
+    },
+    {
+      "name": "Dorsalis_pedis_arteryr",
+      "id": "adp",
+      "system": "arterial",
+      "kind": "art",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Dorsalis_pedis_arteryr",
+      "bounds": {
+        "min": [
+          0.611210823059082,
+          5.160326957702637,
+          1.3686714172363281
+        ],
+        "max": [
+          1.9888033866882324,
+          8.525856018066406,
+          7.951601505279541
+        ]
+      }
+    },
+    {
+      "name": "Superficial_epigastric_arteryr",
+      "id": "ase",
+      "system": "arterial",
+      "kind": "art",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Superficial_epigastric_arteryr",
+      "bounds": {
+        "min": [
+          1.497725486755371,
+          84.73491668701172,
+          7.474490642547607
+        ],
+        "max": [
+          4.450978755950928,
+          106.77314758300781,
+          13.045804977416992
+        ]
+      }
+    },
+    {
+      "name": "afc",
+      "id": "afc",
+      "system": "arterial",
+      "kind": "art",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Femoral_arteryr",
+      "bounds": {
+        "min": [
+          3.0263962745666504,
+          84.8499984741211,
+          5.615525245666504
+        ],
+        "max": [
+          4.4665961265563965,
+          89.80873107910156,
+          8.115842819213867
+        ]
+      }
+    },
+    {
+      "name": "af",
+      "id": "af",
+      "system": "arterial",
+      "kind": "art",
+      "layer": "vascular",
+      "source": "Z-Anatomy",
+      "sourceName": "Femoral_arteryr",
+      "bounds": {
+        "min": [
+          1.2628588676452637,
+          55.968505859375,
+          1.1552637815475464
+        ],
+        "max": [
+          4.268970489501953,
+          84.8499984741211,
+          8.070056915283203
+        ]
+      }
+    },
+    {
+      "name": "Internal_iliac_veinr",
+      "id": "vii",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy � uniones adaptadas IMF",
+      "sourceName": "Internal_iliac_veinr",
+      "bounds": {
+        "min": [
+          5.998521327972412,
+          94.03424835205078,
+          1.4141935110092163
+        ],
+        "max": [
+          7.820837020874023,
+          98.4165267944336,
+          4.796926975250244
+        ]
+      }
+    },
+    {
+      "name": "Great_saphenous_veinr",
+      "id": "vsm",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy � uniones adaptadas IMF",
+      "sourceName": "Great_saphenous_veinr",
+      "bounds": {
+        "min": [
+          1.809175968170166,
+          5.8287353515625,
+          -3.162846088409424
+        ],
+        "max": [
+          7.072213649749756,
+          85.51643371582031,
+          8.752914428710938
+        ]
+      }
+    },
+    {
+      "name": "Small_saphenous_veinr",
+      "id": "vsp",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy � uniones adaptadas IMF",
+      "sourceName": "Small_saphenous_veinr",
+      "bounds": {
+        "min": [
+          -1.8246450424194336,
+          3.410754680633545,
+          -7.414992332458496
+        ],
+        "max": [
+          1.6858344078063965,
+          49.049861907958984,
+          0.12737488746643066
+        ]
+      }
+    },
+    {
+      "name": "Posterior_tibial_veinsr",
+      "id": "vpt",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy � uniones adaptadas IMF",
+      "sourceName": "Posterior_tibial_veinsr",
+      "bounds": {
+        "min": [
+          -1.1672687530517578,
+          3.3992464542388916,
+          -3.29406476020813
+        ],
+        "max": [
+          4.137962341308594,
+          37.55129623413086,
+          -0.0702979564666748
+        ]
+      }
+    },
+    {
+      "name": "Femoral_distal_segment",
+      "id": "vf",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "Z-Anatomy � uniones adaptadas IMF",
+      "sourceName": "Femoral_veinr",
+      "bounds": {
+        "min": [
+          1.493433952331543,
+          56.510799407958984,
+          1.0530236959457397
+        ],
+        "max": [
+          4.710081577301025,
+          84.25,
+          8.130376815795898
+        ]
+      }
+    },
+    {
+      "name": "vsaa",
+      "id": "vsaa",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "IMF � uni�n continua adaptada",
+      "sourceName": "vsaa",
+      "bounds": {
+        "min": [
+          1.1361191272735596,
+          63.65851974487305,
+          7.918204307556152
+        ],
+        "max": [
+          4.991580009460449,
+          85.10160827636719,
+          9.186044692993164
+        ]
+      }
+    },
+    {
+      "name": "giac",
+      "id": "giac",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "IMF � uni�n continua adaptada",
+      "sourceName": "giac",
+      "bounds": {
+        "min": [
+          1.0897136926651,
+          48.78370666503906,
+          -5.075739860534668
+        ],
+        "max": [
+          6.75611686706543,
+          72.68110656738281,
+          6.485208511352539
+        ]
+      }
+    },
+    {
+      "name": "varq",
+      "id": "varq",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "IMF � uni�n continua adaptada",
+      "sourceName": "varq",
+      "bounds": {
+        "min": [
+          2.5580639839172363,
+          9.042407989501953,
+          -6.00985050201416
+        ],
+        "max": [
+          4.468857765197754,
+          38.038002014160156,
+          0.16020739078521729
+        ]
+      }
+    },
+    {
+      "name": "obt",
+      "id": "obt",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "IMF � uni�n continua adaptada",
+      "sourceName": "obt",
+      "bounds": {
+        "min": [
+          3.292975664138794,
+          85.57777404785156,
+          1.8783842325210571
+        ],
+        "max": [
+          6.270334243774414,
+          94.93350219726562,
+          4.306251049041748
+        ]
+      }
+    },
+    {
+      "name": "pdodd",
+      "id": "pdodd",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "IMF � uni�n continua adaptada",
+      "sourceName": "pdodd",
+      "bounds": {
+        "min": [
+          3.6884379386901855,
+          63.89307403564453,
+          5.241211891174316
+        ],
+        "max": [
+          5.0634894371032715,
+          64.30033874511719,
+          5.562201023101807
+        ]
+      }
+    },
+    {
+      "name": "pboyd",
+      "id": "pboyd",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "IMF � uni�n continua adaptada",
+      "sourceName": "pboyd",
+      "bounds": {
+        "min": [
+          0.3759371340274811,
+          35.642913818359375,
+          -1.0962457656860352
+        ],
+        "max": [
+          3.7617015838623047,
+          36.13241958618164,
+          0.4943229556083679
+        ]
+      }
+    },
+    {
+      "name": "pcock",
+      "id": "pcock",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "IMF � uni�n continua adaptada",
+      "sourceName": "pcock",
+      "bounds": {
+        "min": [
+          3.0958333015441895,
+          11.616273880004883,
+          -3.632481575012207
+        ],
+        "max": [
+          3.4163172245025635,
+          11.9810791015625,
+          -3.0844016075134277
+        ]
+      }
+    },
+    {
+      "name": "pcock_1",
+      "id": "pcock",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "IMF � uni�n continua adaptada",
+      "sourceName": "pcock",
+      "bounds": {
+        "min": [
+          2.4033679962158203,
+          16.947649002075195,
+          -4.922266006469727
+        ],
+        "max": [
+          2.792369842529297,
+          17.4191837310791,
+          -2.6854429244995117
+        ]
+      }
+    },
+    {
+      "name": "pcock_2",
+      "id": "pcock",
+      "system": "venous",
+      "kind": "vein",
+      "layer": "vascular",
+      "source": "IMF � uni�n continua adaptada",
+      "sourceName": "pcock",
+      "bounds": {
+        "min": [
+          2.166266679763794,
+          22.320219039916992,
+          -5.612151622772217
+        ],
+        "max": [
+          3.1312406063079834,
+          22.846410751342773,
+          -1.9180901050567627
+        ]
+      }
+    },
+    {
+      "name": "Fascia_latar",
+      "id": null,
+      "system": "fascia",
+      "kind": "fascia",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Fascia_latar",
+      "bounds": {
+        "min": [
+          -6.936359405517578,
+          43.0697135925293,
+          -8.433850288391113
+        ],
+        "max": [
+          9.000000953674316,
+          100.06111145019531,
+          9.080015182495117
+        ]
+      }
+    },
+    {
+      "name": "Crural_fasciar",
+      "id": null,
+      "system": "fascia",
+      "kind": "fascia",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Crural_fasciar",
+      "bounds": {
+        "min": [
+          -5.686606407165527,
+          0.67694491147995,
+          -7.712482452392578
+        ],
+        "max": [
+          6.408172130584717,
+          44.87725830078125,
+          16.743228912353516
+        ]
+      }
+    },
+    {
+      "name": "Popliteal_fasciar",
+      "id": null,
+      "system": "fascia",
+      "kind": "fascia",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Popliteal_fasciar",
+      "bounds": {
+        "min": [
+          -2.1332149505615234,
+          44.42282485961914,
+          -5.014152526855469
+        ],
+        "max": [
+          5.010428428649902,
+          54.09830856323242,
+          -2.9763684272766113
+        ]
+      }
+    },
+    {
+      "name": "Gluteal_regionr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Gluteal_regionr",
+      "bounds": {
+        "min": [
+          -8.057243347167969,
+          76.97703552246094,
+          -11.834403991699219
+        ],
+        "max": [
+          9.000000953674316,
+          101.52587890625,
+          1.228317141532898
+        ]
+      }
+    },
+    {
+      "name": "Hip_regionr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Hip_regionr",
+      "bounds": {
+        "min": [
+          -9.030797958374023,
+          79.48577880859375,
+          -3.818446159362793
+        ],
+        "max": [
+          -6.064202308654785,
+          90.31494903564453,
+          6.799880504608154
+        ]
+      }
+    },
+    {
+      "name": "Anterior_region_of_kneer",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Anterior_region_of_kneer",
+      "bounds": {
+        "min": [
+          -5.333104133605957,
+          37.98380661010742,
+          -1.1192655563354492
+        ],
+        "max": [
+          7.031090259552002,
+          50.609737396240234,
+          8.391562461853027
+        ]
+      }
+    },
+    {
+      "name": "Posterior_region_of_kneer",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Posterior_region_of_kneer",
+      "bounds": {
+        "min": [
+          -5.217047691345215,
+          38.778953552246094,
+          -7.332332611083984
+        ],
+        "max": [
+          7.103043079376221,
+          50.77077102661133,
+          1.6979588270187378
+        ]
+      }
+    },
+    {
+      "name": "Medial_malleolusr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Medial_malleolusr",
+      "bounds": {
+        "min": [
+          3.8859753608703613,
+          5.504669189453125,
+          -3.3615779876708984
+        ],
+        "max": [
+          4.793347358703613,
+          9.812521934509277,
+          0.8685863018035889
+        ]
+      }
+    },
+    {
+      "name": "Lateral_malleolusr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Lateral_malleolusr",
+      "bounds": {
+        "min": [
+          -2.9323806762695312,
+          4.713548183441162,
+          -4.513843059539795
+        ],
+        "max": [
+          -0.36040401458740234,
+          10.025297164916992,
+          -0.8326318264007568
+        ]
+      }
+    },
+    {
+      "name": "Lateral_retromalleolar_regionr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Lateral_retromalleolar_regionr",
+      "bounds": {
+        "min": [
+          -2.4299936294555664,
+          4.230989456176758,
+          -6.868725776672363
+        ],
+        "max": [
+          2.4432759284973145,
+          11.983874320983887,
+          -2.6879358291625977
+        ]
+      }
+    },
+    {
+      "name": "Medial_retromalleolar_regionr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Medial_retromalleolar_regionr",
+      "bounds": {
+        "min": [
+          1.6742768287658691,
+          4.758131980895996,
+          -6.868725776672363
+        ],
+        "max": [
+          4.6641035079956055,
+          11.813547134399414,
+          -0.7437214851379395
+        ]
+      }
+    },
+    {
+      "name": "Anterior_region_of_ankler",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Anterior_region_of_ankler",
+      "bounds": {
+        "min": [
+          -2.58048152923584,
+          5.644569396972656,
+          -4.961777210235596
+        ],
+        "max": [
+          4.433569431304932,
+          12.630243301391602,
+          3.126451015472412
+        ]
+      }
+    },
+    {
+      "name": "Anterior_region_of_legr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Anterior_region_of_legr",
+      "bounds": {
+        "min": [
+          -5.921154022216797,
+          12.063824653625488,
+          -2.347834587097168
+        ],
+        "max": [
+          5.896019458770752,
+          38.99460983276367,
+          4.97495698928833
+        ]
+      }
+    },
+    {
+      "name": "Posterior_region_of_legr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Posterior_region_of_legr",
+      "bounds": {
+        "min": [
+          -5.92115592956543,
+          11.7622709274292,
+          -8.84595775604248
+        ],
+        "max": [
+          5.95941162109375,
+          40.68397903442383,
+          -0.3137960433959961
+        ]
+      }
+    },
+    {
+      "name": "Metatarsal_regionr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Metatarsal_regionr",
+      "bounds": {
+        "min": [
+          -5.199851989746094,
+          2.0116848945617676,
+          1.5260199308395386
+        ],
+        "max": [
+          3.4278669357299805,
+          7.184861660003662,
+          11.475515365600586
+        ]
+      }
+    },
+    {
+      "name": "Hallucial_eminencer",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Hallucial_eminencer",
+      "bounds": {
+        "min": [
+          0.09777545928955078,
+          0.032201457768678665,
+          7.877979755401611
+        ],
+        "max": [
+          3.7839293479919434,
+          3.100064277648926,
+          13.050053596496582
+        ]
+      }
+    },
+    {
+      "name": "Dorsum_of_footr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Dorsum_of_footr",
+      "bounds": {
+        "min": [
+          -3.1334400177001953,
+          3.251481771469116,
+          -2.134860038757324
+        ],
+        "max": [
+          4.433571815490723,
+          9.212897300720215,
+          5.958518028259277
+        ]
+      }
+    },
+    {
+      "name": "Soler",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Soler",
+      "bounds": {
+        "min": [
+          -3.3641719818115234,
+          0.2841356694698334,
+          -1.2067899703979492
+        ],
+        "max": [
+          2.8067760467529297,
+          1.52762770652771,
+          9.08094310760498
+        ]
+      }
+    },
+    {
+      "name": "Lateral_part_of_longitudinal_arch_of_footr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Lateral_part_of_longitudinal_arch_of_footr",
+      "bounds": {
+        "min": [
+          -5.540395736694336,
+          0.28364667296409607,
+          -3.4616737365722656
+        ],
+        "max": [
+          -0.9164838790893555,
+          1.4239939451217651,
+          7.801900863647461
+        ]
+      }
+    },
+    {
+      "name": "Medial_part_of_longitudinal_arch_of_footr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Medial_part_of_longitudinal_arch_of_footr",
+      "bounds": {
+        "min": [
+          -0.21031475067138672,
+          0.20934320986270905,
+          -1.594498634338379
+        ],
+        "max": [
+          4.260944366455078,
+          2.854482889175415,
+          9.26654052734375
+        ]
+      }
+    },
+    {
+      "name": "Medial_border_of_footr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Medial_border_of_footr",
+      "bounds": {
+        "min": [
+          2.692018508911133,
+          0.6538936495780945,
+          -3.3430213928222656
+        ],
+        "max": [
+          4.763839244842529,
+          7.7947187423706055,
+          9.802556991577148
+        ]
+      }
+    },
+    {
+      "name": "Lateral_border_of_footr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Lateral_border_of_footr",
+      "bounds": {
+        "min": [
+          -5.901442527770996,
+          0.6803649067878723,
+          -3.8076577186584473
+        ],
+        "max": [
+          -1.1883668899536133,
+          5.001328945159912,
+          8.864033699035645
+        ]
+      }
+    },
+    {
+      "name": "Dorsal_surfaces_of_digits_of_footr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Dorsal_surfaces_of_digits_of_footr",
+      "bounds": {
+        "min": [
+          -5.921494483947754,
+          1.1440340280532837,
+          7.73480224609375
+        ],
+        "max": [
+          2.7243309020996094,
+          3.8160736560821533,
+          17.56473731994629
+        ]
+      }
+    },
+    {
+      "name": "Plantar_surfaces_of_digits_of_footr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Plantar_surfaces_of_digits_of_footr",
+      "bounds": {
+        "min": [
+          -5.940610885620117,
+          -0.038236990571022034,
+          7.764892578125
+        ],
+        "max": [
+          2.565211296081543,
+          1.8525439500808716,
+          17.56473731994629
+        ]
+      }
+    },
+    {
+      "name": "Heel_regionr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Heel_regionr",
+      "bounds": {
+        "min": [
+          -2.154876708984375,
+          0.16094326972961426,
+          -7.880073547363281
+        ],
+        "max": [
+          4.646552085876465,
+          6.925889015197754,
+          -1.572497844696045
+        ]
+      }
+    },
+    {
+      "name": "Anterior_region_of_thighr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Anterior_region_of_thighr",
+      "bounds": {
+        "min": [
+          -9.184698104858398,
+          49.9735221862793,
+          -1.610511302947998
+        ],
+        "max": [
+          8.643216133117676,
+          101.58887481689453,
+          10.965490341186523
+        ]
+      }
+    },
+    {
+      "name": "Posterior_region_of_thighr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Posterior_region_of_thighr",
+      "bounds": {
+        "min": [
+          -9.13016128540039,
+          50.2354850769043,
+          -8.570792198181152
+        ],
+        "max": [
+          8.849831581115723,
+          80.76194763183594,
+          2.48797345161438
+        ]
+      }
+    },
+    {
+      "name": "Hypogastric_regionr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Hypogastric_regionr",
+      "bounds": {
+        "min": [
+          1.9793510437011719,
+          82.86740112304688,
+          8.678970336914062
+        ],
+        "max": [
+          9.020196914672852,
+          96.34373474121094,
+          14.91423511505127
+        ]
+      }
+    },
+    {
+      "name": "Inguinal_regionr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Inguinal_regionr",
+      "bounds": {
+        "min": [
+          -3.1507396697998047,
+          82.41231536865234,
+          8.384109497070312
+        ],
+        "max": [
+          6.060942649841309,
+          97.41770935058594,
+          13.125724792480469
+        ]
+      }
+    },
+    {
+      "name": "Sacral_regionr",
+      "id": null,
+      "system": "surface",
+      "kind": "skin",
+      "layer": "surface",
+      "source": "Z-Anatomy",
+      "sourceName": "Sacral_regionr",
+      "bounds": {
+        "min": [
+          0.8594293594360352,
+          89.2550277709961,
+          -8.914421081542969
+        ],
+        "max": [
+          9.000000953674316,
+          97.33457946777344,
+          -6.596779823303223
+        ]
+      }
+    },
+    {
+      "name": "Tibiar",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Tibiar",
+      "bounds": {
+        "min": [
+          -2.5789051055908203,
+          7.5218119621276855,
+          -3.2959675788879395
+        ],
+        "max": [
+          5.265786170959473,
+          43.31813049316406,
+          3.5063464641571045
+        ]
+      }
+    },
+    {
+      "name": "Sesamoid_bones_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Sesamoid_bones_of_footr",
+      "bounds": {
+        "min": [
+          0.9624137878417969,
+          1.063502311706543,
+          9.363531112670898
+        ],
+        "max": [
+          2.6979570388793945,
+          1.865748405456543,
+          10.726884841918945
+        ]
+      }
+    },
+    {
+      "name": "Distal_phalanx_of_third_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Distal_phalanx_of_third_finger_of_footr",
+      "bounds": {
+        "min": [
+          -3.3222837448120117,
+          0.9477539658546448,
+          14.82796573638916
+        ],
+        "max": [
+          -2.437458038330078,
+          1.5641340017318726,
+          16.027484893798828
+        ]
+      }
+    },
+    {
+      "name": "Middle_phalanx_of_fifth_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Middle_phalanx_of_fifth_finger_of_footr",
+      "bounds": {
+        "min": [
+          -5.542385101318359,
+          0.9575626850128174,
+          10.977449417114258
+        ],
+        "max": [
+          -4.6827850341796875,
+          1.6178210973739624,
+          11.756434440612793
+        ]
+      }
+    },
+    {
+      "name": "Proximal_phalanx_of_first_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Proximal_phalanx_of_first_finger_of_footr",
+      "bounds": {
+        "min": [
+          0.2961874008178711,
+          1.1326379776000977,
+          10.992055892944336
+        ],
+        "max": [
+          2.9108328819274902,
+          2.905816078186035,
+          14.444135665893555
+        ]
+      }
+    },
+    {
+      "name": "Middle_phalanx_of_third_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Middle_phalanx_of_third_finger_of_footr",
+      "bounds": {
+        "min": [
+          -3.1654739379882812,
+          1.0965367555618286,
+          13.33987808227539
+        ],
+        "max": [
+          -2.0547285079956055,
+          1.9264923334121704,
+          15.083684921264648
+        ]
+      }
+    },
+    {
+      "name": "Distal_phalanx_of_second_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Distal_phalanx_of_second_finger_of_footr",
+      "bounds": {
+        "min": [
+          -1.8894109725952148,
+          0.9462918043136597,
+          15.364142417907715
+        ],
+        "max": [
+          -0.8709182739257812,
+          1.704633116722107,
+          16.73080062866211
+        ]
+      }
+    },
+    {
+      "name": "Distal_phalanx_of_first_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Distal_phalanx_of_first_finger_of_footr",
+      "bounds": {
+        "min": [
+          -0.04290294647216797,
+          0.994817316532135,
+          13.771143913269043
+        ],
+        "max": [
+          2.0363268852233887,
+          2.141721487045288,
+          16.46221160888672
+        ]
+      }
+    },
+    {
+      "name": "Middle_phalanx_of_fourth_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Middle_phalanx_of_fourth_finger_of_footr",
+      "bounds": {
+        "min": [
+          -4.54609489440918,
+          0.9819074869155884,
+          12.228323936462402
+        ],
+        "max": [
+          -3.432037353515625,
+          1.8155502080917358,
+          13.633720397949219
+        ]
+      }
+    },
+    {
+      "name": "Proximal_phalanx_of_third_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Proximal_phalanx_of_third_finger_of_footr",
+      "bounds": {
+        "min": [
+          -2.88027286529541,
+          1.215689778327942,
+          10.608251571655273
+        ],
+        "max": [
+          -1.241044044494629,
+          2.413390636444092,
+          13.629672050476074
+        ]
+      }
+    },
+    {
+      "name": "Distal_phalanx_of_fifth_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Distal_phalanx_of_fifth_finger_of_footr",
+      "bounds": {
+        "min": [
+          -5.641641616821289,
+          0.9203156232833862,
+          11.55850887298584
+        ],
+        "max": [
+          -4.852766990661621,
+          1.4837474822998047,
+          12.65131950378418
+        ]
+      }
+    },
+    {
+      "name": "Distal_phalanx_of_fourth_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Distal_phalanx_of_fourth_finger_of_footr",
+      "bounds": {
+        "min": [
+          -4.657231330871582,
+          0.9239187240600586,
+          13.372727394104004
+        ],
+        "max": [
+          -3.7783021926879883,
+          1.6571722030639648,
+          14.540326118469238
+        ]
+      }
+    },
+    {
+      "name": "Proximal_phalanx_of_fifth_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Proximal_phalanx_of_fifth_finger_of_footr",
+      "bounds": {
+        "min": [
+          -5.4638261795043945,
+          0.9700114130973816,
+          8.501705169677734
+        ],
+        "max": [
+          -3.629693031311035,
+          2.0145492553710938,
+          11.179861068725586
+        ]
+      }
+    },
+    {
+      "name": "Middle_phalanx_of_second_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Middle_phalanx_of_second_finger_of_footr",
+      "bounds": {
+        "min": [
+          -1.7160634994506836,
+          1.1842318773269653,
+          13.89427375793457
+        ],
+        "max": [
+          -0.4835062026977539,
+          2.092602252960205,
+          15.656981468200684
+        ]
+      }
+    },
+    {
+      "name": "Proximal_phalanx_of_fourth_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Proximal_phalanx_of_fourth_finger_of_footr",
+      "bounds": {
+        "min": [
+          -4.220918655395508,
+          0.996570348739624,
+          9.84605598449707
+        ],
+        "max": [
+          -2.4106197357177734,
+          2.37231183052063,
+          12.445494651794434
+        ]
+      }
+    },
+    {
+      "name": "Proximal_phalanx_of_second_finger_of_footr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Proximal_phalanx_of_second_finger_of_footr",
+      "bounds": {
+        "min": [
+          -1.4467763900756836,
+          1.3031095266342163,
+          11.244565963745117
+        ],
+        "max": [
+          0.33957958221435547,
+          2.598362922668457,
+          14.182724952697754
+        ]
+      }
+    },
+    {
+      "name": "Fifth_metatarsal_boner",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Fifth_metatarsal_boner",
+      "bounds": {
+        "min": [
+          -4.795904159545898,
+          0.9887257814407349,
+          1.5961676836013794
+        ],
+        "max": [
+          -1.0935077667236328,
+          4.105837345123291,
+          8.969457626342773
+        ]
+      }
+    },
+    {
+      "name": "First_metatarsal_boner",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "First_metatarsal_boner",
+      "bounds": {
+        "min": [
+          0.7836751937866211,
+          1.463938593864441,
+          5.083402633666992
+        ],
+        "max": [
+          2.968475818634033,
+          5.953385829925537,
+          11.440998077392578
+        ]
+      }
+    },
+    {
+      "name": "Third_metatarsal_boner",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Third_metatarsal_boner",
+      "bounds": {
+        "min": [
+          -2.2222251892089844,
+          1.3418903350830078,
+          4.355307579040527
+        ],
+        "max": [
+          0.08560466766357422,
+          5.786097526550293,
+          11.130751609802246
+        ]
+      }
+    },
+    {
+      "name": "Fourth_metatarsal_boner",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Fourth_metatarsal_boner",
+      "bounds": {
+        "min": [
+          -3.422109603881836,
+          1.2411041259765625,
+          3.3665828704833984
+        ],
+        "max": [
+          -0.4349212646484375,
+          4.938210487365723,
+          10.218465805053711
+        ]
+      }
+    },
+    {
+      "name": "Second_metatarsal_boner",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Second_metatarsal_boner",
+      "bounds": {
+        "min": [
+          -0.8137321472167969,
+          1.352878451347351,
+          4.469725608825684
+        ],
+        "max": [
+          0.9251070022583008,
+          6.3439717292785645,
+          11.515399932861328
+        ]
+      }
+    },
+    {
+      "name": "Talusr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Talusr",
+      "bounds": {
+        "min": [
+          -0.5755376815795898,
+          4.986256122589111,
+          -3.6104960441589355
+        ],
+        "max": [
+          3.6354293823242188,
+          8.547542572021484,
+          2.295926094055176
+        ]
+      }
+    },
+    {
+      "name": "Intermediate_cuneiform_boner",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Intermediate_cuneiform_boner",
+      "bounds": {
+        "min": [
+          -0.33748722076416016,
+          4.667759418487549,
+          2.978060483932495
+        ],
+        "max": [
+          1.6148996353149414,
+          7.069862365722656,
+          5.274273872375488
+        ]
+      }
+    },
+    {
+      "name": "Cuboid_boner",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Cuboid_boner",
+      "bounds": {
+        "min": [
+          -2.175447463989258,
+          2.8904123306274414,
+          0.6527440547943115
+        ],
+        "max": [
+          1.0479507446289062,
+          5.976178169250488,
+          4.0719499588012695
+        ]
+      }
+    },
+    {
+      "name": "Navicular_boner",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Navicular_boner",
+      "bounds": {
+        "min": [
+          -0.3375358581542969,
+          4.845915794372559,
+          1.489172101020813
+        ],
+        "max": [
+          3.731010913848877,
+          7.597560882568359,
+          3.892848014831543
+        ]
+      }
+    },
+    {
+      "name": "Medial_cuneiform_boner",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Medial_cuneiform_boner",
+      "bounds": {
+        "min": [
+          0.6846742630004883,
+          3.5434365272521973,
+          2.900324821472168
+        ],
+        "max": [
+          3.192993640899658,
+          6.773656368255615,
+          6.196222305297852
+        ]
+      }
+    },
+    {
+      "name": "Calcaneusr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Calcaneusr",
+      "bounds": {
+        "min": [
+          -1.2227392196655273,
+          1.144924521446228,
+          -6.155616760253906
+        ],
+        "max": [
+          3.5314722061157227,
+          6.255661487579346,
+          1.4131518602371216
+        ]
+      }
+    },
+    {
+      "name": "Lateral_cuneiform_boner",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Lateral_cuneiform_boner",
+      "bounds": {
+        "min": [
+          -1.5541505813598633,
+          4.022428035736084,
+          2.379892110824585
+        ],
+        "max": [
+          0.8684768676757812,
+          6.708479881286621,
+          5.026963233947754
+        ]
+      }
+    },
+    {
+      "name": "Patellar",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Patellar",
+      "bounds": {
+        "min": [
+          -1.603743553161621,
+          42.38056945800781,
+          2.59120774269104
+        ],
+        "max": [
+          2.7148218154907227,
+          46.4727897644043,
+          4.866433143615723
+        ]
+      }
+    },
+    {
+      "name": "Fibular",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Fibular",
+      "bounds": {
+        "min": [
+          -3.484712600708008,
+          5.521085262298584,
+          -2.968654155731201
+        ],
+        "max": [
+          0.13763427734375,
+          41.77033233642578,
+          0.3239603042602539
+        ]
+      }
+    },
+    {
+      "name": "Femurr",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Femurr",
+      "bounds": {
+        "min": [
+          -5.85308837890625,
+          42.98659133911133,
+          -2.935281753540039
+        ],
+        "max": [
+          5.8061723709106445,
+          88.4305191040039,
+          4.875810146331787
+        ]
+      }
+    },
+    {
+      "name": "Hip_boner",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Hip_boner",
+      "bounds": {
+        "min": [
+          -4.48944091796875,
+          79.73397064208984,
+          -5.678360939025879
+        ],
+        "max": [
+          8.70628547668457,
+          101.19402313232422,
+          8.606866836547852
+        ]
+      }
+    },
+    {
+      "name": "Sacrum",
+      "id": null,
+      "system": "skeletal",
+      "kind": "bone",
+      "layer": "bones",
+      "source": "Z-Anatomy",
+      "sourceName": "Sacrum",
+      "bounds": {
+        "min": [
+          2.849571704864502,
+          86.57537078857422,
+          -6.500250816345215
+        ],
+        "max": [
+          15.142611503601074,
+          98.08345031738281,
+          2.6399567127227783
+        ]
+      }
+    },
+    {
+      "name": "Sartorius_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Sartorius_muscler",
+      "bounds": {
+        "min": [
+          -3.449213981628418,
+          34.87583541870117,
+          -0.2603464126586914
+        ],
+        "max": [
+          6.871152877807617,
+          94.79947662353516,
+          8.754537582397461
+        ]
+      }
+    },
+    {
+      "name": "Gracilis_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Gracilis_muscler",
+      "bounds": {
+        "min": [
+          2.732271671295166,
+          34.34762191772461,
+          -1.8142814636230469
+        ],
+        "max": [
+          8.037849426269531,
+          83.70552062988281,
+          7.258584499359131
+        ]
+      }
+    },
+    {
+      "name": "Adductor_longusr",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Adductor_longusr",
+      "bounds": {
+        "min": [
+          -0.48615264892578125,
+          57.68003463745117,
+          2.3116960525512695
+        ],
+        "max": [
+          7.820371627807617,
+          84.16119384765625,
+          8.294183731079102
+        ]
+      }
+    },
+    {
+      "name": "Adductor_magnusr",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Adductor_magnusr",
+      "bounds": {
+        "min": [
+          -2.0340328216552734,
+          46.26297378540039,
+          -0.5652482509613037
+        ],
+        "max": [
+          7.724352836608887,
+          82.03807067871094,
+          4.677639961242676
+        ]
+      }
+    },
+    {
+      "name": "Adductor_brevisr",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Adductor_brevisr",
+      "bounds": {
+        "min": [
+          -0.8523654937744141,
+          66.55156707763672,
+          2.1230106353759766
+        ],
+        "max": [
+          7.05272102355957,
+          84.18011474609375,
+          6.899797439575195
+        ]
+      }
+    },
+    {
+      "name": "Pectineus_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Pectineus_muscler",
+      "bounds": {
+        "min": [
+          -0.8566627502441406,
+          73.33045196533203,
+          2.5389041900634766
+        ],
+        "max": [
+          7.421318054199219,
+          86.4547348022461,
+          8.596769332885742
+        ]
+      }
+    },
+    {
+      "name": "Vastus_medialis_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Vastus_medialis_muscler",
+      "bounds": {
+        "min": [
+          -1.5214042663574219,
+          38.490901947021484,
+          1.050492286682129
+        ],
+        "max": [
+          5.638987064361572,
+          79.28095245361328,
+          7.899057388305664
+        ]
+      }
+    },
+    {
+      "name": "Rectus_femoris_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Rectus_femoris_muscler",
+      "bounds": {
+        "min": [
+          -5.831878662109375,
+          37.04790115356445,
+          2.09293794631958
+        ],
+        "max": [
+          2.329331874847412,
+          91.58067321777344,
+          9.026973724365234
+        ]
+      }
+    },
+    {
+      "name": "Vastus_lateralis_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Vastus_lateralis_muscler",
+      "bounds": {
+        "min": [
+          -6.899114608764648,
+          38.36164093017578,
+          -0.5735435485839844
+        ],
+        "max": [
+          0.5063924789428711,
+          84.10074615478516,
+          7.34781551361084
+        ]
+      }
+    },
+    {
+      "name": "Vastus_intermedius_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Vastus_intermedius_muscler",
+      "bounds": {
+        "min": [
+          -4.309110641479492,
+          39.85513687133789,
+          2.029740810394287
+        ],
+        "max": [
+          1.353579044342041,
+          80.69481658935547,
+          6.804524898529053
+        ]
+      }
+    },
+    {
+      "name": "Semitendinosus_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Semitendinosus_muscler",
+      "bounds": {
+        "min": [
+          2.1247806549072266,
+          35.14638900756836,
+          -4.553291320800781
+        ],
+        "max": [
+          5.7263312339782715,
+          81.14025115966797,
+          1.270469069480896
+        ]
+      }
+    },
+    {
+      "name": "Semimembranosus_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Semimembranosus_muscler",
+      "bounds": {
+        "min": [
+          1.1232695579528809,
+          38.53598403930664,
+          -3.919895648956299
+        ],
+        "max": [
+          7.500679016113281,
+          80.30712890625,
+          1.5929012298583984
+        ]
+      }
+    },
+    {
+      "name": "Long_head_of_biceps_femorisr",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Long_head_of_biceps_femorisr",
+      "bounds": {
+        "min": [
+          -3.8297243118286133,
+          39.47711181640625,
+          -4.661901473999023
+        ],
+        "max": [
+          3.994783878326416,
+          82.0177001953125,
+          0.9208309650421143
+        ]
+      }
+    },
+    {
+      "name": "Short_head_of_biceps_femorisr",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Short_head_of_biceps_femorisr",
+      "bounds": {
+        "min": [
+          -3.3521575927734375,
+          40.320369720458984,
+          -2.6094350814819336
+        ],
+        "max": [
+          0.3324728012084961,
+          70.45524597167969,
+          1.5785762071609497
+        ]
+      }
+    },
+    {
+      "name": "Medial_head_of_gastrocnemiusr",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Medial_head_of_gastrocnemiusr",
+      "bounds": {
+        "min": [
+          0.4100494384765625,
+          20.647611618041992,
+          -7.408552169799805
+        ],
+        "max": [
+          5.524730682373047,
+          50.61279296875,
+          1.191670298576355
+        ]
+      }
+    },
+    {
+      "name": "Lateral_head_of_gastrocnemiusr",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Lateral_head_of_gastrocnemiusr",
+      "bounds": {
+        "min": [
+          -4.460756301879883,
+          22.010234832763672,
+          -7.642214775085449
+        ],
+        "max": [
+          0.949101448059082,
+          48.9422607421875,
+          0.14851021766662598
+        ]
+      }
+    },
+    {
+      "name": "Soleus_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Soleus_muscler",
+      "bounds": {
+        "min": [
+          -3.8817195892333984,
+          13.37561321258545,
+          -4.900317192077637
+        ],
+        "max": [
+          4.6316022872924805,
+          40.95086669921875,
+          0.6241416931152344
+        ]
+      }
+    },
+    {
+      "name": "Tibialis_anterior_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Tibialis_anterior_muscler",
+      "bounds": {
+        "min": [
+          -2.74892520904541,
+          4.22576379776001,
+          -0.4878816604614258
+        ],
+        "max": [
+          3.332594871520996,
+          41.11183166503906,
+          6.879558563232422
+        ]
+      }
+    },
+    {
+      "name": "Tibialis_posterior_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Tibialis_posterior_muscler",
+      "bounds": {
+        "min": [
+          -1.7902030944824219,
+          3.8866405487060547,
+          -2.797016143798828
+        ],
+        "max": [
+          4.101904392242432,
+          38.26515197753906,
+          5.320644378662109
+        ]
+      }
+    },
+    {
+      "name": "Popliteus_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Popliteus_muscler",
+      "bounds": {
+        "min": [
+          -2.705547332763672,
+          33.994544982910156,
+          -3.269026756286621
+        ],
+        "max": [
+          3.212202548980713,
+          46.50894546508789,
+          0.3847029209136963
+        ]
+      }
+    },
+    {
+      "name": "Fibularis_longus_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Fibularis_longus_muscler",
+      "bounds": {
+        "min": [
+          -4.505088806152344,
+          2.885246515274048,
+          -3.375248432159424
+        ],
+        "max": [
+          1.3706459999084473,
+          40.80072784423828,
+          5.590285778045654
+        ]
+      }
+    },
+    {
+      "name": "Fibularis_brevis_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Fibularis_brevis_muscler",
+      "bounds": {
+        "min": [
+          -2.9422168731689453,
+          2.5784380435943604,
+          -3.551943302154541
+        ],
+        "max": [
+          -0.10181045532226562,
+          29.469623565673828,
+          1.9239587783813477
+        ]
+      }
+    },
+    {
+      "name": "Flexor_digitorum_longusr",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Flexor_digitorum_longusr",
+      "bounds": {
+        "min": [
+          -5.325414657592773,
+          0.7785611152648926,
+          -3.473421096801758
+        ],
+        "max": [
+          4.124764442443848,
+          35.140254974365234,
+          15.841767311096191
+        ]
+      }
+    },
+    {
+      "name": "Flexor_hallucis_longusr",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Flexor_hallucis_longusr",
+      "bounds": {
+        "min": [
+          -2.480682373046875,
+          0.8544793725013733,
+          -3.7249221801757812
+        ],
+        "max": [
+          3.1790924072265625,
+          32.6208381652832,
+          14.751114845275879
+        ]
+      }
+    },
+    {
+      "name": "Gluteus_medius_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Gluteus_medius_muscler",
+      "bounds": {
+        "min": [
+          -5.9829816818237305,
+          82.91364288330078,
+          -3.9699525833129883
+        ],
+        "max": [
+          2.9272780418395996,
+          99.7164535522461,
+          5.190728187561035
+        ]
+      }
+    },
+    {
+      "name": "Gluteus_maximus_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Gluteus_maximus_muscler",
+      "bounds": {
+        "min": [
+          -5.676190376281738,
+          70.97151184082031,
+          -8.19268798828125
+        ],
+        "max": [
+          8.864371299743652,
+          97.92013549804688,
+          1.510205626487732
+        ]
+      }
+    },
+    {
+      "name": "Gluteus_minimus_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Gluteus_minimus_muscler",
+      "bounds": {
+        "min": [
+          -6.0343780517578125,
+          83.37496948242188,
+          -0.9529814720153809
+        ],
+        "max": [
+          2.248225212097168,
+          96.8252182006836,
+          5.124370574951172
+        ]
+      }
+    },
+    {
+      "name": "Iliacus_muscler",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Iliacus_muscler",
+      "bounds": {
+        "min": [
+          -2.8733444213867188,
+          77.21768951416016,
+          -0.7420525550842285
+        ],
+        "max": [
+          2.7408456802368164,
+          100.37602233886719,
+          7.880007266998291
+        ]
+      }
+    },
+    {
+      "name": "Tensor_fasciae_lataer",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Tensor_fasciae_lataer",
+      "bounds": {
+        "min": [
+          -6.2100934982299805,
+          80.3078384399414,
+          4.281340599060059
+        ],
+        "max": [
+          -2.2954368591308594,
+          96.45942687988281,
+          7.80180549621582
+        ]
+      }
+    },
+    {
+      "name": "Calcaneal_tendonr",
+      "id": null,
+      "system": "muscular",
+      "kind": "mus",
+      "layer": "muscles",
+      "source": "Z-Anatomy",
+      "sourceName": "Calcaneal_tendonr",
+      "bounds": {
+        "min": [
+          -2.5368385314941406,
+          2.515610456466675,
+          -6.218178749084473
+        ],
+        "max": [
+          3.7733306884765625,
+          24.52820587158203,
+          -3.4966325759887695
+        ]
+      }
+    }
+  ],
+  "attribution": {
+    "zAnatomy": "Z-Anatomy: Lluís Vinent Juanico, Gauthier Kervyn y colaboradores. CC BY-SA 4.0.",
+    "bodyParts3D": "BodyParts3D, © The Database Center for Life Science (DBCLS), Japón. Se conserva el crédito histórico de la adaptación fuente; el repositorio actual de BodyParts3D declara CC BY 4.0 desde 2025-02-27.",
+    "adaptation": "Instituto Mexicano de Flebología: selección derecha y pelvis, conversión FBX→GLB, transformación rígida [9,0,3], división editorial femoral, complementos y uniones locales. Adaptación CC BY-SA 4.0.",
+    "changesThisDelivery": "Copias GLB sin modificación geométrica ni recomposición anatómica. Manifiesto de lectura y procedencia añadido para el aula.",
+    "licenseScope": "CC BY-SA 4.0 se aplica a las mallas y sus adaptaciones; no convierte automáticamente bibliotecas o todo el código de la aplicación en esa licencia."
+  },
+  "limitations": [
+    "Incluye complementos IMF no atribuidos como mallas originales de Z-Anatomy: safena anterior, Giacomini, arqueada posterior, obturatriz y perforantes seleccionadas.",
+    "Las uniones de 15 conexiones fueron adaptadas en el atlas fuente; no representan una validación clínica de todas las variantes.",
+    "La capa de piel contiene regiones separadas y la de fascia superficies parciales; no deben tratarse como segmentación clínica cerrada."
+  ]
+}

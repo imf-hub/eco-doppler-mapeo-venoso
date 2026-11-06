@@ -1,0 +1,719 @@
+{
+  "gsv": [
+    {
+      "level": 0,
+      "x": 6.957518,
+      "y": 84.7,
+      "z": 10.052729,
+      "normal": [
+        -0.026814,
+        -0.588517,
+        0.80804
+      ],
+      "vein": [
+        5.204245,
+        84.7,
+        8.150935
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Hypogastric_regionr",
+      "skinDistance": 2.586656,
+      "sliceSegments": 63
+    },
+    {
+      "level": 5.882353,
+      "x": 5.814693,
+      "y": 80.158824,
+      "z": 7.830932,
+      "normal": [
+        0.587846,
+        -0.185113,
+        0.787509
+      ],
+      "vein": [
+        5.781217,
+        80.158824,
+        7.796709
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_thighr",
+      "skinDistance": 0.047874,
+      "sliceSegments": 57
+    },
+    {
+      "level": 11.764706,
+      "x": 5.518087,
+      "y": 75.617647,
+      "z": 7.136012,
+      "normal": [
+        0.732738,
+        -0.119929,
+        0.669859
+      ],
+      "vein": [
+        5.495077,
+        75.617647,
+        7.116113
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_thighr",
+      "skinDistance": 0.03042,
+      "sliceSegments": 57
+    },
+    {
+      "level": 17.647059,
+      "x": 5.517273,
+      "y": 71.076471,
+      "z": 6.587405,
+      "normal": [
+        0.722242,
+        -0.104058,
+        0.683767
+      ],
+      "vein": [
+        5.351237,
+        71.076471,
+        6.431454
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_thighr",
+      "skinDistance": 0.227791,
+      "sliceSegments": 61
+    },
+    {
+      "level": 23.529412,
+      "x": 5.340844,
+      "y": 66.535294,
+      "z": 5.948599,
+      "normal": [
+        0.731194,
+        -0.122801,
+        0.671026
+      ],
+      "vein": [
+        5.176462,
+        66.535294,
+        5.800327
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_thighr",
+      "skinDistance": 0.221374,
+      "sliceSegments": 48
+    },
+    {
+      "level": 29.411765,
+      "x": 5.399918,
+      "y": 61.994118,
+      "z": 5.03311,
+      "normal": [
+        0.777207,
+        -0.087948,
+        0.623068
+      ],
+      "vein": [
+        5.290857,
+        61.994118,
+        4.952056
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_thighr",
+      "skinDistance": 0.135882,
+      "sliceSegments": 59
+    },
+    {
+      "level": 35.294118,
+      "x": 6.158763,
+      "y": 57.452941,
+      "z": 3.474281,
+      "normal": [
+        0.87239,
+        -0.010015,
+        0.488708
+      ],
+      "vein": [
+        5.952186,
+        57.452941,
+        3.412204
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_thighr",
+      "skinDistance": 0.215702,
+      "sliceSegments": 60
+    },
+    {
+      "level": 41.176471,
+      "x": 7.160197,
+      "y": 52.911765,
+      "z": 1.113987,
+      "normal": [
+        0.960128,
+        -0.067798,
+        0.271214
+      ],
+      "vein": [
+        6.891797,
+        52.911765,
+        1.142456
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_thighr",
+      "skinDistance": 0.269905,
+      "sliceSegments": 43
+    },
+    {
+      "level": 47.058824,
+      "x": 6.977804,
+      "y": 48.370588,
+      "z": -0.60959,
+      "normal": [
+        0.99083,
+        -0.026295,
+        -0.132528
+      ],
+      "vein": [
+        6.784998,
+        48.370588,
+        -0.539065
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_kneer",
+      "skinDistance": 0.205299,
+      "sliceSegments": 47
+    },
+    {
+      "level": 52.941176,
+      "x": 6.56027,
+      "y": 43.829412,
+      "z": -0.683671,
+      "normal": [
+        0.953949,
+        -0.277595,
+        -0.113678
+      ],
+      "vein": [
+        6.309566,
+        43.829412,
+        -0.642065
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_kneer",
+      "skinDistance": 0.254133,
+      "sliceSegments": 51
+    },
+    {
+      "level": 58.823529,
+      "x": 4.754393,
+      "y": 39.288235,
+      "z": -0.739001,
+      "normal": [
+        0.947462,
+        -0.300858,
+        0.10863
+      ],
+      "vein": [
+        4.694833,
+        39.288235,
+        -0.742134
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_kneer",
+      "skinDistance": 0.059642,
+      "sliceSegments": 84
+    },
+    {
+      "level": 64.705882,
+      "x": 4.80537,
+      "y": 34.747059,
+      "z": -0.368831,
+      "normal": [
+        0.863803,
+        0.178347,
+        0.471207
+      ],
+      "vein": [
+        4.277294,
+        34.747059,
+        -0.523216
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_legr",
+      "skinDistance": 0.550181,
+      "sliceSegments": 120
+    },
+    {
+      "level": 70.588235,
+      "x": 4.898306,
+      "y": 30.205882,
+      "z": -0.274673,
+      "normal": [
+        0.871199,
+        -0.104914,
+        0.479589
+      ],
+      "vein": [
+        3.887498,
+        30.205882,
+        -0.674874
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_legr",
+      "skinDistance": 1.08715,
+      "sliceSegments": 106
+    },
+    {
+      "level": 76.470588,
+      "x": 3.390151,
+      "y": 25.664706,
+      "z": 0.556757,
+      "normal": [
+        0.72729,
+        -0.116823,
+        0.676315
+      ],
+      "vein": [
+        2.843644,
+        25.664706,
+        0.093321
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_legr",
+      "skinDistance": 0.716549,
+      "sliceSegments": 75
+    },
+    {
+      "level": 82.352941,
+      "x": 2.13331,
+      "y": 21.123529,
+      "z": 0.904385,
+      "normal": [
+        0.448213,
+        -0.094889,
+        0.888876
+      ],
+      "vein": [
+        2.009237,
+        21.123529,
+        0.737946
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_legr",
+      "skinDistance": 0.207596,
+      "sliceSegments": 63
+    },
+    {
+      "level": 88.235294,
+      "x": 2.110275,
+      "y": 16.582353,
+      "z": 0.815494,
+      "normal": [
+        0.62976,
+        -0.03502,
+        0.776
+      ],
+      "vein": [
+        2.03352,
+        16.582353,
+        0.697335
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_legr",
+      "skinDistance": 0.1409,
+      "sliceSegments": 70
+    },
+    {
+      "level": 94.117647,
+      "x": 2.58103,
+      "y": 12.041176,
+      "z": 0.801452,
+      "normal": [
+        0.740657,
+        0.16414,
+        0.651525
+      ],
+      "vein": [
+        2.487286,
+        12.041176,
+        0.711678
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Anterior_region_of_ankler",
+      "skinDistance": 0.129797,
+      "sliceSegments": 49
+    },
+    {
+      "level": 100,
+      "x": 2.776991,
+      "y": 7.5,
+      "z": 3.694798,
+      "normal": [
+        0.661347,
+        0.587667,
+        0.46612
+      ],
+      "vein": [
+        2.638116,
+        7.5,
+        3.55233
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Dorsum_of_footr",
+      "skinDistance": 0.198956,
+      "sliceSegments": 53
+    }
+  ],
+  "ssv": [
+    {
+      "level": 0,
+      "x": 1.464975,
+      "y": 48,
+      "z": -4.519609,
+      "normal": [
+        0.068111,
+        0,
+        -0.997678
+      ],
+      "vein": [
+        1.350671,
+        48,
+        -2.518359
+      ],
+      "surfaceMethod": "profile-projection",
+      "surfaceName": null,
+      "skinDistance": 2.004511,
+      "sliceSegments": 50
+    },
+    {
+      "level": 6.666667,
+      "x": 1.529137,
+      "y": 45.3,
+      "z": -5.15086,
+      "normal": [
+        0.200516,
+        0.330172,
+        -0.922377
+      ],
+      "vein": [
+        1.430671,
+        45.3,
+        -3.954301
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_kneer",
+      "skinDistance": 1.200603,
+      "sliceSegments": 65
+    },
+    {
+      "level": 13.333333,
+      "x": 1.401615,
+      "y": 42.6,
+      "z": -6.233481,
+      "normal": [
+        0.201876,
+        0.34308,
+        -0.917356
+      ],
+      "vein": [
+        1.2636,
+        42.6,
+        -5.23866
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_kneer",
+      "skinDistance": 1.00435,
+      "sliceSegments": 52
+    },
+    {
+      "level": 20,
+      "x": 1.584614,
+      "y": 39.9,
+      "z": -7.086295,
+      "normal": [
+        0.146977,
+        0.308995,
+        -0.939638
+      ],
+      "vein": [
+        1.253827,
+        39.9,
+        -6.172727
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_legr",
+      "skinDistance": 0.97161,
+      "sliceSegments": 56
+    },
+    {
+      "level": 26.666667,
+      "x": 1.587117,
+      "y": 37.2,
+      "z": -7.858585,
+      "normal": [
+        0.126119,
+        0.187226,
+        -0.974187
+      ],
+      "vein": [
+        1.210311,
+        37.2,
+        -6.784094
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_legr",
+      "skinDistance": 1.138646,
+      "sliceSegments": 62
+    },
+    {
+      "level": 33.333333,
+      "x": 1.480548,
+      "y": 34.5,
+      "z": -8.310603,
+      "normal": [
+        0.091141,
+        0.084483,
+        -0.992248
+      ],
+      "vein": [
+        1.148869,
+        34.5,
+        -7.164416
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_legr",
+      "skinDistance": 1.193213,
+      "sliceSegments": 44
+    },
+    {
+      "level": 40,
+      "x": 1.379316,
+      "y": 31.8,
+      "z": -8.46349,
+      "normal": [
+        0.12805,
+        0.021022,
+        -0.991545
+      ],
+      "vein": [
+        1.042856,
+        31.8,
+        -7.149315
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_legr",
+      "skinDistance": 1.356561,
+      "sliceSegments": 58
+    },
+    {
+      "level": 46.666667,
+      "x": 1.091922,
+      "y": 29.1,
+      "z": -8.307956,
+      "normal": [
+        0.180492,
+        -0.130287,
+        -0.974909
+      ],
+      "vein": [
+        0.829342,
+        29.1,
+        -6.944113
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_legr",
+      "skinDistance": 1.38889,
+      "sliceSegments": 58
+    },
+    {
+      "level": 53.333333,
+      "x": 0.644266,
+      "y": 26.4,
+      "z": -7.932584,
+      "normal": [
+        -0.06002,
+        -0.179364,
+        -0.98195
+      ],
+      "vein": [
+        0.508257,
+        26.4,
+        -6.6979
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_legr",
+      "skinDistance": 1.242153,
+      "sliceSegments": 59
+    },
+    {
+      "level": 60,
+      "x": 0.230157,
+      "y": 23.7,
+      "z": -7.328966,
+      "normal": [
+        -0.009807,
+        -0.225427,
+        -0.974211
+      ],
+      "vein": [
+        0.192819,
+        23.7,
+        -6.496696
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_legr",
+      "skinDistance": 0.833107,
+      "sliceSegments": 58
+    },
+    {
+      "level": 66.666667,
+      "x": -0.076801,
+      "y": 21,
+      "z": -6.794996,
+      "normal": [
+        -0.122499,
+        -0.209893,
+        -0.97002
+      ],
+      "vein": [
+        -0.069417,
+        21,
+        -6.176334
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_legr",
+      "skinDistance": 0.618706,
+      "sliceSegments": 50
+    },
+    {
+      "level": 73.333333,
+      "x": -0.321144,
+      "y": 18.3,
+      "z": -6.271719,
+      "normal": [
+        -0.091462,
+        -0.17128,
+        -0.980968
+      ],
+      "vein": [
+        -0.245654,
+        18.3,
+        -5.614939
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_legr",
+      "skinDistance": 0.661104,
+      "sliceSegments": 56
+    },
+    {
+      "level": 80,
+      "x": -0.369888,
+      "y": 15.6,
+      "z": -5.708903,
+      "normal": [
+        -0.366383,
+        -0.214564,
+        -0.905387
+      ],
+      "vein": [
+        -0.259739,
+        15.6,
+        -5.185115
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_legr",
+      "skinDistance": 0.535245,
+      "sliceSegments": 53
+    },
+    {
+      "level": 86.666667,
+      "x": -0.243177,
+      "y": 12.9,
+      "z": -5.017777,
+      "normal": [
+        -0.480223,
+        -0.288892,
+        -0.828207
+      ],
+      "vein": [
+        -0.17781,
+        12.9,
+        -4.836563
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Posterior_region_of_legr",
+      "skinDistance": 0.192643,
+      "sliceSegments": 51
+    },
+    {
+      "level": 93.333333,
+      "x": -0.36568,
+      "y": 10.2,
+      "z": -4.39081,
+      "normal": [
+        -0.297783,
+        0.04152,
+        -0.95373
+      ],
+      "vein": [
+        -0.295553,
+        10.2,
+        -4.29676
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Lateral_retromalleolar_regionr",
+      "skinDistance": 0.117317,
+      "sliceSegments": 53
+    },
+    {
+      "level": 100,
+      "x": -0.574706,
+      "y": 7.5,
+      "z": -4.159557,
+      "normal": [
+        -0.391863,
+        -0.057431,
+        -0.918229
+      ],
+      "vein": [
+        -0.373502,
+        7.5,
+        -3.956837
+      ],
+      "surfaceMethod": "skin-raycast",
+      "surfaceName": "Lateral_malleolusr",
+      "skinDistance": 0.285619,
+      "sliceSegments": 55
+    }
+  ],
+  "sfj": {
+    "x": 5.583083,
+    "y": 85.35,
+    "z": 10.389268,
+    "normal": [
+      -0.195119,
+      -0.44798,
+      0.872492
+    ],
+    "vein": [
+      4.938626,
+      85.35,
+      7.811438
+    ],
+    "surfaceMethod": "skin-raycast",
+    "surfaceName": "Hypogastric_regionr",
+    "skinDistance": 2.657166
+  },
+  "metadata": {
+    "coordinateSpace": "Shared original GLB coordinates; +Y proximal, +X medial, +Z anterior; right limb.",
+    "levels": "0=proximal,100=distal. GSV sampled Y84.7→7.5; SSV Y48→7.5. Not a full clinical acquisition route.",
+    "method": "Each vessel anchor is the segment-length-weighted centroid of triangles intersecting a horizontal plane through the actual named vein mesh. Surface contact is the nearest skin-mesh ray intersection in the outward profile-gradient direction. Fallback projection uses the source skin ellipse profile when a regional skin mesh has no intersection.",
+    "normal": "Outward skin-face normal at contact; profile-gradient normal for fallback. Unit vector in original GLB space.",
+    "limitations": [
+      "Atlas geometry and regional skin are not patient segmentation.",
+      "Probe path models visual contact only; it does not model ultrasound beam, pressure, force or acoustic propagation.",
+      "Interpolating sparse anchors is for visualization and can bridge local skin curvature; use small clearance at the probe face.",
+      "GSV/SSV centre is an axial surface-section centroid, not a validated lumen centerline.",
+      "SFJ is a source navigation landmark, not a universal anatomical location."
+    ],
+    "license": "CC BY-SA4.0, derivative coordinate data from Z-Anatomy/IMF atlas; retain ATTRIBUTION.txt and CREDITOS-FUENTE.txt.",
+    "attributionFile": "./media/anatomy-v2/ATTRIBUTION.txt"
+  }
+}

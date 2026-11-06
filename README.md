@@ -4,17 +4,21 @@ Plataforma educativa en español para médicos con formación en flebología que
 
 ## Contenido funcional
 
-- 10 lecciones de fundamentos con preguntas y laboratorio de ondas.
+- 10 lecciones de fundamentos con preguntas y exploradores visuales relacionados.
 - Cuatro experimentos guiados con corrección de imagen y razonamiento; medición de señal retrógrada con cursores.
 - Ecógrafo didáctico original: modo B, color, PW y Power; ganancia, profundidad, frecuencia, foco, TGC, rango dinámico, escala/PRF, filtro, ángulo, presión, persistencia y volumen de muestra.
-- Anatomía 3D procedural original: 11 grupos anatómicos, selección, sistemas, orientación y correlación de planos.
+- Anatomía 3D de referencia Z-Anatomy/BodyParts3D: 143 mallas, capas, cámaras, objetivos anatómicos y crédito CC BY-SA 4.0.
 - Taller 3D de paciente y sonda: barrido, rotación, inclinación, presión, marcador y cambios en la imagen.
 - 12 etapas de mapeo con preparación del paciente, orientación de sonda, evidencia en pantalla, capturas, criterios de calidad y fuentes localizables.
-- 37 momentos visuales: reproducción, pausa, recorrido manual, error/corrección, paciente/mano/sonda 3D, cortes, maniobras, medidas, mapa e informe.
+- 37 momentos visuales: reproducción, pausa, recorrido manual, error/corrección, anatomía/sonda 3D, cortes, maniobras, medidas, mapa e informe.
 - Guías rápidas de las 12 etapas, alertas de detención y PDF descargable de tres páginas.
 - Cartografía de tres caras: trazos, condiciones, anotaciones, perforantes, medidas e informe de práctica. Exportación SVG/JSON recuperable y PDF con mapa, informe y registro de medidas.
 - 6 casos ficticios con 18 preguntas, retroalimentación y rúbrica docente.
 - 26 términos, 17 códigos de representación y dos recursos clínicos CC0 con contexto y créditos.
+
+## Renovación visual 2.0
+
+34 conceptos con cuatro representaciones por concepto: volumen 3D, corte/señal, relaciones gráficas y comparación. Incluye movimiento controlable, escenas espaciales, gráficas originales y referencias gráficas primarias. Consultar [recursos e implementación](docs/visual-renewal.md), [procedencia anatómica](docs/visual-assets-3d.md) y [matriz visual](docs/visual-curriculum-evidence.md).
 
 ## Fundamento clínico
 
